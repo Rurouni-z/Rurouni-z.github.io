@@ -1,0 +1,1552 @@
+<!doctype html><html lang=zh-cn><head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta charset=utf-8><meta name=generator content="Hugo 0.112.3"><meta name=theme-color content="#fff"><meta name=color-scheme content="light dark"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no, date=no, address=no, email=no"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><title>第2讲：实现一个传输h264的RTSP服务器 | 悠闲の小屋</title><link rel=stylesheet href=/css/meme.min.css><script src=https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js defer></script><script src=/js/meme.min.js></script>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&amp;family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Cinzel+Decorative:wght@700&amp;display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&amp;family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Cinzel+Decorative:wght@700&amp;display=swap"></noscript><meta name=author content="Rurouni"><meta name=description content="vscode配置 vscode编译多个cpp文件 将${file}更改为选中部分，使之编……"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=mask-icon href=/icons/safari-pinned-tab.svg color=#2a6df4><link rel=apple-touch-icon sizes=180x180 href=/icons/apple-touch-icon.png><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-title content="悠闲の小屋"><meta name=apple-mobile-web-app-status-bar-style content="black"><meta name=mobile-web-app-capable content="yes"><meta name=application-name content="悠闲の小屋"><meta name=msapplication-starturl content="../../../"><meta name=msapplication-TileColor content="#fff"><meta name=msapplication-TileImage content="../../../icons/mstile-150x150.png"><link rel=manifest href=/manifest.json><link rel=canonical href=https://keepjolly.com/posts/learn/h264-rtsp-server/><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","datePublished":"2023-05-26T21:03:50+08:00","dateModified":"2023-05-26T13:25:50+00:00","url":"https://keepjolly.com/posts/learn/h264-rtsp-server/","headline":"第2讲：实现一个传输h264的RTSP服务器","description":"vscode配置 vscode编译多个cpp文件 将${file}更改为选中部分，使之编……","inLanguage":"zh-CN","articleSection":"posts","wordCount":6259,"image":["https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5","https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-1.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5","https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-2.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5","https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-3.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5","https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-4.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5","https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-5.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5","https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-6.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5"],"author":{"@type":"Person","description":"知行合一","email":"1366475809@qq.com","image":"https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/profile%20photo_1647067705220.jpeg","url":"https://keepjolly.com/","name":"Rurouni"},"license":"在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。","publisher":{"@type":"Organization","name":"悠闲の小屋","logo":{"@type":"ImageObject","url":"https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo%2Fweb_logo.png"},"url":"https://keepjolly.com/"},"mainEntityOfPage":{"@type":"WebSite","@id":"https://keepjolly.com/"}}</script><meta name=twitter:card content="summary_large_image"><meta property="og:title" content="第2讲：实现一个传输h264的RTSP服务器"><meta property="og:description" content="vscode配置 vscode编译多个cpp文件 将${file}更改为选中部分，使之编……"><meta property="og:url" content="https://keepjolly.com/posts/learn/h264-rtsp-server/"><meta property="og:site_name" content="悠闲の小屋"><meta property="og:locale" content="zh"><meta property="og:image" content="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5"><meta property="og:type" content="article"><meta property="article:published_time" content="2023-05-26T21:03:50+08:00"><meta property="article:modified_time" content="2023-05-26T13:25:50+00:00"><meta property="article:section" content="posts"><meta name=google-site-verification content="mBjLYgXaXR8EAfTNbi4DTVC5KOJuBHpZDsmtgbgC6Rs"></head><body><div class=container><header class=header><div class=header-wrapper><div class="header-inner single"><div class=site-brand><a href=/ class=brand>悠闲の小屋</a></div><nav class=nav><ul class=menu id=menu><li class="menu-item active"><a href=/posts/><span class=menu-item-name>文章</span></a></li><li class=menu-item><a href=/tags/><span class=menu-item-name>标签</span></a></li><li class=menu-item><a href=/about/><span class=menu-item-name>关于</span></a></li><li class=menu-item><a id=theme-switcher href=#><span class="icon theme-icon-light">🌞</span><span class="icon theme-icon-dark">🌙</span></a></li><li class="menu-item search-item"><form id=search class=search role=search><label for=search-input><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label><input type=search id=search-input class=search-input></form><template id=search-result hidden><article class="content post"><h2 class=post-title><a class=summary-title-link></a></h2><summary class=summary></summary><div class=read-more-container><a class=read-more-link>阅读更多 »</a></div></article></template></li></ul></nav></div></div><input type=checkbox id=nav-toggle aria-hidden=true>
+<label for=nav-toggle class=nav-toggle></label>
+<label for=nav-toggle class=nav-curtain></label></header><main class="main single" id=main><div class=main-inner><article class="content post h-entry" data-align=justify data-type=posts data-toc-num=true><h1 class="post-title p-name">第2讲：实现一个传输h264的RTSP服务器</h1><nav class=contents><h2 id=contents class=contents-title>目录</h2><ol class=toc><li><a id=contents:vscode配置 href=#vscode配置>vscode配置</a></li><li><a id=contents:项目功能 href=#项目功能>项目功能</a></li><li><a id=contents:rtp理解 href=#rtp理解>RTP理解</a></li><li><a id=contents:h264理解 href=#h264理解>H264理解</a></li><li><a id=contents:h264码流进行rtp封装 href=#h264码流进行rtp封装>H264码流进行RTP封装</a></li><li><a id=contents:代码 href=#代码>代码</a><ol><li><a id=contents:rtph文件 href=#rtph文件>rtp.h文件</a></li><li><a id=contents:rtpcpp href=#rtpcpp>rtp.cpp</a></li><li><a id=contents:maincpp href=#maincpp>main.cpp</a></li></ol></li></ol></nav><div class="post-body e-content"><h1 id=vscode配置><a href=#vscode配置 class=anchor-link>#</a><a href=#contents:vscode配置 class=headings>vscode配置</a></h1><p><a href=https://blog.csdn.net/Yujian2563/article/details/124749727 target=_blank rel=noopener>vscode编译多个cpp文件</a>
+将${file}更改为选中部分，使之编译所有cpp文件。注意：变更之后本工程内不能出现多个main函数！！
+<img src=https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5 alt=image.png>
+或者使用命令行：gcc file1.cpp file2.cpp main.cpp -o myprogram
+或者使用cmake</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cmake data-lang=cmake><span class=line><span class=cl><span class=c>#假设我们有三个源代码文件：
+</span></span></span><span class=line><span class=cl><span class=c></span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c>#main.cpp
+</span></span></span><span class=line><span class=cl><span class=c>#myclass.cpp
+</span></span></span><span class=line><span class=cl><span class=c>#utils.cpp
+</span></span></span><span class=line><span class=cl><span class=c>#以及两个头文件：
+</span></span></span><span class=line><span class=cl><span class=c></span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c>#myclass.h
+</span></span></span><span class=line><span class=cl><span class=c>#utils.h
+</span></span></span><span class=line><span class=cl><span class=c>#那么，我们首先需要在CMakeLists.txt中指定这些源代码文件，并创建一个库：
+</span></span></span><span class=line><span class=cl><span class=c></span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>cmake_minimum_required</span><span class=p>(</span><span class=s>VERSION</span> <span class=s>3.5</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>project</span><span class=p>(</span><span class=s>myproject</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 添加源代码文件
+</span></span></span><span class=line><span class=cl><span class=c></span><span class=nb>add_library</span><span class=p>(</span><span class=s>mylib</span> <span class=s>SHARED</span> 
+</span></span><span class=line><span class=cl>    <span class=s>myclass.cpp</span> 
+</span></span><span class=line><span class=cl>    <span class=s>utils.cpp</span>
+</span></span><span class=line><span class=cl><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 包含头文件搜索路径
+</span></span></span><span class=line><span class=cl><span class=c></span><span class=nb>include_directories</span><span class=p>(</span><span class=o>${</span><span class=nv>CMAKE_CURRENT_SOURCE_DIR</span><span class=o>}</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 指定头文件
+</span></span></span><span class=line><span class=cl><span class=c></span><span class=nb>set</span><span class=p>(</span><span class=s>MY_HEADERS</span>
+</span></span><span class=line><span class=cl>    <span class=s>myclass.h</span>
+</span></span><span class=line><span class=cl>    <span class=s>utils.h</span>
+</span></span><span class=line><span class=cl><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># 指定生成可执行文件，并链接库
+</span></span></span><span class=line><span class=cl><span class=c></span><span class=nb>add_executable</span><span class=p>(</span><span class=s>myapp</span> <span class=s>main.cpp</span><span class=p>)</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>target_link_libraries</span><span class=p>(</span><span class=s>myapp</span> <span class=s>mylib</span><span class=p>)</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div></div><h1 id=项目功能><a href=#项目功能 class=anchor-link>#</a><a href=#contents:项目功能 class=headings>项目功能</a></h1><p>服务端需要源源不断的读取一个本地h264视频文件，并将读取到的h264视频流封装到RTP数据包中，再推送至客户端。这样我们就实现了一个简单的支持RTSP协议流媒体分发服务。</p><h1 id=rtp理解><a href=#rtp理解 class=anchor-link>#</a><a href=#contents:rtp理解 class=headings>RTP理解</a></h1><p>RTP:实时传输协议（Real-time Transport Protocol或简写RTP）是一个网络传输协议.
+RTP定义了两种报文：RTP报文和RTCP报文，RTP报文用于传送媒体数据（如音频和视频），它由 RTP报头和数据两部分组成，RTP数据部分称为有效载荷(payload)；RTCP报文用于传送控制信息，以实现协议控制功能。RTP报文和RTCP 报文将作为下层协议（TCP/UDP）的数据单元进行传输。如果使用UDP，则RTP报文和RTCP报文分别使用两个相邻的UDP端口，RTP报文使用<strong>低端口</strong>，RTCP报文使用<strong>高端口</strong>。如果使用其它的下层协议（TCP），RTP报文和RTCP报文可以合并，放在一个数据单元中一起传送，控制信息在前，媒体数据在后。通常，RTP是由应用程序实现的。
+<img src=https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-1.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5 alt=image.png></p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// RTP头的结构体
+</span></span></span><span class=line><span class=cl><span class=c1></span> 
+</span></span><span class=line><span class=cl><span class=k>struct</span> <span class=nc>RtpHeader</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* byte 0 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint8_t</span> <span class=nl>csrcLen</span> <span class=p>:</span> <span class=mi>4</span><span class=p>;</span> <span class=c1>//CSRC计数器，占后4位，指示CSRC 标识符的个数。
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>uint8_t</span> <span class=nl>extension</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span> <span class=c1>//占1位，后第五位，如果X=1，则在RTP报头后跟有一个扩展报头。
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>uint8_t</span> <span class=nl>padding</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span> <span class=c1>//填充标志，占1位，如果P=1，则在该报文的尾部填充一个或多个额外的八位组，它们不是有效载荷的一部分。
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>uint8_t</span> <span class=nl>version</span> <span class=p>:</span> <span class=mi>2</span><span class=p>;</span> <span class=c1>//RTP协议的版本号，占2位，当前协议版本号为2。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* byte 1 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint8_t</span> <span class=nl>payloadType</span> <span class=p>:</span> <span class=mi>7</span><span class=p>;</span><span class=c1>//有效载荷类型，占7位，用于说明RTP报文中有效载荷的类型，如GSM音频、JPEM图像等。
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>uint8_t</span> <span class=nl>marker</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span><span class=c1>//标记，占1位，不同的有效载荷有不同的含义，对于视频，标记一帧的结束；对于音频，标记会话的开始。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* bytes 2,3 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint16_t</span> <span class=n>seq</span><span class=p>;</span><span class=c1>//占16位，用于标识发送者所发送的RTP报文的序列号，每发送一个报文，序列号增1。接收者通过序列号来检测报文丢失情况，重新排序报文，恢复数据。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* bytes 4-7 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint32_t</span> <span class=n>timestamp</span><span class=p>;</span><span class=c1>//占32位，时戳反映了该RTP报文的第一个八位组的采样时刻。接收者使用时戳来计算延迟和延迟抖动，并进行同步控制。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* bytes 8-11 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint32_t</span> <span class=n>ssrc</span><span class=p>;</span><span class=c1>//占32位，用于标识同步信源。该标识符是随机选择的，参加同一视频会议的两个同步信源不能有相同的SSRC。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>   <span class=cm>/*标准的RTP Header 还可能存在 0-15个特约信源(CSRC)标识符
+</span></span></span><span class=line><span class=cl><span class=cm>   
+</span></span></span><span class=line><span class=cl><span class=cm>   每个CSRC标识符占32位，可以有0～15个。每个CSRC标识了包含在该RTP报文有效载荷中的所有特约信源
+</span></span></span><span class=line><span class=cl><span class=cm>
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// RTP包的结构体
+</span></span></span><span class=line><span class=cl><span class=c1>// 包含一个RTP头部和RTP载荷
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>struct</span> <span class=nc>RtpPacket</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=nc>RtpHeader</span> <span class=n>rtpHeader</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint8_t</span> <span class=n>payload</span><span class=p>[</span><span class=mi>0</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div></div><h1 id=h264理解><a href=#h264理解 class=anchor-link>#</a><a href=#contents:h264理解 class=headings>H264理解</a></h1><p><a href=https://mp.weixin.qq.com/s/SJblG5lj8nzQweM1VnRTEA target=_blank rel=noopener>链接</a></p><ul><li>I帧(intraframe frame),关键帧。<ul><li>采用帧内压缩技术。I帧是所有数据帧最关键的帧，如果缺少了I帧，后面的数据帧将无法使用。IDR帧属于I帧。举例我将GOP中第一帧就可以称作I帧。在编码时，I帧是不需要参考前后帧数据，是独立编码。GOP至少有一个I帧。</li></ul></li><li>P帧(forward Predicted frame)，向前参考帧。<ul><li>压缩时，只参考前面已经处理的帧，采用帧间压缩技术。它占I帧的一半大小。</li></ul></li><li>B帧(Bidirectionally predicted frame)，双向参考帧。<ul><li>压缩时，既参考前面已经处理的帧，也参考后面的帧，帧间压缩技术。它占I帧1/4大小。压缩率变高</li></ul></li></ul><p><strong>编码后数据，根据I帧P帧B帧的特性，在解码的过程是按I帧、P帧和B帧进行解码，文件播放还是按I帧、B帧和P帧顺序播放</strong>
+IDR帧和I帧的关系：
+IDR(Instantannous Decoder Refresh) 解码器立即刷新
+作用：在解码的过程，一旦有一帧数据出现错误，将是无法恢复的过程，后面数据帧不能使用。当有了IDR帧，解码器收到IDR帧时，就会将缓冲区的数据清空，找到第一个IDR帧，重新解码。I和IDR帧都使用帧内预测，在编码解码中为了方便，首个I帧要和其他I帧区别开，<strong>把第一个I帧叫IDR</strong>，这样方便控制编码和解码流程。IDR帧必须是一个I帧，但是I帧不一定是IDR帧，这个帧出现的时候，是告诉解码器，可以清除掉所有的参考帧，这是一个全新的序列，新的GOP已经开始。I帧有被跨帧参考的可能,IDR不会。
+每个GOP中的第一帧就是IDR帧。</p><h1 id=h264码流进行rtp封装><a href=#h264码流进行rtp封装 class=anchor-link>#</a><a href=#contents:h264码流进行rtp封装 class=headings>H264码流进行RTP封装</a></h1><p><a href=https://blog.csdn.net/jwybobo2007/article/details/7054140 target=_blank rel=noopener>RTP封装</a>
+<strong>H.264由一个一个的NALU组成</strong>，每个NALU之间使用<strong>00 00 00 01</strong>或<strong>00 00 01</strong>分隔开
+<img src=https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-2.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5 alt=image.png></p><ol><li>F(forbiden):禁止位，占用NALU头的第一个位，当禁止位值为1时表示语法错误；</li><li>NRI:参考级别，占用NALU头的第二到第三个位；值越大，该NAL越重要。</li><li>Type:Nalu数据类型，也就是标识该NALu的数据类型是哪种，占用NALU头的第4到第8个位；</li></ol><ul><li><img src=https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-3.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5 alt=image.png></li><li><a href=https://blog.csdn.net/qq_29350001/article/details/78226286#t0 target=_blank rel=noopener>图片来源</a></li><li>0x61 (0 11 00001) I帧 type = 1</li><li>0x41 (0 10 00001) P帧 type = 1</li><li>0x01 (0 00 00001) B帧 type = 1</li></ul><p>打包方式：</p><ol><li>单NALU打包</li></ol><p>所谓单NALU打包就是将一整个NALU的数据放入RTP包（RTP头+RTP载荷）的<strong>载荷</strong>中，这是最简单的一种方式。</p><ol start=2><li>分片打包</li></ol><p>每个RTP包都有大小限制的，因为RTP一般都是使用UDP发送，UDP没有流量控制，所以要限制每一次发送的大小，所以如果一个NALU的太大，就需要分成多个RTP包发送，至于如何分成多个RTP包，如下：
+首先要明确，RTP包的格式是绝不会变的，永远都是RTP头+RTP载荷
+RTP头部是固定的，那么只能在<strong>RTP载荷中去添加额外信息</strong>来说明这个RTP包是表示同一个NALU
+如果是分片打包的话，那么在RTP载荷开始有<strong>两个字节的信息</strong>，然后再是NALU的内容
+<img src=https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-4.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5 alt=image.png>
+第一个字节<strong>FU Indicator</strong>，其格式如下
+<img src=https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-5.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5 alt=image.png>
+高三位：与NALU第一个字节的高三位相同
+Type：28，表示该RTP包一个分片，为什么是28？因为H.264的规范中定义的，此外还有许多其他Type，这里不详讲
+第二个字节<strong>FU Header</strong>，其格式如下
+<img src=https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-6.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5 alt=image.png>
+S：标记该分片打包的第一个RTP包
+E：比较该分片打包的最后一个RTP包
+Type：NALU的Type，不同与FU Indicator的type</p><h1 id=代码><a href=#代码 class=anchor-link>#</a><a href=#contents:代码 class=headings>代码</a></h1><p>**ffmpeg -i test.mp4 -codec copy -bsf: h264_mp4toannexb -f h264 test.h264 **生成h264文件</p><h2 id=rtph文件><a href=#rtph文件 class=anchor-link>#</a><a href=#contents:rtph文件 class=headings>rtp.h文件</a></h2><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#pragma once
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdint.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#define RTP_VERSION              2
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#define RTP_PAYLOAD_TYPE_H264   96
+</span></span></span><span class=line><span class=cl><span class=cp>#define RTP_PAYLOAD_TYPE_AAC    97
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#define RTP_HEADER_SIZE         12
+</span></span></span><span class=line><span class=cl><span class=cp>#define RTP_MAX_PKT_SIZE        1400
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl> <span class=cm>/*
+</span></span></span><span class=line><span class=cl><span class=cm>  *    0                   1                   2                   3
+</span></span></span><span class=line><span class=cl><span class=cm>  *    7 6 5 4 3 2 1 0|7 6 5 4 3 2 1 0|7 6 5 4 3 2 1 0|7 6 5 4 3 2 1 0
+</span></span></span><span class=line><span class=cl><span class=cm>  *   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=cm>  *   |V=2|P|X|  CC   |M|     PT      |       sequence number         |
+</span></span></span><span class=line><span class=cl><span class=cm>  *   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=cm>  *   |                           timestamp                           |
+</span></span></span><span class=line><span class=cl><span class=cm>  *   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=cm>  *   |           synchronization source (SSRC) identifier            |
+</span></span></span><span class=line><span class=cl><span class=cm>  *   +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+</span></span></span><span class=line><span class=cl><span class=cm>  *   |            contributing source (CSRC) identifiers             |
+</span></span></span><span class=line><span class=cl><span class=cm>  *   :                             ....                              :
+</span></span></span><span class=line><span class=cl><span class=cm>  *   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=cm>  *
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl><span class=k>struct</span> <span class=nc>RtpHeader</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* byte 0 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint8_t</span> <span class=nl>csrcLen</span> <span class=p>:</span> <span class=mi>4</span><span class=p>;</span><span class=c1>//CSRC计数器，占4位，指示CSRC 标识符的个数。
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>uint8_t</span> <span class=nl>extension</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span><span class=c1>//占1位，如果X=1，则在RTP报头后跟有一个扩展报头。
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>uint8_t</span> <span class=nl>padding</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span><span class=c1>//填充标志，占1位，如果P=1，则在该报文的尾部填充一个或多个额外的八位组，它们不是有效载荷的一部分。
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>uint8_t</span> <span class=nl>version</span> <span class=p>:</span> <span class=mi>2</span><span class=p>;</span><span class=c1>//RTP协议的版本号，占2位，当前协议版本号为2。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* byte 1 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint8_t</span> <span class=nl>payloadType</span> <span class=p>:</span> <span class=mi>7</span><span class=p>;</span><span class=c1>//有效载荷类型，占7位，用于说明RTP报文中有效载荷的类型，如GSM音频、JPEM图像等。
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>uint8_t</span> <span class=nl>marker</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span><span class=c1>//标记，占1位，不同的有效载荷有不同的含义，对于视频，标记一帧的结束；对于音频，标记会话的开始。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* bytes 2,3 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint16_t</span> <span class=n>seq</span><span class=p>;</span><span class=c1>//占16位，用于标识发送者所发送的RTP报文的序列号，每发送一个报文，序列号增1。接收者通过序列号来检测报文丢失情况，重新排序报文，恢复数据。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* bytes 4-7 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint32_t</span> <span class=n>timestamp</span><span class=p>;</span><span class=c1>//占32位，时戳反映了该RTP报文的第一个八位组的采样时刻。接收者使用时戳来计算延迟和延迟抖动，并进行同步控制。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=cm>/* bytes 8-11 */</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint32_t</span> <span class=n>ssrc</span><span class=p>;</span><span class=c1>//占32位，用于标识同步信源。该标识符是随机选择的，参加同一视频会议的两个同步信源不能有相同的SSRC。
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>   <span class=cm>/*标准的RTP Header 还可能存在 0-15个特约信源(CSRC)标识符
+</span></span></span><span class=line><span class=cl><span class=cm>   
+</span></span></span><span class=line><span class=cl><span class=cm>   每个CSRC标识符占32位，可以有0～15个。每个CSRC标识了包含在该RTP报文有效载荷中的所有特约信源
+</span></span></span><span class=line><span class=cl><span class=cm>
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>struct</span> <span class=nc>RtpPacket</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=nc>RtpHeader</span> <span class=n>rtpHeader</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint8_t</span> <span class=n>payload</span><span class=p>[</span><span class=mi>0</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>rtpHeaderInit</span><span class=p>(</span><span class=k>struct</span> <span class=nc>RtpPacket</span><span class=o>*</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>csrcLen</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>extension</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint8_t</span> <span class=n>padding</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>version</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>payloadType</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>marker</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint16_t</span> <span class=n>seq</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>timestamp</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>ssrc</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>rtpSendPacketOverTcp</span><span class=p>(</span><span class=kt>int</span> <span class=n>clientSockfd</span><span class=p>,</span> <span class=k>struct</span> <span class=nc>RtpPacket</span><span class=o>*</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>dataSize</span><span class=p>,</span> <span class=kt>char</span> <span class=n>channel</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>rtpSendPacketOverUdp</span><span class=p>(</span><span class=kt>int</span> <span class=n>serverRtpSockfd</span><span class=p>,</span> <span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>ip</span><span class=p>,</span> <span class=kt>int16_t</span> <span class=n>port</span><span class=p>,</span> <span class=k>struct</span> <span class=nc>RtpPacket</span><span class=o>*</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>dataSize</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div></div><h2 id=rtpcpp><a href=#rtpcpp class=anchor-link>#</a><a href=#contents:rtpcpp class=headings>rtp.cpp</a></h2><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span><span class=lnt>68
+</span><span class=lnt>69
+</span><span class=lnt>70
+</span><span class=lnt>71
+</span><span class=lnt>72
+</span><span class=lnt>73
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&#34;rtp.h&#34;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;unistd.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;arpa/inet.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;sys/socket.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdint.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=kt>void</span> <span class=nf>rtpHeaderInit</span><span class=p>(</span><span class=k>struct</span> <span class=nc>RtpPacket</span><span class=o>*</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>csrcLen</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>extension</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint8_t</span> <span class=n>padding</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>version</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>payloadType</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>marker</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=kt>uint16_t</span> <span class=n>seq</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>timestamp</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>ssrc</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>csrcLen</span> <span class=o>=</span> <span class=n>csrcLen</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>extension</span> <span class=o>=</span> <span class=n>extension</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>padding</span> <span class=o>=</span> <span class=n>padding</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>version</span> <span class=o>=</span> <span class=n>version</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>payloadType</span> <span class=o>=</span> <span class=n>payloadType</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>marker</span> <span class=o>=</span> <span class=n>marker</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span> <span class=o>=</span> <span class=n>seq</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span> <span class=o>=</span> <span class=n>timestamp</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>ssrc</span> <span class=o>=</span> <span class=n>ssrc</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>rtpSendPacketOverTcp</span><span class=p>(</span><span class=kt>int</span> <span class=n>clientSockfd</span><span class=p>,</span> <span class=k>struct</span> <span class=nc>RtpPacket</span><span class=o>*</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>dataSize</span><span class=p>,</span> <span class=kt>char</span> <span class=n>channel</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span> <span class=o>=</span> <span class=n>htons</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span> <span class=o>=</span> <span class=n>htonl</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>ssrc</span> <span class=o>=</span> <span class=n>htonl</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>ssrc</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>uint32_t</span> <span class=n>rtpSize</span> <span class=o>=</span> <span class=n>RTP_HEADER_SIZE</span> <span class=o>+</span> <span class=n>dataSize</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span><span class=o>*</span> <span class=n>tempBuf</span> <span class=o>=</span> <span class=p>(</span><span class=kt>char</span> <span class=o>*</span><span class=p>)</span><span class=n>malloc</span><span class=p>(</span><span class=mi>4</span> <span class=o>+</span> <span class=n>rtpSize</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>tempBuf</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=mh>0x24</span><span class=p>;</span><span class=c1>//$
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>tempBuf</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=n>channel</span><span class=p>;</span><span class=c1>// 0x00;
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>tempBuf</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span> <span class=o>=</span> <span class=p>(</span><span class=kt>uint8_t</span><span class=p>)(((</span><span class=n>rtpSize</span><span class=p>)</span> <span class=o>&amp;</span> <span class=mh>0xFF00</span><span class=p>)</span> <span class=o>&gt;&gt;</span> <span class=mi>8</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>tempBuf</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span> <span class=o>=</span> <span class=p>(</span><span class=kt>uint8_t</span><span class=p>)((</span><span class=n>rtpSize</span><span class=p>)</span> <span class=o>&amp;</span> <span class=mh>0xFF</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>memcpy</span><span class=p>(</span><span class=n>tempBuf</span> <span class=o>+</span> <span class=mi>4</span><span class=p>,</span> <span class=p>(</span><span class=kt>char</span><span class=o>*</span><span class=p>)</span><span class=n>rtpPacket</span><span class=p>,</span> <span class=n>rtpSize</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>ret</span> <span class=o>=</span> <span class=n>send</span><span class=p>(</span><span class=n>clientSockfd</span><span class=p>,</span> <span class=n>tempBuf</span><span class=p>,</span> <span class=mi>4</span> <span class=o>+</span> <span class=n>rtpSize</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span> <span class=o>=</span> <span class=n>ntohs</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span> <span class=o>=</span> <span class=n>ntohl</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>ssrc</span> <span class=o>=</span> <span class=n>ntohl</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>ssrc</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>free</span><span class=p>(</span><span class=n>tempBuf</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>tempBuf</span> <span class=o>=</span> <span class=nb>NULL</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>ret</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>rtpSendPacketOverUdp</span><span class=p>(</span><span class=kt>int</span> <span class=n>serverRtpSockfd</span><span class=p>,</span> <span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>ip</span><span class=p>,</span> <span class=kt>int16_t</span> <span class=n>port</span><span class=p>,</span> <span class=k>struct</span> <span class=nc>RtpPacket</span><span class=o>*</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>dataSize</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=nc>sockaddr_in</span> <span class=n>addr</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>ret</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>addr</span><span class=p>.</span><span class=n>sin_family</span> <span class=o>=</span> <span class=n>AF_INET</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>addr</span><span class=p>.</span><span class=n>sin_port</span> <span class=o>=</span> <span class=n>htons</span><span class=p>(</span><span class=n>port</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>addr</span><span class=p>.</span><span class=n>sin_addr</span><span class=p>.</span><span class=n>s_addr</span> <span class=o>=</span> <span class=n>inet_addr</span><span class=p>(</span><span class=n>ip</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span> <span class=o>=</span> <span class=n>htons</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span><span class=p>);</span> <span class=c1>//h to n从主机字节顺序转变成网络字节顺序
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span> <span class=o>=</span> <span class=n>htonl</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>ssrc</span> <span class=o>=</span> <span class=n>htonl</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>ssrc</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>ret</span> <span class=o>=</span> <span class=n>sendto</span><span class=p>(</span><span class=n>serverRtpSockfd</span><span class=p>,</span> <span class=p>(</span><span class=kt>char</span> <span class=o>*</span><span class=p>)</span><span class=n>rtpPacket</span><span class=p>,</span> <span class=n>dataSize</span> <span class=o>+</span> <span class=n>RTP_HEADER_SIZE</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=p>(</span><span class=k>struct</span> <span class=nc>sockaddr</span><span class=o>*</span><span class=p>)</span><span class=o>&amp;</span><span class=n>addr</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>addr</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span> <span class=o>=</span> <span class=n>ntohs</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span> <span class=o>=</span> <span class=n>ntohl</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>ssrc</span> <span class=o>=</span> <span class=n>ntohl</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>ssrc</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>ret</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></div><h2 id=maincpp><a href=#maincpp class=anchor-link>#</a><a href=#contents:maincpp class=headings>main.cpp</a></h2><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span><span class=lnt>133
+</span><span class=lnt>134
+</span><span class=lnt>135
+</span><span class=lnt>136
+</span><span class=lnt>137
+</span><span class=lnt>138
+</span><span class=lnt>139
+</span><span class=lnt>140
+</span><span class=lnt>141
+</span><span class=lnt>142
+</span><span class=lnt>143
+</span><span class=lnt>144
+</span><span class=lnt>145
+</span><span class=lnt>146
+</span><span class=lnt>147
+</span><span class=lnt>148
+</span><span class=lnt>149
+</span><span class=lnt>150
+</span><span class=lnt>151
+</span><span class=lnt>152
+</span><span class=lnt>153
+</span><span class=lnt>154
+</span><span class=lnt>155
+</span><span class=lnt>156
+</span><span class=lnt>157
+</span><span class=lnt>158
+</span><span class=lnt>159
+</span><span class=lnt>160
+</span><span class=lnt>161
+</span><span class=lnt>162
+</span><span class=lnt>163
+</span><span class=lnt>164
+</span><span class=lnt>165
+</span><span class=lnt>166
+</span><span class=lnt>167
+</span><span class=lnt>168
+</span><span class=lnt>169
+</span><span class=lnt>170
+</span><span class=lnt>171
+</span><span class=lnt>172
+</span><span class=lnt>173
+</span><span class=lnt>174
+</span><span class=lnt>175
+</span><span class=lnt>176
+</span><span class=lnt>177
+</span><span class=lnt>178
+</span><span class=lnt>179
+</span><span class=lnt>180
+</span><span class=lnt>181
+</span><span class=lnt>182
+</span><span class=lnt>183
+</span><span class=lnt>184
+</span><span class=lnt>185
+</span><span class=lnt>186
+</span><span class=lnt>187
+</span><span class=lnt>188
+</span><span class=lnt>189
+</span><span class=lnt>190
+</span><span class=lnt>191
+</span><span class=lnt>192
+</span><span class=lnt>193
+</span><span class=lnt>194
+</span><span class=lnt>195
+</span><span class=lnt>196
+</span><span class=lnt>197
+</span><span class=lnt>198
+</span><span class=lnt>199
+</span><span class=lnt>200
+</span><span class=lnt>201
+</span><span class=lnt>202
+</span><span class=lnt>203
+</span><span class=lnt>204
+</span><span class=lnt>205
+</span><span class=lnt>206
+</span><span class=lnt>207
+</span><span class=lnt>208
+</span><span class=lnt>209
+</span><span class=lnt>210
+</span><span class=lnt>211
+</span><span class=lnt>212
+</span><span class=lnt>213
+</span><span class=lnt>214
+</span><span class=lnt>215
+</span><span class=lnt>216
+</span><span class=lnt>217
+</span><span class=lnt>218
+</span><span class=lnt>219
+</span><span class=lnt>220
+</span><span class=lnt>221
+</span><span class=lnt>222
+</span><span class=lnt>223
+</span><span class=lnt>224
+</span><span class=lnt>225
+</span><span class=lnt>226
+</span><span class=lnt>227
+</span><span class=lnt>228
+</span><span class=lnt>229
+</span><span class=lnt>230
+</span><span class=lnt>231
+</span><span class=lnt>232
+</span><span class=lnt>233
+</span><span class=lnt>234
+</span><span class=lnt>235
+</span><span class=lnt>236
+</span><span class=lnt>237
+</span><span class=lnt>238
+</span><span class=lnt>239
+</span><span class=lnt>240
+</span><span class=lnt>241
+</span><span class=lnt>242
+</span><span class=lnt>243
+</span><span class=lnt>244
+</span><span class=lnt>245
+</span><span class=lnt>246
+</span><span class=lnt>247
+</span><span class=lnt>248
+</span><span class=lnt>249
+</span><span class=lnt>250
+</span><span class=lnt>251
+</span><span class=lnt>252
+</span><span class=lnt>253
+</span><span class=lnt>254
+</span><span class=lnt>255
+</span><span class=lnt>256
+</span><span class=lnt>257
+</span><span class=lnt>258
+</span><span class=lnt>259
+</span><span class=lnt>260
+</span><span class=lnt>261
+</span><span class=lnt>262
+</span><span class=lnt>263
+</span><span class=lnt>264
+</span><span class=lnt>265
+</span><span class=lnt>266
+</span><span class=lnt>267
+</span><span class=lnt>268
+</span><span class=lnt>269
+</span><span class=lnt>270
+</span><span class=lnt>271
+</span><span class=lnt>272
+</span><span class=lnt>273
+</span><span class=lnt>274
+</span><span class=lnt>275
+</span><span class=lnt>276
+</span><span class=lnt>277
+</span><span class=lnt>278
+</span><span class=lnt>279
+</span><span class=lnt>280
+</span><span class=lnt>281
+</span><span class=lnt>282
+</span><span class=lnt>283
+</span><span class=lnt>284
+</span><span class=lnt>285
+</span><span class=lnt>286
+</span><span class=lnt>287
+</span><span class=lnt>288
+</span><span class=lnt>289
+</span><span class=lnt>290
+</span><span class=lnt>291
+</span><span class=lnt>292
+</span><span class=lnt>293
+</span><span class=lnt>294
+</span><span class=lnt>295
+</span><span class=lnt>296
+</span><span class=lnt>297
+</span><span class=lnt>298
+</span><span class=lnt>299
+</span><span class=lnt>300
+</span><span class=lnt>301
+</span><span class=lnt>302
+</span><span class=lnt>303
+</span><span class=lnt>304
+</span><span class=lnt>305
+</span><span class=lnt>306
+</span><span class=lnt>307
+</span><span class=lnt>308
+</span><span class=lnt>309
+</span><span class=lnt>310
+</span><span class=lnt>311
+</span><span class=lnt>312
+</span><span class=lnt>313
+</span><span class=lnt>314
+</span><span class=lnt>315
+</span><span class=lnt>316
+</span><span class=lnt>317
+</span><span class=lnt>318
+</span><span class=lnt>319
+</span><span class=lnt>320
+</span><span class=lnt>321
+</span><span class=lnt>322
+</span><span class=lnt>323
+</span><span class=lnt>324
+</span><span class=lnt>325
+</span><span class=lnt>326
+</span><span class=lnt>327
+</span><span class=lnt>328
+</span><span class=lnt>329
+</span><span class=lnt>330
+</span><span class=lnt>331
+</span><span class=lnt>332
+</span><span class=lnt>333
+</span><span class=lnt>334
+</span><span class=lnt>335
+</span><span class=lnt>336
+</span><span class=lnt>337
+</span><span class=lnt>338
+</span><span class=lnt>339
+</span><span class=lnt>340
+</span><span class=lnt>341
+</span><span class=lnt>342
+</span><span class=lnt>343
+</span><span class=lnt>344
+</span><span class=lnt>345
+</span><span class=lnt>346
+</span><span class=lnt>347
+</span><span class=lnt>348
+</span><span class=lnt>349
+</span><span class=lnt>350
+</span><span class=lnt>351
+</span><span class=lnt>352
+</span><span class=lnt>353
+</span><span class=lnt>354
+</span><span class=lnt>355
+</span><span class=lnt>356
+</span><span class=lnt>357
+</span><span class=lnt>358
+</span><span class=lnt>359
+</span><span class=lnt>360
+</span><span class=lnt>361
+</span><span class=lnt>362
+</span><span class=lnt>363
+</span><span class=lnt>364
+</span><span class=lnt>365
+</span><span class=lnt>366
+</span><span class=lnt>367
+</span><span class=lnt>368
+</span><span class=lnt>369
+</span><span class=lnt>370
+</span><span class=lnt>371
+</span><span class=lnt>372
+</span><span class=lnt>373
+</span><span class=lnt>374
+</span><span class=lnt>375
+</span><span class=lnt>376
+</span><span class=lnt>377
+</span><span class=lnt>378
+</span><span class=lnt>379
+</span><span class=lnt>380
+</span><span class=lnt>381
+</span><span class=lnt>382
+</span><span class=lnt>383
+</span><span class=lnt>384
+</span><span class=lnt>385
+</span><span class=lnt>386
+</span><span class=lnt>387
+</span><span class=lnt>388
+</span><span class=lnt>389
+</span><span class=lnt>390
+</span><span class=lnt>391
+</span><span class=lnt>392
+</span><span class=lnt>393
+</span><span class=lnt>394
+</span><span class=lnt>395
+</span><span class=lnt>396
+</span><span class=lnt>397
+</span><span class=lnt>398
+</span><span class=lnt>399
+</span><span class=lnt>400
+</span><span class=lnt>401
+</span><span class=lnt>402
+</span><span class=lnt>403
+</span><span class=lnt>404
+</span><span class=lnt>405
+</span><span class=lnt>406
+</span><span class=lnt>407
+</span><span class=lnt>408
+</span><span class=lnt>409
+</span><span class=lnt>410
+</span><span class=lnt>411
+</span><span class=lnt>412
+</span><span class=lnt>413
+</span><span class=lnt>414
+</span><span class=lnt>415
+</span><span class=lnt>416
+</span><span class=lnt>417
+</span><span class=lnt>418
+</span><span class=lnt>419
+</span><span class=lnt>420
+</span><span class=lnt>421
+</span><span class=lnt>422
+</span><span class=lnt>423
+</span><span class=lnt>424
+</span><span class=lnt>425
+</span><span class=lnt>426
+</span><span class=lnt>427
+</span><span class=lnt>428
+</span><span class=lnt>429
+</span><span class=lnt>430
+</span><span class=lnt>431
+</span><span class=lnt>432
+</span><span class=lnt>433
+</span><span class=lnt>434
+</span><span class=lnt>435
+</span><span class=lnt>436
+</span><span class=lnt>437
+</span><span class=lnt>438
+</span><span class=lnt>439
+</span><span class=lnt>440
+</span><span class=lnt>441
+</span><span class=lnt>442
+</span><span class=lnt>443
+</span><span class=lnt>444
+</span><span class=lnt>445
+</span><span class=lnt>446
+</span><span class=lnt>447
+</span><span class=lnt>448
+</span><span class=lnt>449
+</span><span class=lnt>450
+</span><span class=lnt>451
+</span><span class=lnt>452
+</span><span class=lnt>453
+</span><span class=lnt>454
+</span><span class=lnt>455
+</span><span class=lnt>456
+</span><span class=lnt>457
+</span><span class=lnt>458
+</span><span class=lnt>459
+</span><span class=lnt>460
+</span><span class=lnt>461
+</span><span class=lnt>462
+</span><span class=lnt>463
+</span><span class=lnt>464
+</span><span class=lnt>465
+</span><span class=lnt>466
+</span><span class=lnt>467
+</span><span class=lnt>468
+</span><span class=lnt>469
+</span><span class=lnt>470
+</span><span class=lnt>471
+</span><span class=lnt>472
+</span><span class=lnt>473
+</span><span class=lnt>474
+</span><span class=lnt>475
+</span><span class=lnt>476
+</span><span class=lnt>477
+</span><span class=lnt>478
+</span><span class=lnt>479
+</span><span class=lnt>480
+</span><span class=lnt>481
+</span><span class=lnt>482
+</span><span class=lnt>483
+</span><span class=lnt>484
+</span><span class=lnt>485
+</span><span class=lnt>486
+</span><span class=lnt>487
+</span><span class=lnt>488
+</span><span class=lnt>489
+</span><span class=lnt>490
+</span><span class=lnt>491
+</span><span class=lnt>492
+</span><span class=lnt>493
+</span><span class=lnt>494
+</span><span class=lnt>495
+</span><span class=lnt>496
+</span><span class=lnt>497
+</span><span class=lnt>498
+</span><span class=lnt>499
+</span><span class=lnt>500
+</span><span class=lnt>501
+</span><span class=lnt>502
+</span><span class=lnt>503
+</span><span class=lnt>504
+</span><span class=lnt>505
+</span><span class=lnt>506
+</span><span class=lnt>507
+</span><span class=lnt>508
+</span><span class=lnt>509
+</span><span class=lnt>510
+</span><span class=lnt>511
+</span><span class=lnt>512
+</span><span class=lnt>513
+</span><span class=lnt>514
+</span><span class=lnt>515
+</span><span class=lnt>516
+</span><span class=lnt>517
+</span><span class=lnt>518
+</span><span class=lnt>519
+</span><span class=lnt>520
+</span><span class=lnt>521
+</span><span class=lnt>522
+</span><span class=lnt>523
+</span><span class=lnt>524
+</span><span class=lnt>525
+</span><span class=lnt>526
+</span><span class=lnt>527
+</span><span class=lnt>528
+</span><span class=lnt>529
+</span><span class=lnt>530
+</span><span class=lnt>531
+</span><span class=lnt>532
+</span><span class=lnt>533
+</span><span class=lnt>534
+</span><span class=lnt>535
+</span><span class=lnt>536
+</span><span class=lnt>537
+</span><span class=lnt>538
+</span><span class=lnt>539
+</span><span class=lnt>540
+</span><span class=lnt>541
+</span><span class=lnt>542
+</span><span class=lnt>543
+</span><span class=lnt>544
+</span><span class=lnt>545
+</span><span class=lnt>546
+</span><span class=lnt>547
+</span><span class=lnt>548
+</span><span class=lnt>549
+</span><span class=lnt>550
+</span><span class=lnt>551
+</span><span class=lnt>552
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&#34;rtp.h&#34;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;unistd.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;arpa/inet.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;sys/socket.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdint.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#define H264_FILE_NAME   &#34;./data/test.h264&#34;  </span><span class=c1>// 修改文件位置
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=cp>#define SERVER_PORT      8554
+</span></span></span><span class=line><span class=cl><span class=cp>#define SERVER_RTP_PORT  55532
+</span></span></span><span class=line><span class=cl><span class=cp>#define SERVER_RTCP_PORT 55533
+</span></span></span><span class=line><span class=cl><span class=cp>#define BUF_MAX_SIZE     (1024*1024)
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>createTcpSocket</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>sockfd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>on</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>sockfd</span> <span class=o>=</span> <span class=n>socket</span><span class=p>(</span><span class=n>AF_INET</span><span class=p>,</span> <span class=n>SOCK_STREAM</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>sockfd</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>setsockopt</span><span class=p>(</span><span class=n>sockfd</span><span class=p>,</span> <span class=n>SOL_SOCKET</span><span class=p>,</span> <span class=n>SO_REUSEADDR</span><span class=p>,</span> <span class=p>(</span><span class=k>const</span> <span class=kt>char</span><span class=o>*</span><span class=p>)</span><span class=o>&amp;</span><span class=n>on</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>on</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>sockfd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>createUdpSocket</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>sockfd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>on</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>sockfd</span> <span class=o>=</span> <span class=n>socket</span><span class=p>(</span><span class=n>AF_INET</span><span class=p>,</span> <span class=n>SOCK_DGRAM</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>sockfd</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>setsockopt</span><span class=p>(</span><span class=n>sockfd</span><span class=p>,</span> <span class=n>SOL_SOCKET</span><span class=p>,</span> <span class=n>SO_REUSEADDR</span><span class=p>,</span> <span class=p>(</span><span class=k>const</span> <span class=kt>char</span><span class=o>*</span><span class=p>)</span><span class=o>&amp;</span><span class=n>on</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>on</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>sockfd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>bindSocketAddr</span><span class=p>(</span><span class=kt>int</span> <span class=n>sockfd</span><span class=p>,</span> <span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>ip</span><span class=p>,</span> <span class=kt>int</span> <span class=n>port</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=nc>sockaddr_in</span> <span class=n>addr</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>addr</span><span class=p>.</span><span class=n>sin_family</span> <span class=o>=</span> <span class=n>AF_INET</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>addr</span><span class=p>.</span><span class=n>sin_port</span> <span class=o>=</span> <span class=n>htons</span><span class=p>(</span><span class=n>port</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>addr</span><span class=p>.</span><span class=n>sin_addr</span><span class=p>.</span><span class=n>s_addr</span> <span class=o>=</span> <span class=n>inet_addr</span><span class=p>(</span><span class=n>ip</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>bind</span><span class=p>(</span><span class=n>sockfd</span><span class=p>,</span> <span class=p>(</span><span class=k>struct</span> <span class=nc>sockaddr</span><span class=o>*</span><span class=p>)</span><span class=o>&amp;</span><span class=n>addr</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=k>struct</span> <span class=nc>sockaddr</span><span class=p>))</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>acceptClient</span><span class=p>(</span><span class=kt>int</span> <span class=n>sockfd</span><span class=p>,</span> <span class=kt>char</span><span class=o>*</span> <span class=n>ip</span><span class=p>,</span> <span class=kt>int</span><span class=o>*</span> <span class=n>port</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>clientfd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>socklen_t</span> <span class=n>len</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=nc>sockaddr_in</span> <span class=n>addr</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>memset</span><span class=p>(</span><span class=o>&amp;</span><span class=n>addr</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>addr</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>len</span> <span class=o>=</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>addr</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>clientfd</span> <span class=o>=</span> <span class=n>accept</span><span class=p>(</span><span class=n>sockfd</span><span class=p>,</span> <span class=p>(</span><span class=k>struct</span> <span class=nc>sockaddr</span><span class=o>*</span><span class=p>)</span><span class=o>&amp;</span><span class=n>addr</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>len</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>clientfd</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>strcpy</span><span class=p>(</span><span class=n>ip</span><span class=p>,</span> <span class=n>inet_ntoa</span><span class=p>(</span><span class=n>addr</span><span class=p>.</span><span class=n>sin_addr</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=o>*</span><span class=n>port</span> <span class=o>=</span> <span class=n>ntohs</span><span class=p>(</span><span class=n>addr</span><span class=p>.</span><span class=n>sin_port</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>clientfd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>closesocket</span><span class=p>(</span><span class=kt>int</span> <span class=n>fd</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>    <span class=n>close</span><span class=p>(</span><span class=n>fd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kr>inline</span> <span class=kt>int</span> <span class=nf>startCode3</span><span class=p>(</span><span class=kt>char</span><span class=o>*</span> <span class=n>buf</span><span class=p>)</span> <span class=c1>// h264文件必定已001 || 0001开头
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>buf</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>==</span> <span class=mi>0</span> <span class=o>&amp;&amp;</span> <span class=n>buf</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=mi>0</span> <span class=o>&amp;&amp;</span> <span class=n>buf</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span> <span class=o>==</span> <span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kr>inline</span> <span class=kt>int</span> <span class=nf>startCode4</span><span class=p>(</span><span class=kt>char</span><span class=o>*</span> <span class=n>buf</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>buf</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>==</span> <span class=mi>0</span> <span class=o>&amp;&amp;</span> <span class=n>buf</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=mi>0</span> <span class=o>&amp;&amp;</span> <span class=n>buf</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span> <span class=o>==</span> <span class=mi>0</span> <span class=o>&amp;&amp;</span> <span class=n>buf</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span> <span class=o>==</span> <span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>char</span><span class=o>*</span> <span class=nf>findNextStartCode</span><span class=p>(</span><span class=kt>char</span><span class=o>*</span> <span class=n>buf</span><span class=p>,</span> <span class=kt>int</span> <span class=n>len</span><span class=p>)</span>  <span class=c1>// 找到下一个nalu包开始
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>i</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>len</span> <span class=o>&lt;</span> <span class=mi>3</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nb>NULL</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=p>(</span><span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>len</span> <span class=o>-</span> <span class=mi>3</span><span class=p>;</span> <span class=o>++</span><span class=n>i</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=n>startCode3</span><span class=p>(</span><span class=n>buf</span><span class=p>)</span> <span class=o>||</span> <span class=n>startCode4</span><span class=p>(</span><span class=n>buf</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=n>buf</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=o>++</span><span class=n>buf</span><span class=p>;</span>  <span class=c1>// http://c.biancheng.net/view/1769.html
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>startCode3</span><span class=p>(</span><span class=n>buf</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>buf</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>NULL</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>getFrameFromH264File</span><span class=p>(</span><span class=n>FILE</span><span class=o>*</span> <span class=n>fp</span><span class=p>,</span> <span class=kt>char</span><span class=o>*</span> <span class=n>frame</span><span class=p>,</span> <span class=kt>int</span> <span class=n>size</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>rSize</span><span class=p>,</span> <span class=n>frameSize</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span><span class=o>*</span> <span class=n>nextStartCode</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>fp</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>rSize</span> <span class=o>=</span> <span class=n>fread</span><span class=p>(</span><span class=n>frame</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=n>size</span><span class=p>,</span> <span class=n>fp</span><span class=p>);</span> <span class=c1>// 读取1*size个数据
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>startCode3</span><span class=p>(</span><span class=n>frame</span><span class=p>)</span> <span class=o>&amp;&amp;</span> <span class=o>!</span><span class=n>startCode4</span><span class=p>(</span><span class=n>frame</span><span class=p>))</span> <span class=c1>// 判断frame是否合法
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>nextStartCode</span> <span class=o>=</span> <span class=n>findNextStartCode</span><span class=p>(</span><span class=n>frame</span> <span class=o>+</span> <span class=mi>3</span><span class=p>,</span> <span class=n>rSize</span> <span class=o>-</span> <span class=mi>3</span><span class=p>);</span>  <span class=c1>// 排除startCode前三位？
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>nextStartCode</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=c1>//lseek(fd, 0, SEEK_SET);
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=c1>//frameSize = rSize;
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>frameSize</span> <span class=o>=</span> <span class=p>(</span><span class=n>nextStartCode</span> <span class=o>-</span> <span class=n>frame</span><span class=p>);</span>  <span class=c1>// 高地址-低地址
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=c1>// 从当前位置前移rSize-frameSize个（第一次是文件头到第一个nalu包尾的数据）
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=c1>//并且下次读取从该位置读取，所以不会一直是相同值
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>fseek</span><span class=p>(</span><span class=n>fp</span><span class=p>,</span> <span class=n>frameSize</span> <span class=o>-</span> <span class=n>rSize</span><span class=p>,</span> <span class=n>SEEK_CUR</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>frameSize</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>rtpSendH264Frame</span><span class=p>(</span><span class=kt>int</span> <span class=n>serverRtpSockfd</span><span class=p>,</span> <span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>ip</span><span class=p>,</span> <span class=kt>int16_t</span> <span class=n>port</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=k>struct</span> <span class=nc>RtpPacket</span><span class=o>*</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=kt>char</span><span class=o>*</span> <span class=n>frame</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>frameSize</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>    <span class=kt>uint8_t</span> <span class=n>naluType</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>sendBytes</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>ret</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>naluType</span> <span class=o>=</span> <span class=n>frame</span><span class=p>[</span><span class=mi>0</span><span class=p>];</span> <span class=c1>// nalu头第一个字节
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;frameSize=%d </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>frameSize</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>frameSize</span> <span class=o>&lt;=</span> <span class=n>RTP_MAX_PKT_SIZE</span><span class=p>)</span> <span class=c1>// nalu长度小于最大包长：单一NALU单元模式
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>         <span class=c1>//*   0 1 2 3 4 5 6 7 8 9
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*  |F|NRI|  Type   | a single NAL unit ... |
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>        <span class=n>memcpy</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=p>,</span> <span class=n>frame</span><span class=p>,</span> <span class=n>frameSize</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>ret</span> <span class=o>=</span> <span class=n>rtpSendPacketOverUdp</span><span class=p>(</span><span class=n>serverRtpSockfd</span><span class=p>,</span> <span class=n>ip</span><span class=p>,</span> <span class=n>port</span><span class=p>,</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=n>frameSize</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=p>(</span><span class=n>ret</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span><span class=o>++</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>sendBytes</span> <span class=o>+=</span> <span class=n>ret</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>((</span><span class=n>naluType</span> <span class=o>&amp;</span> <span class=mh>0x1F</span><span class=p>)</span> <span class=o>==</span> <span class=mi>6</span> <span class=o>||</span> <span class=p>(</span><span class=n>naluType</span> <span class=o>&amp;</span> <span class=mh>0x1F</span><span class=p>)</span> <span class=o>==</span> <span class=mi>7</span> <span class=o>||</span> <span class=p>(</span><span class=n>naluType</span> <span class=o>&amp;</span> <span class=mh>0x1F</span><span class=p>)</span> <span class=o>==</span> <span class=mi>8</span><span class=p>)</span> <span class=c1>// 如果是SEI、SPS、PPS就不需要加时间戳
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=k>goto</span> <span class=n>out</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span> <span class=c1>// nalu长度小于最大包场：分片模式
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>         <span class=c1>//*  0                   1                   2
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//* | FU indicator  |   FU header   |   FU payload   ...  |
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>         <span class=c1>//*     FU Indicator
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*    0 1 2 3 4 5 6 7
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*   +-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*   |F|NRI|  Type   |
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*   +---------------+
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>         <span class=c1>//*      FU Header
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*    0 1 2 3 4 5 6 7
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*   +-+-+-+-+-+-+-+-+
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*   |S|E|R|  Type   |
+</span></span></span><span class=line><span class=cl><span class=c1></span>         <span class=c1>//*   +---------------+
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kt>int</span> <span class=n>pktNum</span> <span class=o>=</span> <span class=n>frameSize</span> <span class=o>/</span> <span class=n>RTP_MAX_PKT_SIZE</span><span class=p>;</span>       <span class=c1>// 有几个完整的包
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=kt>int</span> <span class=n>remainPktSize</span> <span class=o>=</span> <span class=n>frameSize</span> <span class=o>%</span> <span class=n>RTP_MAX_PKT_SIZE</span><span class=p>;</span> <span class=c1>// 剩余不完整包的大小
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=kt>int</span> <span class=n>i</span><span class=p>,</span> <span class=n>pos</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>// 发送完整的包
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>for</span> <span class=p>(</span><span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>pktNum</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=c1>// 0x60：0110 0000、 28：0001 1100
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=p>(</span><span class=n>naluType</span> <span class=o>&amp;</span> <span class=mh>0x60</span><span class=p>)</span> <span class=o>|</span> <span class=mi>28</span><span class=p>;</span>  <span class=c1>// &amp; 获取NRI、| 获取TYPE = 28
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=n>naluType</span> <span class=o>&amp;</span> <span class=mh>0x1F</span><span class=p>;</span> <span class=c1>// 1F：0001 1111 获取NALU的type
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=p>(</span><span class=n>i</span> <span class=o>==</span> <span class=mi>0</span><span class=p>)</span> <span class=c1>//第一包数据
+</span></span></span><span class=line><span class=cl><span class=c1></span>                <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>|=</span> <span class=mh>0x80</span><span class=p>;</span> <span class=c1>// 判断start  1000 0000
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>remainPktSize</span> <span class=o>==</span> <span class=mi>0</span> <span class=o>&amp;&amp;</span> <span class=n>i</span> <span class=o>==</span> <span class=n>pktNum</span> <span class=o>-</span> <span class=mi>1</span><span class=p>)</span> <span class=c1>//最后一包数据
+</span></span></span><span class=line><span class=cl><span class=c1></span>                <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>|=</span> <span class=mh>0x40</span><span class=p>;</span> <span class=c1>// 判断end 0100 0000
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>            <span class=n>memcpy</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=o>+</span><span class=mi>2</span><span class=p>,</span> <span class=n>frame</span><span class=o>+</span><span class=n>pos</span><span class=p>,</span> <span class=n>RTP_MAX_PKT_SIZE</span><span class=p>);</span>  <span class=c1>// 除FU两个字节，将剩余数据放入load
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>ret</span> <span class=o>=</span> <span class=n>rtpSendPacketOverUdp</span><span class=p>(</span><span class=n>serverRtpSockfd</span><span class=p>,</span> <span class=n>ip</span><span class=p>,</span> <span class=n>port</span><span class=p>,</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=n>RTP_MAX_PKT_SIZE</span><span class=o>+</span><span class=mi>2</span><span class=p>);</span> <span class=c1>// +2包含FU
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=k>if</span><span class=p>(</span><span class=n>ret</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>                <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span><span class=o>++</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>sendBytes</span> <span class=o>+=</span> <span class=n>ret</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>pos</span> <span class=o>+=</span> <span class=n>RTP_MAX_PKT_SIZE</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>// 发送剩余的数据
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>if</span> <span class=p>(</span><span class=n>remainPktSize</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=p>(</span><span class=n>naluType</span> <span class=o>&amp;</span> <span class=mh>0x60</span><span class=p>)</span> <span class=o>|</span> <span class=mi>28</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=n>naluType</span> <span class=o>&amp;</span> <span class=mh>0x1F</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>|=</span> <span class=mh>0x40</span><span class=p>;</span> <span class=c1>//end
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>            <span class=n>memcpy</span><span class=p>(</span><span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>payload</span><span class=o>+</span><span class=mi>2</span><span class=p>,</span> <span class=n>frame</span><span class=o>+</span><span class=n>pos</span><span class=p>,</span> <span class=n>remainPktSize</span><span class=o>+</span><span class=mi>2</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>ret</span> <span class=o>=</span> <span class=n>rtpSendPacketOverUdp</span><span class=p>(</span><span class=n>serverRtpSockfd</span><span class=p>,</span> <span class=n>ip</span><span class=p>,</span> <span class=n>port</span><span class=p>,</span> <span class=n>rtpPacket</span><span class=p>,</span> <span class=n>remainPktSize</span><span class=o>+</span><span class=mi>2</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span><span class=p>(</span><span class=n>ret</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>                <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>seq</span><span class=o>++</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>sendBytes</span> <span class=o>+=</span> <span class=n>ret</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>rtpPacket</span><span class=o>-&gt;</span><span class=n>rtpHeader</span><span class=p>.</span><span class=n>timestamp</span> <span class=o>+=</span> <span class=mi>90000</span> <span class=o>/</span> <span class=mi>25</span><span class=p>;</span> <span class=c1>// https://blog.csdn.net/jwybobo2007/article/details/7235942
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nl>out</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>sendBytes</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>handleCmd_OPTIONS</span><span class=p>(</span><span class=kt>char</span><span class=o>*</span> <span class=n>result</span><span class=p>,</span> <span class=kt>int</span> <span class=n>cseq</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>sprintf</span><span class=p>(</span><span class=n>result</span><span class=p>,</span> <span class=s>&#34;RTSP/1.0 200 OK</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;CSeq: %d</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;Public: OPTIONS, DESCRIBE, SETUP, PLAY</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>cseq</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>handleCmd_DESCRIBE</span><span class=p>(</span><span class=kt>char</span><span class=o>*</span> <span class=n>result</span><span class=p>,</span> <span class=kt>int</span> <span class=n>cseq</span><span class=p>,</span> <span class=kt>char</span><span class=o>*</span> <span class=n>url</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span> <span class=n>sdp</span><span class=p>[</span><span class=mi>500</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span> <span class=n>localIp</span><span class=p>[</span><span class=mi>100</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>sscanf</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=s>&#34;rtsp://%[^:]:&#34;</span><span class=p>,</span> <span class=n>localIp</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>sprintf</span><span class=p>(</span><span class=n>sdp</span><span class=p>,</span> <span class=s>&#34;v=0</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;o=- 9%ld 1 IN IP4 %s</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;t=0 0</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;a=control:*</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;m=video 0 RTP/AVP 96</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;a=rtpmap:96 H264/90000</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;a=control:track0</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>time</span><span class=p>(</span><span class=nb>NULL</span><span class=p>),</span> <span class=n>localIp</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>sprintf</span><span class=p>(</span><span class=n>result</span><span class=p>,</span> <span class=s>&#34;RTSP/1.0 200 OK</span><span class=se>\r\n</span><span class=s>CSeq: %d</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;Content-Base: %s</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;Content-type: application/sdp</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;Content-length: %zu</span><span class=se>\r\n\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;%s&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>cseq</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>url</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>strlen</span><span class=p>(</span><span class=n>sdp</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>        <span class=n>sdp</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>handleCmd_SETUP</span><span class=p>(</span><span class=kt>char</span><span class=o>*</span> <span class=n>result</span><span class=p>,</span> <span class=kt>int</span> <span class=n>cseq</span><span class=p>,</span> <span class=kt>int</span> <span class=n>client_Rtp_Port</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>sprintf</span><span class=p>(</span><span class=n>result</span><span class=p>,</span> <span class=s>&#34;RTSP/1.0 200 OK</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;CSeq: %d</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;Transport: RTP/AVP;unicast;client_port=%d-%d;server_port=%d-%d</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;Session: 66334873</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>cseq</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>client_Rtp_Port</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>client_Rtp_Port</span> <span class=o>+</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>SERVER_RTP_PORT</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>SERVER_RTCP_PORT</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>handleCmd_PLAY</span><span class=p>(</span><span class=kt>char</span><span class=o>*</span> <span class=n>result</span><span class=p>,</span> <span class=kt>int</span> <span class=n>cseq</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>sprintf</span><span class=p>(</span><span class=n>result</span><span class=p>,</span> <span class=s>&#34;RTSP/1.0 200 OK</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;CSeq: %d</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;Range: npt=0.000-</span><span class=se>\r\n</span><span class=s>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=s>&#34;Session: 66334873; timeout=10</span><span class=se>\r\n\r\n</span><span class=s>&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>cseq</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>void</span> <span class=nf>doClient</span><span class=p>(</span><span class=kt>int</span> <span class=n>clientSockfd</span><span class=p>,</span> <span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>clientIP</span><span class=p>,</span> <span class=kt>int</span> <span class=n>clientPort</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span> <span class=n>method</span><span class=p>[</span><span class=mi>40</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span> <span class=n>url</span><span class=p>[</span><span class=mi>100</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span> <span class=n>version</span><span class=p>[</span><span class=mi>40</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>CSeq</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>serverRtpSockfd</span> <span class=o>=</span> <span class=o>-</span><span class=mi>1</span><span class=p>,</span> <span class=n>serverRtcpSockfd</span> <span class=o>=</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>client_Rtp_Port</span><span class=p>,</span> <span class=n>client_Rtcp_Port</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span><span class=o>*</span> <span class=n>rBuf</span> <span class=o>=</span> <span class=p>(</span><span class=kt>char</span><span class=o>*</span><span class=p>)</span><span class=n>malloc</span><span class=p>(</span><span class=n>BUF_MAX_SIZE</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span><span class=o>*</span> <span class=n>sBuf</span> <span class=o>=</span> <span class=p>(</span><span class=kt>char</span><span class=o>*</span><span class=p>)</span><span class=n>malloc</span><span class=p>(</span><span class=n>BUF_MAX_SIZE</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>while</span> <span class=p>(</span><span class=nb>true</span><span class=p>)</span> <span class=p>{</span>  <span class=c1>// 循环接收客户端发送的每个请求并做处理
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=kt>int</span> <span class=n>recvLen</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>recvLen</span> <span class=o>=</span> <span class=n>recv</span><span class=p>(</span><span class=n>clientSockfd</span><span class=p>,</span> <span class=n>rBuf</span><span class=p>,</span> <span class=n>BUF_MAX_SIZE</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=n>recvLen</span> <span class=o>&lt;=</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>rBuf</span><span class=p>[</span><span class=n>recvLen</span><span class=p>]</span> <span class=o>=</span> <span class=sc>&#39;\0&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>printf</span><span class=p>(</span><span class=s>&#34;%s rBuf = %s </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span><span class=n>__FUNCTION__</span><span class=p>,</span><span class=n>rBuf</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>sep</span> <span class=o>=</span> <span class=s>&#34;</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=kt>char</span><span class=o>*</span> <span class=n>line</span> <span class=o>=</span> <span class=n>strtok</span><span class=p>(</span><span class=n>rBuf</span><span class=p>,</span> <span class=n>sep</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>while</span> <span class=p>(</span><span class=n>line</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// 解析客户端发送的请求
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=k>if</span> <span class=p>(</span><span class=n>strstr</span><span class=p>(</span><span class=n>line</span><span class=p>,</span> <span class=s>&#34;OPTIONS&#34;</span><span class=p>)</span> <span class=o>||</span>
+</span></span><span class=line><span class=cl>                <span class=n>strstr</span><span class=p>(</span><span class=n>line</span><span class=p>,</span> <span class=s>&#34;DESCRIBE&#34;</span><span class=p>)</span> <span class=o>||</span>
+</span></span><span class=line><span class=cl>                <span class=n>strstr</span><span class=p>(</span><span class=n>line</span><span class=p>,</span> <span class=s>&#34;SETUP&#34;</span><span class=p>)</span> <span class=o>||</span>
+</span></span><span class=line><span class=cl>                <span class=n>strstr</span><span class=p>(</span><span class=n>line</span><span class=p>,</span> <span class=s>&#34;PLAY&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=p>(</span><span class=n>sscanf</span><span class=p>(</span><span class=n>line</span><span class=p>,</span> <span class=s>&#34;%s %s %s</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>method</span><span class=p>,</span> <span class=n>url</span><span class=p>,</span> <span class=n>version</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>3</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                    <span class=c1>// error
+</span></span></span><span class=line><span class=cl><span class=c1></span>                <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>strstr</span><span class=p>(</span><span class=n>line</span><span class=p>,</span> <span class=s>&#34;CSeq&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=p>(</span><span class=n>sscanf</span><span class=p>(</span><span class=n>line</span><span class=p>,</span> <span class=s>&#34;CSeq: %d</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>CSeq</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                    <span class=c1>// error
+</span></span></span><span class=line><span class=cl><span class=c1></span>                <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>strncmp</span><span class=p>(</span><span class=n>line</span><span class=p>,</span> <span class=s>&#34;Transport:&#34;</span><span class=p>,</span> <span class=n>strlen</span><span class=p>(</span><span class=s>&#34;Transport:&#34;</span><span class=p>)))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=c1>// Transport: RTP/AVP/UDP;unicast;client_port=13358-13359
+</span></span></span><span class=line><span class=cl><span class=c1></span>                <span class=c1>// Transport: RTP/AVP;unicast;client_port=13358-13359
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=p>(</span><span class=n>sscanf</span><span class=p>(</span><span class=n>line</span><span class=p>,</span> <span class=s>&#34;Transport: RTP/AVP/UDP;unicast;client_port=%d-%d</span><span class=se>\r\n</span><span class=s>&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                    <span class=o>&amp;</span><span class=n>client_Rtp_Port</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>client_Rtcp_Port</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>2</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                    <span class=c1>// error
+</span></span></span><span class=line><span class=cl><span class=c1></span>                    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;parse Transport error </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=n>line</span> <span class=o>=</span> <span class=n>strtok</span><span class=p>(</span><span class=nb>NULL</span><span class=p>,</span> <span class=n>sep</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// 服务端回应客户端请求，目前只是填充了sBuf
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>strcmp</span><span class=p>(</span><span class=n>method</span><span class=p>,</span> <span class=s>&#34;OPTIONS&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=p>(</span><span class=n>handleCmd_OPTIONS</span><span class=p>(</span><span class=n>sBuf</span><span class=p>,</span> <span class=n>CSeq</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>            <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to handle options</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>strcmp</span><span class=p>(</span><span class=n>method</span><span class=p>,</span> <span class=s>&#34;DESCRIBE&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=p>(</span><span class=n>handleCmd_DESCRIBE</span><span class=p>(</span><span class=n>sBuf</span><span class=p>,</span> <span class=n>CSeq</span><span class=p>,</span> <span class=n>url</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>            <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to handle describe</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>strcmp</span><span class=p>(</span><span class=n>method</span><span class=p>,</span> <span class=s>&#34;SETUP&#34;</span><span class=p>))</span> <span class=p>{</span>  <span class=c1>//SETUP返回服务端 端口号
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=k>if</span> <span class=p>(</span><span class=n>handleCmd_SETUP</span><span class=p>(</span><span class=n>sBuf</span><span class=p>,</span> <span class=n>CSeq</span><span class=p>,</span> <span class=n>client_Rtp_Port</span><span class=p>))</span>  
+</span></span><span class=line><span class=cl>            <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to handle setup</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=c1>// 创建服务端 端口号 用于通信
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>serverRtpSockfd</span> <span class=o>=</span> <span class=n>createUdpSocket</span><span class=p>();</span> 
+</span></span><span class=line><span class=cl>            <span class=n>serverRtcpSockfd</span> <span class=o>=</span> <span class=n>createUdpSocket</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=p>(</span><span class=n>serverRtpSockfd</span> <span class=o>&lt;</span> <span class=mi>0</span> <span class=o>||</span> <span class=n>serverRtcpSockfd</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to create udp socket</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=p>(</span><span class=n>bindSocketAddr</span><span class=p>(</span><span class=n>serverRtpSockfd</span><span class=p>,</span> <span class=s>&#34;0.0.0.0&#34;</span><span class=p>,</span> <span class=n>SERVER_RTP_PORT</span><span class=p>)</span> <span class=o>&lt;</span> <span class=mi>0</span> <span class=o>||</span>
+</span></span><span class=line><span class=cl>                <span class=n>bindSocketAddr</span><span class=p>(</span><span class=n>serverRtcpSockfd</span><span class=p>,</span> <span class=s>&#34;0.0.0.0&#34;</span><span class=p>,</span> <span class=n>SERVER_RTCP_PORT</span><span class=p>)</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to bind addr</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>strcmp</span><span class=p>(</span><span class=n>method</span><span class=p>,</span> <span class=s>&#34;PLAY&#34;</span><span class=p>))</span> <span class=p>{</span>  
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=p>(</span><span class=n>handleCmd_PLAY</span><span class=p>(</span><span class=n>sBuf</span><span class=p>,</span> <span class=n>CSeq</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>            <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to handle play</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>printf</span><span class=p>(</span><span class=s>&#34;未定义的method = %s </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>method</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=cm>/*
+</span></span></span><span class=line><span class=cl><span class=cm>        sBuf = RTSP/1.0 200 OK
+</span></span></span><span class=line><span class=cl><span class=cm>        CSeq: 2
+</span></span></span><span class=line><span class=cl><span class=cm>        Content-Base: rtsp://127.0.0.1:8554
+</span></span></span><span class=line><span class=cl><span class=cm>        Content-type: application/sdp
+</span></span></span><span class=line><span class=cl><span class=cm>        Content-length: 125
+</span></span></span><span class=line><span class=cl><span class=cm>        ...
+</span></span></span><span class=line><span class=cl><span class=cm>        */</span>
+</span></span><span class=line><span class=cl>        <span class=n>printf</span><span class=p>(</span><span class=s>&#34;sBuf = %s </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>sBuf</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=cm>/*
+</span></span></span><span class=line><span class=cl><span class=cm>        doClient rBuf = SETUP rtsp://127.0.0.1:8554/track0 RTSP/1.0
+</span></span></span><span class=line><span class=cl><span class=cm>        Transport: RTP/AVP/UDP;unicast;client_port=16010-16011
+</span></span></span><span class=line><span class=cl><span class=cm>        CSeq: 3
+</span></span></span><span class=line><span class=cl><span class=cm>        User-Agent: Lavf58.45.100
+</span></span></span><span class=line><span class=cl><span class=cm>        */</span>
+</span></span><span class=line><span class=cl>        <span class=n>printf</span><span class=p>(</span><span class=s>&#34;%s sBuf = %s </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>__FUNCTION__</span><span class=p>,</span> <span class=n>sBuf</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=n>send</span><span class=p>(</span><span class=n>clientSockfd</span><span class=p>,</span> <span class=n>sBuf</span><span class=p>,</span> <span class=n>strlen</span><span class=p>(</span><span class=n>sBuf</span><span class=p>),</span> <span class=mi>0</span><span class=p>);</span>  <span class=c1>// 回应客户端请求 用填充后的sBuf
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>//开始播放，发送RTP包to Client
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>strcmp</span><span class=p>(</span><span class=n>method</span><span class=p>,</span> <span class=s>&#34;PLAY&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=kt>int</span> <span class=n>frameSize</span><span class=p>,</span> <span class=n>startCode</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=kt>char</span><span class=o>*</span> <span class=n>frame</span> <span class=o>=</span> <span class=p>(</span><span class=kt>char</span><span class=o>*</span><span class=p>)</span><span class=n>malloc</span><span class=p>(</span><span class=mi>500000</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=k>struct</span> <span class=nc>RtpPacket</span><span class=o>*</span> <span class=n>rtpPacket</span> <span class=o>=</span> <span class=p>(</span><span class=k>struct</span> <span class=nc>RtpPacket</span><span class=o>*</span><span class=p>)</span><span class=n>malloc</span><span class=p>(</span><span class=mi>500000</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>FILE</span><span class=o>*</span> <span class=n>fp</span> <span class=o>=</span> <span class=n>fopen</span><span class=p>(</span><span class=n>H264_FILE_NAME</span><span class=p>,</span> <span class=s>&#34;rb&#34;</span><span class=p>);</span>  <span class=c1>// read binary
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>fp</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>printf</span><span class=p>(</span><span class=s>&#34;读取 %s 失败</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>H264_FILE_NAME</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=c1>// 正常顺序 1: version padding extension csrcLen; 2: payloadType; 3: seq; 4: timestamp; 5:ssrc; 6:csrc
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>rtpHeaderInit</span><span class=p>(</span><span class=n>rtpPacket</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=n>RTP_VERSION</span><span class=p>,</span> <span class=n>RTP_PAYLOAD_TYPE_H264</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mh>0x88923423</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=n>printf</span><span class=p>(</span><span class=s>&#34;start play</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>printf</span><span class=p>(</span><span class=s>&#34;client ip:%s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>clientIP</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>printf</span><span class=p>(</span><span class=s>&#34;client port:%d</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>client_Rtp_Port</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=k>while</span> <span class=p>(</span><span class=nb>true</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>frameSize</span> <span class=o>=</span> <span class=n>getFrameFromH264File</span><span class=p>(</span><span class=n>fp</span><span class=p>,</span> <span class=n>frame</span><span class=p>,</span> <span class=mi>500000</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=p>(</span><span class=n>frameSize</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>                <span class=p>{</span>
+</span></span><span class=line><span class=cl>                    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;读取%s结束,frameSize=%d </span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>H264_FILE_NAME</span><span class=p>,</span> <span class=n>frameSize</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                    <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>                <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=p>(</span><span class=n>startCode3</span><span class=p>(</span><span class=n>frame</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>                    <span class=n>startCode</span> <span class=o>=</span> <span class=mi>3</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>                <span class=k>else</span>
+</span></span><span class=line><span class=cl>                    <span class=n>startCode</span> <span class=o>=</span> <span class=mi>4</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                <span class=n>frameSize</span> <span class=o>-=</span> <span class=n>startCode</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>                <span class=n>rtpSendH264Frame</span><span class=p>(</span><span class=n>serverRtpSockfd</span><span class=p>,</span> <span class=n>clientIP</span><span class=p>,</span> <span class=n>client_Rtp_Port</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                    <span class=n>rtpPacket</span><span class=p>,</span> <span class=n>frame</span> <span class=o>+</span> <span class=n>startCode</span><span class=p>,</span> <span class=n>frameSize</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>               
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                <span class=n>usleep</span><span class=p>(</span><span class=mi>40000</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=c1>//usleep(40000);//1000/25 * 1000
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=n>free</span><span class=p>(</span><span class=n>frame</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>free</span><span class=p>(</span><span class=n>rtpPacket</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>memset</span><span class=p>(</span><span class=n>method</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=k>sizeof</span><span class=p>(</span><span class=n>method</span><span class=p>)</span><span class=o>/</span><span class=k>sizeof</span><span class=p>(</span><span class=kt>char</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>        <span class=n>memset</span><span class=p>(</span><span class=n>url</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=k>sizeof</span><span class=p>(</span><span class=n>url</span><span class=p>)</span><span class=o>/</span><span class=k>sizeof</span><span class=p>(</span><span class=kt>char</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>        <span class=n>CSeq</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>closesocket</span><span class=p>(</span><span class=n>clientSockfd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>serverRtpSockfd</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>closesocket</span><span class=p>(</span><span class=n>serverRtpSockfd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>serverRtcpSockfd</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>closesocket</span><span class=p>(</span><span class=n>serverRtcpSockfd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>free</span><span class=p>(</span><span class=n>rBuf</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>free</span><span class=p>(</span><span class=n>sBuf</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>int</span> <span class=n>argc</span><span class=p>,</span> <span class=kt>char</span><span class=o>*</span> <span class=n>argv</span><span class=p>[])</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>rtspServerSockfd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>rtspServerSockfd</span> <span class=o>=</span> <span class=n>createTcpSocket</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>rtspServerSockfd</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to create tcp socket</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>bindSocketAddr</span><span class=p>(</span><span class=n>rtspServerSockfd</span><span class=p>,</span> <span class=s>&#34;0.0.0.0&#34;</span><span class=p>,</span> <span class=n>SERVER_PORT</span><span class=p>)</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to bind addr</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>listen</span><span class=p>(</span><span class=n>rtspServerSockfd</span><span class=p>,</span> <span class=mi>10</span><span class=p>)</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to listen</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;%s rtsp://127.0.0.1:%d</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>__FILE__</span><span class=p>,</span> <span class=n>SERVER_PORT</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>while</span> <span class=p>(</span><span class=nb>true</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=kt>int</span> <span class=n>clientSockfd</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=kt>char</span> <span class=n>clientIp</span><span class=p>[</span><span class=mi>40</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>        <span class=kt>int</span> <span class=n>clientPort</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>clientSockfd</span> <span class=o>=</span> <span class=n>acceptClient</span><span class=p>(</span><span class=n>rtspServerSockfd</span><span class=p>,</span> <span class=n>clientIp</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>clientPort</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=n>clientSockfd</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>printf</span><span class=p>(</span><span class=s>&#34;failed to accept client</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>printf</span><span class=p>(</span><span class=s>&#34;accept client;client ip:%s,client port:%d</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>clientIp</span><span class=p>,</span> <span class=n>clientPort</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>doClient</span><span class=p>(</span><span class=n>clientSockfd</span><span class=p>,</span> <span class=n>clientIp</span><span class=p>,</span> <span class=n>clientPort</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>closesocket</span><span class=p>(</span><span class=n>rtspServerSockfd</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></div></div></article><footer class=minimal-footer><div class=post-tag><a href=/tags/c-/ rel=tag class=post-tag-link>#c</a> <a href=/tags/rtsp/ rel=tag class=post-tag-link>#rtsp</a></div><div class=post-category><a href=/posts/ class="post-category-link active">my-posts</a> |</div></footer></div></main><div id=back-to-top class=back-to-top><a href=#><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6.0-33.9L207 39c9.4-9.4 24.6-9.4 33.9.0l194.3 194.3c9.4 9.4 9.4 24.6.0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3.0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a></div></div><script>"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")})</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css><script>if(typeof renderMathInElement=="undefined"){const e=e=>{const t=document.createElement("script");t.defer=!0,t.crossOrigin="anonymous",Object.keys(e).forEach(n=>{t[n]=e[n]}),document.body.appendChild(t)};e({src:"https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js",onload:()=>{e({src:"https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/mhchem.min.js",onload:()=>{e({src:"https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js",onload:()=>{renderKaTex()}})}})}})}else renderKaTex();function renderKaTex(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})}</script><script src=https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js></script>
+<script>let imgNodes=document.querySelectorAll("div.post-body img");imgNodes=Array.from(imgNodes).filter(e=>e.parentNode.tagName!=="A"),mediumZoom(imgNodes,{background:"hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)"})</script></body></html>
