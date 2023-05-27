@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.112.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Fri, 26 May 2023 13:25:55 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>提高一些链接的下载速度</title><link>https://keepjolly.com/posts/tech/improve-download-speed/</link><guid isPermaLink="true">https://keepjolly.com/posts/tech/improve-download-speed/</guid><pubDate>Fri, 26 May 2023 21:16:39 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>做记录用&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.112.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sat, 27 May 2023 09:24:11 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>提高一些链接的下载速度</title><link>https://keepjolly.com/posts/tech/improve-download-speed/</link><guid isPermaLink="true">https://keepjolly.com/posts/tech/improve-download-speed/</guid><pubDate>Fri, 26 May 2023 21:16:39 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>做记录用&lt;/p>
 &lt;h1 id="cuda下载">cuda下载&lt;/h1>
 &lt;ol>
 &lt;li>&lt;a href="https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run">https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run&lt;/a>
@@ -6776,49 +6776,49 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;p>单视图重构会受到多义性的影响，并且需要场景知识
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 而人眼是有两个眼睛，可以组合两种图片，采用多视图几何&lt;/p>
-&lt;h4 id="三维重建基础">三维重建基础&lt;/h4>
-&lt;h5 id="三角化">三角化&lt;/h5>
+&lt;h3 id="三维重建基础">三维重建基础&lt;/h3>
+&lt;h4 id="三角化">三角化&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-1.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 未知参数：xyz
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-2.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-3.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 难点：
 需要知道摄像机的内参矩阵，以及R、T矩阵，P点的三维坐标&lt;/p>
-&lt;h5 id="多视图几何的关键问题">多视图几何的关键问题&lt;/h5>
+&lt;h4 id="多视图几何的关键问题">多视图几何的关键问题&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-4.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="极几何与基础矩阵">极几何与基础矩阵&lt;/h4>
-&lt;h5 id="极几何">极几何&lt;/h5>
+&lt;h3 id="极几何与基础矩阵">极几何与基础矩阵&lt;/h3>
+&lt;h4 id="极几何">极几何&lt;/h4>
 &lt;p>极几何描述了同一场景或者物体的两个视点图像间的几何关系；利用极几何解决第三个关键问题。
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-5.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 本质矩阵和基础矩阵就是通过p来求极线l&lt;/p>
-&lt;h6 id="平行视图">平行视图&lt;/h6>
+&lt;h5 id="平行视图">平行视图&lt;/h5>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-6.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h6 id="前向平移无旋转">前向平移（无旋转）&lt;/h6>
+&lt;h5 id="前向平移无旋转">前向平移（无旋转）&lt;/h5>
 &lt;p>用于深度估计，非课程内容
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-7.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h6 id="极几何约束--本质矩阵">极几何约束--本质矩阵&lt;/h6>
+&lt;h5 id="极几何约束--本质矩阵">极几何约束--本质矩阵&lt;/h5>
 &lt;p>通过极几何约束，将搜索范围缩小到对应的极线上。
 本质矩阵是对规范化摄像机拍摄的两个视点图像间的极几何关系进行代数描述。
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-8.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-9.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-10.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-11.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h6 id="从本质矩阵到基础矩阵">从本质矩阵到基础矩阵&lt;/h6>
+&lt;h5 id="从本质矩阵到基础矩阵">从本质矩阵到基础矩阵&lt;/h5>
 &lt;p>基础矩阵是对&lt;strong>一般的&lt;/strong>透视摄像机拍摄的两个视点图像间的极几何关系进行代数描述，具有泛化性
 将O1看作世界坐标系
 &lt;img src="https://cdn.nlark.com/yuque/0/2023/png/12600461/1678781585123-8891b878-939b-48b2-9e82-b63a2212c494.png#averageHue=%23f6f1f0&amp;amp;clientId=u29392bc6-1192-4&amp;amp;from=paste&amp;amp;height=794&amp;amp;id=uf6fea83e&amp;amp;originHeight=1008&amp;amp;originWidth=1982&amp;amp;originalType=binary&amp;amp;ratio=1.2699999809265137&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=204071&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u14d3f806-3dce-4c63-ae41-290caf297bc&amp;amp;title=&amp;amp;width=1560.6299446981527" alt="image.png">&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-12.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-13.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 总结：
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-14.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="基础矩阵估计">基础矩阵估计&lt;/h4>
-&lt;h5 id="八点算法">八点算法&lt;/h5>
+&lt;h3 id="基础矩阵估计">基础矩阵估计&lt;/h3>
+&lt;h4 id="八点算法">八点算法&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-15.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-16.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 精度较低，采用 归一化八点法：
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-17.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-18.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="补充知识">补充知识&lt;/h4>
-&lt;h5 id="单应矩阵">单应矩阵&lt;/h5>
+&lt;h3 id="补充知识">补充知识&lt;/h3>
+&lt;h4 id="单应矩阵">单应矩阵&lt;/h4>
 &lt;p>结合基础矩阵，使slam系统更鲁棒
 空间平面在两个摄像机下的投影几何
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-19.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
