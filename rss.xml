@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.112.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sat, 27 May 2023 12:51:05 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>hexo博客美化</title><link>https://keepjolly.com/posts/other/hexo-custom/</link><guid isPermaLink="true">https://keepjolly.com/posts/other/hexo-custom/</guid><pubDate>Sat, 27 May 2023 20:14:24 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>记录一些我没用到但是&lt;a href="https://butterfly.js.org">butterfly&lt;/a>上是true的选项&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.112.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sat, 27 May 2023 13:51:24 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>hexo博客美化</title><link>https://keepjolly.com/posts/other/hexo-custom/</link><guid isPermaLink="true">https://keepjolly.com/posts/other/hexo-custom/</guid><pubDate>Sat, 27 May 2023 20:14:24 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>记录一些我没用到但是&lt;a href="https://butterfly.js.org">butterfly&lt;/a>上是true的选项&lt;/p>
 &lt;h2 id="page-front-matter">Page Front-matter&lt;/h2>
 &lt;p>&lt;a href="https://butterfly.js.org/posts/dc584b87/#Front-matter">PFM&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1281,8 +1281,25 @@ theme: '#f44336'
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/create/">create</category><category domain="https://keepjolly.com/tags/blog/">Blog</category></item><item><title>MemE美化1</title><link>https://keepjolly.com/posts/create/meme-custom-1/</link><guid isPermaLink="true">https://keepjolly.com/posts/create/meme-custom-1/</guid><pubDate>Sat, 27 May 2023 19:51:00 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="设置为section">设置为section&lt;/h2>
-&lt;p>文章路径放在 blog/content/posts ，其内每个文件夹必须有个_index.md文件，为空没事，并且posts下也需要有&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;p>文章路径放在 blog/content/posts ，其内每个文件夹必须有个_index.md文件，为空没事，并且posts下也需要有。&lt;/p>
+&lt;p>如果需要在第一个section内创建文件夹但是不显示该文件夹名可以配置Permalinks属性为&lt;/p>
+&lt;p>[permalinks]
+posts = '/posts/:sections[1]/:slug/'&lt;/p>
+&lt;p>&lt;a href="https://gohugo.io/content-management/urls/#permalinks">url pattern&lt;/a>&lt;/p>
+&lt;pre tabindex="0">&lt;code>.
+└── content
+└── about
+| └── index.md // &amp;lt;- https://example.com/about/
+├── posts
+| ├── _index.md // &amp;lt;- https://example.com/posts/
+| ├── firstpost.md // &amp;lt;- https://example.com/posts/firstpost/
+| ├── happy
+| | └── ness.md // &amp;lt;- https://example.com/posts/ness/ 不显示happy
+| └── secondpost.md // &amp;lt;- https://example.com/posts/secondpost/
+└── quote
+├── first.md // &amp;lt;- https://example.com/quote/first/
+└── second.md // &amp;lt;- https://example.com/quote/second/
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -8318,7 +8335,8 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;h5 id="从本质矩阵到基础矩阵">从本质矩阵到基础矩阵&lt;/h5>
 &lt;p>基础矩阵是对&lt;strong>一般的&lt;/strong>透视摄像机拍摄的两个视点图像间的极几何关系进行代数描述，具有泛化性
 将O1看作世界坐标系
-&lt;img src="https://cdn.nlark.com/yuque/0/2023/png/12600461/1678781585123-8891b878-939b-48b2-9e82-b63a2212c494.png#averageHue=%23f6f1f0&amp;amp;clientId=u29392bc6-1192-4&amp;amp;from=paste&amp;amp;height=794&amp;amp;id=uf6fea83e&amp;amp;originHeight=1008&amp;amp;originWidth=1982&amp;amp;originalType=binary&amp;amp;ratio=1.2699999809265137&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=204071&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u14d3f806-3dce-4c63-ae41-290caf297bc&amp;amp;title=&amp;amp;width=1560.6299446981527" alt="image.png">&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-12.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
+&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230527212253.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
+&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-12.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-13.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 总结：
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-14.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -8906,9 +8924,9 @@ hugo new &amp;quot;about/_index.md&amp;quot;&lt;/p>
 &lt;h5 id="插曲将坐标转为线性关系">插曲：将坐标转为线性关系&lt;/h5>
 &lt;ul>
 &lt;li>齐次坐标：EtoH：多加一维，值为1；HtoE：前n-1维除以第n维（E欧氏空间、H齐次空间）&lt;/li>
-&lt;li>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-4.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">（α=fk。β=fl）&lt;/li>
+&lt;li>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230527212427.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="">（α=fk。β=fl）&lt;/li>
 &lt;li>约定后续Ph写做P，除非特别指明是欧式空间下的P&lt;/li>
-&lt;li>&lt;img src="https://cdn.nlark.com/yuque/0/2023/png/12600461/1679105948768-f4b176af-ef6a-4e1c-9bfb-e2bd5cbc20c3.png#averageHue=%23fbf9f9&amp;amp;clientId=u304ec050-67df-4&amp;amp;from=paste&amp;amp;height=225&amp;amp;id=u10073beb&amp;amp;name=image.png&amp;amp;originHeight=429&amp;amp;originWidth=796&amp;amp;originalType=binary&amp;amp;ratio=1.2699999809265137&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=74795&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u1bf1fadc-ef79-4920-9d90-13d609f21c6&amp;amp;title=&amp;amp;width=417.75933837890625" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230527212446.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="">&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;p>&lt;a name="thwSn">&lt;/a>&lt;/p>
@@ -9090,7 +9108,8 @@ ui÷vi即在原世界坐标下的等比例缩放直线，就那个d2
 &lt;h4 id="无穷远点无穷远线无穷远面">无穷远点、无穷远线、无穷远面&lt;/h4>
 &lt;p>&lt;a name="EVjLI">&lt;/a>&lt;/p>
 &lt;h5 id="2d空间">2D空间&lt;/h5>
-&lt;p>&lt;strong>用l表示一条直线&lt;/strong>
+&lt;p>$url?imageMogr2/format/webp|?watermark/3/type/3/text/a2VlcGpvbGx5
+&lt;strong>用l表示一条直线&lt;/strong>
 &lt;img src="https://cdn.nlark.com/yuque/0/2023/png/12600461/1678154285531-0bfa14f4-d345-4ae1-b317-ef2e02729257.png#averageHue=%23ebebf2&amp;amp;clientId=u68e9a600-0c37-4&amp;amp;from=paste&amp;amp;height=317&amp;amp;id=u83842eee&amp;amp;name=image.png&amp;amp;originHeight=684&amp;amp;originWidth=1256&amp;amp;originalType=binary&amp;amp;ratio=1.2699999809265137&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=55246&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u88b7be70-3edb-4ab6-acfc-5e588cfc20e&amp;amp;title=&amp;amp;width=583.00146484375" alt="image.png">
 &lt;strong>x是两条直线的交点，x是l和l'的叉乘&lt;/strong>
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-43.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
@@ -9870,7 +9889,7 @@ C++：string库（仍保留'\0'）、redis库（用多个结构体优化存储�
 &lt;/div>&lt;p>&lt;a href="https://www.iteye.com/blog/hzdiy-736816">delete and delete[]&lt;/a>、删除指针后并不会置为nullptr
 对于像 int/char/long/int*/struct 等等简单数据类型，由于对象没有 destructor，所以用 delete 和 delete [] 是一样的！但是如果是C++ 对象数组就不同了！&lt;/p>
 &lt;h3 id="内存分配">内存分配&lt;/h3>
-&lt;p>&lt;img src="https://cdn.nlark.com/yuque/0/2023/png/12600461/1676602885720-04081f99-124e-471a-b4c2-ae6ad1b73d69.png#averageHue=%23fbd26b&amp;amp;clientId=u4e1a1f95-50a9-4&amp;amp;from=paste&amp;amp;height=439&amp;amp;id=uacc70f9e&amp;amp;name=image.png&amp;amp;originHeight=439&amp;amp;originWidth=453&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=67840&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=uf57f9d7d-4d1e-4042-9966-df9a6ba186e&amp;amp;title=&amp;amp;width=453" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230527212359.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="">&lt;/p>
 &lt;ul>
 &lt;li>stack：由程序分配地址&lt;/li>
 &lt;li>heap：由程序员分配地址 new/delete&lt;/li>
