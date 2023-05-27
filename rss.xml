@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.112.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sat, 27 May 2023 09:24:11 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>提高一些链接的下载速度</title><link>https://keepjolly.com/posts/tech/improve-download-speed/</link><guid isPermaLink="true">https://keepjolly.com/posts/tech/improve-download-speed/</guid><pubDate>Fri, 26 May 2023 21:16:39 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>做记录用&lt;/p>
-&lt;h1 id="cuda下载">cuda下载&lt;/h1>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.112.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sat, 27 May 2023 10:01:28 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>提高一些链接的下载速度</title><link>https://keepjolly.com/posts/tech/improve-download-speed/</link><guid isPermaLink="true">https://keepjolly.com/posts/tech/improve-download-speed/</guid><pubDate>Fri, 26 May 2023 21:16:39 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>做记录用&lt;/p>
+&lt;h2 id="cuda下载">cuda下载&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run">https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run&lt;/a>
 &lt;ol>
@@ -8,15 +8,15 @@
 &lt;/li>
 &lt;li>sudo sh cuda_12.1.1_530.30.02_linux.run&lt;/li>
 &lt;/ol>
-&lt;h1 id="git-clone">git clone&lt;/h1>
-&lt;h2 id="搜索ip地址">搜索IP地址&lt;/h2>
+&lt;h2 id="git-clone">git clone&lt;/h2>
+&lt;h3 id="搜索ip地址">搜索IP地址&lt;/h3>
 &lt;p>&lt;a href="https://link.segmentfault.com/?enc=uBTVyUIamkNzLONeeMfDBA%3D%3D.i5v95tuMG7MNJYNdOaEiPv%2Fw5pvuLjksCoadv7ObJzg%3D">https://www.ipaddress.com/&lt;/a>
 github.global.ssl.fastly.net
 随便挑一个
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526205752.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="光学A星-20170524-圣地亚哥缩略图.jpg">
 github.com
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526205752-1.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="1.jpg">&lt;/p>
-&lt;h2 id="修改host">修改host&lt;/h2>
+&lt;h3 id="修改host">修改host&lt;/h3>
 &lt;ol>
 &lt;li>打开hosts文件&lt;/li>
 &lt;/ol>
@@ -37,7 +37,7 @@ github.com
 &lt;blockquote>
 &lt;p>sudo systemd-resolve --flush-caches&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="还是慢">还是慢&lt;/h2>
+&lt;h3 id="还是慢">还是慢&lt;/h3>
 &lt;p>用镜像gitee吧&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/tech/">tech</category><category domain="https://keepjolly.com/tags/others/">Others</category></item><item><title>混合编程python与C++</title><link>https://keepjolly.com/posts/create/python-client-c-server/</link><guid isPermaLink="true">https://keepjolly.com/posts/create/python-client-c-server/</guid><pubDate>Fri, 26 May 2023 21:14:31 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>&lt;a href="https://www.keepjolly.com/posts/create/ctype-with-threading/">上个版本&lt;/a>: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,方便后续维护.
 本文实现功能: python传输图片给C++, C++接受图片后对图片进行处理,并将结果返回给python客户端, pass image from python to C++&lt;/p>
 &lt;h2 id="c-服务端">C++ 服务端&lt;/h2>
@@ -1053,7 +1053,7 @@ github.com
 &lt;li>&lt;a href="https://blog.csdn.net/guotianqing/article/details/95970785">Linux c++获取本地毫秒级精确时间&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://python3-cookbook.readthedocs.io/zh_CN/latest/c06/p12_read_nested_and_variable_sized_binary_structures.html">如果不想用json,可以试试struct&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/Mculover666/article/details/103796256">利用json来传输分类结果&lt;/a>&lt;/li>
-&lt;/ul></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/create/">create</category><category domain="https://keepjolly.com/tags/c-/">C++</category><category domain="https://keepjolly.com/tags/python/">Python</category><category domain="https://keepjolly.com/tags/tcp/">TCP</category></item><item><title>第3、4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器</title><link>https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</guid><pubDate>Fri, 26 May 2023 21:04:25 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h1 id="音频原理">音频原理&lt;/h1>
+&lt;/ul></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/create/">create</category><category domain="https://keepjolly.com/tags/c-/">C++</category><category domain="https://keepjolly.com/tags/python/">Python</category><category domain="https://keepjolly.com/tags/tcp/">TCP</category></item><item><title>第3、4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器</title><link>https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</guid><pubDate>Fri, 26 May 2023 21:04:25 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="音频原理">音频原理&lt;/h2>
 &lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/53475069">博客&lt;/a>&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>声音&lt;/strong>&lt;/li>
@@ -1067,12 +1067,12 @@ github.com
 对声音的采样常用麦克风等设备将声音信号转换成电信号，再用模/数转换器将电信号转换成一串用1和0表示的二进制数字（数字信号）。
 &lt;strong>采样频率&lt;/strong>指录音设备在一秒钟内对声音信号的采样次数。采样频率越高，声音的还原就越真实越自然。
 目前主流的采样频率有22.05KHz、44.1KHz、48KHz三种。&lt;/p>
-&lt;h2 id="pcm">PCM&lt;/h2>
+&lt;h3 id="pcm">PCM&lt;/h3>
 &lt;p>PCM(Pulse Code Modulation)也被称为 脉码编码调制。PCM中的声音数据没有被压缩，如果是单声道的文件，采样数据按时间的先后顺序依次存入。(它的基本组织单位是BYTE(8bit)或WORD(16bit))
 &lt;strong>一般情况下，一帧PCM是由2048次采样组成的&lt;/strong>( 参考 &lt;a href="http://discussion.forum.nokia.com/forum/showthread.php?129458-%E8%AF%B7%E9%97%AEPCM%E6%A0%BC%E5%BC%8F%E7%9A%84%E9%9F%B3%E9%A2%91%E6%B5%81%EF%BC%8C%E6%AF%8F%E6%AC%A1%E8%AF%BB%E5%85%A5%E6%88%96%E8%BE%93%E5%87%BA%E7%9A%84%E5%9D%97%E7%9A%84%E5%A4%A7%E5%B0%8F%E6%98%AF%E5%BF%85%E9%A1%BB%E5%9B%BA%E5%AE%9A%E4%B8%BA4096B%E4%B9%88&amp;amp;s=e79e9dd1707157281e3725a163844c49">http://discussion.forum.nokia.com/forum/showthread.php?129458-请问PCM格式的音频流，每次读入或输出的块的大小是必须固定为4096B么&amp;amp;s=e79e9dd1707157281e3725a163844c49&lt;/a> )。
 如果是双声道的文件，采样数据按时间先后顺序交叉地存入。如图所示:
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210449.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="图片.png">&lt;/p>
-&lt;h1 id="aac的码流格式">aac的码流格式&lt;/h1>
+&lt;h2 id="aac的码流格式">aac的码流格式&lt;/h2>
 &lt;p>&lt;a href="https://blog.csdn.net/jay100500/article/details/52955232">AAC的ADTS头文件信息介绍&lt;/a>、&lt;a href="https://blog.csdn.net/u013113678/article/details/123134860">C++ 解析aac-adts的头部信息&lt;/a>、&lt;a href="https://www.cnblogs.com/zhangxuan/p/8809245.html">AAC ADTS格式分析&lt;/a>、&lt;a href="https://xie.infoq.cn/article/403c31f46c2ee5e39fdbede0e">保留用&lt;/a>
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210449-1.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="图片.png">
 AAC音频格式：Advanced Audio Coding(高级音频解码)，是一种由MPEG-4标准定义的有损音频压缩格式，由Fraunhofer发展，Dolby, Sony和AT&amp;amp;T是主要的贡献者。&lt;/p>
@@ -1080,7 +1080,7 @@ AAC音频格式：Advanced Audio Coding(高级音频解码)，是一种由MPEG-4
 &lt;li>ADIF：Audio Data Interchange Format 音频数据交换格式。这种格式的特征是可以确定的找到这个音频数据的开始，不需进行在音频数据流中间开始的解码，即它的解码必须在明确定义的开始处进行。故这种格式常用在&lt;strong>磁盘文件&lt;/strong>中。&lt;/li>
 &lt;li>ADTS的全称是Audio Data Transport Stream。是AAC音频的传输流格式。AAC音频格式在MPEG-2（ISO-13318-7 2003）中有定义。AAC后来又被采用到MPEG-4标准中。这种格式的特征是它是一个有同步字的比特流，解码可以在这个流中任何位置开始。它的特征类似于mp3数据流格式。常用在&lt;strong>数据传输&lt;/strong>中。&lt;/li>
 &lt;/ul>
-&lt;h2 id="adts-header">ADTS Header&lt;/h2>
+&lt;h3 id="adts-header">ADTS Header&lt;/h3>
 &lt;ul>
 &lt;li>syncword ：总是0xFFF, 代表一个ADTS帧的开始, 用于同步.解码器可通过0xFFF确定每个ADTS的开始位置.因为它的存在，解码可以在这个流中任何位置开始, 即可以在任意帧解码。&lt;/li>
 &lt;li>ID：MPEG Version: 0 for MPEG-4，1 for MPEG-2&lt;/li>
@@ -1118,7 +1118,7 @@ AAC音频格式：Advanced Audio Coding(高级音频解码)，是一种由MPEG-4
 &lt;li>adts_buffer_fullness：0x7FF 说明是码率可变的码流。&lt;/li>
 &lt;li>number_of_raw_data_blocks_in_frame：表示ADTS帧中有number_of_raw_data_blocks_in_frame + 1个AAC原始帧。所以说number_of_raw_data_blocks_in_frame == 0 表示说ADTS帧中有一个AAC数据块。(一个AAC原始帧包含一段时间内1024个采样及相关数据)&lt;/li>
 &lt;/ul>
-&lt;h1 id="代码">代码&lt;/h1>
+&lt;h2 id="代码">代码&lt;/h2>
 &lt;p>rtp.h、 rtp.cpp参考前文&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -2096,7 +2096,7 @@ AAC音频格式：Advanced Audio Coding(高级音频解码)，是一种由MPEG-4
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="第4讲实现一个基于tcp的rtp同时传输h264和aac的rtsp服务器">第4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器&lt;/h1>
+&lt;/div>&lt;h2 id="第4讲实现一个基于tcp的rtp同时传输h264和aac的rtsp服务器">第4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器&lt;/h2>
 &lt;p>这个只是将前两讲组合在一起，并用线程分别开启，所以直接合并成一个博客。&lt;/p>
 &lt;blockquote>
 &lt;p>如果之前的rtp.cpp不能使用，请重新在&lt;a href="https://gitee.com/Vanishi/BXC_RtspServer_study">北小菜&lt;/a>下载&lt;/p>
@@ -3432,7 +3432,7 @@ AAC音频格式：Advanced Audio Coding(高级音频解码)，是一种由MPEG-4
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/learn/">learn</category><category domain="https://keepjolly.com/tags/c-/">C++</category><category domain="https://keepjolly.com/tags/rtsp/">RTSP</category></item><item><title>第2讲：实现一个传输h264的RTSP服务器</title><link>https://keepjolly.com/posts/learn/h264-rtsp-server/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/h264-rtsp-server/</guid><pubDate>Fri, 26 May 2023 21:03:50 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h1 id="vscode配置">vscode配置&lt;/h1>
+&lt;/div></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/learn/">learn</category><category domain="https://keepjolly.com/tags/c-/">C++</category><category domain="https://keepjolly.com/tags/rtsp/">RTSP</category></item><item><title>第2讲：实现一个传输h264的RTSP服务器</title><link>https://keepjolly.com/posts/learn/h264-rtsp-server/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/h264-rtsp-server/</guid><pubDate>Fri, 26 May 2023 21:03:50 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="vscode配置">vscode配置&lt;/h2>
 &lt;p>&lt;a href="https://blog.csdn.net/Yujian2563/article/details/124749727">vscode编译多个cpp文件&lt;/a>
 将${file}更改为选中部分，使之编译所有cpp文件。注意：变更之后本工程内不能出现多个main函数！！
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
@@ -3490,22 +3490,22 @@ AAC音频格式：Advanced Audio Coding(高级音频解码)，是一种由MPEG-4
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="nb">project&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">myproject&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c"># 添加源代码文件
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c">## 添加源代码文件
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="nb">add_library&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">mylib&lt;/span> &lt;span class="s">SHARED&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">myclass.cpp&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">utils.cpp&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>&lt;span class="err">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c"># 包含头文件搜索路径
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c">## 包含头文件搜索路径
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="nb">include_directories&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">${&lt;/span>&lt;span class="nv">CMAKE_CURRENT_SOURCE_DIR&lt;/span>&lt;span class="o">}&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c"># 指定头文件
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c">## 指定头文件
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="nb">set&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">MY_HEADERS&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">myclass.h&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">utils.h&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>&lt;span class="err">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c"># 指定生成可执行文件，并链接库
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="c">## 指定生成可执行文件，并链接库
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="nb">add_executable&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">myapp&lt;/span> &lt;span class="s">main.cpp&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">&lt;/span>&lt;span class="nb">target_link_libraries&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">myapp&lt;/span> &lt;span class="s">mylib&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
@@ -3596,7 +3596,7 @@ RTP定义了两种报文：RTP报文和RTCP报文，RTP报文用于传送媒体�
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="h264理解">H264理解&lt;/h1>
+&lt;/div>&lt;h2 id="h264理解">H264理解&lt;/h2>
 &lt;p>&lt;a href="https://mp.weixin.qq.com/s/SJblG5lj8nzQweM1VnRTEA">链接&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>I帧(intraframe frame),关键帧。
@@ -3620,7 +3620,7 @@ IDR帧和I帧的关系：
 IDR(Instantannous Decoder Refresh) 解码器立即刷新
 作用：在解码的过程，一旦有一帧数据出现错误，将是无法恢复的过程，后面数据帧不能使用。当有了IDR帧，解码器收到IDR帧时，就会将缓冲区的数据清空，找到第一个IDR帧，重新解码。I和IDR帧都使用帧内预测，在编码解码中为了方便，首个I帧要和其他I帧区别开，&lt;strong>把第一个I帧叫IDR&lt;/strong>，这样方便控制编码和解码流程。IDR帧必须是一个I帧，但是I帧不一定是IDR帧，这个帧出现的时候，是告诉解码器，可以清除掉所有的参考帧，这是一个全新的序列，新的GOP已经开始。I帧有被跨帧参考的可能,IDR不会。
 每个GOP中的第一帧就是IDR帧。&lt;/p>
-&lt;h1 id="h264码流进行rtp封装">H264码流进行RTP封装&lt;/h1>
+&lt;h2 id="h264码流进行rtp封装">H264码流进行RTP封装&lt;/h2>
 &lt;p>&lt;a href="https://blog.csdn.net/jwybobo2007/article/details/7054140">RTP封装&lt;/a>
 &lt;strong>H.264由一个一个的NALU组成&lt;/strong>，每个NALU之间使用&lt;strong>00 00 00 01&lt;/strong>或&lt;strong>00 00 01&lt;/strong>分隔开
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444-2.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -3658,9 +3658,9 @@ Type：28，表示该RTP包一个分片，为什么是28？因为H.264的规范�
 S：标记该分片打包的第一个RTP包
 E：比较该分片打包的最后一个RTP包
 Type：NALU的Type，不同与FU Indicator的type&lt;/p>
-&lt;h1 id="代码">代码&lt;/h1>
+&lt;h2 id="代码">代码&lt;/h2>
 &lt;p>**ffmpeg -i test.mp4 -codec copy -bsf: h264_mp4toannexb -f h264 test.h264 **生成h264文件&lt;/p>
-&lt;h2 id="rtph文件">rtp.h文件&lt;/h2>
+&lt;h3 id="rtph文件">rtp.h文件&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -3799,7 +3799,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">rtpSendPacketOverUdp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">serverRtpSockfd&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="kt">char&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">ip&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int16_t&lt;/span> &lt;span class="n">port&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">struct&lt;/span> &lt;span class="nc">RtpPacket&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">rtpPacket&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">uint32_t&lt;/span> &lt;span class="n">dataSize&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="rtpcpp">rtp.cpp&lt;/h2>
+&lt;/div>&lt;h3 id="rtpcpp">rtp.cpp&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -3952,7 +3952,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="maincpp">main.cpp&lt;/h2>
+&lt;/div>&lt;h3 id="maincpp">main.cpp&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -5073,10 +5073,10 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="准备工作">准备工作&lt;/h1>
-&lt;h2 id="安装ffmepg">安装ffmepg&lt;/h2>
+&lt;h2 id="准备工作">准备工作&lt;/h2>
+&lt;h3 id="安装ffmepg">安装ffmepg&lt;/h3>
 &lt;p>因为已经装过了，所以这里&lt;a href="https://www.google.com.hk/search?q=ffmpeg%E4%B8%8B%E8%BD%BDubuntu">自行安装&lt;/a>。&lt;/p>
-&lt;h2 id="安装wireshark">安装wireshark&lt;/h2>
+&lt;h3 id="安装wireshark">安装wireshark&lt;/h3>
 &lt;ol>
 &lt;li>sudo apt-get update&lt;/li>
 &lt;li>sudo apt-get install wireshark&lt;/li>
@@ -5097,7 +5097,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 随后运行程序即可，然后再开启一个终端（ctrl+alt+T），输入ffplay -i rtsp://127.0.0.1:8554
 然后wireshark就会出现
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210441-1.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="2.jpg">&lt;/p>
-&lt;h1 id="rtsp相关选项">RTSP相关选项&lt;/h1>
+&lt;h2 id="rtsp相关选项">RTSP相关选项&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://blog.csdn.net/mlfcjob/article/details/109120103">options&lt;/a>请求，用于查询RTSP服务器支持的方法（如DESCRIBE、SETUP、PLAY等）。
 &lt;ul>
@@ -5108,7 +5108,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;li>&lt;a href="https://blog.csdn.net/mlfcjob/article/details/109120217">SETUP&lt;/a>请求，作用是指明媒体流该以什么方式传输；每个流PLAY之前必须执行SETUP操作；发送SETUP请求时，客户端会指定两个端口，一个端口用于接收RTP数据；另一个端口接收RTCP数据，偶数端口用来接收RTP数据，相邻的奇数端口用于接收RTCP数据！&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/mlfcjob/article/details/109336283">PLAY&lt;/a>请求，发送播放请求的时候可以指定播放区间！发起播放请求后，如果连接正常，则服务端开始播放，即开始向客户端按照之前在TRASPORT中约定好的方式发送音视频数据包！播放流程便这样开始了&lt;/li>
 &lt;/ul>
-&lt;h1 id="linux代码">Linux代码&lt;/h1>
+&lt;h2 id="linux代码">Linux代码&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -5709,7 +5709,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="ffmpeg入门">ffmpeg入门&lt;/h1>
+&lt;/div>&lt;h2 id="ffmpeg入门">ffmpeg入门&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/413567427">ffmpeg命令行 视频生成图片&lt;/a>
 &lt;ul>
@@ -5740,7 +5740,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/ul></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/learn/">learn</category><category domain="https://keepjolly.com/tags/c-/">C++</category><category domain="https://keepjolly.com/tags/rtsp/">RTSP</category></item><item><title>zmq 小白简易安装C++版</title><link>https://keepjolly.com/posts/tech/zmq-install/</link><guid isPermaLink="true">https://keepjolly.com/posts/tech/zmq-install/</guid><pubDate>Fri, 26 May 2023 20:55:03 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>主要参考博客:&lt;a href="https://www.cnblogs.com/y4247464/p/14241876.html"> 在cmake工程中使用ZeroMQ&lt;/a>,并加以补充
 次要博客:&lt;a href="https://blog.csdn.net/qq_41453285/article/details/105989698">Linux下ZeroMQ的编译安装与运行&lt;/a>
 文中提到arm,我只装在linux系统上，原本想用在通信中，最后还是用tcp实现了&lt;/p>
-&lt;h1 id="安装libzmq">安装libzmq&lt;/h1>
+&lt;h2 id="安装libzmq">安装libzmq&lt;/h2>
 &lt;ol>
 &lt;li>git clone &lt;a href="https://github.com/zeromq/libzmq.git">https://github.com/zeromq/libzmq.git&lt;/a>
 &lt;ol>
@@ -5751,7 +5751,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;li>./autogen.sh&lt;/li>
 &lt;li>./configure&lt;/li>
 &lt;/ol>
-&lt;h2 id="安装zmqpp">安装zmqpp&lt;/h2>
+&lt;h3 id="安装zmqpp">安装zmqpp&lt;/h3>
 &lt;ol>
 &lt;li>git clone &lt;a href="https://github.com/zeromq/zmqpp.git">https://github.com/zeromq/zmqpp.git&lt;/a>
 &lt;ol>
@@ -5768,7 +5768,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;p>头文件路径 ： /usr/local/include
 库文件路径 : /usr/local/lib&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="cmakelisttxt">CMakeList.txt&lt;/h2>
+&lt;h3 id="cmakelisttxt">CMakeList.txt&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -5829,8 +5829,8 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&lt;/span>&lt;span class="nb">target_link_libraries&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">server&lt;/span> &lt;span class="s">PRIVATE&lt;/span> &lt;span class="o">${&lt;/span>&lt;span class="nv">link_libs&lt;/span>&lt;span class="o">}&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="servercpp简易案例">server.cpp简易案例&lt;/h2>
-&lt;h3 id="server">server&lt;/h3>
+&lt;/div>&lt;h3 id="servercpp简易案例">server.cpp简易案例&lt;/h3>
+&lt;h4 id="server">server&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -5895,7 +5895,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="client">client&lt;/h3>
+&lt;/div>&lt;h4 id="client">client&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -5927,7 +5927,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 另外该多线程传输图片的速度比没有多线程执行还满,后续不对python服务端做优化,而改为C++服务端实现.写出来继续再分享把&lt;/p>
 &lt;/blockquote>
 &lt;p>前篇博客&lt;a href="https://www.keepjolly.com/archives/python-and-ctypes">地址&lt;/a>&lt;/p>
-&lt;h1 id="python客户端">python客户端&lt;/h1>
+&lt;h2 id="python客户端">python客户端&lt;/h2>
 &lt;p>采用&lt;a href="https://blog.csdn.net/weixin_43533825/article/details/89155648">生存者消费者模式&lt;/a>、&lt;a href="https://blog.csdn.net/u012720518/article/details/107410192">模式２&lt;/a>和&lt;a href="https://blog.csdn.net/qq_36441027/article/details/105929246">joinablequeue&lt;/a>库.
 客户端实现还是比较简单的,麻烦在server端&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -6088,7 +6088,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">producer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="python服务端">Python服务端&lt;/h1>
+&lt;/div>&lt;h2 id="python服务端">Python服务端&lt;/h2>
 &lt;p>此处接受图片和发送结果线程处在一个类内,使得可以共享一个Listener,来自chatGPT的idea.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -6456,7 +6456,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">listener_thread&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="c模型调用">C++模型调用&lt;/h1>
+&lt;/div>&lt;h2 id="c模型调用">C++模型调用&lt;/h2>
 &lt;p>此处涉及其他人员写的代码,做修改处理&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -6759,7 +6759,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>至此这个混合编程项目结束,但是server接收到client耗时居然300ms,需要优化...&lt;/p>
-&lt;h1 id="参考博客">参考博客&lt;/h1>
+&lt;h2 id="参考博客">参考博客&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://www.cnblogs.com/lsdb/p/10815319.html">共享内存&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/weixin_44141532/article/details/87937541">Address already in use&lt;/a>&lt;/li>
@@ -9506,14 +9506,14 @@ Linux中anaconda地址是：anaconda3安装路径/envs/虚拟环境名/lib/pytho
 我用conda管理环境的时候 运行的环境里没有jupyter notebook 他估计自动调用了全局的notebook ，但是全局没有tensorflow，然后就报错了。&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/error/">error</category><category domain="https://keepjolly.com/tags/python/">Python</category><category domain="https://keepjolly.com/tags/collection/">Collection</category></item><item><title>小目标检测综述-半成品</title><link>https://keepjolly.com/archives/small-target-detection/</link><guid isPermaLink="true">https://keepjolly.com/archives/small-target-detection/</guid><pubDate>Sat, 11 Mar 2023 20:25:51 +0000</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>因为后续转三维重建了，所以只能写到一半了，如有需要可以找我要源文件
 参考论文：
 &lt;a href="https://arxiv.org/abs/1905.05055">Object Detection in 20 Years: A Survey&lt;/a>&lt;/p>
-&lt;h1 id="总言">总言&lt;/h1>
+&lt;h2 id="总言">总言&lt;/h2>
 &lt;p>因为不是大神，所以都是摘自网络文章，如有错误欢迎评论&lt;/p>
-&lt;h1 id="目标检测">目标检测&lt;/h1>
-&lt;h2 id="传统目标检测">传统目标检测&lt;/h2>
-&lt;h3 id="viola-jones-detector">Viola Jones Detector&lt;/h3>
+&lt;h2 id="目标检测">目标检测&lt;/h2>
+&lt;h3 id="传统目标检测">传统目标检测&lt;/h3>
+&lt;h4 id="viola-jones-detector">Viola Jones Detector&lt;/h4>
 &lt;p>论文：&lt;a href="https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf">Rapid Object Detection using a Boosted Cascade of Simple Features&lt;/a>
 2001年提出，基于滑动窗口的目标检测算法，通过积分图像来加速对Haar-like特征的计算，使用如下方法来加速网络计算以及提高准确率。&lt;/p>
-&lt;h4 id="网络架构使用方法">网络架构/使用方法&lt;/h4>
+&lt;h5 id="网络架构使用方法">网络架构/使用方法&lt;/h5>
 &lt;ul>
 &lt;li>Integral image：&lt;a href="https://codeantenna.com/a/GBSSZGRWWG">解析&lt;/a>&lt;/li>
 &lt;li>Feature selection：使用Adaboost对候选特征筛选，找到最有代表性的一小组特征&lt;/li>
@@ -9523,7 +9523,7 @@ Linux中anaconda地址是：anaconda3安装路径/envs/虚拟环境名/lib/pytho
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h4 id="优缺点">优缺点&lt;/h4>
+&lt;h5 id="优缺点">优缺点&lt;/h5>
 &lt;p>优点：&lt;/p>
 &lt;ul>
 &lt;li>具有里程碑的意义&lt;/li>
@@ -9536,10 +9536,10 @@ Linux中anaconda地址是：anaconda3安装路径/envs/虚拟环境名/lib/pytho
 &lt;/ul>
 &lt;hr>
 &lt;p>参考博客：&lt;a href="https://blog.csdn.net/qq_16829085/article/details/108680639">目标检测之 Viola-Jones&lt;/a>、&lt;a href="https://segmentfault.com/a/1190000023017586">viola jones人脸检测原理&lt;/a>&lt;/p>
-&lt;h3 id="hog-detector">HOG Detector&lt;/h3>
+&lt;h4 id="hog-detector">HOG Detector&lt;/h4>
 &lt;p>论文：&lt;a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">Histograms of Oriented Gradients for Human Detection&lt;/a>
 HOG（Histogram of Oriented Gridients的简写）特征检测算法，最早是由法国研究员Dalal等在CVPR-2005上提出来的，一种解决人体目标检测的图像描述子，是一种用于表征图像局部梯度方向和梯度强度分布特性的描述符。其主要思想是：在边缘具体位置未知的情况下，边缘方向的分布也可以很好的表示行人目标的外形轮廓。&lt;/p>
-&lt;h4 id="网络架构使用方法-1">网络架构/使用方法&lt;/h4>
+&lt;h5 id="网络架构使用方法-1">网络架构/使用方法&lt;/h5>
 &lt;ol>
 &lt;li>灰度化、颜色空间归一化：Gamma校正&lt;/li>
 &lt;li>计算图像中每个像素的梯度值和梯度方向&lt;/li>
@@ -9568,7 +9568,7 @@ HOG（Histogram of Oriented Gridients的简写）特征检测算法，最早是�
 &lt;li>每张图特征维度：105×4×9=3780&lt;/li>
 &lt;/ul>
 &lt;p>获取到每张图的特征维度后，再用线性SVM训练分类器即可。&lt;/p>
-&lt;h4 id="优缺点-1">优缺点&lt;/h4>
+&lt;h5 id="优缺点-1">优缺点&lt;/h5>
 &lt;p>优点：&lt;/p>
 &lt;ul>
 &lt;li>使用contrast-normalize the local response来使得局部几何和光学形变具有不变性&lt;/li>
@@ -9583,11 +9583,11 @@ HOG（Histogram of Oriented Gridients的简写）特征检测算法，最早是�
 &lt;/ul>
 &lt;hr>
 &lt;p>参考博客：&lt;a href="https://blog.csdn.net/hujingshuang/article/details/47337707">【特征检测】HOG特征算法&lt;/a>、&lt;a href="https://www.jianshu.com/p/033cfd13e613">目标检测HOG特征解读&lt;/a>、&lt;a href="https://www.cnblogs.com/alexme/p/11361563.html">HOG 特征提取算法（实践篇）&lt;/a>、&lt;a href="https://www.jianshu.com/p/ad673c1e601d">HOG特征&lt;/a>&lt;/p>
-&lt;h3 id="deformable-part-based-modeldpm">Deformable Part-based Model(DPM)&lt;/h3>
+&lt;h4 id="deformable-part-based-modeldpm">Deformable Part-based Model(DPM)&lt;/h4>
 &lt;p>论文：&lt;a href="https://www.rossgirshick.info/latent/">Discriminatively trained deformable part models&lt;/a>
 由P. Felzenszwalb在2008提出，作为HOG的扩展版。DPM的设计理念是“divide and conquer”，训练时分解对象，推理时组合不同部件。DPM的本质就是&lt;strong>弹簧形变模型。&lt;/strong>
 DPM算法采用了改进后的HOG特征，SVM分类器和滑动窗口（Sliding Windows）检测思想，针对目标的多视角问题，采用了多组件（Component）的策略，针对目标本身的形变问题，采用了基于图结构（Pictorial Structure）的部件模型策略。此外，将样本的所属的模型类别，部件模型的位置等作为潜变量（Latent Variable），采用多示例学习（Multiple-instance Learning）来自动确定。&lt;/p>
-&lt;h4 id="网络架构使用方法-2">网络架构/使用方法&lt;/h4>
+&lt;h5 id="网络架构使用方法-2">网络架构/使用方法&lt;/h5>
 &lt;ul>
 &lt;li>经典DPM由一个root-filter和多个part-filter组成。&lt;/li>
 &lt;li>LatentSVM：使得不用标出part框&lt;/li>
@@ -9597,7 +9597,7 @@ DPM算法采用了改进后的HOG特征，SVM分类器和滑动窗口（Sliding 
 &lt;li>混合模型：学习多个模型来适应物体不同形变&lt;/li>
 &lt;li>图像金字塔：适应形变&lt;/li>
 &lt;/ul>
-&lt;h4 id="优缺点-2">优缺点&lt;/h4>
+&lt;h5 id="优缺点-2">优缺点&lt;/h5>
 &lt;p>优点&lt;/p>
 &lt;ul>
 &lt;li>运算速度快，适应物体形变，方法直观简单&lt;/li>
@@ -9608,31 +9608,31 @@ DPM算法采用了改进后的HOG特征，SVM分类器和滑动窗口（Sliding 
 &lt;li>性能一般&lt;/li>
 &lt;li>无法适应大幅度旋转以及当图像中目标像素远小于root filter时无法检测&lt;/li>
 &lt;/ul>
-&lt;h4 id="解惑">解惑&lt;/h4>
+&lt;h5 id="解惑">解惑&lt;/h5>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202415-2.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="">
 DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中，只保留了HOG中的Cell。如上图所示，假设，一个8&lt;em>8的Cell，将该细胞单元与其对角线临域的4个细胞单元做归一化操作。
 提取有符号的HOG梯度，0-360度将产生18个梯度向量，提取无符号的HOG梯度，0-180度将产生9个梯度向量。因此，一个8&lt;/em>8的细胞单元将会产生，（18+9）&lt;em>4=108 （&lt;strong>其中的4是4个相对邻域，这里看的时候没看懂&lt;/strong>），维度有点高，Felzenszwalb大神给出了其优化思想。
 首先，只提取无符号的HOG梯度，将会产生4&lt;/em>9=36维特征，将其看成一个4*9的矩阵，分别将行和列分别相加，最终将生成4+9=13个特征向量，为了进一步提高精度，将提取的18维有符号的梯度特征也加进来，这样，一共产生13+18=&lt;a href="https://blog.csdn.net/sysu_yuhaibao/article/details/76599926">31维梯度特征&lt;/a>（另一个解释）。实现了很好的目标检测。&lt;/p>
 &lt;hr>
 &lt;p>参考博客：&lt;a href="https://blog.csdn.net/qq_14845119/article/details/52625426">DPM（Deformable Part Model）原理详解&lt;/a>、&lt;a href="https://blog.csdn.net/ttransposition/article/details/12966521">DPM(Deformable Parts Model)--原理(一)&lt;/a>、&lt;a href="https://blog.csdn.net/ttransposition/article/details/41806601">DPM目标检测算法(毕业论文节选)&lt;/a>、&lt;a href="https://cloud.tencent.com/developer/article/1729851">多个博客的组合体&lt;/a>、&lt;a href="https://www.zhihu.com/question/27726840">什么是latent SVM？&lt;/a>、&lt;a href="https://zhuanlan.zhihu.com/p/41508881">DPM模型&lt;/a>、&lt;a href="https://www.cnblogs.com/henuliulei/p/12109100.html">传统目标检测算法之DPM&lt;/a>&lt;/p>
-&lt;h3 id="总结">总结&lt;/h3>
+&lt;h4 id="总结">总结&lt;/h4>
 &lt;p>基于手工提取特征的传统目标检测算法主要有以下三个缺点：&lt;/p>
 &lt;ol>
 &lt;li>识别效果不够好，准确率不高&lt;/li>
 &lt;li>计算量较大，运算速度慢&lt;/li>
 &lt;li>可能产生多个正确识别的结果&lt;/li>
 &lt;/ol>
-&lt;h2 id="深度学习检测">深度学习检测&lt;/h2>
-&lt;h3 id="two-stage-detection">two-stage detection&lt;/h3>
+&lt;h3 id="深度学习检测">深度学习检测&lt;/h3>
+&lt;h4 id="two-stage-detection">two-stage detection&lt;/h4>
 &lt;p>总结性博客：&lt;a href="https://blog.csdn.net/hust_lmj/article/details/78974348">RCNN系列总结&lt;/a>、&lt;a href="https://www.cnblogs.com/yifanrensheng/p/12846798.html">目标检测：R-CNN、SPP,Fast R-CNN、Faster R-CNN&lt;/a>、&lt;a href="https://zhuanlan.zhihu.com/p/80856944">Faster RCNN系列算法原理&lt;/a>、&lt;a href="https://www.citisy.site/posts/18732.html">目标检测-RCNN系列&lt;/a>、&lt;a href="https://www.yanxishe.com/columnDetail/21514#1--%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B">小哲AI专栏文章分类索引&lt;/a>
 咱也不知道RCNN家族有多少，这里只好列举了RCNN→SPPnet→Fast RCNN→Faster RCNN→FPN→MaskRCNN→Cascade RCNN
 另外二阶段检测所包含的这些网络如有误，欢迎评论
 二阶段：1，先产生高质量框，2. 对框进行微调 coarse to fine
 一阶段：一步到位&lt;/p>
-&lt;h4 id="rcnn提出数据稀少的解决方案">RCNN（提出数据稀少的解决方案）&lt;/h4>
+&lt;h5 id="rcnn提出数据稀少的解决方案">RCNN（提出数据稀少的解决方案）&lt;/h5>
 &lt;p>论文：&lt;a href="https://arxiv.org/pdf/1311.2524.pdf">Rich feature hierarchies for accurate object detection and semantic segmentation&lt;/a>
 最近几年，物体检测陷入停滞，表现最好的检测系统是复杂的将多低层级的图像特征与高层级的物体检测器环境与场景识别相结合。我们取得这个性能主要通过两个方面：第一是应用了自底向上的候选框训练的高容量的卷积神经网络进行定位和分割物体。另外一个是使用在标签数据匮乏的情况下训练大规模神经网络的一个方法。&lt;/p>
-&lt;h5 id="网络架构使用方法-3">网络架构/使用方法&lt;/h5>
+&lt;h6 id="网络架构使用方法-3">网络架构/使用方法&lt;/h6>
 &lt;ol>
 &lt;li>目标检测：
 &lt;ol>
@@ -9645,7 +9645,7 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;li>Selective Search → CNN→ SVM→ regression&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202415-3.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
 &lt;/ol>
 &lt;p>分析网络采用Hoiem等人的定位分析工具：Diagnosing error in object detectors，看到进化版分析工具：A General Toolbox for Identifying Object Detection Errors&lt;/p>
-&lt;h5 id="优缺点-3">优缺点&lt;/h5>
+&lt;h6 id="优缺点-3">优缺点&lt;/h6>
 &lt;p>优点：&lt;/p>
 &lt;ul>
 &lt;li>使用CNN来提取特征，减少人工操作&lt;/li>
@@ -9659,10 +9659,10 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;/ul>
 &lt;hr>
 &lt;p>参考博客：&lt;a href="https://blog.csdn.net/v1_vivian/article/details/78599229">R-CNN论文详解（论文翻译）&lt;/a>、&lt;a href="https://zhuanlan.zhihu.com/p/42643788">RCNN 论文阅读记录 还介绍了一些方法&lt;/a>&lt;/p>
-&lt;h4 id="sppnet">SPPnet&lt;/h4>
+&lt;h5 id="sppnet">SPPnet&lt;/h5>
 &lt;p>论文：&lt;a href="https://arxiv.org/abs/1406.4729">Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition&lt;/a>
 普遍的CNN需要固定输入图片大小，原因是卷积层后的全连接层需要固定长度的输入。SPP是Bag-of-words模型的扩展，是视觉最成功的方法之一。它将图像划分为从精细到粗糙空间，并聚合其中的局部特征。&lt;/p>
-&lt;h5 id="网络架构使用方法-4">网络架构/使用方法&lt;/h5>
+&lt;h6 id="网络架构使用方法-4">网络架构/使用方法&lt;/h6>
 &lt;p>网络架构：
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202415-4.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;ol>
@@ -9676,7 +9676,7 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;/li>
 &lt;li>&lt;/li>
 &lt;/ol>
-&lt;h5 id="优缺点-4">优缺点&lt;/h5>
+&lt;h6 id="优缺点-4">优缺点&lt;/h6>
 &lt;p>优点：&lt;/p>
 &lt;ul>
 &lt;li>输入任意大小的图片，防止剪裁、放缩降低精度 （优化RCNN）&lt;/li>
@@ -9696,9 +9696,9 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;/ul>
 &lt;hr>
 &lt;p>参考博客：&lt;a href="https://blog.csdn.net/hust_lmj/article/details/78974348#t9">SPP优缺点&lt;/a>、&lt;a href="https://cloud.tencent.com/developer/article/1441559">空间金字塔池化网络SPPNet详解&lt;/a>、&lt;a href="https://blog.csdn.net/u011534057/article/details/51219959">RCNN学习笔记(3)&lt;/a>、&lt;a href="https://cloud.tencent.com/developer/article/1829792">ROI详解&lt;/a>（&lt;a href="https://erdem.pl/2020/02/understanding-region-of-interest-ro-i-pooling">英文原版&lt;/a>）&lt;/p>
-&lt;h4 id="fast-rcnn">Fast-RCNN&lt;/h4>
+&lt;h5 id="fast-rcnn">Fast-RCNN&lt;/h5>
 &lt;p>论文：&lt;a href="https://arxiv.org/pdf/1504.08083.pdf">Fast R-CNN&lt;/a>&lt;/p>
-&lt;h5 id="网络架构使用方法-5">网络架构/使用方法&lt;/h5>
+&lt;h6 id="网络架构使用方法-5">网络架构/使用方法&lt;/h6>
 &lt;p>网络结构：
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202415-5.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 目标检测：&lt;/p>
@@ -9707,7 +9707,7 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;li>提取整张图片的特征生成特征图，并将候选区域映射到特征图上：同SPPnet一致&lt;/li>
 &lt;li>候选区域分类+BBox回归：对&lt;strong>每个候选区域&lt;/strong>使用ROI Pooling，然后进行softmax分类+回归&lt;/li>
 &lt;/ol>
-&lt;h5 id="优缺点-5">优缺点&lt;/h5>
+&lt;h6 id="优缺点-5">优缺点&lt;/h6>
 &lt;p>优点：&lt;/p>
 &lt;ul>
 &lt;li>加入多任务损失，使得模型由多阶段转为单阶段，实现端到端（除SS Region Proposal阶段）（创新点）&lt;/li>
@@ -9717,7 +9717,7 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;ul>
 &lt;li>使用的selective search只能在CPU上跑，速度慢&lt;/li>
 &lt;/ul>
-&lt;h5 id="一些结论">一些结论&lt;/h5>
+&lt;h6 id="一些结论">一些结论&lt;/h6>
 &lt;ul>
 &lt;li>多任务比多阶段训练好&lt;/li>
 &lt;li>发现SPPnet的多尺度训练并不比单尺度训练好，因为尺度不变性，所以使用ROI 池化&lt;/li>
@@ -9727,9 +9727,9 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;/ul>
 &lt;hr>
 &lt;p>参考博客：&lt;a href="https://zhuanlan.zhihu.com/p/42738847">物体检测之Fast R-CNN&lt;/a>、&lt;a href="https://zhuanlan.zhihu.com/p/383167028">RCNN 系列详解&lt;/a>、&lt;a href="https://www.cnblogs.com/zyly/p/9246418.html">目标检测算法之Fast R-CNN算法详解&lt;/a>&lt;/p>
-&lt;h4 id="faster-rcnn">Faster-RCNN&lt;/h4>
+&lt;h5 id="faster-rcnn">Faster-RCNN&lt;/h5>
 &lt;p>论文：&lt;a href="https://arxiv.org/abs/1506.01497">Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks&lt;/a>&lt;/p>
-&lt;h5 id="网络架构使用方法-6">网络架构/使用方法&lt;/h5>
+&lt;h6 id="网络架构使用方法-6">网络架构/使用方法&lt;/h6>
 &lt;p>网络结构：
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202415-6.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;ol>
@@ -9738,7 +9738,7 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;li>生成固定长度向量：Roi 池化&lt;/li>
 &lt;li>分类+微调：softamx+回归&lt;/li>
 &lt;/ol>
-&lt;h5 id="优缺点-6">优缺点&lt;/h5>
+&lt;h6 id="优缺点-6">优缺点&lt;/h6>
 &lt;p>优点：&lt;/p>
 &lt;ul>
 &lt;li>端到端网络（改进Fast）&lt;/li>
@@ -9753,10 +9753,10 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;li>&lt;a href="https://blog.csdn.net/qq_41214679/article/details/114595001#t2">重新审视Faster RCNN：优缺点与改进&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>参考博客：&lt;a href="https://zhuanlan.zhihu.com/p/31426458">一文读懂Faster RCNN（完善）&lt;/a>、&lt;a href="https://www.cnblogs.com/guoyaohua/p/9488119.html">Faster R-CNN：详解目标检测的实现过程&lt;/a>&lt;/p>
-&lt;h4 id="fpnfaster-rcnn">FPN+Faster RCNN&lt;/h4>
+&lt;h5 id="fpnfaster-rcnn">FPN+Faster RCNN&lt;/h5>
 &lt;p>论文：&lt;a href="https://arxiv.org/abs/1612.03144">Feature Pyramid Networks for Object Detection&lt;/a>
 融合深浅层特征，解决不同尺寸目标预测&lt;/p>
-&lt;h5 id="网络架构使用方法-7">网络架构/使用方法&lt;/h5>
+&lt;h6 id="网络架构使用方法-7">网络架构/使用方法&lt;/h6>
 &lt;p>FPN网络思想&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202415-7.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;ol>
 &lt;li>图片输入resnet，构建自底向上网络&lt;/li>
@@ -9764,38 +9764,38 @@ DPM首先采用的是HOG进行特征的提取，但是又有别于HOG，DPM中�
 &lt;li>将得到的ROI分别进行分类和回归&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/haoji007/article/details/88387635">FPN构建Faster R-CNN检测器&lt;/a>&lt;/li>
 &lt;/ol>
-&lt;h5 id="优缺点-7">优缺点&lt;/h5>
+&lt;h6 id="优缺点-7">优缺点&lt;/h6>
 &lt;p>优点：&lt;/p>
 &lt;ul>
 &lt;li>结合深浅层和多分辨率特征进行融合&lt;/li>
 &lt;li>主干网络，可以适配很多模型&lt;/li>
 &lt;/ul>
-&lt;h5 id="trick">trick：&lt;/h5>
+&lt;h6 id="trick">trick：&lt;/h6>
 &lt;ul>
 &lt;li>使用3×3卷积降低上采样影响&lt;/li>
 &lt;li>使用1×1卷积匹配输入的维度&lt;/li>
 &lt;/ul>
 &lt;p>参考博客：&lt;a href="https://zhuanlan.zhihu.com/p/78160468">Feature Pyramid Network 详解特征金字塔网络FPN的来龙去脉&lt;/a>、&lt;a href="https://zhuanlan.zhihu.com/p/62604038">【目标检测】FPN(Feature Pyramid Network)&lt;/a>&lt;/p>
-&lt;h4 id="mask-rcnnroi-align">Mask-RCNN（RoI Align）&lt;/h4>
+&lt;h5 id="mask-rcnnroi-align">Mask-RCNN（RoI Align）&lt;/h5>
 &lt;p>论文：&lt;a href="https://arxiv.org/pdf/1703.06870.pdf">Mask R-CNN&lt;/a>
 加入mask和RoI Align使得可以进行分割任务&lt;/p>
-&lt;h5 id="网络架构使用方法-8">网络架构/使用方法&lt;/h5>
+&lt;h6 id="网络架构使用方法-8">网络架构/使用方法&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202415-8.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="">
 RoI Align:
 &lt;a href="https://blog.csdn.net/weixin_42782150/article/details/110946903">RoIPooling和RoIAlign的学习和理解&lt;/a>&lt;/p>
-&lt;h5 id="优缺点-8">优缺点&lt;/h5>
+&lt;h6 id="优缺点-8">优缺点&lt;/h6>
 &lt;ol>
 &lt;li>将RoI池化修改为更适合分割任务的RoI Align&lt;/li>
 &lt;/ol>
 &lt;hr>
 &lt;p>参考博客：&lt;a href="https://blog.csdn.net/jiongnima/article/details/79094159">图片出处&lt;/a>、&lt;a href="https://blog.csdn.net/qq_37541097/article/details/123754766">Mask R-CNN网络详解&lt;/a>&lt;/p>
-&lt;h4 id="cascade-rcnn">Cascade RCNN&lt;/h4>
+&lt;h5 id="cascade-rcnn">Cascade RCNN&lt;/h5>
 &lt;p>论文：&lt;a href="https://arxiv.org/pdf/1712.00726.pdf">Cascade R-CNN: Delving into High Quality Object Detection&lt;/a>
 主要解决&lt;strong>在目标检测中，检测框不是特别准，容易出现噪声干扰的问题&lt;/strong>，&lt;/p>
-&lt;h5 id="网络架构使用方法-9">网络架构/使用方法&lt;/h5>
+&lt;h6 id="网络架构使用方法-9">网络架构/使用方法&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202415-9.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 通过级联的R-CNN网络，每个级联的R-CNN设置不同的IOU阈值，这样每个网络输出的准确度提升一点，用作下一个更高精度的网络的输入，逐步将网络输出的准确度进一步提高。&lt;/p>
-&lt;h5 id="优缺点-9">优缺点&lt;/h5>
+&lt;h6 id="优缺点-9">优缺点&lt;/h6>
 &lt;p>优点：&lt;/p>
 &lt;ul>
 &lt;li>避免因IoU增大而导致训练过拟合&lt;/li>
@@ -9808,9 +9808,9 @@ RoI Align:
 &lt;/ul>
 &lt;hr>
 &lt;p>参考博客：&lt;a href="https://blog.csdn.net/qq_41375609/article/details/96871118">【论文笔记】&lt;/a>、&lt;a href="https://zhuanlan.zhihu.com/p/42553957">Cascade R-CNN 详细解读&lt;/a>（介绍实验部分）、&lt;a href="https://zhuanlan.zhihu.com/p/161530664">RCNN系列文章之Cascade RCNN详解&lt;/a>（介绍实验部分）&lt;/p>
-&lt;h3 id="one-stage-detection">one-stage detection&lt;/h3>
-&lt;h4 id="网络架构使用方法-10">网络架构/使用方法&lt;/h4>
-&lt;h4 id="优缺点-10">优缺点&lt;/h4>
+&lt;h4 id="one-stage-detection">one-stage detection&lt;/h4>
+&lt;h5 id="网络架构使用方法-10">网络架构/使用方法&lt;/h5>
+&lt;h5 id="优缺点-10">优缺点&lt;/h5>
 &lt;p>优点：&lt;/p>
 &lt;ul>
 &lt;li>&lt;/li>
@@ -9819,11 +9819,11 @@ RoI Align:
 &lt;ul>
 &lt;li>&lt;/li>
 &lt;/ul></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/other/">other</category><category domain="https://keepjolly.com/tags/computervision/">ComputerVision</category></item><item><title>Java 学习 半成品</title><link>https://keepjolly.com/archives/java-study/</link><guid isPermaLink="true">https://keepjolly.com/archives/java-study/</guid><pubDate>Sat, 11 Mar 2023 20:23:47 +0000</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>半路转C++了，所以没学完Java，相对来说，韩顺平这个Java视频讲的很详细，如果时间充裕可以看看。&lt;/p>
-&lt;h1 id="初阶知识">初阶知识&lt;/h1>
-&lt;h2 id="变量">变量&lt;/h2>
-&lt;h3 id="加法运算">加法运算&lt;/h3>
+&lt;h2 id="初阶知识">初阶知识&lt;/h2>
+&lt;h3 id="变量">变量&lt;/h3>
+&lt;h4 id="加法运算">加法运算&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202016.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h3 id="浮点数byte布尔值">浮点数/byte/布尔值&lt;/h3>
+&lt;h4 id="浮点数byte布尔值">浮点数/byte/布尔值&lt;/h4>
 &lt;ul>
 &lt;li>浮点数 = 符号位 +指数位 +尾数位&lt;/li>
 &lt;/ul>
@@ -9832,14 +9832,14 @@ RoI Align:
 &lt;li>boolean变量只能为true/false&lt;/li>
 &lt;li>给byte赋常数时，&lt;strong>先&lt;/strong>判断该值是否在byte范围(-128~127)内，所以不会出现赋值为int类型&lt;/li>
 &lt;/ul>
-&lt;h3 id="自动类型转换">自动类型转换&lt;/h3>
+&lt;h4 id="自动类型转换">自动类型转换&lt;/h4>
 &lt;p>进行赋值或运算时，小精度类型自动转化为大精度类型
 char/(byte → short) → int → long → float → double
 byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 强制转换
 (int)(long/float值)&lt;/p>
-&lt;h2 id="运算符">运算符&lt;/h2>
-&lt;h3 id="算数运算符运算">算数运算符运算&lt;/h3>
+&lt;h3 id="运算符">运算符&lt;/h3>
+&lt;h4 id="算数运算符运算">算数运算符运算&lt;/h4>
 &lt;ul>
 &lt;li>a % b = a - a / b * b 所以当b为&lt;strong>负数&lt;/strong>反而为正，ab全为负数则为负&lt;/li>
 &lt;/ul>
@@ -9862,9 +9862,9 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="逻辑运算符">逻辑运算符&lt;/h3>
+&lt;h4 id="逻辑运算符">逻辑运算符&lt;/h4>
 &lt;p>&amp;amp; 和 | 用在检查特等奖和一等奖之间取最好的那个&lt;/p>
-&lt;h3 id="进制">进制&lt;/h3>
+&lt;h4 id="进制">进制&lt;/h4>
 &lt;p>整数有四种进制：&lt;/p>
 &lt;ol>
 &lt;li>二进制：以0b或0B开头&lt;/li>
@@ -9875,7 +9875,7 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;p>二进制转八进制：从低位开始，二进制数&lt;strong>每三位(&lt;/strong>$2^{3}=8$&lt;strong>)&lt;strong>一组，换算成对应八进制数
 二进制转十六进制：从低位开始，二进制数&lt;/strong>每四位&lt;/strong>一组，换算成对应八进制数
 反之，则将八(十六)进制数&lt;strong>每位&lt;/strong>转成对应**三(四)**位二进制数即可&lt;/p>
-&lt;h3 id="位运算">位运算&lt;/h3>
+&lt;h4 id="位运算">位运算&lt;/h4>
 &lt;p>原码，反码，补码：&lt;/p>
 &lt;ul>
 &lt;li>正数三码合一&lt;/li>
@@ -9918,7 +9918,7 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">out&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="控制结构">控制结构&lt;/h2>
+&lt;/div>&lt;h3 id="控制结构">控制结构&lt;/h3>
 &lt;ul>
 &lt;li>switch中表达式的返回值必须是：byte, short, int, char, enum, String&lt;/li>
 &lt;li>break/continue 可以通过标签指明终止/跳过哪一层语句块（不建议使用）
@@ -9928,8 +9928,8 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;/li>
 &lt;li>&amp;quot;lucky&amp;quot;.equals(type) // 避免空指针&lt;/li>
 &lt;/ul>
-&lt;h2 id="数组排序查找">数组/排序/查找&lt;/h2>
-&lt;h3 id="二维数组">二维数组&lt;/h3>
+&lt;h3 id="数组排序查找">数组/排序/查找&lt;/h3>
+&lt;h4 id="二维数组">二维数组&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -9966,11 +9966,11 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="对象">对象&lt;/h2>
-&lt;h3 id="对象内存布局">对象内存布局&lt;/h3>
+&lt;/div>&lt;h3 id="对象">对象&lt;/h3>
+&lt;h4 id="对象内存布局">对象内存布局&lt;/h4>
 &lt;p>加载cat类信息从第一句代码就执行
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202016-2.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h3 id="java内存的结构分析">Java内存的结构分析&lt;/h3>
+&lt;h4 id="java内存的结构分析">Java内存的结构分析&lt;/h4>
 &lt;ul>
 &lt;li>栈：一般存放基本数据类型（局部变量）&lt;/li>
 &lt;li>堆：存放对象、数组&lt;/li>
@@ -9984,7 +9984,7 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;li>进行属性赋值&lt;/li>
 &lt;/ol>
 &lt;p>当方法内将对象置空/创建新对象，不会改变main中的对象，参考&lt;a href="https://www.bilibili.com/video/BV1fh411y7R8?p=213">传参机制&lt;/a>&lt;/p>
-&lt;h3 id="递归-">递归 ☆☆☆&lt;/h3>
+&lt;h4 id="递归-">递归 ☆☆☆&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -10045,22 +10045,22 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="可变参数">可变参数&lt;/h3>
+&lt;/div>&lt;h4 id="可变参数">可变参数&lt;/h4>
 &lt;p>语法：访问修饰符 返回类型 方法名(数据类型... 形参名)&lt;/p>
 &lt;ul>
 &lt;li>可变参数本质是数组，因此实参可以为数组或0-N个值&lt;/li>
 &lt;li>可变参数和普通参数放一起，需保证可变参数在最后&lt;/li>
 &lt;li>形参列表只能有一个可变参数&lt;/li>
 &lt;/ul>
-&lt;h3 id="作用域">作用域&lt;/h3>
+&lt;h4 id="作用域">作用域&lt;/h4>
 &lt;p>全局变量（属性）：作用域为整个类体，有默认值
 局部变量（除属性外其他变量）：作用域为代码块，没有默认值&lt;/p>
-&lt;h3 id="this使用">this使用&lt;/h3>
+&lt;h4 id="this使用">this使用&lt;/h4>
 &lt;ul>
 &lt;li>访问构造器语法：this(参数列表)，只能在构造器中使用，并且放在第一条语句中&lt;/li>
 &lt;/ul>
-&lt;h1 id="中阶知识">中阶知识&lt;/h1>
-&lt;h2 id="idea快捷键">Idea快捷键&lt;/h2>
+&lt;h2 id="中阶知识">中阶知识&lt;/h2>
+&lt;h3 id="idea快捷键">Idea快捷键&lt;/h3>
 &lt;ul>
 &lt;li>ctrl + D 粘贴至下一行&lt;/li>
 &lt;li>ctrl + Y 删除当前行&lt;/li>
@@ -10070,15 +10070,15 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;li>ctrl + B 定位方法&lt;/li>
 &lt;li>alt + enter/ .var 自动分配变量名&lt;/li>
 &lt;/ul>
-&lt;h1 id="额外知识">额外知识&lt;/h1>
-&lt;h3 id="字符串">字符串&lt;/h3>
+&lt;h2 id="额外知识">额外知识&lt;/h2>
+&lt;h4 id="字符串">字符串&lt;/h4>
 &lt;p>&lt;a href="https://blog.csdn.net/langhong8/article/details/50938041">字符串常量池&lt;/a>&lt;/p>
-&lt;h3 id="cannot-make-a-static-reference-to-the-non-static">Cannot make a static reference to the non-static&lt;/h3>
-&lt;p>&lt;a href="https://blog.csdn.net/q610376681/article/details/49359819">Cannot make a static reference to the non-static&lt;/a>&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/other/">other</category><category domain="https://keepjolly.com/tags/java/">Java</category></item><item><title>ColMap使用</title><link>https://keepjolly.com/archives/colmap-use/</link><guid isPermaLink="true">https://keepjolly.com/archives/colmap-use/</guid><pubDate>Sat, 11 Mar 2023 20:17:43 +0000</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h1 id="数据集下载">数据集下载&lt;/h1>
+&lt;h4 id="cannot-make-a-static-reference-to-the-non-static">Cannot make a static reference to the non-static&lt;/h4>
+&lt;p>&lt;a href="https://blog.csdn.net/q610376681/article/details/49359819">Cannot make a static reference to the non-static&lt;/a>&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/other/">other</category><category domain="https://keepjolly.com/tags/java/">Java</category></item><item><title>ColMap使用</title><link>https://keepjolly.com/archives/colmap-use/</link><guid isPermaLink="true">https://keepjolly.com/archives/colmap-use/</guid><pubDate>Sat, 11 Mar 2023 20:17:43 +0000</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="数据集下载">数据集下载&lt;/h2>
 &lt;p>&lt;a href="https://pan.baidu.com/s/1Wb9E6BWCJu4wZfwxm_t4TQ#list/path=%2Fmvsnet%2Fpreprocessed_inputs">密码：s2v2，文件路径mvsnet-&amp;gt;preprocessed_inputs&lt;/a>&lt;/p>
-&lt;h1 id="tutorial">Tutorial&lt;/h1>
+&lt;h2 id="tutorial">Tutorial&lt;/h2>
 &lt;p>COLMAP 3.8-dev&lt;/p>
-&lt;h2 id="quickstart">QuickStart&lt;/h2>
+&lt;h3 id="quickstart">QuickStart&lt;/h3>
 &lt;ol>
 &lt;li>Reconstruction &amp;gt; Automatic Reconstruction
 &lt;ol>
@@ -10105,7 +10105,7 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;/ol>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="the-picture-capture-process">the picture capture process&lt;/h2>
+&lt;h3 id="the-picture-capture-process">the picture capture process&lt;/h3>
 &lt;p>注意事项：&lt;/p>
 &lt;ul>
 &lt;li>拍摄的图片应具有丰富的纹理。最好避免纹理特别少的图片如一张白墙or空桌图片。通过加入一些物品来丰富纹理&lt;/li>
@@ -10113,14 +10113,14 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;li>具有高度视觉重叠的图片。确保一个物体至少有三张图片，尽量多一点&lt;/li>
 &lt;li>多视图拍摄。不要通过平移旋转相机来从同一个方向拍摄。但确保相似视角有少且精的图片，并不是越多越好。如果是视频，请减少帧率。&lt;/li>
 &lt;/ul>
-&lt;h2 id="preface">Preface&lt;/h2>
+&lt;h3 id="preface">Preface&lt;/h3>
 &lt;p>新手参数用&lt;strong>默认的就好&lt;/strong>。也可以给不同重建场景设置“optimal”选项，Extras &amp;gt; Set options for ... data（不知道干嘛用的，好像能修改图片质量，而不是生成的3D质量）。如需了解参数，查看源码
 如果遇到非正常退出，介意用命令行运行可执行文件，以获取不同级别的日志记录详细程度。（命令不知）&lt;/p>
-&lt;h2 id="data-structure">Data Structure&lt;/h2>
+&lt;h3 id="data-structure">Data Structure&lt;/h3>
 &lt;p>COLMAP 假定所有输入图像都在一个输入目录中，该目录具有可能嵌套的子目录。它将读取存储在该目录中的所有图像，并且它支持各种不同的图像格式（请参阅 &lt;a href="http://freeimage.sourceforge.net/documentation.html">FreeImage&lt;/a>）。其他文件将被自动忽略。如果需要高性能，那么您应该分离所有非图像文档。图像由它们的相对文档路径唯一标识。对于后期处理，例如图像去失真或密集重建，&lt;strong>应保留相关文档夹结构&lt;/strong>。 COLMAP 不修改输入图像或目录，所有提取的数据都存储在一个独立的 SQLite 数据库文档中（请参阅&lt;a href="https://colmap.github.io/database.html">数据库格式&lt;/a>）。
 第一步是通过运行预构建的二进制文件（Windows：COLMAP.bat，Mac：COLMAP.app）或通过从 CMake build 文档夹执行 ./src/exe/colmap gui 来启动 COLMAP 的图形用户界面。接下来，通过&lt;strong>File &amp;gt; New project&lt;/strong>。在此对话框中，您&lt;strong>必须选择存储数据库的位置以及包含输入图像的文档夹&lt;/strong>。为方便起见，您可以通过选择&lt;strong>File &amp;gt; Save project&lt;/strong>将整个项目设置保存到配置文件中。除了任何其他参数设置外，项目配置还存储数据库和图像文档夹的绝对路径信息。如果您决定移动数据库或图像文档夹，则必须通过&lt;strong>创建新项目相应地更改路径&lt;/strong>。或者，可以在您选择的文本编辑器中直接修改生成的 .ini 配置文档。要重新打开现有项目，只需选择&lt;strong>File &amp;gt; Open project&lt;/strong>即可打开配置文档然后恢复所有参数设置。请注意，所有 COLMAP 可执行文件都可以通过将各个设置指定为命令行参数或通过提供项目配置文档的路径（see &lt;a href="https://colmap.github.io/tutorial.html#interface">Interface&lt;/a>）从命令行启动。
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311201518-5.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h2 id="feature-detection-and-extraction">Feature Detection and Extraction&lt;/h2>
+&lt;h3 id="feature-detection-and-extraction">Feature Detection and Extraction&lt;/h3>
 &lt;p>选择Processing &amp;gt; feature extraction
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311201518-6.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 在此对话框中，您必须首先决定使用的固有相机模型。您可以从嵌入的 EXIF 信息中自动提取焦距信息，也可以手动指定内部参数，例如在实验室校准中获得的参数（在custom parameters里？）。如果图像包含部分 EXIF 信息，COLMAP 会尝试在大型相机型号数据库中自动查找缺失的相机规格。如果您的所有图像都是由具有相同缩放系数的同一台物理相机拍摄的，建议&lt;strong>在所有图像之间共享内在函数&lt;/strong>。请注意，如果所有图像共享相同的相机型号但并非所有图像都具有相同的尺寸或 EXIF 焦距，进程将&lt;strong>不正常地退出&lt;/strong>。如果您有几组图像共享相同的内在相机参数，您也可以在以后轻松修改相机模型（see &lt;a href="https://colmap.github.io/tutorial.html#database-management">Database Management&lt;/a>）。如果不确定在此步骤中选择什幺，只需&lt;strong>坚持使用默认参数&lt;/strong>即可。
@@ -10142,7 +10142,7 @@ X Y SCALE ORIENTATION D_1 D_2 D_3 ... D_128&lt;/p>
 &lt;p>请注意，按照惯例，图像的左上角坐标为 (0, 0)，最左上角像素的中心坐标为 (0.5, 0.5)。如果您必须为大型图像集合导入特征，使用您喜欢的脚本语言直接访问数据库会更有效(see &lt;a href="https://colmap.github.io/database.html#database-format">Database Format&lt;/a>)
 如果您完成了所有选项的设置，请选择“Extract”并等待提取完成或取消。如果您在提取过程中取消，下次您开始为同一项目提取图像时，COLMAP 会&lt;strong>自动从中断处继续&lt;/strong>。这也允许您将图像添加到现有项目/重建中。在这种情况下，请务必在使用共享内在函数时&lt;strong>验证相机参数&lt;/strong>。
 所有提取的数据将存储在数据库文档中，可以在数据库管理工具中查看/管理(see &lt;a href="https://colmap.github.io/tutorial.html#database-management">Database Management&lt;/a>) 或使用SQLite(see &lt;a href="https://colmap.github.io/database.html#database-format">Database Format&lt;/a>).&lt;/p>
-&lt;h2 id="feature-matching-and-geometric-verification">Feature Matching and Geometric Verification&lt;/h2>
+&lt;h3 id="feature-matching-and-geometric-verification">Feature Matching and Geometric Verification&lt;/h3>
 &lt;p>特征匹配和几何验证会找到不同图像中特征点之间的对应关系。
 选择Processing &amp;gt; feature matching 并选择一种提供的匹配模式，用于不同的输入场景：
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311201518-7.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
@@ -10163,7 +10163,7 @@ image1.jpg image3.jpg
 如果您完成了所有选项的设置，请选择&amp;quot;Match&amp;quot;/&amp;quot;Run&amp;quot;并等待匹配完成或在期间取消。请注意，此步骤可能会花费大量时间，具体取决于图像数量、每张图像的特征数量以及所选的匹配模式。exhaustive matching的预期时间从几十张图像的几分钟到数百张图像的几小时到数千张图像的几天或几周不等。如果在匹配后取消匹配过程或导入新图像，COLMAP 只会匹配以前没有匹配过的图像对。跳过已经匹配的图像对的开销很低。这还可以匹配初始匹配后导入的其他图像，并且可以为同一数据集组合不同的匹配模式。
 所有提取的数据将存储在数据库文档中，可以在数据库管理工具中查看/管理(see &lt;a href="https://colmap.github.io/tutorial.html#database-management">Database Management&lt;/a>) 或使用SQLite(see &lt;a href="https://colmap.github.io/database.html#database-format">Database Format&lt;/a>).
 注意，特征匹配&lt;strong>需要 GPU&lt;/strong>，并且在匹配过程中您的计算机的显示性能可能会显著下降。如果您的系统有多个支持 CUDA 的 GPU，您可以使用 **gpu_index **选项选择特定的 GPU。&lt;/p>
-&lt;h2 id="sparse-reconstruction">Sparse Reconstruction&lt;/h2>
+&lt;h3 id="sparse-reconstruction">Sparse Reconstruction&lt;/h3>
 &lt;p>Reconstruction &amp;gt; start/resume reconstruction进行 incremental reconstruction
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311201518-9.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 COLMAP 首先将所有数据库中提取的数据加载到内存中，并从初始的image pair开始重建。然后，通过记录新图像和triangulating new points来逐步扩展场景。在此重建过程中，结果实时可视化。有关可用控件的更多详细信息，请参阅&lt;a href="https://colmap.github.io/gui.html#gui">Graphical User Interface&lt;/a>。如果不是所有图像都记录到同一模型中，COLMAP 会尝试重建多个模型。可以从工具栏的下拉菜单中选择不同的模型（应该如图所示的下拉栏）。
@@ -10176,10 +10176,10 @@ COLMAP 首先将所有数据库中提取的数据加载到内存中，并从初�
 &lt;li>如果 COLMAP 初始化失败，请手动选择初始图像对。选择Reconstruction &amp;gt; Reconstruction options &amp;gt; Init并从数据库管理工具中设置从不同视点具有足够匹配度的图像。&lt;/li>
 &lt;/ul>
 &lt;p>并从数据库管理工具中设置从不同视点具有足够匹配度的图像。&lt;/p>
-&lt;h2 id="importing-and-exporting">Importing and Exporting&lt;/h2>
+&lt;h3 id="importing-and-exporting">Importing and Exporting&lt;/h3>
 &lt;p>COLMAP 为进一步处理提供了几个导出选项。为了充分的灵活性，建议导出以 COLMAP 的数据格式的reconstruction。通过选择 File &amp;gt; Export 导出当前查看的模型或 File &amp;gt; Export all 导出所有重建的模型。使用用于重建相机、图像和点的单独文本文件将模型导出到所选文件夹中。当以 COLMAP 的数据格式导出时，您可以重新导入重建以用于以后的可视化、图像去失真，或从中断的地方继续现有的重建（例如，在导入和匹配新图像之后）。要导入模型，请选择 File &amp;gt; Import 并选择导出文件夹路径。或者，您也可以通过 File &amp;gt; Export as... 选择以各种其他格式导出模型，例如 Bundler、VisualSfM 、PLY 或 VRML。COLMAP 可以通过 File &amp;gt; Import From... 可视化具有 RGB 信息的plain PLY 点云文件。有关导出模型格式的更多信息，请参见&lt;a href="https://colmap.github.io/format.html#output-format">此处&lt;/a>。
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311201518-12.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h2 id="dense-reconstruction">Dense Reconstruction&lt;/h2>
+&lt;h3 id="dense-reconstruction">Dense Reconstruction&lt;/h3>
 &lt;p>在重建场景的稀疏表示和输入图像的相机姿势后，MVS 现在可以恢复更密集的场景几何。 COLMAP 具有集成的密集重建流程，可以为所有配准图像生成深度图和法线图，将深度图和法线图融合成具有法线信息的密集点云，并最终使用Poisson或Delaunay重建从融合点云估计密集表面。
 首先，导入你的稀疏 3D模型（或选择已重建的模型）。然后选择Reconstruction &amp;gt; Multi-view stereo并选择一个空的工作路径，用来存储所有稠密重建结果。然后 1. undistort 图片，2. 使用stereo计算深度图和法线图，3. fuse 深度图和法线图形成点云， 4. meshing 点云（可选选项）。
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311201518-13.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
@@ -10194,12 +10194,12 @@ COLMAP 首先将所有数据库中提取的数据加载到内存中，并从初�
 &lt;li>&lt;a href="http://ptak.felk.cvut.cz/sfmservice/websfm.pl">CMP-MVS&lt;/a> &lt;a href="https://colmap.github.io/bibliography.html#jancosek11">[jancosek11]&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/manhofer/Line3Dpp">Line3D++&lt;/a> &lt;a href="https://colmap.github.io/bibliography.html#hofer16">[hofer16]&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;h2 id="database-management">Database Management&lt;/h2>
+&lt;h3 id="database-management">Database Management&lt;/h3>
 &lt;p>您可以在数据库管理工具中查看和管理导入的摄像机、图像和特征匹配，选择Processing &amp;gt; Manage database。在打开的对话框中，您可以看到导入的图像和相机列表。您可以通过单击Show image 和 Overlapping images查看每个图像的特征和匹配项。可以通过双击特定单元格来修改数据库表中的各个条目。请注意，对数据库的任何更改只有在单击Save后才有效（现在关闭对话框就能直接生效）。
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311201518-15.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 要在任意图像组之间共享相机内在参数，请选择单个或多个图像，然后选择 Set camera 并设置 camera_id，它对应于 cameras 表中唯一的 camera_id 列。您还可以添加具有特定参数的新相机。通过将 prior_focal_length flag设置为 0 或 1，可以提示重建算法是否应该信任该焦距值。如果是先前的实验室校准，您希望将此值设置为 1。在事先不了解焦距的情况下，建议将此值设置为 1.25 * max(width_in_px, height_in_px)。
 数据库管理工具只有有限的功能，要完全控制数据，您必须直接修改 SQLite 数据库（see &lt;a href="https://colmap.github.io/database.html#database-format">Database Format&lt;/a>）。通过直接访问数据库，您可以仅使用 COLMAP 进行特征提取和匹配，也可以导入自己的特征和匹配以仅使用 COLMAP 的增量重建算法。&lt;/p>
-&lt;h2 id="graphical-and-command-line-interface">Graphical and Command-line Interface&lt;/h2>
+&lt;h3 id="graphical-and-command-line-interface">Graphical and Command-line Interface&lt;/h3>
 &lt;p>COLMAP 的大部分功能都可以从图形界面和命令行界面访问，它们都嵌入在同一个可执行文件中。您可以直接将选项作为命令行参数提供，也可以使用 --project_path path/to/project.ini 参数提供包含选项的 .ini 项目配置文件。启动GUI界面可以在当前文件夹路径的cmd中输入colmap gui 或直接明确项目配置 colmap gui --project_path。使用colmap help来列举不同命令参数。&lt;a href="https://colmap.github.io/gui.html#gui">graphical user interface&lt;/a> 和 &lt;a href="https://colmap.github.io/cli.html#cli">command-line Interface&lt;/a>提供了有关可用命令的更多详细信息。&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/tech/">tech</category><category domain="https://keepjolly.com/tags/computervision/">ComputerVision</category></item><item><title>python 与python通信、python调用c++ 动态库返回检测结果</title><link>https://keepjolly.com/archives/python-and-ctypes/</link><guid isPermaLink="true">https://keepjolly.com/archives/python-and-ctypes/</guid><pubDate>Sun, 08 Jan 2023 11:17:34 +0000</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="项目需求">项目需求&lt;/h2>
 &lt;p>python 客户端将opencv读取到的图片发送给python服务端，然后python服务端将opencv图发送给Linux设备，将处理结果通过C++ 传给服务端，然后服务端再传给客户端。
 这里服务端可以改成C++ 写的，就不用这么麻烦了，但是需要将python的pickle包解码成C++ 的pickle包，还未尝试。
