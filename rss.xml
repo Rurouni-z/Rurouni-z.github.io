@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.112.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sat, 27 May 2023 10:01:28 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>提高一些链接的下载速度</title><link>https://keepjolly.com/posts/tech/improve-download-speed/</link><guid isPermaLink="true">https://keepjolly.com/posts/tech/improve-download-speed/</guid><pubDate>Fri, 26 May 2023 21:16:39 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>做记录用&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.112.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sat, 27 May 2023 10:11:13 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>提高一些链接的下载速度</title><link>https://keepjolly.com/posts/tech/improve-download-speed/</link><guid isPermaLink="true">https://keepjolly.com/posts/tech/improve-download-speed/</guid><pubDate>Fri, 26 May 2023 21:16:39 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>做记录用&lt;/p>
 &lt;h2 id="cuda下载">cuda下载&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run">https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run&lt;/a>
@@ -6826,22 +6826,22 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-21.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h2 id="双目立体视觉">双目立体视觉&lt;/h2>
 &lt;h3 id="基于平行试图的双目立体视觉">基于平行试图的双目立体视觉&lt;/h3>
-&lt;h4 id="1-平行视图">1. 平行视图&lt;/h4>
+&lt;h4 id="平行视图-1">平行视图&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-22.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="2-f和e的关系">2. F和e'的关系&lt;/h4>
+&lt;h4 id="f和e的关系">F和e'的关系&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-23.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="3-平行视图基础矩阵">3. 平行视图基础矩阵&lt;/h4>
+&lt;h4 id="平行视图基础矩阵">平行视图基础矩阵&lt;/h4>
 &lt;p>哦，平行视图基础矩阵长这样。
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-24.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="4-平行视图极线p和p关系">4. 平行视图极线、p和p'关系&lt;/h4>
+&lt;h4 id="平行视图极线p和p关系">平行视图极线、p和p'关系&lt;/h4>
 &lt;p>我的问题：找到pp'之后可以解决唯一确定一个三维点，从而构建三维模型？p'怎么确定，扫描线上哪个点：相似性处理
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-25.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-26.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-27.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-28.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="5-平行视图三角测量三角化">5. 平行视图三角测量（三角化）&lt;/h4>
+&lt;h4 id="平行视图三角测量三角化">平行视图三角测量（三角化）&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-29.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="6-双目立体视觉系统构建的核心问题">6. 双目立体视觉系统构建的核心问题&lt;/h4>
+&lt;h4 id="双目立体视觉系统构建的核心问题">双目立体视觉系统构建的核心问题&lt;/h4>
 &lt;ul>
 &lt;li>如何获得平行视图&lt;/li>
 &lt;li>如何建立点对应关系&lt;/li>
@@ -6876,17 +6876,17 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-38.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 124问题已经解决，只需要处理本质矩阵即可
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-39.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="1-无视e的符号及尺度">1. 无视E的符号及尺度&lt;/h4>
+&lt;h4 id="无视e的符号及尺度">无视E的符号及尺度&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-40.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-41.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="2-分解出e中的r矩阵">2. 分解出E中的R矩阵&lt;/h4>
+&lt;h4 id="分解出e中的r矩阵">分解出E中的R矩阵&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-42.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-43.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="3-分解出e中的t向量">3. 分解出E中的T向量&lt;/h4>
+&lt;h4 id="分解出e中的t向量">分解出E中的T向量&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-44.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="4-分解本质矩阵总结">4. 分解本质矩阵总结&lt;/h4>
+&lt;h4 id="分解本质矩阵总结">分解本质矩阵总结&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-45.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="5-计算三角化">5. 计算三角化&lt;/h4>
+&lt;h4 id="计算三角化">计算三角化&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-46.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h4 id="欧式结构恢复的歧义">欧式结构恢复的歧义&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-47.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -6898,7 +6898,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;h4 id="仿射结构问题">仿射结构问题&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-50.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h4 id="基于因式分解的仿射结构恢复">基于因式分解的仿射结构恢复&lt;/h4>
-&lt;h5 id="1-数据中心化">1. 数据中心化&lt;/h5>
+&lt;h5 id="数据中心化">数据中心化&lt;/h5>
 &lt;p>这里有点没听懂，直接记结论了，为什么bi=0
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-51.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-52.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -6926,9 +6926,9 @@ M也可以利用U3W3，S用V3T，解会不唯一，参考恢复歧义
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-61.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 M1&lt;em>已知，M2&lt;/em>未知
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-62.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h6 id="1-得到f关于ab的表达式">1. 得到F关于A、b的表达式&lt;/h6>
+&lt;h6 id="得到f关于ab的表达式">得到F关于A、b的表达式&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-63.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h6 id="2-计算ab求m2">2. 计算A，b，求M2*&lt;/h6>
+&lt;h6 id="计算ab求m2">计算A，b，求M2*&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-64.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-65.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h6 id="n视图情况">N视图情况&lt;/h6>
@@ -6993,18 +6993,18 @@ M1&lt;em>已知，M2&lt;/em>未知
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-88.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h4 id="增量法总体步骤">增量法总体步骤&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-89.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="1-计算轨迹">1. 计算轨迹&lt;/h5>
+&lt;h5 id="计算轨迹">计算轨迹&lt;/h5>
 &lt;p>根据预处理的结果特征提取和特征匹配就可以构建轨迹
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-90.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="2-计算共视图连通图">2. 计算共视图（连通图）&lt;/h5>
+&lt;h5 id="计算共视图连通图">计算共视图（连通图）&lt;/h5>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-91.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="3-g中选边e">3. G中选边e&lt;/h5>
+&lt;h5 id="g中选边e">G中选边e&lt;/h5>
 &lt;p>选出初始两张图构建初始三维模型。图中是三维点在两幅图上的像素点
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-92.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="456-两视图重构">4.5.6. 两视图重构&lt;/h5>
+&lt;h5 id="两视图重构">两视图重构&lt;/h5>
 &lt;p>t是轨迹中大于2的点，e是连通边上两张图所有的匹配点，取交集
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-93.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="78-增量法">7.8. 增量法&lt;/h5>
+&lt;h5 id="增量法">增量法&lt;/h5>
 &lt;ol start="7">
 &lt;li>
 &lt;p>有了连通图，就由处理所有图片变成处理G中的边即可。&lt;/p>
@@ -7082,7 +7082,7 @@ M1&lt;em>已知，M2&lt;/em>未知
 &lt;p>开源方案
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-105.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-106.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="1-数据结构与数据库">1. 数据结构与数据库&lt;/h4>
+&lt;h4 id="数据结构与数据库">数据结构与数据库&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-107.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 核心数据库内容：
 地图点&lt;/p>
@@ -7128,9 +7128,9 @@ M1&lt;em>已知，M2&lt;/em>未知
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h4 id="2-系统工作流程-">2. 系统工作流程 ⭐&lt;/h4>
+&lt;h4 id="系统工作流程-">系统工作流程 ⭐&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-108.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="21-跟踪">2.1 跟踪&lt;/h5>
+&lt;h5 id="跟踪">跟踪&lt;/h5>
 &lt;p>核心功能：1. 确定当前帧位姿（RT）；2. 确定其是否将其作为关键帧&lt;/p>
 &lt;h6 id="地图初始化">地图初始化&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-109.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -7151,7 +7151,7 @@ M1&lt;em>已知，M2&lt;/em>未知
 &lt;h6 id="关键帧选取">关键帧选取&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-114.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 Kref来自于数据集中的某帧 （前一步位姿优化中出现）&lt;/p>
-&lt;h5 id="22-建图">2.2 建图&lt;/h5>
+&lt;h5 id="建图">建图&lt;/h5>
 &lt;p>该线程核心功能：完成局部地图构建&lt;/p>
 &lt;h6 id="关键帧插入">关键帧插入&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-115.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -7164,7 +7164,7 @@ Kref来自于数据集中的某帧 （前一步位姿优化中出现）&lt;/p>
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-118.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h6 id="局部关键帧剔除">局部关键帧剔除&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-119.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="23-回环校正">2.3 回环校正&lt;/h5>
+&lt;h5 id="回环校正">回环校正&lt;/h5>
 &lt;p>该线程核心功能：修正累计误差
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-120.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h6 id="回环候选帧检测">回环候选帧检测&lt;/h6>
@@ -7379,14 +7379,14 @@ hugo new &amp;quot;about/_index.md&amp;quot;&lt;/p>
 &lt;p>为了将像平面图像（连续）转到数字图像（离散），使其可被建模。进行一些修正：
 前三步是摄像机坐标系下
 &lt;a name="zyC7R">&lt;/a>&lt;/p>
-&lt;h4 id="1-偏置-单位变换">1. 偏置 单位变换&lt;/h4>
+&lt;h4 id="偏置-单位变换">偏置 单位变换&lt;/h4>
 &lt;p>（下图f=f+z0,简化符号）&lt;/p>
 &lt;ul>
 &lt;li>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-2.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;p>&lt;a name="bcZVp">&lt;/a>&lt;/p>
-&lt;h4 id="2-转化为齐次坐标系">2. 转化为齐次坐标系&lt;/h4>
+&lt;h4 id="转化为齐次坐标系">转化为齐次坐标系&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-3.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 其中M是相机内参，不变矩阵，P是3D点，变化向量，建立了P'到P的线性关系
 &lt;a name="S7JfO">&lt;/a>&lt;/p>
@@ -7399,17 +7399,17 @@ hugo new &amp;quot;about/_index.md&amp;quot;&lt;/p>
 &lt;/ul>
 &lt;hr>
 &lt;p>&lt;a name="thwSn">&lt;/a>&lt;/p>
-&lt;h4 id="3-摄像机偏移">3. 摄像机偏移&lt;/h4>
+&lt;h4 id="摄像机偏移">摄像机偏移&lt;/h4>
 &lt;p>工艺问题，不能垂直，所以需要加偏移系数
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-5.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 自由度：α，β，θ，Cx，Cy
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-6.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;hr>
 &lt;p>&lt;a name="dUwn6">&lt;/a>&lt;/p>
-&lt;h4 id="4-世界坐标系转换到摄像机坐标系">4. 世界坐标系转换到摄像机坐标系&lt;/h4>
+&lt;h4 id="世界坐标系转换到摄像机坐标系">世界坐标系转换到摄像机坐标系&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-7.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="SDFNM">&lt;/a>&lt;/p>
-&lt;h4 id="5-摄像机模型pkr-tpw">5. 摄像机模型P'=K[R T]Pw&lt;/h4>
+&lt;h4 id="摄像机模型pkr-tpw">摄像机模型P'=K[R T]Pw&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-8.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 RT矩阵具体内容不知道是什么，如有链接欢迎评论，后面的&lt;strong>摄像机标定的&lt;/strong>&lt;a href="https://keepjolly.com/archives/three-d-reconstruction-1/#HFfse">&lt;strong>补充知识&lt;/strong>&lt;/a>&lt;strong>有讲&lt;/strong>&lt;/p>
 &lt;hr>
@@ -7481,63 +7481,63 @@ RT矩阵具体内容不知道是什么，如有链接欢迎评论，后面的&lt
 &lt;p>摄像机标定，即&lt;strong>已知点坐标求解摄像机内、外参数矩阵&lt;/strong>，使得二维转三维可行。
 更换符号：p=P'（像平面P'变为p） P=Pw（世界坐标Pw变为P）。
 &lt;a name="UKmUo">&lt;/a>&lt;/p>
-&lt;h3 id="1-标定问题基本思路">1. 标定问题基本思路&lt;/h3>
+&lt;h3 id="标定问题基本思路">标定问题基本思路&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-21.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="nhXJc">&lt;/a>&lt;/p>
-&lt;h3 id="2-超定齐次方程的原因">2. 超定齐次方程的原因&lt;/h3>
+&lt;h3 id="超定齐次方程的原因">超定齐次方程的原因&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-22.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="LDwvq">&lt;/a>&lt;/p>
-&lt;h3 id="3-转换成矩阵形式">3. 转换成矩阵形式&lt;/h3>
+&lt;h3 id="转换成矩阵形式">转换成矩阵形式&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-23.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="NVpqQ">&lt;/a>&lt;/p>
-&lt;h3 id="4-利用奇异值分解求超定齐次方程">4. 利用奇异值分解求超定齐次方程&lt;/h3>
+&lt;h3 id="利用奇异值分解求超定齐次方程">利用奇异值分解求超定齐次方程&lt;/h3>
 &lt;p>其中M求解的值是真实世界的值差一个&lt;strong>放大系数&lt;/strong>
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-24.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="b0ZeZ">&lt;/a>&lt;/p>
-&lt;h3 id="5-提取摄像机系数">5. 提取摄像机系数&lt;/h3>
+&lt;h3 id="提取摄像机系数">提取摄像机系数&lt;/h3>
 &lt;p>详细过程参见：&lt;a href="https://niecongchong.blog.csdn.net/article/details/127209507#t5">提取摄像机内参数&lt;/a>
 课堂知识：互相垂直点乘·为0（r1r2r3互相垂直）；r1×r2=r3 （另外图中矩阵大小可能有误）
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-25.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="i3JVJ">&lt;/a>&lt;/p>
-&lt;h4 id="51-求u0v0放大系数ρ">5.1 求u0、v0，放大系数ρ&lt;/h4>
+&lt;h4 id="求u0v0放大系数ρ">求u0、v0，放大系数ρ&lt;/h4>
 &lt;p>不知道为什么a有时候转置有时候不转置
 u0、v0就是&lt;a href="https://keepjolly.com/archives/three-d-reconstruction-1/#zyC7R">偏置Cx、Cy&lt;/a>
 r1·r3 = 0；r2·r3=0；r3·r3=1，且都互不相关，正交矩阵
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-26.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 （图中是点乘不是叉乘）
 &lt;a name="PatrE">&lt;/a>&lt;/p>
-&lt;h4 id="52-求θ">5.2 求θ&lt;/h4>
+&lt;h4 id="求θ">求θ&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-27.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 然后左式子点乘 比上 右式子点乘即可出现下图 （具体看视频，虽然讲的也不怎么清楚，参考弹幕或前面的&lt;a href="https://niecongchong.blog.csdn.net/article/details/127209507#t5">链接&lt;/a>）
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-28.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 ps. 如果θ=90° 则符合faugeras定理
 &lt;a name="qT9nR">&lt;/a>&lt;/p>
-&lt;h4 id="53-求α和β">5.3 求α和β&lt;/h4>
+&lt;h4 id="求α和β">求α和β&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-29.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 如果α=β，则符合faugeras定理
 &lt;a name="inEAt">&lt;/a>&lt;/p>
-&lt;h4 id="54-求外参r1r2r3">5.4 求外参r1，r2，r3&lt;/h4>
+&lt;h4 id="求外参r1r2r3">求外参r1，r2，r3&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-30.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="oFdwP">&lt;/a>&lt;/p>
-&lt;h4 id="55-求外参t">5.5 求外参T&lt;/h4>
+&lt;h4 id="求外参t">求外参T&lt;/h4>
 &lt;p>K满秩所必可逆
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-31.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="jJbl2">&lt;/a>&lt;/p>
-&lt;h4 id="56-总结">5.6 总结&lt;/h4>
+&lt;h4 id="总结-1">总结&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-32.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 取点不能都位于同一平面，否则三点确定一个平面，多余的点都是没用的
 &lt;a name="acfQ6">&lt;/a>&lt;/p>
 &lt;h3 id="径向畸变的摄像机标定">径向畸变的摄像机标定&lt;/h3>
 &lt;p>&lt;a name="Q1aWO">&lt;/a>&lt;/p>
-&lt;h4 id="1-畸变模型">1. 畸变模型&lt;/h4>
+&lt;h4 id="畸变模型">畸变模型&lt;/h4>
 &lt;p>Sλ就是畸变矩阵
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-33.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="uZX1S">&lt;/a>&lt;/p>
-&lt;h4 id="2-非线性求解">2. 非线性求解&lt;/h4>
+&lt;h4 id="非线性求解">非线性求解&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-34.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 m1m2m3是&lt;a href="https://keepjolly.com/archives/three-d-reconstruction-1/#b0ZeZ">提取摄像机系数&lt;/a>里的投影矩阵的三行
 &lt;a name="CQYTA">&lt;/a>&lt;/p>
-&lt;h4 id="3-求解线性部分加快迭代">3. 求解线性部分加快迭代&lt;/h4>
+&lt;h4 id="求解线性部分加快迭代">求解线性部分加快迭代&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-35.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 ui÷vi即在原世界坐标下的等比例缩放直线，就那个d2
 &lt;a name="HFfse">&lt;/a>&lt;/p>
@@ -7649,22 +7649,22 @@ ui÷vi即在原世界坐标下的等比例缩放直线，就那个d2
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-61.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-62.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="epDTg">&lt;/a>&lt;/p>
-&lt;h4 id="总结-1">总结&lt;/h4>
+&lt;h4 id="总结-2">总结&lt;/h4>
 &lt;p>根据前面的求出摄像机内参矩阵后，就可以根据摄像机几何来获取像素点和三维点的关系，然后根据场景平面方向n来重建三维场景。
 缺点是：场景的实际比例无法恢复，需要手动选择影消点与影消线，还需要场景先验信息（点对应关系，线、面几何信息等）
 &lt;a name="Z6Nsa">&lt;/a>&lt;/p>
-&lt;h3 id="总结-2">总结&lt;/h3>
+&lt;h3 id="总结-3">总结&lt;/h3>
 &lt;p>01:16:00.知道法向量和影消线的关系，影消点和直线的方向后，然后通过取三垂直的面来计算摄像机的内参矩阵，在两个假设下成立。然后通过法向量和影消线的关系，已知影消线就可求平面法向量，然后通过p=MP，获得三维点就可以三维重构了吗？期待评论单视图重构详细过程
 推荐阅读博客：&lt;a href="https://blog.csdn.net/Nismilesucc/article/details/121056910">单视图测量&lt;/a>
 &lt;a name="VwLVo">&lt;/a>&lt;/p>
 &lt;h2 id="harris角点">Harris角点&lt;/h2>
 &lt;p>&lt;a href="https://www.bilibili.com/video/BV1nz4y197Qv">视频地址&lt;/a>
 &lt;a name="Rx6wg">&lt;/a>&lt;/p>
-&lt;h3 id="1-uv与euv的关系">1. uv与Euv的关系&lt;/h3>
+&lt;h3 id="uv与euv的关系">uv与Euv的关系&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-63.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 通过观察uv的变化进而观察E(u, v)的变化，从而发现是不是角点，但是此处不方便，都需要经过I来计算，下面通过泰勒二阶展开，简化运算
 &lt;a name="NpI6o">&lt;/a>&lt;/p>
-&lt;h3 id="2-泰勒展开">2. 泰勒展开&lt;/h3>
+&lt;h3 id="泰勒展开">泰勒展开&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-64.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 得到M与Euv的关系，进而只需要分析M矩阵
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-65.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
@@ -7674,10 +7674,10 @@ ui÷vi即在原世界坐标下的等比例缩放直线，就那个d2
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-66.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-67.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="NR12n">&lt;/a>&lt;/p>
-&lt;h3 id="3-更进一步转化">3. 更进一步转化&lt;/h3>
+&lt;h3 id="更进一步转化">更进一步转化&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-68.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="BkiH2">&lt;/a>&lt;/p>
-&lt;h4 id="总结-3">总结&lt;/h4>
+&lt;h4 id="总结-4">总结&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-69.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;ul>
 &lt;li>Partially invariant to affine intensity change&lt;/li>

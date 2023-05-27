@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><title type="text">悠闲の小屋</title><subtitle type="html">一个极简主题的博客。</subtitle><updated>2023-05-27T10:01:26+00:00</updated><id>https://keepjolly.com/</id><link rel="alternate" type="text/html" href="https://keepjolly.com/"/><link rel="self" type="application/atom+xml" href="https://keepjolly.com/atom.xml"/><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><generator uri="https://gohugo.io/" version="0.112.3">Hugo</generator><entry><title type="text">提高一些链接的下载速度</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/improve-download-speed/"/><id>https://keepjolly.com/posts/tech/improve-download-speed/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-26T21:16:39+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">做记录用 cuda下载 https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run 将其中的.nvidia.com改为.. .cn ..即可，并将链接复制……</summary><content type="html">&lt;p>做记录用&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><title type="text">悠闲の小屋</title><subtitle type="html">一个极简主题的博客。</subtitle><updated>2023-05-27T10:11:12+00:00</updated><id>https://keepjolly.com/</id><link rel="alternate" type="text/html" href="https://keepjolly.com/"/><link rel="self" type="application/atom+xml" href="https://keepjolly.com/atom.xml"/><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><generator uri="https://gohugo.io/" version="0.112.3">Hugo</generator><entry><title type="text">提高一些链接的下载速度</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/improve-download-speed/"/><id>https://keepjolly.com/posts/tech/improve-download-speed/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-26T21:16:39+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">做记录用 cuda下载 https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run 将其中的.nvidia.com改为.. .cn ..即可，并将链接复制……</summary><content type="html">&lt;p>做记录用&lt;/p>
 &lt;h2 id="cuda下载">cuda下载&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run">https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run&lt;/a>
@@ -38,7 +38,7 @@ github.com
 &lt;p>sudo systemd-resolve --flush-caches&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="还是慢">还是慢&lt;/h3>
-&lt;p>用镜像gitee吧&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">混合编程python与C++</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/python-client-c-server/"/><id>https://keepjolly.com/posts/create/python-client-c-server/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-26T21:14:31+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">上个版本: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,……</summary><content type="html">&lt;p>&lt;a href="https://www.keepjolly.com/posts/create/ctype-with-threading/">上个版本&lt;/a>: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,方便后续维护.
+&lt;p>用镜像gitee吧&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">混合编程python与C++</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/python-client-c-server/"/><id>https://keepjolly.com/posts/create/python-client-c-server/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-26T21:14:31+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">上个版本: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,……</summary><content type="html">&lt;p>&lt;a href="https://www.keepjolly.com/posts/create/ctype-with-threading/">上个版本&lt;/a>: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,方便后续维护.
 本文实现功能: python传输图片给C++, C++接受图片后对图片进行处理,并将结果返回给python客户端, pass image from python to C++&lt;/p>
 &lt;h2 id="c-服务端">C++ 服务端&lt;/h2>
 &lt;h3 id="h文件">.h文件&lt;/h3>
@@ -1053,7 +1053,7 @@ github.com
 &lt;li>&lt;a href="https://blog.csdn.net/guotianqing/article/details/95970785">Linux c++获取本地毫秒级精确时间&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://python3-cookbook.readthedocs.io/zh_CN/latest/c06/p12_read_nested_and_variable_sized_binary_structures.html">如果不想用json,可以试试struct&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/Mculover666/article/details/103796256">利用json来传输分类结果&lt;/a>&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/></entry><entry><title type="text">第3、4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/"/><id>https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-26T21:04:25+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">音频原理 博客 声音 频率（音调）：声音1秒内周期性变化的次数 人耳的听觉范围在20Hz-2……</summary><content type="html">&lt;h2 id="音频原理">音频原理&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/></entry><entry><title type="text">第3、4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/"/><id>https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-26T21:04:25+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">音频原理 博客 声音 频率（音调）：声音1秒内周期性变化的次数 人耳的听觉范围在20Hz-2……</summary><content type="html">&lt;h2 id="音频原理">音频原理&lt;/h2>
 &lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/53475069">博客&lt;/a>&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>声音&lt;/strong>&lt;/li>
@@ -3432,7 +3432,7 @@ AAC音频格式：Advanced Audio Coding(高级音频解码)，是一种由MPEG-4
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第2讲：实现一个传输h264的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/h264-rtsp-server/"/><id>https://keepjolly.com/posts/learn/h264-rtsp-server/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-26T21:03:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">vscode配置 vscode编译多个cpp文件 将${file}更改为选中部分，使之编……</summary><content type="html">&lt;h2 id="vscode配置">vscode配置&lt;/h2>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第2讲：实现一个传输h264的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/h264-rtsp-server/"/><id>https://keepjolly.com/posts/learn/h264-rtsp-server/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-26T21:03:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">vscode配置 vscode编译多个cpp文件 将${file}更改为选中部分，使之编……</summary><content type="html">&lt;h2 id="vscode配置">vscode配置&lt;/h2>
 &lt;p>&lt;a href="https://blog.csdn.net/Yujian2563/article/details/124749727">vscode编译多个cpp文件&lt;/a>
 将${file}更改为选中部分，使之编译所有cpp文件。注意：变更之后本工程内不能出现多个main函数！！
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
@@ -5063,7 +5063,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第1讲：RTSP协议讲解及代码实现</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/"/><id>https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-26T21:02:17+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">RTSP是一个实时传输流协议，是一个应用层的协议。通常说的RTSP包括RTSP协议、……</summary><content type="html">&lt;ul>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第1讲：RTSP协议讲解及代码实现</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/"/><id>https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-26T21:02:17+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">RTSP是一个实时传输流协议，是一个应用层的协议。通常说的RTSP包括RTSP协议、……</summary><content type="html">&lt;ul>
 &lt;li>RTSP是一个实时传输流协议，是一个应用层的协议。通常说的RTSP包括RTSP协议、RTP协议、RTCP协议，对于这些协议的作用简单的理解如下
 &lt;ul>
 &lt;li>RTSP协议：负责服务器与客户端之间的&lt;strong>请求与响应&lt;/strong>&lt;/li>
@@ -5737,7 +5737,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;li>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">zmq 小白简易安装C++版</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/zmq-install/"/><id>https://keepjolly.com/posts/tech/zmq-install/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-26T20:55:03+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">主要参考博客: 在cmake工程中使用ZeroMQ,并加以补充 次要博客:Linux下Z……</summary><content type="html">&lt;p>主要参考博客:&lt;a href="https://www.cnblogs.com/y4247464/p/14241876.html"> 在cmake工程中使用ZeroMQ&lt;/a>,并加以补充
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">zmq 小白简易安装C++版</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/zmq-install/"/><id>https://keepjolly.com/posts/tech/zmq-install/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-26T20:55:03+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">主要参考博客: 在cmake工程中使用ZeroMQ,并加以补充 次要博客:Linux下Z……</summary><content type="html">&lt;p>主要参考博客:&lt;a href="https://www.cnblogs.com/y4247464/p/14241876.html"> 在cmake工程中使用ZeroMQ&lt;/a>,并加以补充
 次要博客:&lt;a href="https://blog.csdn.net/qq_41453285/article/details/105989698">Linux下ZeroMQ的编译安装与运行&lt;/a>
 文中提到arm,我只装在linux系统上，原本想用在通信中，最后还是用tcp实现了&lt;/p>
 &lt;h2 id="安装libzmq">安装libzmq&lt;/h2>
@@ -5922,7 +5922,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">reply&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/install/" term="Install" label="Install"/></entry><entry><title type="text">混合编程之多线程</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/ctype-with-threading/"/><id>https://keepjolly.com/posts/create/ctype-with-threading/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-26T20:34:37+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">前言: 小白一个, 没有系统性的学习过python网络通信,只是单纯的cv加修改代码,仅……</summary><content type="html">&lt;blockquote>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/install/" term="Install" label="Install"/></entry><entry><title type="text">混合编程之多线程</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/ctype-with-threading/"/><id>https://keepjolly.com/posts/create/ctype-with-threading/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-26T20:34:37+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">前言: 小白一个, 没有系统性的学习过python网络通信,只是单纯的cv加修改代码,仅……</summary><content type="html">&lt;blockquote>
 &lt;p>前言: 小白一个, 没有系统性的学习过python网络通信,只是单纯的cv加修改代码,仅作留念以及参考用,感谢互联网博主们和bito插件,使得chatGPT得以免费使用.
 另外该多线程传输图片的速度比没有多线程执行还满,后续不对python服务端做优化,而改为C++服务端实现.写出来继续再分享把&lt;/p>
 &lt;/blockquote>
@@ -6772,7 +6772,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;li>Broken pipe&lt;/li>
 &lt;/ol>
 &lt;/li>
-&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/ctype/" term="Ctype" label="Ctype"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/></entry><entry><title type="text">三维重建之路中</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/three-d-reconstruction-3/"/><id>https://keepjolly.com/posts/learn/three-d-reconstruction-3/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-26T20:28:22+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">三维重建与极几何 单视图重构会受到多义性的影响，并且需要场景知识 而人眼是有两个眼睛，可……</summary><content type="html">&lt;h2 id="三维重建与极几何">三维重建与极几何&lt;/h2>
+&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/ctype/" term="Ctype" label="Ctype"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/></entry><entry><title type="text">三维重建之路中</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/three-d-reconstruction-3/"/><id>https://keepjolly.com/posts/learn/three-d-reconstruction-3/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-26T20:28:22+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">三维重建与极几何 单视图重构会受到多义性的影响，并且需要场景知识 而人眼是有两个眼睛，可……</summary><content type="html">&lt;h2 id="三维重建与极几何">三维重建与极几何&lt;/h2>
 &lt;p>单视图重构会受到多义性的影响，并且需要场景知识
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 而人眼是有两个眼睛，可以组合两种图片，采用多视图几何&lt;/p>
@@ -6826,22 +6826,22 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-21.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h2 id="双目立体视觉">双目立体视觉&lt;/h2>
 &lt;h3 id="基于平行试图的双目立体视觉">基于平行试图的双目立体视觉&lt;/h3>
-&lt;h4 id="1-平行视图">1. 平行视图&lt;/h4>
+&lt;h4 id="平行视图-1">平行视图&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-22.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="2-f和e的关系">2. F和e'的关系&lt;/h4>
+&lt;h4 id="f和e的关系">F和e'的关系&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-23.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="3-平行视图基础矩阵">3. 平行视图基础矩阵&lt;/h4>
+&lt;h4 id="平行视图基础矩阵">平行视图基础矩阵&lt;/h4>
 &lt;p>哦，平行视图基础矩阵长这样。
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-24.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="4-平行视图极线p和p关系">4. 平行视图极线、p和p'关系&lt;/h4>
+&lt;h4 id="平行视图极线p和p关系">平行视图极线、p和p'关系&lt;/h4>
 &lt;p>我的问题：找到pp'之后可以解决唯一确定一个三维点，从而构建三维模型？p'怎么确定，扫描线上哪个点：相似性处理
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-25.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-26.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-27.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-28.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="5-平行视图三角测量三角化">5. 平行视图三角测量（三角化）&lt;/h4>
+&lt;h4 id="平行视图三角测量三角化">平行视图三角测量（三角化）&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-29.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="6-双目立体视觉系统构建的核心问题">6. 双目立体视觉系统构建的核心问题&lt;/h4>
+&lt;h4 id="双目立体视觉系统构建的核心问题">双目立体视觉系统构建的核心问题&lt;/h4>
 &lt;ul>
 &lt;li>如何获得平行视图&lt;/li>
 &lt;li>如何建立点对应关系&lt;/li>
@@ -6876,17 +6876,17 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-38.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 124问题已经解决，只需要处理本质矩阵即可
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-39.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="1-无视e的符号及尺度">1. 无视E的符号及尺度&lt;/h4>
+&lt;h4 id="无视e的符号及尺度">无视E的符号及尺度&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-40.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-41.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="2-分解出e中的r矩阵">2. 分解出E中的R矩阵&lt;/h4>
+&lt;h4 id="分解出e中的r矩阵">分解出E中的R矩阵&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-42.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-43.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="3-分解出e中的t向量">3. 分解出E中的T向量&lt;/h4>
+&lt;h4 id="分解出e中的t向量">分解出E中的T向量&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-44.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="4-分解本质矩阵总结">4. 分解本质矩阵总结&lt;/h4>
+&lt;h4 id="分解本质矩阵总结">分解本质矩阵总结&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-45.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="5-计算三角化">5. 计算三角化&lt;/h4>
+&lt;h4 id="计算三角化">计算三角化&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-46.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h4 id="欧式结构恢复的歧义">欧式结构恢复的歧义&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-47.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -6898,7 +6898,7 @@ Type：NALU的Type，不同与FU Indicator的type&lt;/p>
 &lt;h4 id="仿射结构问题">仿射结构问题&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-50.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h4 id="基于因式分解的仿射结构恢复">基于因式分解的仿射结构恢复&lt;/h4>
-&lt;h5 id="1-数据中心化">1. 数据中心化&lt;/h5>
+&lt;h5 id="数据中心化">数据中心化&lt;/h5>
 &lt;p>这里有点没听懂，直接记结论了，为什么bi=0
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-51.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-52.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -6926,9 +6926,9 @@ M也可以利用U3W3，S用V3T，解会不唯一，参考恢复歧义
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-61.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 M1&lt;em>已知，M2&lt;/em>未知
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-62.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h6 id="1-得到f关于ab的表达式">1. 得到F关于A、b的表达式&lt;/h6>
+&lt;h6 id="得到f关于ab的表达式">得到F关于A、b的表达式&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-63.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h6 id="2-计算ab求m2">2. 计算A，b，求M2*&lt;/h6>
+&lt;h6 id="计算ab求m2">计算A，b，求M2*&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-64.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-65.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h6 id="n视图情况">N视图情况&lt;/h6>
@@ -6954,7 +6954,7 @@ M1&lt;em>已知，M2&lt;/em>未知
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-74.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 核心是计算采样次数N
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-75.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
-&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-76.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">三维重建之路下</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/three-d-reconstruction-2/"/><id>https://keepjolly.com/posts/learn/three-d-reconstruction-2/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-26T20:09:59+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">运动恢复结构SfM系统解析 回顾 本质矩阵与单应矩阵区别 Global Bundle Adjustment P3P 已知内参矩阵，3个像素点……</summary><content type="html">&lt;h2 id="运动恢复结构sfm系统解析">运动恢复结构SfM系统解析&lt;/h2>
+&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-76.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">三维重建之路下</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/three-d-reconstruction-2/"/><id>https://keepjolly.com/posts/learn/three-d-reconstruction-2/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-26T20:09:59+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">运动恢复结构SfM系统解析 回顾 本质矩阵与单应矩阵区别 Global Bundle Adjustment P3P 已知内参矩阵，3个像素点……</summary><content type="html">&lt;h2 id="运动恢复结构sfm系统解析">运动恢复结构SfM系统解析&lt;/h2>
 &lt;h3 id="回顾">回顾&lt;/h3>
 &lt;h4 id="本质矩阵与单应矩阵区别">本质矩阵与单应矩阵区别&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-77.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -6993,18 +6993,18 @@ M1&lt;em>已知，M2&lt;/em>未知
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-88.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h4 id="增量法总体步骤">增量法总体步骤&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-89.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="1-计算轨迹">1. 计算轨迹&lt;/h5>
+&lt;h5 id="计算轨迹">计算轨迹&lt;/h5>
 &lt;p>根据预处理的结果特征提取和特征匹配就可以构建轨迹
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-90.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="2-计算共视图连通图">2. 计算共视图（连通图）&lt;/h5>
+&lt;h5 id="计算共视图连通图">计算共视图（连通图）&lt;/h5>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-91.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="3-g中选边e">3. G中选边e&lt;/h5>
+&lt;h5 id="g中选边e">G中选边e&lt;/h5>
 &lt;p>选出初始两张图构建初始三维模型。图中是三维点在两幅图上的像素点
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-92.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="456-两视图重构">4.5.6. 两视图重构&lt;/h5>
+&lt;h5 id="两视图重构">两视图重构&lt;/h5>
 &lt;p>t是轨迹中大于2的点，e是连通边上两张图所有的匹配点，取交集
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-93.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="78-增量法">7.8. 增量法&lt;/h5>
+&lt;h5 id="增量法">增量法&lt;/h5>
 &lt;ol start="7">
 &lt;li>
 &lt;p>有了连通图，就由处理所有图片变成处理G中的边即可。&lt;/p>
@@ -7082,7 +7082,7 @@ M1&lt;em>已知，M2&lt;/em>未知
 &lt;p>开源方案
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-105.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-106.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h4 id="1-数据结构与数据库">1. 数据结构与数据库&lt;/h4>
+&lt;h4 id="数据结构与数据库">数据结构与数据库&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-107.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 核心数据库内容：
 地图点&lt;/p>
@@ -7128,9 +7128,9 @@ M1&lt;em>已知，M2&lt;/em>未知
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h4 id="2-系统工作流程-">2. 系统工作流程 ⭐&lt;/h4>
+&lt;h4 id="系统工作流程-">系统工作流程 ⭐&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-108.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="21-跟踪">2.1 跟踪&lt;/h5>
+&lt;h5 id="跟踪">跟踪&lt;/h5>
 &lt;p>核心功能：1. 确定当前帧位姿（RT）；2. 确定其是否将其作为关键帧&lt;/p>
 &lt;h6 id="地图初始化">地图初始化&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-109.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -7151,7 +7151,7 @@ M1&lt;em>已知，M2&lt;/em>未知
 &lt;h6 id="关键帧选取">关键帧选取&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-114.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 Kref来自于数据集中的某帧 （前一步位姿优化中出现）&lt;/p>
-&lt;h5 id="22-建图">2.2 建图&lt;/h5>
+&lt;h5 id="建图">建图&lt;/h5>
 &lt;p>该线程核心功能：完成局部地图构建&lt;/p>
 &lt;h6 id="关键帧插入">关键帧插入&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-115.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -7164,7 +7164,7 @@ Kref来自于数据集中的某帧 （前一步位姿优化中出现）&lt;/p>
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-118.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h6 id="局部关键帧剔除">局部关键帧剔除&lt;/h6>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-119.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
-&lt;h5 id="23-回环校正">2.3 回环校正&lt;/h5>
+&lt;h5 id="回环校正">回环校正&lt;/h5>
 &lt;p>该线程核心功能：修正累计误差
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-120.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;h6 id="回环候选帧检测">回环候选帧检测&lt;/h6>
@@ -7280,7 +7280,7 @@ Kref来自于数据集中的某帧 （前一步位姿优化中出现）&lt;/p>
 &lt;h3 id="slam系统">SLAM系统&lt;/h3>
 &lt;p>同时摄像机定位和构建三维模型
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-144.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
-&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-145.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">hugo主题-meme配置</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/hugo_theme_meme_configuration/"/><id>https://keepjolly.com/posts/tech/hugo_theme_meme_configuration/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-05-24T21:51:34+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">安装git和go Installing on Windows git 官方文档 There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to……</summary><content type="html">&lt;h2 id="安装git和go">安装git和go&lt;/h2>
+&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839-145.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">hugo主题-meme配置</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/hugo_theme_meme_configuration/"/><id>https://keepjolly.com/posts/tech/hugo_theme_meme_configuration/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-05-24T21:51:34+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">安装git和go Installing on Windows git 官方文档 There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to……</summary><content type="html">&lt;h2 id="安装git和go">安装git和go&lt;/h2>
 &lt;h3 id="installing-on-windows-git">Installing on Windows git&lt;/h3>
 &lt;p>&lt;a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">官方文档&lt;/a>
 There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. &lt;strong>Just go to&lt;/strong> &lt;a href="https://git-scm.com/download/win">https://git-scm.com/download/win&lt;/a> and &lt;strong>the download will start automatically.&lt;/strong> Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to &lt;a href="https://gitforwindows.org/">https://gitforwindows.org&lt;/a>.
@@ -7353,7 +7353,7 @@ hugo new &amp;quot;about/_index.md&amp;quot;&lt;/p>
 &lt;h2 id="图床不显示图片">图床不显示图片&lt;/h2>
 &lt;p>&lt;strong>原因不明，不能复现问题&lt;/strong>
 我使用的是腾讯云的图床，但是部署到github发现不能使用
-最后将config.toml中的enableMediumZoom = false置为false即可（true也没事）&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/><category scheme="https://keepjolly.com/tags/hugo/" term="Hugo" label="Hugo"/></entry><entry><title type="text">三维重建之路上</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/three-d-reconstruction-1/"/><id>https://keepjolly.com/archives/three-d-reconstruction-1/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-03-26T09:07:02+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">instant-ngp --scene data/nerf/fox 视频：计算机视觉之三维重建 找到一个同样是这个视频的笔记网址 摄像机几何 针孔模型 &amp;amp;……</summary><content type="html">&lt;p>instant-ngp --scene data/nerf/fox
+最后将config.toml中的enableMediumZoom = false置为false即可（true也没事）&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/><category scheme="https://keepjolly.com/tags/hugo/" term="Hugo" label="Hugo"/></entry><entry><title type="text">三维重建之路上</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/three-d-reconstruction-1/"/><id>https://keepjolly.com/archives/three-d-reconstruction-1/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-03-26T09:07:02+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">instant-ngp --scene data/nerf/fox 视频：计算机视觉之三维重建 找到一个同样是这个视频的笔记网址 摄像机几何 针孔模型 &amp;amp;……</summary><content type="html">&lt;p>instant-ngp --scene data/nerf/fox
 视频：&lt;a href="https://www.bilibili.com/video/BV1mT4y1o7Q2">计算机视觉之三维重建&lt;/a>
 找到一个同样是这个视频的&lt;a href="https://blog.csdn.net/xijuezhu8128/category_11916420.html">笔记网址&lt;/a>
 &lt;a name="PVvJl">&lt;/a>&lt;/p>
@@ -7379,14 +7379,14 @@ hugo new &amp;quot;about/_index.md&amp;quot;&lt;/p>
 &lt;p>为了将像平面图像（连续）转到数字图像（离散），使其可被建模。进行一些修正：
 前三步是摄像机坐标系下
 &lt;a name="zyC7R">&lt;/a>&lt;/p>
-&lt;h4 id="1-偏置-单位变换">1. 偏置 单位变换&lt;/h4>
+&lt;h4 id="偏置-单位变换">偏置 单位变换&lt;/h4>
 &lt;p>（下图f=f+z0,简化符号）&lt;/p>
 &lt;ul>
 &lt;li>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-2.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;p>&lt;a name="bcZVp">&lt;/a>&lt;/p>
-&lt;h4 id="2-转化为齐次坐标系">2. 转化为齐次坐标系&lt;/h4>
+&lt;h4 id="转化为齐次坐标系">转化为齐次坐标系&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-3.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 其中M是相机内参，不变矩阵，P是3D点，变化向量，建立了P'到P的线性关系
 &lt;a name="S7JfO">&lt;/a>&lt;/p>
@@ -7399,17 +7399,17 @@ hugo new &amp;quot;about/_index.md&amp;quot;&lt;/p>
 &lt;/ul>
 &lt;hr>
 &lt;p>&lt;a name="thwSn">&lt;/a>&lt;/p>
-&lt;h4 id="3-摄像机偏移">3. 摄像机偏移&lt;/h4>
+&lt;h4 id="摄像机偏移">摄像机偏移&lt;/h4>
 &lt;p>工艺问题，不能垂直，所以需要加偏移系数
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-5.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 自由度：α，β，θ，Cx，Cy
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-6.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;hr>
 &lt;p>&lt;a name="dUwn6">&lt;/a>&lt;/p>
-&lt;h4 id="4-世界坐标系转换到摄像机坐标系">4. 世界坐标系转换到摄像机坐标系&lt;/h4>
+&lt;h4 id="世界坐标系转换到摄像机坐标系">世界坐标系转换到摄像机坐标系&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-7.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="SDFNM">&lt;/a>&lt;/p>
-&lt;h4 id="5-摄像机模型pkr-tpw">5. 摄像机模型P'=K[R T]Pw&lt;/h4>
+&lt;h4 id="摄像机模型pkr-tpw">摄像机模型P'=K[R T]Pw&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-8.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 RT矩阵具体内容不知道是什么，如有链接欢迎评论，后面的&lt;strong>摄像机标定的&lt;/strong>&lt;a href="https://keepjolly.com/archives/three-d-reconstruction-1/#HFfse">&lt;strong>补充知识&lt;/strong>&lt;/a>&lt;strong>有讲&lt;/strong>&lt;/p>
 &lt;hr>
@@ -7481,63 +7481,63 @@ RT矩阵具体内容不知道是什么，如有链接欢迎评论，后面的&lt
 &lt;p>摄像机标定，即&lt;strong>已知点坐标求解摄像机内、外参数矩阵&lt;/strong>，使得二维转三维可行。
 更换符号：p=P'（像平面P'变为p） P=Pw（世界坐标Pw变为P）。
 &lt;a name="UKmUo">&lt;/a>&lt;/p>
-&lt;h3 id="1-标定问题基本思路">1. 标定问题基本思路&lt;/h3>
+&lt;h3 id="标定问题基本思路">标定问题基本思路&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-21.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="nhXJc">&lt;/a>&lt;/p>
-&lt;h3 id="2-超定齐次方程的原因">2. 超定齐次方程的原因&lt;/h3>
+&lt;h3 id="超定齐次方程的原因">超定齐次方程的原因&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-22.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="LDwvq">&lt;/a>&lt;/p>
-&lt;h3 id="3-转换成矩阵形式">3. 转换成矩阵形式&lt;/h3>
+&lt;h3 id="转换成矩阵形式">转换成矩阵形式&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-23.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="NVpqQ">&lt;/a>&lt;/p>
-&lt;h3 id="4-利用奇异值分解求超定齐次方程">4. 利用奇异值分解求超定齐次方程&lt;/h3>
+&lt;h3 id="利用奇异值分解求超定齐次方程">利用奇异值分解求超定齐次方程&lt;/h3>
 &lt;p>其中M求解的值是真实世界的值差一个&lt;strong>放大系数&lt;/strong>
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-24.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="b0ZeZ">&lt;/a>&lt;/p>
-&lt;h3 id="5-提取摄像机系数">5. 提取摄像机系数&lt;/h3>
+&lt;h3 id="提取摄像机系数">提取摄像机系数&lt;/h3>
 &lt;p>详细过程参见：&lt;a href="https://niecongchong.blog.csdn.net/article/details/127209507#t5">提取摄像机内参数&lt;/a>
 课堂知识：互相垂直点乘·为0（r1r2r3互相垂直）；r1×r2=r3 （另外图中矩阵大小可能有误）
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-25.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="i3JVJ">&lt;/a>&lt;/p>
-&lt;h4 id="51-求u0v0放大系数ρ">5.1 求u0、v0，放大系数ρ&lt;/h4>
+&lt;h4 id="求u0v0放大系数ρ">求u0、v0，放大系数ρ&lt;/h4>
 &lt;p>不知道为什么a有时候转置有时候不转置
 u0、v0就是&lt;a href="https://keepjolly.com/archives/three-d-reconstruction-1/#zyC7R">偏置Cx、Cy&lt;/a>
 r1·r3 = 0；r2·r3=0；r3·r3=1，且都互不相关，正交矩阵
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-26.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 （图中是点乘不是叉乘）
 &lt;a name="PatrE">&lt;/a>&lt;/p>
-&lt;h4 id="52-求θ">5.2 求θ&lt;/h4>
+&lt;h4 id="求θ">求θ&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-27.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 然后左式子点乘 比上 右式子点乘即可出现下图 （具体看视频，虽然讲的也不怎么清楚，参考弹幕或前面的&lt;a href="https://niecongchong.blog.csdn.net/article/details/127209507#t5">链接&lt;/a>）
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-28.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 ps. 如果θ=90° 则符合faugeras定理
 &lt;a name="qT9nR">&lt;/a>&lt;/p>
-&lt;h4 id="53-求α和β">5.3 求α和β&lt;/h4>
+&lt;h4 id="求α和β">求α和β&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-29.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 如果α=β，则符合faugeras定理
 &lt;a name="inEAt">&lt;/a>&lt;/p>
-&lt;h4 id="54-求外参r1r2r3">5.4 求外参r1，r2，r3&lt;/h4>
+&lt;h4 id="求外参r1r2r3">求外参r1，r2，r3&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-30.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="oFdwP">&lt;/a>&lt;/p>
-&lt;h4 id="55-求外参t">5.5 求外参T&lt;/h4>
+&lt;h4 id="求外参t">求外参T&lt;/h4>
 &lt;p>K满秩所必可逆
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-31.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="jJbl2">&lt;/a>&lt;/p>
-&lt;h4 id="56-总结">5.6 总结&lt;/h4>
+&lt;h4 id="总结-1">总结&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-32.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 取点不能都位于同一平面，否则三点确定一个平面，多余的点都是没用的
 &lt;a name="acfQ6">&lt;/a>&lt;/p>
 &lt;h3 id="径向畸变的摄像机标定">径向畸变的摄像机标定&lt;/h3>
 &lt;p>&lt;a name="Q1aWO">&lt;/a>&lt;/p>
-&lt;h4 id="1-畸变模型">1. 畸变模型&lt;/h4>
+&lt;h4 id="畸变模型">畸变模型&lt;/h4>
 &lt;p>Sλ就是畸变矩阵
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-33.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="uZX1S">&lt;/a>&lt;/p>
-&lt;h4 id="2-非线性求解">2. 非线性求解&lt;/h4>
+&lt;h4 id="非线性求解">非线性求解&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-34.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 m1m2m3是&lt;a href="https://keepjolly.com/archives/three-d-reconstruction-1/#b0ZeZ">提取摄像机系数&lt;/a>里的投影矩阵的三行
 &lt;a name="CQYTA">&lt;/a>&lt;/p>
-&lt;h4 id="3-求解线性部分加快迭代">3. 求解线性部分加快迭代&lt;/h4>
+&lt;h4 id="求解线性部分加快迭代">求解线性部分加快迭代&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-35.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 ui÷vi即在原世界坐标下的等比例缩放直线，就那个d2
 &lt;a name="HFfse">&lt;/a>&lt;/p>
@@ -7649,22 +7649,22 @@ ui÷vi即在原世界坐标下的等比例缩放直线，就那个d2
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-61.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-62.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="epDTg">&lt;/a>&lt;/p>
-&lt;h4 id="总结-1">总结&lt;/h4>
+&lt;h4 id="总结-2">总结&lt;/h4>
 &lt;p>根据前面的求出摄像机内参矩阵后，就可以根据摄像机几何来获取像素点和三维点的关系，然后根据场景平面方向n来重建三维场景。
 缺点是：场景的实际比例无法恢复，需要手动选择影消点与影消线，还需要场景先验信息（点对应关系，线、面几何信息等）
 &lt;a name="Z6Nsa">&lt;/a>&lt;/p>
-&lt;h3 id="总结-2">总结&lt;/h3>
+&lt;h3 id="总结-3">总结&lt;/h3>
 &lt;p>01:16:00.知道法向量和影消线的关系，影消点和直线的方向后，然后通过取三垂直的面来计算摄像机的内参矩阵，在两个假设下成立。然后通过法向量和影消线的关系，已知影消线就可求平面法向量，然后通过p=MP，获得三维点就可以三维重构了吗？期待评论单视图重构详细过程
 推荐阅读博客：&lt;a href="https://blog.csdn.net/Nismilesucc/article/details/121056910">单视图测量&lt;/a>
 &lt;a name="VwLVo">&lt;/a>&lt;/p>
 &lt;h2 id="harris角点">Harris角点&lt;/h2>
 &lt;p>&lt;a href="https://www.bilibili.com/video/BV1nz4y197Qv">视频地址&lt;/a>
 &lt;a name="Rx6wg">&lt;/a>&lt;/p>
-&lt;h3 id="1-uv与euv的关系">1. uv与Euv的关系&lt;/h3>
+&lt;h3 id="uv与euv的关系">uv与Euv的关系&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-63.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 通过观察uv的变化进而观察E(u, v)的变化，从而发现是不是角点，但是此处不方便，都需要经过I来计算，下面通过泰勒二阶展开，简化运算
 &lt;a name="NpI6o">&lt;/a>&lt;/p>
-&lt;h3 id="2-泰勒展开">2. 泰勒展开&lt;/h3>
+&lt;h3 id="泰勒展开">泰勒展开&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-64.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 得到M与Euv的关系，进而只需要分析M矩阵
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-65.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
@@ -7674,10 +7674,10 @@ ui÷vi即在原世界坐标下的等比例缩放直线，就那个d2
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-66.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-67.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="NR12n">&lt;/a>&lt;/p>
-&lt;h3 id="3-更进一步转化">3. 更进一步转化&lt;/h3>
+&lt;h3 id="更进一步转化">更进一步转化&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-68.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 &lt;a name="BkiH2">&lt;/a>&lt;/p>
-&lt;h4 id="总结-3">总结&lt;/h4>
+&lt;h4 id="总结-4">总结&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-69.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
 &lt;ul>
 &lt;li>Partially invariant to affine intensity change&lt;/li>
@@ -7805,7 +7805,7 @@ Laplacian is the second Gaussian derivative, so it **must be multiplied by σ2 *
 &lt;p>将图片表示成一个向量
 &lt;a name="p1SF5">&lt;/a>&lt;/p>
 &lt;h5 id="bag-of-features-models">Bag-of-features models&lt;/h5>
-&lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-89.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">C++学习</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/cplusplus-learn/"/><id>https://keepjolly.com/archives/cplusplus-learn/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-03-26T09:06:56+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">source insight C++ 概括 C++优点 强大的封装能力：既有开发工程能力，又保留高性能 高性能：运行快，快……</summary><content type="html">&lt;p>source insight&lt;/p>
+&lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090143-89.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">C++学习</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/cplusplus-learn/"/><id>https://keepjolly.com/archives/cplusplus-learn/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-03-26T09:06:56+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">source insight C++ 概括 C++优点 强大的封装能力：既有开发工程能力，又保留高性能 高性能：运行快，快……</summary><content type="html">&lt;p>source insight&lt;/p>
 &lt;h2 id="c-概括">C++ 概括&lt;/h2>
 &lt;p>C++优点&lt;/p>
 &lt;ul>
@@ -9487,7 +9487,7 @@ dynamic_cast：只用于包含虚函数的类，用于多态中，向上向下�
 &lt;h2 id="调试">调试&lt;/h2>
 &lt;h3 id="汇编语言">汇编语言&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090137-8.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
-&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090137-9.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">Python编程 遇到的问题</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/python-problem/"/><id>https://keepjolly.com/archives/python-problem/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-03-11T20:27:34+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">持续更新中 imshow：qt.qpa.plugin: could not find the Qt platform plugin &amp;quot;xcb&amp;quot; in &amp;quot;&amp;quot; 这个问题在我……</summary><content type="html">&lt;p>持续更新中&lt;/p>
+&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090137-9.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">Python编程 遇到的问题</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/python-problem/"/><id>https://keepjolly.com/archives/python-problem/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-03-11T20:27:34+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">持续更新中 imshow：qt.qpa.plugin: could not find the Qt platform plugin &amp;quot;xcb&amp;quot; in &amp;quot;&amp;quot; 这个问题在我……</summary><content type="html">&lt;p>持续更新中&lt;/p>
 &lt;h2 id="imshowqtqpaplugin-could-not-find-the-qt-platform-plugin-xcb-in-">imshow：qt.qpa.plugin: could not find the Qt platform plugin &amp;quot;xcb&amp;quot; in &amp;quot;&amp;quot;&lt;/h2>
 &lt;p>这个问题在我用python创建的虚拟环境后碰到，无法找到解决办法，只能用conda创建虚拟环境，然后opencv可以显示图片了&lt;/p>
 &lt;blockquote>
@@ -9503,7 +9503,7 @@ Linux中anaconda地址是：anaconda3安装路径/envs/虚拟环境名/lib/pytho
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202709.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="da3de5c330013051f9be766648ade55.jpg">&lt;/p>
 &lt;h2 id="importerror-no-module-named-tensorflow">ImportError: No module named tensorflow&lt;/h2>
 &lt;p>如果你是在jupyter notebook中出现这个错误。先看你是否安装了tensorflow 其次看你是否安装了jupyter notebook。
-我用conda管理环境的时候 运行的环境里没有jupyter notebook 他估计自动调用了全局的notebook ，但是全局没有tensorflow，然后就报错了。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/error/" term="error" label="error"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/collection/" term="Collection" label="Collection"/></entry><entry><title type="text">小目标检测综述-半成品</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/small-target-detection/"/><id>https://keepjolly.com/archives/small-target-detection/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-03-11T20:25:51+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">因为后续转三维重建了，所以只能写到一半了，如有需要可以找我要源文件 参考论文： Object Detection in 20……</summary><content type="html">&lt;p>因为后续转三维重建了，所以只能写到一半了，如有需要可以找我要源文件
+我用conda管理环境的时候 运行的环境里没有jupyter notebook 他估计自动调用了全局的notebook ，但是全局没有tensorflow，然后就报错了。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/error/" term="error" label="error"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/collection/" term="Collection" label="Collection"/></entry><entry><title type="text">小目标检测综述-半成品</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/small-target-detection/"/><id>https://keepjolly.com/archives/small-target-detection/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-03-11T20:25:51+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">因为后续转三维重建了，所以只能写到一半了，如有需要可以找我要源文件 参考论文： Object Detection in 20……</summary><content type="html">&lt;p>因为后续转三维重建了，所以只能写到一半了，如有需要可以找我要源文件
 参考论文：
 &lt;a href="https://arxiv.org/abs/1905.05055">Object Detection in 20 Years: A Survey&lt;/a>&lt;/p>
 &lt;h2 id="总言">总言&lt;/h2>
@@ -9818,7 +9818,7 @@ RoI Align:
 &lt;p>缺点：&lt;/p>
 &lt;ul>
 &lt;li>&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">Java 学习 半成品</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/java-study/"/><id>https://keepjolly.com/archives/java-study/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-03-11T20:23:47+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">半路转C++了，所以没学完Java，相对来说，韩顺平这个Java视频讲的很详细，如果……</summary><content type="html">&lt;p>半路转C++了，所以没学完Java，相对来说，韩顺平这个Java视频讲的很详细，如果时间充裕可以看看。&lt;/p>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">Java 学习 半成品</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/java-study/"/><id>https://keepjolly.com/archives/java-study/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-03-11T20:23:47+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">半路转C++了，所以没学完Java，相对来说，韩顺平这个Java视频讲的很详细，如果……</summary><content type="html">&lt;p>半路转C++了，所以没学完Java，相对来说，韩顺平这个Java视频讲的很详细，如果时间充裕可以看看。&lt;/p>
 &lt;h2 id="初阶知识">初阶知识&lt;/h2>
 &lt;h3 id="变量">变量&lt;/h3>
 &lt;h4 id="加法运算">加法运算&lt;/h4>
@@ -10074,7 +10074,7 @@ byte/char/short 同类型计算或它们之间计算都会自动转成int类型
 &lt;h4 id="字符串">字符串&lt;/h4>
 &lt;p>&lt;a href="https://blog.csdn.net/langhong8/article/details/50938041">字符串常量池&lt;/a>&lt;/p>
 &lt;h4 id="cannot-make-a-static-reference-to-the-non-static">Cannot make a static reference to the non-static&lt;/h4>
-&lt;p>&lt;a href="https://blog.csdn.net/q610376681/article/details/49359819">Cannot make a static reference to the non-static&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/java/" term="Java" label="Java"/></entry><entry><title type="text">ColMap使用</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/colmap-use/"/><id>https://keepjolly.com/archives/colmap-use/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-03-11T20:17:43+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">数据集下载 密码：s2v2，文件路径mvsnet-&amp;gt;preprocessed_i……</summary><content type="html">&lt;h2 id="数据集下载">数据集下载&lt;/h2>
+&lt;p>&lt;a href="https://blog.csdn.net/q610376681/article/details/49359819">Cannot make a static reference to the non-static&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/java/" term="Java" label="Java"/></entry><entry><title type="text">ColMap使用</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/colmap-use/"/><id>https://keepjolly.com/archives/colmap-use/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-03-11T20:17:43+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">数据集下载 密码：s2v2，文件路径mvsnet-&amp;gt;preprocessed_i……</summary><content type="html">&lt;h2 id="数据集下载">数据集下载&lt;/h2>
 &lt;p>&lt;a href="https://pan.baidu.com/s/1Wb9E6BWCJu4wZfwxm_t4TQ#list/path=%2Fmvsnet%2Fpreprocessed_inputs">密码：s2v2，文件路径mvsnet-&amp;gt;preprocessed_inputs&lt;/a>&lt;/p>
 &lt;h2 id="tutorial">Tutorial&lt;/h2>
 &lt;p>COLMAP 3.8-dev&lt;/p>
@@ -10200,7 +10200,7 @@ COLMAP 首先将所有数据库中提取的数据加载到内存中，并从初�
 要在任意图像组之间共享相机内在参数，请选择单个或多个图像，然后选择 Set camera 并设置 camera_id，它对应于 cameras 表中唯一的 camera_id 列。您还可以添加具有特定参数的新相机。通过将 prior_focal_length flag设置为 0 或 1，可以提示重建算法是否应该信任该焦距值。如果是先前的实验室校准，您希望将此值设置为 1。在事先不了解焦距的情况下，建议将此值设置为 1.25 * max(width_in_px, height_in_px)。
 数据库管理工具只有有限的功能，要完全控制数据，您必须直接修改 SQLite 数据库（see &lt;a href="https://colmap.github.io/database.html#database-format">Database Format&lt;/a>）。通过直接访问数据库，您可以仅使用 COLMAP 进行特征提取和匹配，也可以导入自己的特征和匹配以仅使用 COLMAP 的增量重建算法。&lt;/p>
 &lt;h3 id="graphical-and-command-line-interface">Graphical and Command-line Interface&lt;/h3>
-&lt;p>COLMAP 的大部分功能都可以从图形界面和命令行界面访问，它们都嵌入在同一个可执行文件中。您可以直接将选项作为命令行参数提供，也可以使用 --project_path path/to/project.ini 参数提供包含选项的 .ini 项目配置文件。启动GUI界面可以在当前文件夹路径的cmd中输入colmap gui 或直接明确项目配置 colmap gui --project_path。使用colmap help来列举不同命令参数。&lt;a href="https://colmap.github.io/gui.html#gui">graphical user interface&lt;/a> 和 &lt;a href="https://colmap.github.io/cli.html#cli">command-line Interface&lt;/a>提供了有关可用命令的更多详细信息。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">python 与python通信、python调用c++ 动态库返回检测结果</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/python-and-ctypes/"/><id>https://keepjolly.com/archives/python-and-ctypes/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2023-01-08T11:17:34+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">项目需求 python 客户端将opencv读取到的图片发送给python服务端，然后python……</summary><content type="html">&lt;h2 id="项目需求">项目需求&lt;/h2>
+&lt;p>COLMAP 的大部分功能都可以从图形界面和命令行界面访问，它们都嵌入在同一个可执行文件中。您可以直接将选项作为命令行参数提供，也可以使用 --project_path path/to/project.ini 参数提供包含选项的 .ini 项目配置文件。启动GUI界面可以在当前文件夹路径的cmd中输入colmap gui 或直接明确项目配置 colmap gui --project_path。使用colmap help来列举不同命令参数。&lt;a href="https://colmap.github.io/gui.html#gui">graphical user interface&lt;/a> 和 &lt;a href="https://colmap.github.io/cli.html#cli">command-line Interface&lt;/a>提供了有关可用命令的更多详细信息。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">python 与python通信、python调用c++ 动态库返回检测结果</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/python-and-ctypes/"/><id>https://keepjolly.com/archives/python-and-ctypes/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2023-01-08T11:17:34+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">项目需求 python 客户端将opencv读取到的图片发送给python服务端，然后python……</summary><content type="html">&lt;h2 id="项目需求">项目需求&lt;/h2>
 &lt;p>python 客户端将opencv读取到的图片发送给python服务端，然后python服务端将opencv图发送给Linux设备，将处理结果通过C++ 传给服务端，然后服务端再传给客户端。
 这里服务端可以改成C++ 写的，就不用这么麻烦了，但是需要将python的pickle包解码成C++ 的pickle包，还未尝试。
 以下所给代码，并不一定能跑通，思路在哪里，结合自己的代码&lt;/p>
@@ -11040,7 +11040,7 @@ C++ 端&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sock&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">send&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">content&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/ctype/" term="Ctype" label="Ctype"/></entry><entry><title type="text">Linux 两台设备用网线通信</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/linux-two-device-directly-communicate/"/><id>https://keepjolly.com/archives/linux-two-device-directly-communicate/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2022-12-15T19:50:58+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">问题来源 项目需求用Ubuntu和Debian互相通信，传输数据 参考链接：Ubuntu……</summary><content type="html">&lt;h2 id="问题来源">问题来源&lt;/h2>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/ctype/" term="Ctype" label="Ctype"/></entry><entry><title type="text">Linux 两台设备用网线通信</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/linux-two-device-directly-communicate/"/><id>https://keepjolly.com/archives/linux-two-device-directly-communicate/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2022-12-15T19:50:58+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">问题来源 项目需求用Ubuntu和Debian互相通信，传输数据 参考链接：Ubuntu……</summary><content type="html">&lt;h2 id="问题来源">问题来源&lt;/h2>
 &lt;p>项目需求用Ubuntu和Debian互相通信，传输数据
 参考链接：&lt;a href="https://blog.51cto.com/u_15315240/3202599">Ubuntu通过修改配置文件进行网络配置&lt;/a>、&lt;a href="https://blog.51cto.com/yhd2011/732156">linux 双机直连设置&lt;/a>&lt;/p>
 &lt;h2 id="物理连接">物理连接&lt;/h2>
@@ -11074,7 +11074,7 @@ iface eth0 inet static
 address 192.168.0.2
 netmask 255.255.255.0
 gateway 192.168.0.1 # 这个好像没什么关系 网关我也忘了什么意思了
-&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2022/12/20221215194637-2.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="1.jpg">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/linux/" term="Linux" label="Linux"/></entry><entry><title type="text">opencv提高摄像头分辨率时，无法打开摄像头</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/opencv-set-high-resolution-cant-open-camera/"/><id>https://keepjolly.com/archives/opencv-set-high-resolution-cant-open-camera/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2022-11-16T16:40:52+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">前言 本文环境是win7，opencv-python，有两个摄像头设备 参考链接： 万能的……</summary><content type="html">&lt;p>前言
+&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2022/12/20221215194637-2.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="1.jpg">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/linux/" term="Linux" label="Linux"/></entry><entry><title type="text">opencv提高摄像头分辨率时，无法打开摄像头</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/opencv-set-high-resolution-cant-open-camera/"/><id>https://keepjolly.com/archives/opencv-set-high-resolution-cant-open-camera/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2022-11-16T16:40:52+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">前言 本文环境是win7，opencv-python，有两个摄像头设备 参考链接： 万能的……</summary><content type="html">&lt;p>前言
 本文环境是win7，opencv-python，有两个摄像头设备
 参考链接：&lt;/p>
 &lt;ul>
@@ -11112,7 +11112,7 @@ gateway 192.168.0.1 # 这个好像没什么关系 网关我也忘了什么意思
 &lt;/div>
 &lt;/div>&lt;h2 id="解决办法二">解决办法二&lt;/h2>
 &lt;p>未经测试，就是有多个摄像头设备的时候，占用一个总线，所以导致冲突了，多添加一个usb card（我也不知道是啥，可能是usb接口）
-&lt;a href="https://stackoverflow.com/a/29702444">https://stackoverflow.com/a/29702444&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/error/" term="error" label="error"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/opencv/" term="Opencv" label="Opencv"/></entry><entry><title type="text">数学建模-数据分析题</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/data-analysis/"/><id>https://keepjolly.com/archives/data-analysis/</id><updated>2023-05-27T10:01:22+00:00</updated><published>2022-10-16T20:58:19+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">仅做参考用，今年建模赛前做完这个代码后，自觉信心满满，比完赛后直接裂开，希望能拿个国……</summary><content type="html">&lt;p>仅做参考用，今年建模赛前做完这个代码后，自觉信心满满，比完赛后直接裂开，希望能拿个国三吧!o(╥﹏╥)o。
+&lt;a href="https://stackoverflow.com/a/29702444">https://stackoverflow.com/a/29702444&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/error/" term="error" label="error"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/opencv/" term="Opencv" label="Opencv"/></entry><entry><title type="text">数学建模-数据分析题</title><link rel="alternate" type="text/html" href="https://keepjolly.com/archives/data-analysis/"/><id>https://keepjolly.com/archives/data-analysis/</id><updated>2023-05-27T10:11:08+00:00</updated><published>2022-10-16T20:58:19+00:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">仅做参考用，今年建模赛前做完这个代码后，自觉信心满满，比完赛后直接裂开，希望能拿个国……</summary><content type="html">&lt;p>仅做参考用，今年建模赛前做完这个代码后，自觉信心满满，比完赛后直接裂开，希望能拿个国三吧!o(╥﹏╥)o。
 11/26 为什么还没公布成绩，哭死，貌似还有好几个星期
 &lt;a href="https://github.com/Z-timer/MathModel">github&lt;/a>&lt;/p>
 &lt;h2 id="数据查看">数据查看&lt;/h2>
