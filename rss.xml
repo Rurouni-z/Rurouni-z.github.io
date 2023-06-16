@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.113.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sat, 10 Jun 2023 14:45:21 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>Instant-ngp笔记</title><link>https://keepjolly.com/posts/learn/ngp_note/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/ngp_note/</guid><pubDate>Fri, 09 Jun 2023 22:28:26 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>&lt;a href="https://blog.csdn.net/qq_43620967/article/details/124382650">翻译&lt;/a>、&lt;a href="https://blog.csdn.net/qq_32981275/article/details/125888274">思维导图（good）&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.113.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Fri, 16 Jun 2023 15:02:48 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>2023年小记</title><link>https://keepjolly.com/posts/life/2023-mynote/</link><guid isPermaLink="true">https://keepjolly.com/posts/life/2023-mynote/</guid><pubDate>Mon, 12 Jun 2023 22:32:10 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="电脑间切换硬盘">电脑间切换硬盘&lt;/h2>
+&lt;p>这是不可行的，已经尝试过了，双系统丢失，但是装回来就可以复原&lt;/p>
+&lt;h2 id="如何大致规划研究生生活">如何大致规划研究生生活&lt;/h2>
+&lt;p>如果你的导师是放养型，但是还是会试不试的关照你的话，前期多准备工作的事情，等后面老师给你
+安排任务的时候，努力去钻研科研。&lt;/p>
+&lt;p>纯放养型的话，只能早点确定方向，赶紧把毕业要求达到，如果想要工作学业两手抓的话，效果不太好
+容易两边都忘。&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/life/">life</category><category domain="https://keepjolly.com/tags/others/">Others</category></item><item><title>Instant-ngp笔记</title><link>https://keepjolly.com/posts/learn/ngp_note/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/ngp_note/</guid><pubDate>Fri, 09 Jun 2023 22:28:26 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>&lt;a href="https://blog.csdn.net/qq_43620967/article/details/124382650">翻译&lt;/a>、&lt;a href="https://blog.csdn.net/qq_32981275/article/details/125888274">思维导图（good）&lt;/a>&lt;/p>
 &lt;h2 id="instant-ngp-是做什么的">Instant-ngp 是做什么的&lt;/h2>
 &lt;p>Given a fully connected neural network$m(\mathbf{y} ; \Phi)$ we are interested in &lt;strong>an encoding&lt;/strong> of its inputs ${y}=\operatorname{enc}(\mathbf{x} ; \theta)$ that &lt;strong>improves the approximation quality and training speed&lt;/strong> &lt;strong>across a wide range of applications&lt;/strong> without incurring a notable performance overhead.&lt;/p>
 &lt;h2 id="instant-ngp-是怎么做的">Instant-ngp 是怎么做的&lt;/h2>
@@ -48,8 +54,7 @@
 &lt;li>优化哈希函数。两种途径是开发解析微分的连续哈希函数，或者有效探索离散函数空间的进化优化算法。&lt;/li>
 &lt;li>生成网络。因为特征与规则的点网格不是互相映射，无法进行生成式网络。&lt;/li>
 &lt;li>外部的空白空间、内部的固体空间以及其表面的稀疏细节，非常适合我们的编码。&lt;/li>
-&lt;/ul>
-&lt;h3 id="heading">&lt;/h3></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/learn/">learn</category><category domain="https://keepjolly.com/tags/computervision/">ComputerVision</category></item><item><title>Nerf初入门笔记</title><link>https://keepjolly.com/posts/learn/nerf_note/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/nerf_note/</guid><pubDate>Wed, 07 Jun 2023 22:05:23 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>推荐一个&lt;a href="https://zhuanlan.zhihu.com/p/486710656">专栏&lt;/a>, 转载自&lt;a href="https://zicx.top/notebook/research/nerf/note/#hierarchical-volume-sampling">来源&lt;/a>, 再加入自己的东西&lt;/p>
+&lt;/ul></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/learn/">learn</category><category domain="https://keepjolly.com/tags/computervision/">ComputerVision</category></item><item><title>Nerf初入门笔记</title><link>https://keepjolly.com/posts/learn/nerf_note/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/nerf_note/</guid><pubDate>Wed, 07 Jun 2023 22:05:23 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>推荐一个&lt;a href="https://zhuanlan.zhihu.com/p/486710656">专栏&lt;/a>, 转载自&lt;a href="https://zicx.top/notebook/research/nerf/note/#hierarchical-volume-sampling">来源&lt;/a>, 再加入自己的东西&lt;/p>
 &lt;h2 id="nerf-是做什么的">NeRF 是做什么的&lt;/h2>
 &lt;p>通过使用稀疏的输入视图优化底层的的连续辐射体积场函数，实现&lt;strong>复杂场景的新视角合成&lt;/strong>&lt;/p>
 &lt;h2 id="nerf-是怎么做的">NeRF 是怎么做的&lt;/h2>
@@ -2094,10 +2099,6 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 &lt;ol>
 &lt;li>在qt.pro中粘贴代码&lt;/li>
 &lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2116,8 +2117,9 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -lopencv_imgcodecs -lopencv_imgproc -lopencv_videoio &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;pre>&lt;code> 2. 如果是cmake
-&lt;/code>&lt;/pre>
+&lt;/div>&lt;ol start="2">
+&lt;li>如果是cmake&lt;/li>
+&lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -2136,7 +2138,7 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">include_directories&lt;span class="o">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="si">${&lt;/span>&lt;span class="nv">CMAKE_SOURCE_DIR&lt;/span>&lt;span class="si">}&lt;/span>/./opencv3415/include
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="si">${&lt;/span>&lt;span class="nv">CMAKE_SOURCE_DIR&lt;/span>&lt;span class="si">}&lt;/span>/./opencv3415/include
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">set&lt;span class="o">(&lt;/span>link_libs &lt;span class="si">${&lt;/span>&lt;span class="nv">CMAKE_SOURCE_DIR&lt;/span>&lt;span class="si">}&lt;/span>/./opencv3415/lib/libopencv_core.so
@@ -2150,7 +2152,11 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">target_link_libraries&lt;span class="o">(&lt;/span>main &lt;span class="si">${&lt;/span>&lt;span class="nv">link_libs&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="o">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/510292490">参考博客&lt;/a>&lt;/p>
+&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/510292490">参考博客&lt;/a>&lt;/p>
 &lt;h2 id="管理cuda">管理cuda&lt;/h2>
 &lt;ol>
 &lt;li>删除原软链接&lt;/li>
@@ -2159,14 +2165,14 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 &lt;p>cd /usr/local
 sudo unlink cuda&lt;/p>
 &lt;/blockquote>
-&lt;ol start="2">
+&lt;ol>
 &lt;li>建立新链接&lt;/li>
 &lt;/ol>
 &lt;blockquote>
 &lt;p>sudo ln -snf /usr/local/&lt;code>..cuda-xx..&lt;/code> /usr/local/cuda
 cuda-xx是文件夹名&lt;/p>
 &lt;/blockquote>
-&lt;ol start="3">
+&lt;ol>
 &lt;li>查看当前版本&lt;/li>
 &lt;/ol>
 &lt;blockquote>
@@ -12965,20 +12971,4 @@ dynamic_cast：只用于包含虚函数的类，用于多态中，向上向下�
 &lt;h2 id="调试">调试&lt;/h2>
 &lt;h3 id="汇编语言">汇编语言&lt;/h3>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090137-8.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
-&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090137-9.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/learn/">learn</category><category domain="https://keepjolly.com/tags/c-/">C++</category></item><item><title>Python编程 遇到的问题</title><link>https://keepjolly.com/archives/python-problem/</link><guid isPermaLink="true">https://keepjolly.com/archives/python-problem/</guid><pubDate>Sat, 11 Mar 2023 20:27:34 +0000</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>持续更新中&lt;/p>
-&lt;h2 id="imshowqtqpaplugin-could-not-find-the-qt-platform-plugin-xcb-in-">imshow：qt.qpa.plugin: could not find the Qt platform plugin &amp;quot;xcb&amp;quot; in &amp;quot;&amp;quot;&lt;/h2>
-&lt;p>这个问题在我用python创建的虚拟环境后碰到，无法找到解决办法，只能用conda创建虚拟环境，然后opencv可以显示图片了&lt;/p>
-&lt;blockquote>
-&lt;p>pip install -i &lt;a href="https://pypi.doubanio.com/simple/">https://pypi.doubanio.com/simple/&lt;/a> --trusted-host pypi.doubanio.com xxx-package-name
-更新：卸载重置qt即可&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="linux-pycharm-opencv不显示代码提示">Linux pycharm opencv不显示代码提示&lt;/h2>
-&lt;p>参考：&lt;a href="https://blog.csdn.net/fangzhihuaa/article/details/113903689">链接&lt;/a>
-Linux中anaconda地址是：anaconda3安装路径/envs/虚拟环境名/lib/python版本号/site-packages/cv2&lt;/p>
-&lt;h2 id="ssizeempty-in-function-resize">!ssize.empty() in function resize&lt;/h2>
-&lt;p>顾名思义，某个地方调用opencv库的resize时，传入空值，导致该错误，仔细检查传入值的数据是否为0或者None即可。
-但是给的错误信息有点误导意思，因为我用的是另一个版本的opencv，还以为是版本不一致导致的错误。如下，提示的是OpenCV3.4.15版本
-&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230311202709.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="da3de5c330013051f9be766648ade55.jpg">&lt;/p>
-&lt;h2 id="importerror-no-module-named-tensorflow">ImportError: No module named tensorflow&lt;/h2>
-&lt;p>如果你是在jupyter notebook中出现这个错误。先看你是否安装了tensorflow 其次看你是否安装了jupyter notebook。
-我用conda管理环境的时候 运行的环境里没有jupyter notebook 他估计自动调用了全局的notebook ，但是全局没有tensorflow，然后就报错了。&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/error/">error</category><category domain="https://keepjolly.com/tags/python/">Python</category><category domain="https://keepjolly.com/tags/collection/">Collection</category></item></channel></rss>
+&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/03/20230326090137-9.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/learn/">learn</category><category domain="https://keepjolly.com/tags/c-/">C++</category></item></channel></rss>
