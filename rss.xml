@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.116.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Mon, 31 Jul 2023 13:00:40 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>2023年小记</title><link>https://keepjolly.com/posts/life/2023-mynote/</link><guid isPermaLink="true">https://keepjolly.com/posts/life/2023-mynote/</guid><pubDate>Mon, 12 Jun 2023 22:32:10 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="电脑间切换硬盘">电脑间切换硬盘&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.116.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Mon, 31 Jul 2023 13:07:04 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>2023年小记</title><link>https://keepjolly.com/posts/life/2023-mynote/</link><guid isPermaLink="true">https://keepjolly.com/posts/life/2023-mynote/</guid><pubDate>Mon, 12 Jun 2023 22:32:10 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="电脑间切换硬盘">电脑间切换硬盘&lt;/h2>
 &lt;p>这是不可行的，已经尝试过了，双系统丢失，但是装回来就可以复原&lt;/p>
 &lt;h2 id="如何大致规划研究生生活">如何大致规划研究生生活&lt;/h2>
 &lt;p>如果你的导师是放养型，但是还是会试不试的关照你的话，前期多准备工作的事情，等后面老师给你
@@ -3233,7 +3233,7 @@ theme: '#f44336'
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="配置豆瓣短码">配置豆瓣短码&lt;/h2>
-&lt;h2 id="创建doubanmd">创建douban.md&lt;/h2>
+&lt;h3 id="创建doubanmd">创建douban.md&lt;/h3>
 &lt;p>xxx\layouts\shortcodes 下创建douban.md&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -3299,7 +3299,7 @@ theme: '#f44336'
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{end}}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="修改customscss样式">修改custom.scss样式&lt;/h2>
+&lt;/div>&lt;h3 id="修改customscss样式">修改custom.scss样式&lt;/h3>
 &lt;p>在源文件下追加，修改了一些样式，使其更适配Meme&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -3345,11 +3345,15 @@ theme: '#f44336'
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;/div>&lt;h3 id="注意事项">注意事项&lt;/h3>
 &lt;ul>
 &lt;li>所给api可能不稳定，可能需要更换。&lt;/li>
 &lt;li>也可以试试&lt;a href="https://blog.yandaojiang.com/posts/others/hugo_shortcodes%E7%A4%BA%E4%BE%8B/#%E8%B1%86%E7%93%A3%E6%9D%A1%E7%9B%AE">本地缓存&lt;/a>&lt;/li>
-&lt;li>使用：{a(去掉a){&amp;lt; douban(shortcode_name) &amp;quot;https://book.douban.com/subject/35496106/&amp;quot;&amp;gt;}}&lt;/li>
+&lt;li>使用：
+&lt;ul>
+&lt;li>{a(去掉a){&amp;lt; douban(shortcode_name) &amp;quot;https://book.douban.com/subject/35496106/&amp;quot;&amp;gt;}}&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul>
 &lt;p>参考网址：&lt;/p>
 &lt;ul>
