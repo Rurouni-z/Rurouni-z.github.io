@@ -1,26 +1,293 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><title type="text">悠闲の小屋</title><subtitle type="html">一个极简主题的博客。</subtitle><updated>2023-11-08T15:17:44+00:00</updated><id>https://keepjolly.com/</id><link rel="alternate" type="text/html" href="https://keepjolly.com/"/><link rel="self" type="application/atom+xml" href="https://keepjolly.com/atom.xml"/><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><generator uri="https://gohugo.io/" version="0.120.4">Hugo</generator><entry><title type="text">公务员行测--数量关系</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/quantitative-relation/"/><id>https://keepjolly.com/posts/learn/quantitative-relation/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-11-08T23:00:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">解题技巧 代入排除法 ※ 代入排除法 题型：多位数问题、余数问题、年龄问题、不定方程、不会做……</summary><content type="html">&lt;h2 id="解题技巧">解题技巧&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><title type="text">悠闲の小屋</title><subtitle type="html">一个极简主题的博客。</subtitle><updated>2023-11-09T16:00:32+00:00</updated><id>https://keepjolly.com/</id><link rel="alternate" type="text/html" href="https://keepjolly.com/"/><link rel="self" type="application/atom+xml" href="https://keepjolly.com/atom.xml"/><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><generator uri="https://gohugo.io/" version="0.120.4">Hugo</generator><entry><title type="text">公务员行测--数量关系</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/quantitative-relation/"/><id>https://keepjolly.com/posts/learn/quantitative-relation/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-11-08T23:00:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">解题技巧 代入排除法 ※ 代入排除法 题型：多位数问题、余数问题、年龄问题、不定方程、不会做……</summary><content type="html">&lt;h2 id="解题技巧">解题技巧&lt;/h2>
 &lt;h3 id="代入排除法-">代入排除法 ※&lt;/h3>
 &lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=631">代入排除法&lt;/a>&lt;/p>
 &lt;p>题型：多位数问题、余数问题、年龄问题、不定方程、不会做的&lt;/p>
+&lt;hr>
 &lt;p>多位数问题&lt;/p>
 &lt;ol>
-&lt;li>将一个三位数的个位数字和百位数字调换后所得的三位数与原三位数的和是1070，差是198，这个三位数是：
-A．218 B．327 C．436 D．524
-解：436代入得634+436=1070，634-436=198&lt;/li>
+&lt;li>
+&lt;p>将一个三位数的个位数字和百位数字调换后所得的三位数与原三位数的和是1070，差是198，这个三位数是：&lt;/p>
+&lt;p>A．218 B．327 C．436 D．524&lt;/p>
+&lt;p>解：436代入得634+436=1070，634-436=198&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;p>余数问题&lt;/p>
 &lt;ol>
-&lt;li>一批武警战士平均分成若干小组值勤。如果每 4 人一组，恰好余 1 人；如果每 5 人一组，恰好也余 1 人；如果每 6 人一组，恰好还是余 1 人。这批武警战士至少有（ ）人。
-A．121 B．101 C．81 D．61
-解：&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2595">精准空降到 43:15&lt;/a>&lt;/li>
+&lt;li>
+&lt;p>一批武警战士平均分成若干小组值勤。如果每 4 人一组，恰好余 1 人；如果每 5 人一组，恰好也余 1 人；如果每 6 人一组，恰好还是余 1 人。这批武警战士至少有（ ）人。&lt;/p>
+&lt;p>A．121 B．101 C．81 D．61&lt;/p>
+&lt;p>解：&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2595">精准空降到 43:15&lt;/a>&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="数字特性">数字特性&lt;/h3>
+&lt;h4 id="奇偶性">奇偶性&lt;/h4>
 &lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2750">数字特性&lt;/a>&lt;/p>
-&lt;p>奇/偶 ± 奇/偶 = 偶
-奇 ± 偶 = 奇&lt;/p>
-&lt;p>奇 × 奇 = 奇&lt;/p>
-&lt;p>偶 × any = 偶&lt;/p>
-&lt;p>使用：知差求和、知和求差；二倍类、平均分；不定方程&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry><entry><title type="text">TCP_IP网络编程2</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/tcp_ip_network_programming2/"/><id>https://keepjolly.com/posts/learn/tcp_ip_network_programming2/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-08-13T22:41:59+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">进程间通信 进程间通信的基本概念 管道实现进程间通信 可以看出，为了完成进程间通信，需要创……</summary><content type="html">&lt;h2 id="进程间通信">进程间通信&lt;/h2>
+&lt;ul>
+&lt;li>奇/偶 ± 奇/偶 = 偶&lt;/li>
+&lt;li>奇 ± 偶 = 奇&lt;/li>
+&lt;li>奇 × 奇 = 奇&lt;/li>
+&lt;li>偶 × any = 偶&lt;/li>
+&lt;/ul>
+&lt;p>使用场景：知差求和、知和求差；二倍类、平均分；不定方程&lt;/p>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>某次测验有 50 道判断题，每做对一题得 3 分，不做或做错一题倒 扣1分，某学生共得82分，问答对题数和答错题数（包括不做）相差多少？（ ）&lt;/p>
+&lt;p>A.33 B.39 C.17 D.16&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=4422">练1&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>母亲现在的年龄个位数跟十位数对调再减 10 岁就是儿子的年龄， 再过 3 年母亲的年龄就是儿子年龄的 2 倍，则母亲现在的年龄是（）。&lt;/p>
+&lt;p>A.53 B.52 C.43 D.42&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3443">例2&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="整除判定">整除判定&lt;/h4>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=5764">整除判定，原理在前面几分钟&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>2，4，8 整除及其余数判定法则
+&lt;ul>
+&lt;li>一个数能被 2(或 5)整除，当且仅当&lt;strong>末一位&lt;/strong>数字能被 2(或者 5)整除；&lt;/li>
+&lt;li>一个数能被 4(或者 25)整除，当且仅当&lt;strong>末两位&lt;/strong>数字能被 4(或者 25)整除；&lt;/li>
+&lt;li>一个数能被 8(或者 125)整除，当且仅当&lt;strong>末三位&lt;/strong>数字能被 8(或者 125)整除；&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>3，9 整除判定基本法则
+&lt;ul>
+&lt;li>一个数字能被 3 整除，当且仅当其各位数字&lt;strong>之和&lt;/strong>能被 3 整除；&lt;/li>
+&lt;li>一个数字能被 9 整除，当且仅当其各位数字&lt;strong>之和&lt;/strong>能被 9 整除；&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>使用场景：题目出现 2、4、8、3、9 等的倍数。 题目出现倍数、分数、百分数、比例、分组（7男5女一组：7：5）等字眼。 题目中出现“各个数位之和”&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>一个四位数“□□□□”分别能被 15、12 和 10 除尽，且被这三个数除尽 时所得的三个商的和为 1365，问四位数“□□□□”中四个数字的和是多少？&lt;/p>
+&lt;p>A．17 B．16 C．15 D．14&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=6084">例4，设值可以考虑公倍数&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="倍数关系">倍数关系&lt;/h4>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=2&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=149">倍数关系&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>若 a：b = m：n，或 $\frac{a}{b} = \frac{m}{n}$ 或者 $𝑎 = \tfrac{m}{n}b$（m、n 互质，m：n &lt;strong>不能继续约分&lt;/strong>）。&lt;/li>
+&lt;li>则 a 是 m 的倍数；b 是 n 的倍数；a + b 是 m + n 的倍数；a – b 是 m – n 的倍数&lt;/li>
+&lt;li>例：男是女生的9/4倍 $\Leftrightarrow$ 男：女 = 9：4 $\Leftrightarrow$ a：b=9：4 $\Leftrightarrow$ 男是9的倍数，女是4的倍数 $\Leftrightarrow$ 总人数是9+4的倍数，男女之差是9-4的倍数&lt;/li>
+&lt;/ul>
+&lt;p>使用场景：倍数、百分数、比例、分组（7男5女一组：7：5）&lt;/p>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>甲乙两队举行智力抢答赛，两队平均得分为 92 分，其中甲队平均 得分 88 分，乙队平均得分为 94 分，则甲、乙两队人数之和可能是（ ）。&lt;/p>
+&lt;p>A.20 B.21 C.23 D.25&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=2&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2969">例14(十字交叉，两队平均)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>两个派出所某月内共受理案件 160 起，其中甲派出所受理的案件中 17%是刑事案件，乙派出所受理的案件中有 20%是刑事案件，问乙派出所在这个 月中共受理多少起非刑事案件？&lt;/p>
+&lt;p>A.48 B.60 C.72 D.96&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=2&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3747">练4（不可约分得总数）&lt;/a>，并且100 &amp;lt; 160 &amp;lt; 200 则200不行&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>某汽车厂商生产甲、乙、丙三种车型,其中乙型产量的 3 倍与丙型 产量的 6 倍之和等于甲型产量的 4 倍，甲型产量与乙型产量的&lt;strong>2倍之和&lt;/strong>等于丙型 产量的 7 倍。则甲、乙、丙三型产量之比为( )?&lt;/p>
+&lt;p>A.5:4:3 B.4:3:2 C.4:2:1 D.3:2:1&lt;/p>
+&lt;p>二倍之和 != 之和二倍&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="方程法">方程法&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=3&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=115">方程法&lt;/a>&lt;/p>
+&lt;p>设未知数的原则：&lt;/p>
+&lt;ul>
+&lt;li>在同等情况下，优先设所求的量&lt;/li>
+&lt;li>设中间变量、份数(有分数、百分数、比例倍数特征)&lt;/li>
+&lt;li>优先设小不设大&lt;/li>
+&lt;/ul>
+&lt;p>题型：和差倍比问题、鸡兔同笼、盈亏问题、工程问题、经济利润问题、 行程问题等等。&lt;/p>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>公司销售部门共有甲、乙、丙、丁四个销售小组，本年度甲组销售 金额是该部门销售金额总数的 1/3，乙组销售金额是另外三个小组总额的 1/4，丙 组销售金额比丁组销售金额多 200 万元，比甲组少 200 万元。问销售部门销售总 金额是多少万元？（ ）&lt;/p>
+&lt;p>A.1800 B.2400 C.3000 D.3600&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=3&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1085">例5，乙是另外三组的1/4倍，则乙/总=1/5&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>有甲、乙两瓶盐水，其浓度分别为 16%和 25%；质量分别为 600 克 和 240 克，若向这两瓶溶液中加入等量的水，使他们的浓度相同，则需要向这两 瓶盐水中分别加入的水量为（）。&lt;/p>
+&lt;p>A.320 克 B. 360 克 C. 370 克 D. 377 克&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=4&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1238">练5，两个分数相等的快速解法&lt;/a>，$\frac{a}{b} = \frac{c}{d} = \frac{a+c}{b+d} = \frac{a-c}{b-d}$ 约掉x&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="不定方程">不定方程&lt;/h4>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=4&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1731">不定方程&lt;/a>&lt;/p>
+&lt;p>限制性不定方程解析顺序：&lt;/p>
+&lt;ol>
+&lt;li>尾数法
+&lt;ul>
+&lt;li>3x+&lt;strong>5y&lt;/strong>=41：（10=5，10，15，20，...）y必为0，5结尾，x则需要令0+3x=1；5+3x=1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>因子倍数
+&lt;ul>
+&lt;li>29x+&lt;strong>24&lt;/strong>y=&lt;strong>900&lt;/strong>：y是12的倍数，先找最大的倍数（3，4，5，...，12），则x是12的倍数&lt;/li>
+&lt;li>11a+7b=121：7b=11(11-a)$\rightarrow$ b=11,a=4&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>奇偶特性
+&lt;ul>
+&lt;li>3x+&lt;strong>4y&lt;/strong>=20：x必须偶数（看左边有无&lt;a href="https://keepjolly.com/posts/learn/quantitative-relation/#%E5%A5%87%E5%81%B6%E6%80%A7">必为偶数&lt;/a>，即乘偶数必为偶数）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>代入排除&lt;/li>
+&lt;/ol>
+&lt;p>题型：&lt;/p>
+&lt;ul>
+&lt;li>限制性不定方程（组），未知数&lt;strong>必须是正整数&lt;/strong>，例如未知数是人、桌子、 盒子、笔等。&lt;/li>
+&lt;li>非限制性不定方程（组），未知数不限制必须是整数，例如钱、时间， 重量等，此类题型出题巧妙，技巧性强。&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>小刚买了 3 支钢笔、一个笔记本、2 瓶墨水，花去 35 元钱，小强 在同一家店买同样的 5 支钢笔，1 个笔记本，3 瓶墨水花去 52 元钱，则买 1 支钢笔、1 个笔记本、1 瓶墨水共需（）元。&lt;/p>
+&lt;p>A．9 B．12 C．15 D．18&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=4&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=4358">例6&lt;/a>，遇到无穷解给难约分的赋0，一般x+y+z的形式 or 约分得到特定形式（难）&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="工程问题-">工程问题 ※&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=5&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1413">工程问题&lt;/a>&lt;/p>
+&lt;p>公式：工作总量w＝效率e×时间t&lt;/p>
+&lt;p>解题方法：画表格&lt;/p>
+&lt;p>给定时间型：①赋值总量为时间的公倍数②求出各自的效率③分析求解&lt;/p>
+&lt;p>一项工程，甲单独30天完成，乙单独45天完成，两人合作几天完成。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">w&lt;/th>
+&lt;th style="text-align:center">e&lt;/th>
+&lt;th style="text-align:center">t&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">90&lt;/td>
+&lt;td style="text-align:center">得出3&lt;/td>
+&lt;td style="text-align:center">30&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;/td>
+&lt;td style="text-align:center">得出2&lt;/td>
+&lt;td style="text-align:center">45&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">得到&lt;/td>
+&lt;td style="text-align:center">3+2&lt;/td>
+&lt;td style="text-align:center">90/5=18&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>效率制约型：①赋值效率②直接赋值各自效率比值③分析求解&lt;/p>
+&lt;p>题型：&lt;/p>
+&lt;ul>
+&lt;li>效率比&lt;/li>
+&lt;li>提高20%，则1：1.2=5：6&lt;/li>
+&lt;li>42台机器，则1：1：1：...&lt;/li>
+&lt;li>某一部分工程，甲3天，乙5天，则甲：乙=5：3&lt;/li>
+&lt;/ul>
+&lt;p>一项工程，甲和乙的效率比为2：3，合作8天完成，甲单独几天完成？&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">w&lt;/th>
+&lt;th style="text-align:center">e&lt;/th>
+&lt;th style="text-align:center">t&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">5*8=40&lt;/td>
+&lt;td style="text-align:center">2&lt;/td>
+&lt;td style="text-align:center">得出20&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;/td>
+&lt;td style="text-align:center">3&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>两根同样长的木炭，燃烧完一根粗的木炭需要 2 小时，燃烧完一根 细的木炭需要 1 小时。现同时点燃这两根木炭，若干分钟后将两根木炭同时熄 灭，发现粗木炭的剩余长度是细木炭的剩余长度的 2 倍，则燃烧了（）分钟。&lt;/p>
+&lt;p>A. 35 B. 40 C. 45 D. 50&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=5&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2609">例4，时间效率型&lt;/a>，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A 工程队的效率是 B 工程队的 2 倍，某工程交给两队共同完成需要 6 天。如果两队的工作效率均提高一倍，且 B 队中途休息了 1 天，问要保证工程 按原来的时间完成，A 队中途最多可以休息几天？&lt;/p>
+&lt;p>A．4 B．3 C．2 D．1&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=5&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=4104">例6&lt;/a>，计算某一队(B)确定要干的天数，然后就能得到另一队需要干的工作量&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>某件刺绣产品，需要效率相当的三名绣工 8 天才能完成；绣品完成 50%时，一人有事提前离开，绣品由剩下的两人继续完成；绣品完成 75%时，又 有一人离开，绣品由最后剩下的那个人做完。那么，完成该件绣品一共用了（） 天。&lt;/p>
+&lt;p>A．10 天 B．11 天 C．12 天 D．13 天&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=5&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=4293">例7&lt;/a>，1：1：1&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>某商铺甲乙两组员工利用包装礼品的边角料制作一批花朵装饰门店。 甲组单独制作需要 10 小时，乙组单独制作需要 15 小时，现两组一起做，期间乙 组休息了 1 小时 40 分，完成时甲组比乙组多做 300 朵。问这批花有多少朵？&lt;/p>
+&lt;p>A.600 B.900 C.1350 D.1500&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=6&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1046">练5&lt;/a>，同例6，计算各组完成的量（相对各自完成花数的量，x-300：x=20：10，x=600）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A、B、C 三支施工队在王庄和李庄修路，王庄要修路 900 米。李庄 要修路 1250 米。已知 A、B、C 队每天分别能修 24 米、30 米、32 米，A、C 队 分别在王庄和李庄修路，B 队先在王庄，施工若干天后转到李庄，两地工程同时 开始同时结束。问 B 队在王庄工作了几天？&lt;/p>
+&lt;p>A.9 B.10 C.11 D.12&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=6&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1523">练7&lt;/a>，同时开工同时结束，三队一直干到结束&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>工厂有 5 条效率不同的生产线。某个生产项目如果任选 3 条生产线 一起加工，最快需要 6 天整，最慢需要 12 天整；5 条生产线一起加工，则需要 5 天整。问如果所有生产线的产能都扩大一倍，任选 2 条生产线一起加工，最多需 要多少天完成？&lt;/p>
+&lt;p>A.11 B.13 C.15 D.30&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=6&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1884">练8&lt;/a>，效率不同，直接设a&amp;gt;b&amp;gt;c&amp;gt;d&amp;gt;e，求d+e&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>某工厂的一个生产小组，当每个工人都在岗位工作，9 小时可以完 成一项生产任务。如果交换工人甲和乙的岗位，其他人不变，可提前 1 小时完成 任务；如果交换工人丙和丁的岗位，其他人不变，也可以提前 1 小时完成任务。 如果同时交换甲和乙，丙和丁的岗位，其他人不变，可以提前多少时间完成？&lt;/p>
+&lt;p>A.1.4 B.1.8 C.2.2 D.2.6&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=6&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2211">练9&lt;/a>，题目没看懂，交换了效率+1，都交换效率+2&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="行程问题">行程问题&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=6&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2575">行程问题&lt;/a>&lt;/p>
+&lt;p>公式：S=v×t，vt反比，Svt正比&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=6&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3119">等距离求平均速度&lt;/a>：$\bar{v} =\frac{2v_1v_2}{v_1+v_2}$&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=6&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=4737">流水行船问题&lt;/a>
+&lt;ul>
+&lt;li>顺流速度＝静水船速+水速 =&amp;gt; S=(船速+水速) × 时间&lt;/li>
+&lt;li>逆流速度＝静水船速-水速 =&amp;gt; S=(船速-水速) × 时间&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=6&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=5251">相遇追及问题&lt;/a>
+&lt;ul>
+&lt;li>&lt;strong>相遇&lt;/strong>距离=(大速度+小速度) × 相遇时间&lt;/li>
+&lt;li>&lt;strong>追及&lt;/strong>距离=(大速度-小速度) × 追及时间&lt;/li>
+&lt;li>类似顺水逆水&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=7&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=23">环形跑道问题&lt;/a>
+&lt;ul>
+&lt;li>环线型 n 次相遇，&lt;strong>总(共同行走的)距离&lt;/strong>=n × 环线长度&lt;/li>
+&lt;li>环线型 n 次追及，追及的距离=n × 环线长度。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=7&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=695">两端相遇问题&lt;/a>
+&lt;ul>
+&lt;li>直线型两端出发 n 次相遇，&lt;strong>总(共同行走的)距离&lt;/strong>=(2n-1) × 两地初始距离&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>解题方法：画图&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry><entry><title type="text">TCP_IP网络编程2</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/tcp_ip_network_programming2/"/><id>https://keepjolly.com/posts/learn/tcp_ip_network_programming2/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-08-13T22:41:59+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">进程间通信 进程间通信的基本概念 管道实现进程间通信 可以看出，为了完成进程间通信，需要创……</summary><content type="html">&lt;h2 id="进程间通信">进程间通信&lt;/h2>
 &lt;h3 id="进程间通信的基本概念">进程间通信的基本概念&lt;/h3>
 &lt;h4 id="管道实现进程间通信">管道实现进程间通信&lt;/h4>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/08/20230813224506.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="">&lt;br />可以看出，为了完成进程间通信，需要创建管道。管道并非属于进程的资源，而是和套接字一样，属于操作系统（也就不是 fork 函数的复制对象）。所以，两个进程通过操作系统提供的内存空间进行通信。下面是创建管道的函数。&lt;/p>
@@ -1491,7 +1758,7 @@ epoll 例程 A 中&lt;strong>注册&lt;/strong>文件描述符 B ，主要目的
 &lt;li>404 Not Found : 请求的文件不存在!&lt;/li>
 &lt;li>400 Bad Request : 请求方式错误，请检查！&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>消息头中含有传输的数据类型和长度等信息&lt;/strong>。图中的消息头含有如下信息：&lt;br />服务端名为 SimpleWebServer ，传输的数据类型为 text/html。数据长度不超过 2048 个字节。&lt;br />最后插入一个空行后，通过消息体&lt;strong>发送客户端请求的文件数据&lt;/strong>。以上就是实现 Web 服务端过程中必要的 HTTP 协议。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/network/" term="Network" label="Network"/></entry><entry><title type="text">TCP_IP网络编程</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/tcp_ip_network_programming/"/><id>https://keepjolly.com/posts/learn/tcp_ip_network_programming/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-08-13T22:41:54+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">理解网络编程和套接字 server： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25……</summary><content type="html">&lt;h2 id="理解网络编程和套接字">理解网络编程和套接字&lt;/h2>
+&lt;p>&lt;strong>消息头中含有传输的数据类型和长度等信息&lt;/strong>。图中的消息头含有如下信息：&lt;br />服务端名为 SimpleWebServer ，传输的数据类型为 text/html。数据长度不超过 2048 个字节。&lt;br />最后插入一个空行后，通过消息体&lt;strong>发送客户端请求的文件数据&lt;/strong>。以上就是实现 Web 服务端过程中必要的 HTTP 协议。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/network/" term="Network" label="Network"/></entry><entry><title type="text">TCP_IP网络编程</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/tcp_ip_network_programming/"/><id>https://keepjolly.com/posts/learn/tcp_ip_network_programming/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-08-13T22:41:54+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">理解网络编程和套接字 server： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25……</summary><content type="html">&lt;h2 id="理解网络编程和套接字">理解网络编程和套接字&lt;/h2>
 &lt;p>server：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -3215,7 +3482,7 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;p>传输数据后要等待服务器端返回的数据，因为程序代码中重复调用了 read 和 write 函数。只能这么写的原因之一是，程序在 1 个进程中运行，现在可以创建多个进程，因此可以分割数据收发过程。分割后过程如下图所示：&lt;br />&lt;img src="https://camo.githubusercontent.com/60042284b80365905816ec0f9ca8bcf8695895916bad37b1d6d30a716e85ba0f/68747470733a2f2f73322e617831782e636f6d2f323031392f30312f32312f6b5062686b442e706e67#from=url&amp;amp;id=Qy4jl&amp;amp;originHeight=295&amp;amp;originWidth=459&amp;amp;originalType=binary&amp;amp;ratio=1.2&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;status=done&amp;amp;style=none&amp;amp;title=" alt="">&lt;br />从图中可以看出，客户端的父进程负责接收数据，额外创建的子进程负责发送数据，分割后，父子进程分别负责输入输出，这样，无论客户端是否从服务器端接收完数据都可以进程传输。&lt;br />分割 I/O 程序的另外一个好处是，可以提高频繁交换数据的程序性能，如下图所示：&lt;br />&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/06/20230607220100-12.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5#from=url&amp;amp;id=EtW4z&amp;amp;originHeight=374&amp;amp;originWidth=612&amp;amp;originalType=binary&amp;amp;ratio=1.2&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;status=done&amp;amp;style=none&amp;amp;title=" alt="">&lt;br />根据上图显示可以看出，在网络不好的情况下，明显提升速度。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/riba2534/TCP-IP-NetworkNote/blob/master/ch10/echo_mpclient.c">回声客户端的 I/O 分割的代码实现&lt;/a>&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/network/" term="Network" label="Network"/></entry><entry><title type="text">MySQL学习</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/mysql-tutorial/"/><id>https://keepjolly.com/posts/learn/mysql-tutorial/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-08-10T23:13:48+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">数据库概述 资料+视频 MySQL常用命令 退出 exit 查看数据库 show databases; 使用某数据库 use xxx; 创建数据库……</summary><content type="html">&lt;h2 id="数据库概述">数据库概述&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/network/" term="Network" label="Network"/></entry><entry><title type="text">MySQL学习</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/mysql-tutorial/"/><id>https://keepjolly.com/posts/learn/mysql-tutorial/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-08-10T23:13:48+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">数据库概述 资料+视频 MySQL常用命令 退出 exit 查看数据库 show databases; 使用某数据库 use xxx; 创建数据库……</summary><content type="html">&lt;h2 id="数据库概述">数据库概述&lt;/h2>
 &lt;p>&lt;a href="https://pan.baidu.com/s/18W0ZRYaCR60mQWFP92CJsg?pwd=2you">资料&lt;/a>+&lt;a href="https://www.bilibili.com/video/BV1Vy4y1z7EX">视频&lt;/a>&lt;/p>
 &lt;h3 id="mysql常用命令">MySQL常用命令&lt;/h3>
 &lt;table>
@@ -4279,7 +4546,7 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;li>select a.ename, b.ename, b.sal from EMP a join EMP b on a.mgr=b.empno where b.sal &amp;gt; 3000;&lt;/li>
 &lt;li>select dname, ifnull(sum(sal),0) sum, count(e.deptno) num from EMP e right join DEPT d on e.deptno=d.deptno where dname like 'S%' or dname like '%S%' or dname like '%S' group by d.deptno;&lt;/li>
 &lt;li>update EMP set sal=sal*1.1 where timestampdiff(year, hiredate, now()) &amp;gt; 30;&lt;/li>
-&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/mysql/" term="MySQL" label="MySQL"/></entry><entry><title type="text">文字摘录</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/life/book-list/"/><id>https://keepjolly.com/posts/life/book-list/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-07-31T22:57:22+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">序 限于文字功底不是那么深厚，故摘录一些喜欢的文字。 禅与摩托车维修艺术 禅与摩托车维修艺……</summary><content type="html">&lt;h2 id="序">序&lt;/h2>
+&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/mysql/" term="MySQL" label="MySQL"/></entry><entry><title type="text">文字摘录</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/life/book-list/"/><id>https://keepjolly.com/posts/life/book-list/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-07-31T22:57:22+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">序 限于文字功底不是那么深厚，故摘录一些喜欢的文字。 禅与摩托车维修艺术 禅与摩托车维修艺……</summary><content type="html">&lt;h2 id="序">序&lt;/h2>
 &lt;p>限于文字功底不是那么深厚，故摘录一些喜欢的文字。&lt;/p>
 &lt;h2 id="禅与摩托车维修艺术">禅与摩托车维修艺术&lt;/h2>
 &lt;div class="db-card">
@@ -4587,13 +4854,13 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;/div>
 &lt;div class="db-card-cate">book&lt;/div>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/life/" term="life" label="life"/><category scheme="https://keepjolly.com/tags/life/" term="Life" label="Life"/><category scheme="https://keepjolly.com/tags/books/" term="Books" label="Books"/></entry><entry><title type="text">2023年小记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/life/2023-mynote/"/><id>https://keepjolly.com/posts/life/2023-mynote/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-06-12T22:32:10+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">电脑间切换硬盘 这是不可行的，已经尝试过了，双系统丢失，但是装回来就可以复原 如何大致规……</summary><content type="html">&lt;h2 id="电脑间切换硬盘">电脑间切换硬盘&lt;/h2>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/life/" term="life" label="life"/><category scheme="https://keepjolly.com/tags/life/" term="Life" label="Life"/><category scheme="https://keepjolly.com/tags/books/" term="Books" label="Books"/></entry><entry><title type="text">2023年小记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/life/2023-mynote/"/><id>https://keepjolly.com/posts/life/2023-mynote/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-06-12T22:32:10+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">电脑间切换硬盘 这是不可行的，已经尝试过了，双系统丢失，但是装回来就可以复原 如何大致规……</summary><content type="html">&lt;h2 id="电脑间切换硬盘">电脑间切换硬盘&lt;/h2>
 &lt;p>这是不可行的，已经尝试过了，双系统丢失，但是装回来就可以复原&lt;/p>
 &lt;h2 id="如何大致规划研究生生活">如何大致规划研究生生活&lt;/h2>
 &lt;p>如果你的导师是放养型，但是还是会试不试的关照你的话，前期多准备工作的事情，等后面老师给你
 安排任务的时候，努力去钻研科研。&lt;/p>
 &lt;p>纯放养型的话，只能早点确定方向，赶紧把毕业要求达到，如果想要工作学业两手抓的话，效果不太好
-容易两边都忘。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/life/" term="life" label="life"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">Instant-ngp笔记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/ngp_note/"/><id>https://keepjolly.com/posts/learn/ngp_note/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-06-09T22:28:26+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">翻译、思维导图（good） Instant-ngp 是做什么的 Given a fully connected neural network$m(\mathbf{y} ; \Phi)$ we are interested in an encoding of its inputs ${y}=\operatorname{enc}(\mathbf{x} ; \theta)$ that improves the……</summary><content type="html">&lt;p>&lt;a href="https://blog.csdn.net/qq_43620967/article/details/124382650">翻译&lt;/a>、&lt;a href="https://blog.csdn.net/qq_32981275/article/details/125888274">思维导图（good）&lt;/a>&lt;/p>
+容易两边都忘。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/life/" term="life" label="life"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">Instant-ngp笔记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/ngp_note/"/><id>https://keepjolly.com/posts/learn/ngp_note/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-06-09T22:28:26+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">翻译、思维导图（good） Instant-ngp 是做什么的 Given a fully connected neural network$m(\mathbf{y} ; \Phi)$ we are interested in an encoding of its inputs ${y}=\operatorname{enc}(\mathbf{x} ; \theta)$ that improves the……</summary><content type="html">&lt;p>&lt;a href="https://blog.csdn.net/qq_43620967/article/details/124382650">翻译&lt;/a>、&lt;a href="https://blog.csdn.net/qq_32981275/article/details/125888274">思维导图（good）&lt;/a>&lt;/p>
 &lt;h2 id="instant-ngp-是做什么的">Instant-ngp 是做什么的&lt;/h2>
 &lt;p>Given a fully connected neural network$m(\mathbf{y} ; \Phi)$ we are interested in &lt;strong>an encoding&lt;/strong> of its inputs ${y}=\operatorname{enc}(\mathbf{x} ; \theta)$ that &lt;strong>improves the approximation quality and training speed&lt;/strong> &lt;strong>across a wide range of applications&lt;/strong> without incurring a notable performance overhead.&lt;/p>
 &lt;h2 id="instant-ngp-是怎么做的">Instant-ngp 是怎么做的&lt;/h2>
@@ -4643,7 +4910,7 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;li>优化哈希函数。两种途径是开发解析微分的连续哈希函数，或者有效探索离散函数空间的进化优化算法。&lt;/li>
 &lt;li>生成网络。因为特征与规则的点网格不是互相映射，无法进行生成式网络。&lt;/li>
 &lt;li>外部的空白空间、内部的固体空间以及其表面的稀疏细节，非常适合我们的编码。&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">Nerf初入门笔记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/nerf_note/"/><id>https://keepjolly.com/posts/learn/nerf_note/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-06-07T22:05:23+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">推荐一个专栏, 转载自来源, 再加入自己的东西 NeRF 是做什么的 通过使用稀疏的输入视图优化底层……</summary><content type="html">&lt;p>推荐一个&lt;a href="https://zhuanlan.zhihu.com/p/486710656">专栏&lt;/a>, 转载自&lt;a href="https://zicx.top/notebook/research/nerf/note/#hierarchical-volume-sampling">来源&lt;/a>, 再加入自己的东西&lt;/p>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">Nerf初入门笔记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/nerf_note/"/><id>https://keepjolly.com/posts/learn/nerf_note/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-06-07T22:05:23+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">推荐一个专栏, 转载自来源, 再加入自己的东西 NeRF 是做什么的 通过使用稀疏的输入视图优化底层……</summary><content type="html">&lt;p>推荐一个&lt;a href="https://zhuanlan.zhihu.com/p/486710656">专栏&lt;/a>, 转载自&lt;a href="https://zicx.top/notebook/research/nerf/note/#hierarchical-volume-sampling">来源&lt;/a>, 再加入自己的东西&lt;/p>
 &lt;h2 id="nerf-是做什么的">NeRF 是做什么的&lt;/h2>
 &lt;p>通过使用稀疏的输入视图优化底层的的连续辐射体积场函数，实现&lt;strong>复杂场景的新视角合成&lt;/strong>&lt;/p>
 &lt;h2 id="nerf-是怎么做的">NeRF 是怎么做的&lt;/h2>
@@ -4820,7 +5087,7 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;ol>
 &lt;li>auto-coder&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/06/20230607220051-7.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="1.jpg">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">ubuntu安装nerfstudio</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/ubuntu-install-nerfstudio/"/><id>https://keepjolly.com/posts/tech/ubuntu-install-nerfstudio/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-28T09:34:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">博主配置： ubuntu18.04 gcc11 （需要$\geq$8） conda cuda11.8 安装教程（基本来源于此，除了Dependen……</summary><content type="html">&lt;p>博主配置：&lt;/p>
+&lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/06/20230607220051-7.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="1.jpg">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">ubuntu安装nerfstudio</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/ubuntu-install-nerfstudio/"/><id>https://keepjolly.com/posts/tech/ubuntu-install-nerfstudio/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-28T09:34:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">博主配置： ubuntu18.04 gcc11 （需要$\geq$8） conda cuda11.8 安装教程（基本来源于此，除了Dependen……</summary><content type="html">&lt;p>博主配置：&lt;/p>
 &lt;ul>
 &lt;li>ubuntu18.04&lt;/li>
 &lt;li>gcc11 （&lt;a href="https://github.com/NVlabs/tiny-cuda-nn#requirements">需要&lt;/a>$\geq$8）&lt;/li>
@@ -5043,7 +5310,7 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 &lt;blockquote>
 &lt;p>nvcc -V&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/410764884">参考链接&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/ubuntu/" term="Ubuntu" label="Ubuntu"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">MemE关键美化</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/meme-custom-important/"/><id>https://keepjolly.com/posts/create/meme-custom-important/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-27T19:59:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">运用snippet简化配置front-matter；运用action简化配置algolia上传；修改about页加入视频和音频；创建toc右边显示，定制为页面级显示；加入豆瓣条目。</summary><content type="html">&lt;h2 id="hugo坑">hugo坑&lt;/h2>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/410764884">参考链接&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/ubuntu/" term="Ubuntu" label="Ubuntu"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">MemE关键美化</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/meme-custom-important/"/><id>https://keepjolly.com/posts/create/meme-custom-important/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-27T19:59:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">运用snippet简化配置front-matter；运用action简化配置algolia上传；修改about页加入视频和音频；创建toc右边显示，定制为页面级显示；加入豆瓣条目。</summary><content type="html">&lt;h2 id="hugo坑">hugo坑&lt;/h2>
 &lt;ul>
 &lt;li>使用shortcode时，无论放何处都会生效，必须取消shortcode格式，如：
 &lt;ul>
@@ -6221,7 +6488,7 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 &lt;li>&lt;a href="https://immmmm.com/post-show-douban-item/">文章内显示豆瓣条目&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://immmmm.com/hugo-shortcodes-douban/">Hugo 豆瓣短代码&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.sulvblog.cn/posts/blog/shortcodes/#5-%e5%bc%95%e5%85%a5%e8%b1%86%e7%93%a3%e9%98%85%e8%af%bb%e5%92%8c%e7%94%b5%e5%bd%b1%e5%8d%a1%e7%89%87">引入豆瓣（暂时没用）&lt;/a>&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/></entry><entry><title type="text">MemE美化1</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/meme-custom-1/"/><id>https://keepjolly.com/posts/create/meme-custom-1/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-27T19:51:00+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">设置为section 文章路径放在 blog/content/posts ，其内每个文件夹必须有个_index.md文件，为……</summary><content type="html">&lt;h2 id="设置为section">设置为section&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/></entry><entry><title type="text">MemE美化1</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/meme-custom-1/"/><id>https://keepjolly.com/posts/create/meme-custom-1/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-27T19:51:00+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">设置为section 文章路径放在 blog/content/posts ，其内每个文件夹必须有个_index.md文件，为……</summary><content type="html">&lt;h2 id="设置为section">设置为section&lt;/h2>
 &lt;p>文章路径放在 blog/content/posts ，其内每个文件夹必须有个_index.md文件，为空没事，并且posts下也需要有。&lt;/p>
 &lt;p>如果需要在第一个section内创建文件夹但是不显示该文件夹名可以配置Permalinks属性为&lt;/p>
 &lt;p>[permalinks]
@@ -6468,7 +6735,7 @@ posts = '/posts/:sections[1]/:slug/'&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">listDateFormat&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;2006-01-02&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/></entry><entry><title type="text">提高一些链接的下载速度</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/improve-download-speed/"/><id>https://keepjolly.com/posts/tech/improve-download-speed/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-26T21:16:39+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">做记录用 cuda下载 https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run 将其中的.nvidia.com改为.. .cn ..即可，并将链接复制……</summary><content type="html">&lt;p>做记录用&lt;/p>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/></entry><entry><title type="text">提高一些链接的下载速度</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/improve-download-speed/"/><id>https://keepjolly.com/posts/tech/improve-download-speed/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-26T21:16:39+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">做记录用 cuda下载 https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run 将其中的.nvidia.com改为.. .cn ..即可，并将链接复制……</summary><content type="html">&lt;p>做记录用&lt;/p>
 &lt;h2 id="cuda下载">cuda下载&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run">https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run&lt;/a>
@@ -6508,7 +6775,7 @@ github.com
 &lt;p>sudo systemd-resolve --flush-caches&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="还是慢">还是慢&lt;/h3>
-&lt;p>用镜像gitee吧&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">混合编程python与C++</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/python-client-c-server/"/><id>https://keepjolly.com/posts/create/python-client-c-server/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-26T21:14:31+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">上个版本: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,……</summary><content type="html">&lt;p>&lt;a href="https://keepjolly.com/posts/create/python-client-c-server/">上个版本&lt;/a>: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,方便后续维护.
+&lt;p>用镜像gitee吧&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">混合编程python与C++</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/python-client-c-server/"/><id>https://keepjolly.com/posts/create/python-client-c-server/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-26T21:14:31+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">上个版本: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,……</summary><content type="html">&lt;p>&lt;a href="https://keepjolly.com/posts/create/python-client-c-server/">上个版本&lt;/a>: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,方便后续维护.
 本文实现功能: python传输图片给C++, C++接受图片后对图片进行处理,并将结果返回给python客户端, pass image from python to C++&lt;/p>
 &lt;h2 id="c-服务端">C++ 服务端&lt;/h2>
 &lt;h3 id="h文件">.h文件&lt;/h3>
@@ -7523,7 +7790,7 @@ github.com
 &lt;li>&lt;a href="https://blog.csdn.net/guotianqing/article/details/95970785">Linux c++获取本地毫秒级精确时间&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://python3-cookbook.readthedocs.io/zh_CN/latest/c06/p12_read_nested_and_variable_sized_binary_structures.html">如果不想用json,可以试试struct&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/Mculover666/article/details/103796256">利用json来传输分类结果&lt;/a>&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/></entry><entry><title type="text">第3、4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/"/><id>https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-26T21:04:25+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">音频原理 博客 声音 频率（音调）：声音1秒内周期性变化的次数 人耳的听觉范围在20Hz-2……</summary><content type="html">&lt;h2 id="音频原理">音频原理&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/></entry><entry><title type="text">第3、4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/"/><id>https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-26T21:04:25+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">音频原理 博客 声音 频率（音调）：声音1秒内周期性变化的次数 人耳的听觉范围在20Hz-2……</summary><content type="html">&lt;h2 id="音频原理">音频原理&lt;/h2>
 &lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/53475069">博客&lt;/a>&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>声音&lt;/strong>&lt;/li>
@@ -9904,7 +10171,7 @@ github.com
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第2讲：实现一个传输h264的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/h264-rtsp-server/"/><id>https://keepjolly.com/posts/learn/h264-rtsp-server/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-26T21:03:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">vscode配置 vscode编译多个cpp文件 将${file}更改为选中部分，使之编……</summary><content type="html">&lt;h2 id="vscode配置">vscode配置&lt;/h2>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第2讲：实现一个传输h264的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/h264-rtsp-server/"/><id>https://keepjolly.com/posts/learn/h264-rtsp-server/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-26T21:03:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">vscode配置 vscode编译多个cpp文件 将${file}更改为选中部分，使之编……</summary><content type="html">&lt;h2 id="vscode配置">vscode配置&lt;/h2>
 &lt;p>&lt;a href="https://blog.csdn.net/Yujian2563/article/details/124749727">vscode编译多个cpp文件&lt;/a>&lt;/p>
 &lt;p>将${file}更改为选中部分，使之编译所有cpp文件。注意：变更之后本工程内不能出现多个main函数！！&lt;/p>
 &lt;p>&lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526210444.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -11536,7 +11803,7 @@ IDR帧和I帧的关系：&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第1讲：RTSP协议讲解及代码实现</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/"/><id>https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-26T21:02:17+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">RTSP是一个实时传输流协议，是一个应用层的协议。通常说的RTSP包括RTSP协议、……</summary><content type="html">&lt;ul>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第1讲：RTSP协议讲解及代码实现</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/"/><id>https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-26T21:02:17+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">RTSP是一个实时传输流协议，是一个应用层的协议。通常说的RTSP包括RTSP协议、……</summary><content type="html">&lt;ul>
 &lt;li>RTSP是一个实时传输流协议，是一个应用层的协议。通常说的RTSP包括RTSP协议、RTP协议、RTCP协议，对于这些协议的作用简单的理解如下
 &lt;ul>
 &lt;li>RTSP协议：负责服务器与客户端之间的&lt;strong>请求与响应&lt;/strong>&lt;/li>
@@ -12209,7 +12476,7 @@ IDR帧和I帧的关系：&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">zmq 小白简易安装C++版</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/zmq-install/"/><id>https://keepjolly.com/posts/tech/zmq-install/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-26T20:55:03+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">主要参考博客: 在cmake工程中使用ZeroMQ,并加以补充 次要博客:Linux下Z……</summary><content type="html">&lt;p>主要参考博客:&lt;a href="https://www.cnblogs.com/y4247464/p/14241876.html"> 在cmake工程中使用ZeroMQ&lt;/a>,并加以补充
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">zmq 小白简易安装C++版</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/zmq-install/"/><id>https://keepjolly.com/posts/tech/zmq-install/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-26T20:55:03+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">主要参考博客: 在cmake工程中使用ZeroMQ,并加以补充 次要博客:Linux下Z……</summary><content type="html">&lt;p>主要参考博客:&lt;a href="https://www.cnblogs.com/y4247464/p/14241876.html"> 在cmake工程中使用ZeroMQ&lt;/a>,并加以补充
 次要博客:&lt;a href="https://blog.csdn.net/qq_41453285/article/details/105989698">Linux下ZeroMQ的编译安装与运行&lt;/a>
 文中提到arm,我只装在linux系统上，原本想用在通信中，最后还是用tcp实现了&lt;/p>
 &lt;h2 id="安装libzmq">安装libzmq&lt;/h2>
@@ -12394,7 +12661,7 @@ IDR帧和I帧的关系：&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">reply&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/install/" term="Install" label="Install"/></entry><entry><title type="text">混合编程之多线程</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/ctype-with-threading/"/><id>https://keepjolly.com/posts/create/ctype-with-threading/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-26T20:34:37+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">前言: 小白一个, 没有系统性的学习过python网络通信,只是单纯的cv加修改代码,仅……</summary><content type="html">&lt;blockquote>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/install/" term="Install" label="Install"/></entry><entry><title type="text">混合编程之多线程</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/ctype-with-threading/"/><id>https://keepjolly.com/posts/create/ctype-with-threading/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-26T20:34:37+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">前言: 小白一个, 没有系统性的学习过python网络通信,只是单纯的cv加修改代码,仅……</summary><content type="html">&lt;blockquote>
 &lt;p>前言: 小白一个, 没有系统性的学习过python网络通信,只是单纯的cv加修改代码,仅作留念以及参考用,感谢互联网博主们和bito插件,使得chatGPT得以免费使用.
 另外该多线程传输图片的速度比没有多线程执行还满,后续不对python服务端做优化,而改为C++服务端实现.写出来继续再分享把&lt;/p>
 &lt;/blockquote>
@@ -13244,7 +13511,7 @@ IDR帧和I帧的关系：&lt;/p>
 &lt;li>Broken pipe&lt;/li>
 &lt;/ol>
 &lt;/li>
-&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/ctype/" term="Ctype" label="Ctype"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/></entry><entry><title type="text">三维重建之路中</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/three-d-reconstruction-3/"/><id>https://keepjolly.com/posts/learn/three-d-reconstruction-3/</id><updated>2023-11-08T15:17:38+00:00</updated><published>2023-05-26T20:28:22+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">三维重建与极几何 单视图重构会受到多义性的影响，并且需要场景知识 而人眼是有两个眼睛，可……</summary><content type="html">&lt;h2 id="三维重建与极几何">三维重建与极几何&lt;/h2>
+&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/ctype/" term="Ctype" label="Ctype"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/></entry><entry><title type="text">三维重建之路中</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/three-d-reconstruction-3/"/><id>https://keepjolly.com/posts/learn/three-d-reconstruction-3/</id><updated>2023-11-09T16:00:28+00:00</updated><published>2023-05-26T20:28:22+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">三维重建与极几何 单视图重构会受到多义性的影响，并且需要场景知识 而人眼是有两个眼睛，可……</summary><content type="html">&lt;h2 id="三维重建与极几何">三维重建与极几何&lt;/h2>
 &lt;p>单视图重构会受到多义性的影响，并且需要场景知识
 &lt;img src="https://halo-1310118673.cos.ap-singapore.myqcloud.com/halo/blog/2023/05/20230526195839.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
 而人眼是有两个眼睛，可以组合两种图片，采用多视图几何&lt;/p>
