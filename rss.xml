@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.120.4 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sat, 11 Nov 2023 16:52:25 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>公务员行测--资料分析</title><link>https://keepjolly.com/posts/learn/data-analysis/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/data-analysis/</guid><pubDate>Sun, 12 Nov 2023 00:49:46 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="统计术语">统计术语&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.120.4 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Wed, 15 Nov 2023 15:17:45 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>公务员行测--资料分析</title><link>https://keepjolly.com/posts/learn/data-analysis/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/data-analysis/</guid><pubDate>Sun, 12 Nov 2023 00:49:46 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="统计术语">统计术语&lt;/h2>
 &lt;ul>
 &lt;li>基期量与现期量
 &lt;ul>
@@ -393,7 +393,7 @@
 &lt;td style="text-align:center">30&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">&lt;/td>
+&lt;td style="text-align:center">90&lt;/td>
 &lt;td style="text-align:center">得出2&lt;/td>
 &lt;td style="text-align:center">45&lt;/td>
 &lt;/tr>
@@ -425,7 +425,7 @@
 &lt;tr>
 &lt;td style="text-align:center">5*8=40&lt;/td>
 &lt;td style="text-align:center">2&lt;/td>
-&lt;td style="text-align:center">得出20&lt;/td>
+&lt;td style="text-align:center">40/2&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">&lt;/td>
@@ -524,7 +524,7 @@
 &lt;li>分类用加法，分步用乘法&lt;/li>
 &lt;li>排列有顺序，组合无顺序&lt;/li>
 &lt;li>$A^m_n = n(n − 1)(n − 2) … (n − m + 1)$&lt;/li>
-&lt;li>$\mathrm{C}&lt;em>{\mathrm{n}}^{\mathrm{m}}=\frac{\mathrm{A}&lt;/em>{\mathrm{n}}^{\mathrm{m}}}{\mathrm{m} !}=\frac{\mathrm{n}(\mathrm{n}-1)(\mathrm{n}-2) \ldots(\mathrm{n}-\mathrm{m}+1)}{m \times(m-1) \times(m-2) \ldots \times 2 \times 1}$&lt;/li>
+&lt;li>$C_{n}^{m}=\frac{A_{n}^{m}}{m!}=\frac{n(n-1)(n-2) \ldots(n-m+1)}{m \times(m-1) \times(m-2) \ldots \times 2 \times 1}$&lt;/li>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=8&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3931">捆绑法&lt;/a>：相邻问题，将相邻的元素捆绑成一个元素&lt;/li>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=8&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=4309">插空法&lt;/a>：不相邻问题，先对其他元素排列，然后将不相邻的元素插入空中&lt;/li>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=8&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=5160">插板法&lt;/a>：N 个&lt;strong>相同&lt;/strong>物品分给 M 个人，&lt;strong>每人至少分得一个&lt;/strong>，N 个物品中间有（N-1）个间隔，在间隔中插入（M-1）个板，共有$C^{M-1}_{N-1}$种情况。&lt;/li>
@@ -591,7 +591,7 @@
 &lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=9&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=4782">练3&lt;/a>,和奇=奇+偶，偶+奇&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="经济利润">经济利润※&lt;/h3>
+&lt;h3 id="经济利润-">经济利润 ※&lt;/h3>
 &lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=10&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=33">经济利润&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>利润折扣问题：
@@ -747,7 +747,7 @@
 &lt;li>正方形面积 $S_{\text {正方形 }}=a^{2}$ ; 长方形面积 $S_{\text {长方形 }}=a b$ ; 圆形面积 $S_{\text {圆 }}=\pi R^{2}$&lt;/li>
 &lt;li>三角形面积 $S_{\text {三角形 }}=\frac{1}{2} a h$ ; 同底等高面积相等！&lt;/li>
 &lt;li>平行四边形面积 $S_{\text {平行四边形 }}=a h$ ;&lt;/li>
-&lt;li>梯形面积 $S_{\text {梯形 }}=\frac{1}{2}(a+b) h$ ; 扇形面积 $S_{\text {扇形 }}=\frac{n}{360^{*}} \pi R^{2}$&lt;/li>
+&lt;li>梯形面积 $S_{\text {梯形 }}=\frac{1}{2}(a+b) h$ ; 扇形面积 $S_{\text {扇形 }}=\frac{n}{360^{°}} \pi R^{2}$&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>常用表面积公式
@@ -759,7 +759,7 @@
 &lt;li>常用体积公式
 &lt;ul>
 &lt;li>正方体的体积 $=a^{3}$ ; 长方体的体积 $=\mathrm{abc}$ ; 球的体积 $=\frac{4}{3} \pi R^{3}$&lt;/li>
-&lt;li>圆柱的体积 $=\pi R^{2} h$ ; 圆雉 (棱雉) 的体积 $=\frac{1}{3} \times 底面积 \times 高$&lt;/li>
+&lt;li>圆柱的体积 $=\pi R^{2} h$ ; 圆雉 (棱雉) 的体积 $=\frac{1}{3} \times S_{底} \times h$&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=12&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3139">勾股定理&lt;/a>
@@ -841,7 +841,8 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="提高篇">提高篇&lt;/h2>
-&lt;h2 id="牛吃草">牛吃草&lt;/h2>
+&lt;h3 id="牛吃草">牛吃草&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=230">牛吃草&lt;/a>&lt;/p>
 &lt;p>（例）一片草地（草以均匀的速度生长），240 头牛可以吃 6 天，200 头牛可 以吃 10 天，则这片草原可供 190 头牛吃的天数是（ ）。&lt;/p>
 &lt;ul>
 &lt;li>第一步，假设每头牛每天吃 1 份草。&lt;/li>
@@ -855,16 +856,228 @@
 &lt;li>第四步，解方程 y=600，x=140，即原草场有 600 份草，每天长 140 份草。&lt;/li>
 &lt;li>第五步，分析计算，190 头牛每天吃 190 份草，每天长 140 份，于是草场每 天实际减少 50 份草，600÷50=12 天。&lt;/li>
 &lt;/ul>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>某轮船发生漏水事故，漏洞处不断地匀速进水，船员发现险情后立 即开启抽水机向外抽水。已知每台抽水机每分钟抽水 20 立方米，若同时使用 2 台抽水机 15 分钟能把水抽完，若同时使用 3 台抽水机 9 分钟能把水抽完。当抽 水机开始向外抽水时，该轮船已进水（ ）立方米。&lt;/p>
+&lt;p>A．360 B．450 C．540 D．600&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1416">例4&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="循环周期问题">循环周期问题&lt;/h3>
-&lt;p>核心点：若一串事物以 T 为周期，且 A÷T=N 余 a，那么第 A 项等同于第 a 项。&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1615">循环周期&lt;/a>&lt;/p>
+&lt;p>核心点：若一串事物以 T 为周期，且 A÷T=N 余 a，那么第 A 项等同于第 a 项。整除是周期最后一项。&lt;/p>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>某政府机构内甲、乙两部门通过门户网站定期向社会发布消息，甲 部门每隔 2 天、乙部门每隔 3 天有一个发布日，节假日无休。问甲、乙两部门在 一个自然月内最多有几天同时为发布日？&lt;/p>
+&lt;p>A．5 B．2 C．6 D．3&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2002">例2&lt;/a>，每三天，每四天，公倍数12，从1号开始1 13 25&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>某新建小区计划在小区主干道两侧种植银杏树和梧桐树绿化环境， 一侧每隔 3 棵银杏树种 1 棵梧桐树，另一侧每隔 4 棵梧桐树种 1 棵银杏树，最终 两侧各种植了 35 棵树，问最多栽种了多少棵银杏树？&lt;/p>
+&lt;p>A、33 B、34 C、36 D、37&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2117">例3&lt;/a>，最多，优先种银杏树&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>为维护办公环境，某办公室四人在工作日每天轮流打扫卫生，每周 一打扫卫生的人给植物浇水。7 月 5 日周五轮到小玲打扫卫生，下一次小玲给植 物浇水是哪天？&lt;/p>
+&lt;p>A、7 月 15 日 B、7 月 22 日 C、7 月 29 日 D、8 月 5 日&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2409">例5&lt;/a>，画日历&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="星期日期问题">星期日期问题&lt;/h3>
 &lt;ul>
-&lt;li>平年与闰年： 四年一闰，百年不闰，四百年再闰。&lt;/li>
-&lt;li>大月与小月： 大月 31 天(1、3、5、7、8、10、12 月)；小月 30 天(4、6、9、11 月)&lt;/li>
-&lt;li>2 月 闰年：29 天 平年：28 天&lt;/li>
-&lt;li>每过一个平年（365÷7=52 余 1）星期+1，每过一个闰年（366÷7=52 余 2） 星期+2&lt;/li>
+&lt;li>平年与闰年： 四年一闰，百年不闰，四百年再闰。
+&lt;ul>
+&lt;li>$(year%4==0 &amp;amp;&amp;amp; year%100 !=0) || year%100 == 0$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>大月与小月： 大月 31 天(1、3、5、7、8、10、12 月)；小月 30 天(4、6、9、11 月)
+&lt;ul>
+&lt;li>拳头凸起31天，否则30天&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2 月
+&lt;ul>
+&lt;li>闰年：29 天 平年：28 天&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>每过一个平年（365÷7=52 余 1）星期几+1，每过一个闰年（366÷7=52 余 2） 星期几+2&lt;/li>
 &lt;li>星期日期推断：每连续 7 天一定包含一个完整的星期&lt;/li>
 &lt;/ul>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>小明、小红、小桃三人定期到某棋馆学围棋，小明每隔 3 天去一次， 小红每隔 4 天去一次，小桃每隔 5 天去一次。若 2016 年 2 月 10 日三人恰好在棋 馆相遇，则下次三人在棋馆相遇的日期是 ：&lt;/p>
+&lt;p>A．2016 年 4 月 8 日 B．2016 年 4 月 11 日 C．2016 年 4 月 9 日 D．2016 年 4 月 10 日&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3804">例2&lt;/a>，巩固上节例2，一个月一个来的计算&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>根据国务院办公厅部分节假日安排的通知，某年 8 月份有 22 个工 作日，那么当年的 8 月 1 日可能是：&lt;/p>
+&lt;p>A．周一或周三 B．周三或周日 C．周一或周四 D．周四或周日&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=4848">例4&lt;/a>，算前半部分，把后面变成几个完整的星期，推断前面；如1，2，3...4*7=28(工作日20天)。算后半部分，反之。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="比赛问题">比赛问题&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=5051">比赛问题&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>淘汰赛： 每场比赛淘汰一队，每轮比赛淘汰一半的队伍（如果总数是奇数，例如 11 个队伍一轮淘汰 5 个队伍，一支队伍轮空，保留 6 个队伍）。&lt;/li>
+&lt;li>单循环赛，每支队伍都要和其他队伍进行一次比赛，N 支队伍的总场次是$C_{N}^{2}=\frac{N \times(N-1)}{2}$&lt;/li>
+&lt;li>双循环赛，每支队伍都要和其他队伍进行两场比赛（分主场和客场），N 支队伍的总场次是$A^2_N=N \times (N-1)$&lt;/li>
+&lt;li>答案小直接画图&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>某篮球比赛有 12 支球队报名参加，比赛的第一阶段中，12 支球队 平均分成 2 个组进行单循环比赛，每组前 4 名进入第二阶段；第二阶段采用单场 淘汰赛，直至决出冠军。问亚军参加的场次占整个赛事总场次的比重为：&lt;/p>
+&lt;p>A．10%以下 B．10%-15% C．15%-20% D．20%以上&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=14&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=6154">例3&lt;/a>，单循环打5场，淘汰赛3场&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="统筹优化">统筹优化&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=18">枚举法、逻辑推断&lt;/a>，最优方法&lt;/p>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>某餐厅要用三个炉灶做出 9 道菜肴，做完各道菜肴需要的时间分别 是 1、2、3、4、4、5、5、6、7 分钟。每个炉灶在同一时间只能做一道菜肴。那 么，最少经过（）分钟，该餐厅可以做完全部菜肴。&lt;/p>
+&lt;p>A.11 B.12 C.13 D.14&lt;/p>
+&lt;p>[每个炉子平均放](&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=265">https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=265&lt;/a>）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=367">煎饼共30面，一次煎两个面，15min&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="钟表问题">钟表问题&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=896">追及问题 &lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>分针速度为 360°/60min=6°/min；时针的速度 30°/60min=0.5°/min&lt;/li>
+&lt;li>一整天分针走过 24 圈，时针走过 2 圈，多跑22圈，所以时针追上分针 22 次，时针和分针重合 22 次，垂直 44 次（每次重合前后都会呈现两次垂直）&lt;/li>
+&lt;li>给定任意时间，先考虑整点角度，再计算追击距离-(分速-时速)*时间的绝对值&lt;/li>
+&lt;/ul>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>从钟表的 12 点整开始，时针与分针的第一次垂直与再一次重叠中 间相隔的时间约（ ）&lt;/p>
+&lt;p>A.43 分钟 B.45 分钟 C.49 分钟 D.61 分钟&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1979">例2&lt;/a>，第一次垂直后，到重叠之间的距离为360-90=270，追击问题&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>张某下午六时多外出买菜，出门时看手表，发现表的时针和分针的 夹角为 110°，七时前回家时又看手表，发现时针和分针的夹角仍是 110°。那么张 某外出买菜用时：&lt;/p>
+&lt;p>A．20 分钟 B．30 分钟 C．40 分钟 D．50 分钟&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2225">眼睛就是尺&lt;/a>，追击220°&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="植树问题">植树问题&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2390">植树问题&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>单边线性植树：棵数＝总长÷间隔＋1，总长＝(棵数－1)×间隔；&lt;/li>
+&lt;li>单边环形植树：棵数＝总长÷间隔，总长＝棵数×间隔。&lt;/li>
+&lt;li>注意：区分题干中是在马路单边植树还是在马路双边植树。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3074">剪绳问题&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>将绳子截为 N 段，需要截（N-1）次，对折n次，有$2^n$个绳子，剪一刀$=2^n+1$&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>某条道路进行灯光增亮工程，原来间隔 35 米的路灯一共有 21 盏， 现要将路灯的间隔缩短为 25 米，那么有（）盏路灯无需移动。&lt;/p>
+&lt;p>A.2 B.3 C.4 D.5&lt;/p>
+&lt;p>算出总长，求公倍数&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="函数图问题">函数图问题&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3891">函数图形问题&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>$y=kx+b$&lt;/li>
+&lt;li>$y=ax^2+bx+c$, $x=-\frac{b}{2a}$ &amp;lt;=&amp;gt; $a+b=10,ab=25$&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>某集团三个分公司共同举行技能大赛，其中成绩靠前的 X 人获奖。 如获奖人数最多的分公司获奖的人数为 Y，问以下哪个图形能反映 Y 的上、下 限分别与 X 的关系？&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=15&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=4376">例2&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="数列问题">数列问题&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=617">数列问题&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>平均数 公式：$\bar{a}=\frac{a_{1}+a_{2}+\cdots \cdots+a_{n}}{n}$&lt;/li>
+&lt;li>等差数列
+&lt;ul>
+&lt;li>通项公式：$𝑎_𝑛 = 𝑎_1 + (𝑛 − 1)𝑑$&lt;/li>
+&lt;li>求和公式：和= $\frac{1}{2}$ ×（首项+末项）× 项数=平均数×项数=中位数×项数&lt;/li>
+&lt;li>项数公式：项数=（末项-首项）÷ 公差+1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>加减可以用尾数法、乘除不建议&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>某成衣厂对 9 名缝纫工进行技术评比，9 名工人的得分正好成等差 数列，9 人的平均得分是 86 分，前 5 名工人的得分之和是 460 分，那么前 7 名工人的得分之和是多少：&lt;/p>
+&lt;p>A、602 B、623 C、627 D、631&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=853">例4&lt;/a>，平均分=中位数&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="天平问题">天平问题&lt;/h3>
+&lt;p>23年浙江选调考到&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1178">天平问题&lt;/a>，选最小（玄学）&lt;/p>
+&lt;p>N 次称量可以从 $3^N$个物品中，选出具有差异的瑕疵品。&lt;/p>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>体育彩票 22 选 5 使用的 22 个彩球除编号不同外，其余完全一样。 由于生产过程疏忽，22 个彩球中有一个球的重量略重于其它球。现需要天平将 该球找出，那么，在最优方案下，最多要使用天平：&lt;/p>
+&lt;p>A.3 次 B.4 次 C.5 次 D.6 次&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1861">例3&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="空瓶换酒">空瓶换酒&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1899">空瓶换酒&lt;/a>
+解题技巧：我们将“M 个空瓶换 1 瓶酒”，转化为“（M-1）个空瓶换 1 个（无 瓶）酒”来完成答题，这样的题目我们默认是可以“借瓶再换瓶”的。&lt;/p>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>31 个小运动员在参加完比赛后，口渴难耐，去小店买饮料，饮料店 搞促销，凭三个空瓶子可以再换一瓶，它们最少买多少瓶饮料才能保证一人一瓶？&lt;/p>
+&lt;p>A．21 B．23 C．25 D．27&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2301">例2&lt;/a>，反面求 带答案&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="方阵问题">方阵问题&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=2410">方阵问题&lt;/a>
+若正方形方阵边长为 N，长方形方阵边长分别为 M、N，则：&lt;/p>
+&lt;ul>
+&lt;li>正方形实心方阵的总数为 $N^2$，长方形实心方阵的总数为 MN。&lt;/li>
+&lt;li>正方形方阵最外层数 4N-4，长方形方阵最外层数 2（M+N）- 4。 周长-4&lt;/li>
+&lt;li>方阵相邻两层人数&lt;strong>相差 8 人&lt;/strong>。&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>有一队士兵排成若干层的中空方阵，外层人数共有 68 人，中间一 层共 44 人，则该方阵士兵的总人数是：&lt;/p>
+&lt;p>A、296 人 B、308 人 C、324 个 D、348 个&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3198">例3&lt;/a>，中间 ，不是最内圈，等差数列&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="拿牌问题">拿牌问题&lt;/h3>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3474">拿牌问题&lt;/a>
+第一次拿完牌后，恰好凑成最大最小数之和的倍数。&lt;/p>
+&lt;hr>
+&lt;p>题目：
+一副扑克牌（共 54 张），甲乙两人轮流拿，每人每次只能拿 1、2、 3 或者 4 张，谁拿到最后一张谁赢。若甲先拿牌，则甲第一次应该拿多少张牌， 才能确保获胜？&lt;/p>
+&lt;p>A．1 B．2 C．3 D&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?p=16&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=3597">例1&lt;/a>，拿完4张后，1+4=5的倍数&lt;/p>
 &lt;h2 id="数字推理">数字推理&lt;/h2>
 &lt;p>&lt;a href="https://www.bilibili.com/video/BV1fQ4y1m7n1">适用于浙江&lt;/a>&lt;/p>
 &lt;h3 id="数推">数推&lt;/h3>
