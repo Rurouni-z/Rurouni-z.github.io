@@ -1,4 +1,187 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><title type="text">悠闲の小屋</title><subtitle type="html">一个极简主题的博客。</subtitle><updated>2023-11-17T15:36:02+00:00</updated><id>https://keepjolly.com/</id><link rel="alternate" type="text/html" href="https://keepjolly.com/"/><link rel="self" type="application/atom+xml" href="https://keepjolly.com/atom.xml"/><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><generator uri="https://gohugo.io/" version="0.120.4">Hugo</generator><entry><title type="text">公务员行测--资料分析</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/data-analysis/"/><id>https://keepjolly.com/posts/learn/data-analysis/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-11-12T00:49:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">统计术语 基期量与现期量 作为对比参照的时期称为基期，相对于基期的称为现期 增长量 基期量与……</summary><content type="html">&lt;h2 id="统计术语">统计术语&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><title type="text">悠闲の小屋</title><subtitle type="html">一个极简主题的博客。</subtitle><updated>2023-11-19T15:12:54+00:00</updated><id>https://keepjolly.com/</id><link rel="alternate" type="text/html" href="https://keepjolly.com/"/><link rel="self" type="application/atom+xml" href="https://keepjolly.com/atom.xml"/><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><generator uri="https://gohugo.io/" version="0.120.4">Hugo</generator><entry><title type="text">公务员行测--言语理解</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/speech-understanding/"/><id>https://keepjolly.com/posts/learn/speech-understanding/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-11-19T22:34:44+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">这个老师不讲选项的其他错误地方，有点不好 准备知识 国考主要考逻辑填空、中心理解 逻辑填空……</summary><content type="html">&lt;p>这个老师不讲选项的其他错误地方，有点不好&lt;/p>
+&lt;h2 id="准备知识">准备知识&lt;/h2>
+&lt;p>国考主要考逻辑填空、中心理解&lt;/p>
+&lt;ol>
+&lt;li>逻辑填空&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>形式：题干+问法+选项&lt;/li>
+&lt;li>题干为文段但是其中挖去1-4个成语/实词 形成空格&lt;/li>
+&lt;li>问法为填入画横线/括号部分最恰当的一项是？&lt;/li>
+&lt;li>选项为单选，四个选项 需理解文段，选出被挖去的成语/实词&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>中心理解&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>形式：题干+问法+选项&lt;/li>
+&lt;li>题干是完整文段，需要整体阅读理解&lt;/li>
+&lt;li>问法常为这段文字给我们的启示是？这段文字主要介绍？这段文字的核心观点是？这段文字意在强调？最适合做这段文字标题的是？等等目的是让你理解文段的问法&lt;/li>
+&lt;li>选项为单选，四个选项，需理解文段，选出文段核心意思&lt;/li>
+&lt;/ul>
+&lt;ol start="3">
+&lt;li>语句填入&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>形式：题干+问法+选项&lt;/li>
+&lt;li>题干为文段，但是挖去了其中的一句完整句子，形成空格&lt;/li>
+&lt;li>问法为填入画横线/括号部分最恰当的一句是？&lt;/li>
+&lt;li>选项为单选，四个选项，需理解文段及空格上下文，选出被挖去的句子&lt;/li>
+&lt;/ul>
+&lt;ol start="4">
+&lt;li>语句排序&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>形式：题干+问法+选项&lt;/li>
+&lt;li>题干是多个独立且乱序的句子，需要对句子按照合理顺序进行排序&lt;/li>
+&lt;li>问法是将以上句子重新排列，顺序最恰当正确的一组是？&lt;/li>
+&lt;li>选项为选项为单选，四个选项，每个选项都是一组句子顺序&lt;/li>
+&lt;/ul>
+&lt;ol start="5">
+&lt;li>下文推断&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>形式题干+问法选项&lt;/li>
+&lt;li>题干是完整的文段，需要整体阅读理解&lt;/li>
+&lt;li>问法为这段文字接下最可排讲述/谈论的是？&lt;/li>
+&lt;li>选项为单选，四个选项，需要选出下文可能出现的完整语句&lt;/li>
+&lt;/ul>
+&lt;ol start="6">
+&lt;li>细节判断&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>形式：题干+问法+选项&lt;/li>
+&lt;li>题干是完整的文段，需要整体阅读&lt;/li>
+&lt;li>问法为下列说法与原文相符/不符的是？以下无法从上述文字得知的是？以下概括文中未涉及的是？等等需要和文段部分内容一一对应的问法。&lt;/li>
+&lt;li>选项为单选，四个选项，需要和文段进行一一对应&lt;/li>
+&lt;/ul>
+&lt;h2 id="脉络剖析-基础">脉络剖析-基础&lt;/h2>
+&lt;ol>
+&lt;li>基本概述
+&lt;ol>
+&lt;li>什么叫脉络？其实就是写文章的思维，如果你要表达你的观点，在一篇完整的文章里面，不可能一上来什么都不说，直接说观点，一定是一步一步引出来的，因为写文章的基础思路，就是让读者能够充分体会你想表达的东西，所以一定要尽可能铺垫。&lt;br />常见的脉络顺承方式：代指（这，其，之，此）;转折（但是，而，而是。);结论&lt;br />(所以，由xx可得。....);相同话题等&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>三大原则
+&lt;ol>
+&lt;li>顺承说意义，后文意义不重要，这是观点提出的方式&lt;/li>
+&lt;li>顺承引出新话题，若后文反复论述新话题，则后文内容重要；若夏然而止提一下，&lt;br />则不重要
+&lt;ol>
+&lt;li>珊瑚的每一“树”可能包含着数十万计的微小珊瑚个体。每个珊瑚虫又带有少量的光合藻类，这些藻类为珊瑚提供食物，帮助其保持健康。当水温仅比平常上升几度时，面对环境压力的珊瑚虫会把藻类驱逐出去，先前的整支珊瑚群会变白——&lt;code>..这就是珊瑚白化..&lt;/code>。如果水温不能及时回冷，那么珊瑚可能会死于饥饿或感染。即使珊瑚能逃过一劫，也要耗费约十年时间才能完全复原。 &lt;br />这段文字意在说明： &lt;br />A.白化是珊瑚主动应对环境压力的结果 &lt;br />B.光合藻类对于珊瑚保持健康至关重要&lt;br />C.珊瑚礁是一个复杂又脆弱的生态群落 &lt;br />D.海洋升温对珊瑚的生存产生严重威胁&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>顺承引出新话题，但是处于结尾，则重要不重要都有可能，具体情况具体分&lt;br />析，这里考虑出题人截取文章的思维&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="中心理解">中心理解&lt;/h2>
+&lt;h3 id="以人为本">以人为本&lt;/h3>
+&lt;ol>
+&lt;li>基本概述&lt;br />何为以人为本？这里的人指的就是出题人 很多同学都有一个误区，言语理解主观理解去做题，其实这个是不对的，言语理解确实是理解为王，但是这个理解一定不能和出题人相悖，&lt;strong>你怎么想的并不重要，出题人表达的才是最重要的&lt;/strong>，也就是我常说的不要和出题入扳手航。&lt;br />但是难点就在于，什么才是出题人想表达的东西呢？为此，宝哥总结了&lt;strong>观点提出&lt;/strong>的六大方式，旨在让大家直接和出题人进行对话。主要看观点，中心思想。 （一旦观点找错，直接选错）&lt;/li>
+&lt;li>万能解题公式
+&lt;ol>
+&lt;li>熟练掌握观点提出的六大方式，分析文段结构，锁定观点。&lt;/li>
+&lt;li>找到观点发出的主语和宏观限定。&lt;/li>
+&lt;li>匹配选项，排除干扰。（主要匹配观点的同义词，同词，如题目的神经元）&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="观点提出的六大方式">观点提出的六大方式&lt;/h4>
+&lt;ol>
+&lt;li>必要性提出观点&lt;br />当题干中出现：&lt;code>..只有（G观点）才..&lt;/code>，&lt;code>..除非（G）否则不..&lt;/code> 等标志词以及&lt;code>..基础，&lt;/code>..假设..&lt;code>，&lt;/code>..前提..&lt;code>，&lt;/code>..关键，&lt;code>..必不可少..&lt;/code>，&lt;code>..依赖..&lt;/code>，&lt;code>..离不开..&lt;/code>等词语，&lt;strong>可表达必要性，被必要主体是观点&lt;/strong>&lt;/li>
+&lt;li>设问提出观点（难题）&lt;br />需要关注文段是否在解释设问，若&lt;strong>重点在于解释设问&lt;/strong>，设问直接锁定观点，答案就是对问题的解释/回答&lt;br />本质就是作者的主观性，也就是写作的目的性&lt;/li>
+&lt;/ol>
+&lt;p>题目：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>提到青少年面临的威胁，引人注目的新科技总是比那些熟悉和难以改变的问题更容易成为人们关注的焦点，这种偏差可能会使我们的感知发生偏离。除了使用手机导致糟糕的睡眠质量，家庭冲突也是造成青少年心理健康问题的一个重要原因，艾伦说：“不仅冲突和压力会影响大脑，缺乏温暖和社会支持同样会影响大脑”，有这么多证据都表明，其他因素会对青少年产生影响，为什么我们还只是担心手机？&lt;/p>
+&lt;p>这段文字旨在强调（ ）。&lt;/p>
+&lt;p>A.手机成瘾并非我们唯一需要关注的问题&lt;/p>
+&lt;p>B.当今青少年的身心健康面临着诸多威胁&lt;/p>
+&lt;p>C.熟悉和难以改变的问题对青少年的健康威胁更大&lt;/p>
+&lt;p>D.青少年缺乏温暖和社会支持的问题亟待引起重视&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>很多动物有着颜色古怪的眼睛，为什么人没有呢？眼睛的颜色其实是指虹膜的颜色，即眼睛中的一圈环状肌肉的颜色。如果虹膜中含有大量的色素，眼睛就会呈现黑褐色。随着黑色素含量的降低，眼睛就会呈现出淡褐色、绿色或蓝色。当瞳孔扩张时，虹膜处于收缩状态，由于黑色素的密度变大，眼睛的颜色便会加深一些；当瞳孔收缩时，虹膜便会舒张，眼睛的颜色也会因此变浅。不过，无论虹膜如何舒张或收缩，人类的眼睛也不可能是五颜六色的。&lt;/p>
+&lt;p>这段文字主要解释了（ ）。&lt;/p>
+&lt;p>A.为什么是黑色素决定人眼颜色的深浅&lt;/p>
+&lt;p>B.为什么是瞳孔的张缩决定眼睛的颜色&lt;/p>
+&lt;p>C.为什么人的眼睛不可能是五颜六色的&lt;/p>
+&lt;p>D.为什么人眼颜色不会像动物那样古怪&lt;/p>
+&lt;p>&lt;a href="https://www.chinagwy.org/html/stzx/qt/202206/98_510726.html">解释&lt;/a>，有点不符合设问解题，选D了。注意转折，”不过“&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>与其他物种相比，人类拥有非凡的认知能力。人脑究竟有什么独到之处，使得我们脱颖而出呢？脑容量是一个显而易见的候选者：如果大脑是产生意识认知的部位，更大的脑容量则意味着更高的认知能力，但大象有着比人类更大的脑容量，却不具备像我们一样灵活而复杂的行为。这是为什么呢？对于这个问题有一个简单的解释，首先，我们是灵长类，能够将大量神经元装进较小的大脑皮层里；其次，人类大脑的能量消耗可谓奢侈，只占不到2%的体重，却占了至少 20%的代谢率。而其他动物在野外摄取生肉中获取的能量，并不足以支持如此丰富的大脑皮层神经元活动。&lt;/p>
+&lt;p>这段文字旨在说明（ ）。&lt;/p>
+&lt;p>A.脑容量不能决定物种的认知水平&lt;/p>
+&lt;p>B.人类在认知能力上有绝对的优越性&lt;/p>
+&lt;p>C.人脑认知能力的形成十分复杂&lt;/p>
+&lt;p>D.生理因素决定了人类认知水平的优势&lt;/p>
+&lt;p>用提炼的观点/论证结果锁定选项，再利用选项反窥观点的正确性。要回答问题，选B不应该&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>提对策给观点(三大)&lt;/p>
+&lt;ol>
+&lt;li>开门见山给对策（直接对策）&lt;br />当出现要 、需、需要、亟需、必须、应该、能够等；以及：如果（D对策）就；只要（D）就时，直接表明作者观点
+&lt;ol>
+&lt;li>
+&lt;p>小剧场的“小”首先体现在物理空间的“小”。一般来讲，小剧场在物理空间的容纳度上是小的，演出空间基本上在 2000 平方米左右，观众席在 500 座以下，最为常见的为200至300个座位。参演人数不多，一般为 2 至 6 人，有时也会有独角戏。这就决定了演剧空间的紧凑性和观演关系的紧密性。因此，小剧场不宜过度渲染舞台美术的宏阔与震撼效果，而应该关注思想性、艺术形式表达或创新探索维度等戏剧艺术的本体呈现。用英国著名戏剧家彼得·布鲁克的话来说：“你若要看到什么有质量的东西，就得创造一个空的空间。”小剧场便是以鲜活的、新颖的方式传递内容、意义、表达、语言和音乐等核心艺术元素的存在。&lt;/p>
+&lt;p>这段文字意在说明（ ）。&lt;/p>
+&lt;p>A.小剧场营造出了一个空的艺术创作空间&lt;/p>
+&lt;p>B.物理空间的小决定了小剧场创作的特点&lt;/p>
+&lt;p>C.小剧场创作应更关注戏剧艺术本体呈现&lt;/p>
+&lt;p>D.小剧场具有更加多元化方向的创作取向&lt;/p>
+&lt;p>反复强调艺术 是重点&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>做法+危害/意义给对策&lt;br />阐述一个做法或者没有一个做法，会导致负面/正面结果。对策就是做法，危害/意义不重要
+&lt;ol>
+&lt;li>
+&lt;p>网络语言，尤其是当下流行的一些新潮网络语言，对汉语的发展是促进还是阻碍，是汉语文化的精华还是糟粕，得让其在不断的冲突中接受时间和实践的检验。而为了保护汉语，保证其固有的纯洁性而一味地摒弃打压某些带有消极影响的网络语言，甚至制定相关规定性条文条款来限制网络语言的发展，有时非但不能抑制，反而会起到相反的作用。&lt;br />这段文字意在说明： &lt;br />A.网络语言的发展不宜通过行政手段干预&lt;br /> B.汉语的传承离不开网络语言的不断创新&lt;br />C.网络语言的生命力需要依靠时间来检验&lt;br /> D.新生的网络语言可能影响汉语的纯洁性&lt;/p>
+&lt;p>”甚至“标递进，看递进的内容&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>当人脑在发育阶段接触到视觉刺激，也就是通过眼睛看到外界事物时，视皮层上的神经元会被激活，也就是说这些神经元会对不同的图像特征如颜色、形状、亮度、朝向、距离等进行加工。如果人正处于视觉功能的发育关键期，而视觉神经元未被充分激活，未来在看到某些图像特征时就不会产生反应或反应比较弱，导致看不见或看不清。&lt;br />这段文字最适合作为下列哪个观点的论据？ &lt;br />A.人体的不同机能存在着不同的发育关键期 &lt;br />B.人体功能发育不充分有可能造成终生影响&lt;br />C.图像特征对视皮层神经元的激活至关重要 &lt;br />D.错过发育关键期有可能丧失部分人体机能&lt;/p>
+&lt;p>&lt;a href="https://shenzhen.huatu.com/tiku/3579934.html">解释&lt;/a>，人体机能是什么意思，可以指神经元。这题太牵强了&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>否定型对策&lt;br />直接否定这个对策，常见的有不可以（做），不能（做）,不要（做）,禁止（做）
+&lt;ol>
+&lt;li>
+&lt;p>科举是一种复杂的文化现象。然而，在现代中国人对传统事物的看法中，科举大概也是被误解最深的制度。我们不应忽略科举制的历史性，试想在传统社会，能构想出其他更好的选才制度来吗？古代的中国统治者和许多文化巨人并不是没有看到科举制的局限和弊端，也不都是因循守旧之辈。但经过反复比较，最后还是选择了科举制，这实际上是一种择善而从。古代一些学者批评科举取士并不等于反对科举制度。从古代到近代的学者对科举制的批判主要是对应试现象、对考试内容和形式的批判，特别是对八股取士的批判，很少有人否定科举制本身。&lt;br />这段文字意在强调（ ）。&lt;br /> A.古代学者对科举制的肯定多过否定&lt;br /> B.科举制的弊端并非来自其制度本身&lt;br />C.科举制是当时历史条件下的理性选择 &lt;br />D.应从现实情况出发多角度评价科举制&lt;/p>
+&lt;p>&lt;a href="https://cq.m.jinbiaochi.com/sydw/news_450928.html">解释&lt;/a>，&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>利用他者经验提观点&lt;br />只要他者经验是成功的，可借鉴的，且文段作者没有提出自己的观点，则重点借鉴&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>关于“天鹅都是白色的”这一假说，通常我们应该一只一只地调查天鹅的颜色。这种通过积累个别观察来验证假说或推导出定律的方法称为“归纳法”。但基于归纳法的推论不能带来可靠的正确性，哲学家波普提出了不依赖于归纳法的科学方法。他认为，试图证明假说是错误的才是科学的研究。例如，即使只找到了一只黑天鹅，也能证明“天鹅都是白色的”这一假说是错误的。虽然基于归纳法的验证通常是不可靠的，但如果证伪的话，则是可靠的。通过反复“设定一个用来解决问题的假说，寻找其反例来证伪假说，再设立新的假说······”，就可以进行科学的研究。 &lt;br />这段文字意在说明（ ）。 &lt;br /> A.科学的方法应是“可归纳” &lt;br />B.科学的方法应是“可证伪” &lt;br />C.科学的方法应是“不可证伪” &lt;br />D.科学的方法应是“不可归纳”&lt;/p>
+&lt;p>不可证伪？要符合观点：试图证明假说是错误的才是科学的研究&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>人在社会上生活，当然有适应现实的必要，但这不该是教育的主要目的，蒙田说，“学习不是为了适应外界，而是为了丰富自己。”孔子也主张学习是“为己”而非“为人”的事情。古往今来的哲人都强调，学习是为了发展自己内在的精神能力，从而在外部现实面前获得自由。当然，这只是一种内在自由，但是，正是凭借这种内在自由，这些独立人格和独立思考的能力，那些优秀的灵魂和头脑对于改变人类社会的现实发生了伟大的作用。&lt;br />这段话想表达（ ）。 &lt;br />A.教育的目的是让人适应社会 &lt;br />B.学习是为了发展个人的内在精神能力&lt;br /> C.人的内在自由对改变人类社会的现实具有伟大的作用&lt;br /> D.教育的主要目的是让学生摆脱现实的束缚，而非适应现实&lt;/p>
+&lt;p>注意脉络顺承，他者观点(学习是为了发展自己内在的精神能力)不一定就是答案&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>传统的文明标准有三个，即文字、青铜器和城市。但后来许多考古学家发现，由于区域不同，文明的差异也很大，这个判断标准不但行不通，还会给考古工作带来阻碍。现如今，国际上对文明的判断标准主要是：已进入国家社会形态，具有一套礼仪系统和统治管理制度。良渚文化虽没有青铜器和较为成熟的文字，但具有早期国家社会形态和较为完整的礼仪系统以及管理制度，还具有许多东方文明的因素。有良渚文化考古研究员甚至认为，良渚文化是东方早期一个集大成的文明。&lt;br /> 这段文字意在强调：&lt;br /> A.城市应该成为认定文明的首要标准&lt;br /> B.良渚文化符合通行的文明判断标准&lt;br />C.传统的文明评判标准仍具有现实意义&lt;br /> D.良渚文化颠覆了传统上对文明的认识&lt;/p>
+&lt;p>D应该是文明标准，全文都在强调文明标准&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>重要性提观点&lt;/p>
+&lt;ol>
+&lt;li>其一：当题干中出现：事物意义，没有事物+危害时&lt;/li>
+&lt;li>其二：当题干中出现表达xx很重要的标志词，如：独特优势，显著提升，重要角色，有很大帮助，带来很多意义等等，可以以重要性表达观点（需灵活理解）&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry><entry><title type="text">公务员行测--资料分析</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/data-analysis/"/><id>https://keepjolly.com/posts/learn/data-analysis/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-11-12T00:49:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">统计术语 基期量与现期量 作为对比参照的时期称为基期，相对于基期的称为现期 增长量 基期量与……</summary><content type="html">&lt;h2 id="统计术语">统计术语&lt;/h2>
 &lt;ul>
 &lt;li>基期量与现期量
 &lt;ul>
@@ -62,7 +245,7 @@
 多步连除：分子分母同时截位，分开估算/交叉估算&lt;/li>
 &lt;/ol>
 &lt;p>关于多步截除的增长率估算&lt;/p>
-&lt;p>$\frac{1+11%}{1+3%}\approx 1+8%$&lt;/p>
+&lt;p>$\frac{1+11%}{1+3%} \approx 1+8%$&lt;/p>
 &lt;ul>
 &lt;li>乘法估算：乘法一大一小，各按比例缩放（粗算不需要，首位均不同）&lt;/li>
 &lt;li>$99\uparrow+101\downarrow \approx100*100$&lt;/li>
@@ -92,7 +275,7 @@
 &lt;p>2015 年我国高技术制造业实现主营业务收入 116048.9 亿元，比 2010 年增长 108.2%；占全部制造业企业的比重为 12.8%，比 2010 年提高 0.8 个百分点。2015 年我国高技术制造业实现利润总额 7233.7 亿元，比 2010 年增长 165.5%，增幅比 其他制造业平均水平高出 11.5 个百分点；高技术制造业利润总额占全部制造业 的比重为 13.1%，比 2010 年提高 0.5 个百分点。&lt;/p>
 &lt;p>【练 3】2010 年，我国制造业实现利润总额约多少万亿元？&lt;/p>
 &lt;p>A．1.3 B．1.7 C．2.2 D．2.8&lt;/p>
-&lt;p>&lt;a href="https://www.bilibili.com/video/BV1f4411C7z5/?p=4&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1425">2&lt;/a>，$\frac{利润_{2015}}{1+165.5%}÷比重_{2010}$&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1f4411C7z5/?p=4&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1425">2&lt;/a>，$\frac{利润_{2015}}{1+165.5%} \div 比重_{2010}$&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="分数比较">分数比较&lt;/h3>
@@ -259,7 +442,7 @@
 &lt;ul>
 &lt;li>看&lt;strong>部分&lt;/strong>的增长率大于&lt;strong>整体&lt;/strong>的增长率则比重增大，否则比重减少
 &lt;ul>
-&lt;li>$\frac{X_{part}}{Y_{all}}&lt;em>{去年} &amp;gt; \frac{X&lt;/em>{part}(1+a)}{Y_{all}(1+b)}_{今年}\Rightarrow a&amp;gt;b 比重\uparrow$&lt;/li>
+&lt;li>$去年：\frac{X_{part}}{Y_{all}} &amp;gt; 今年：\frac{X_{part}(1+a)}{Y_{all}(1+b)} \Rightarrow a&amp;gt;b 比重 \uparrow$&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>比重上升也可以反推部分增速快&lt;/li>
@@ -276,7 +459,7 @@
 &lt;li>平均数 等差数列平均数等于中位数&lt;/li>
 &lt;li>&lt;a href="https://www.bilibili.com/video/BV1f4411C7z5/?p=10&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1908">平均值增长率&lt;/a>：$\frac{今年-去年}{去年} = \frac{A(1+a)/B(1+b)-A/B}{A/B}= \frac{a-b}{1+b}$ （不等于比重差）&lt;/li>
 &lt;/ul>
-&lt;p>应用技巧：截位直除，叠除估算&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry><entry><title type="text">公务员行测--数量关系</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/quantitative-relation/"/><id>https://keepjolly.com/posts/learn/quantitative-relation/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-11-08T23:00:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">解题技巧 代入排除法 ※ 代入排除法 题型：多位数问题、余数问题、年龄问题、不定方程、不会做……</summary><content type="html">&lt;h2 id="解题技巧">解题技巧&lt;/h2>
+&lt;p>应用技巧：截位直除，叠除估算&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry><entry><title type="text">公务员行测--数量关系</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/quantitative-relation/"/><id>https://keepjolly.com/posts/learn/quantitative-relation/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-11-08T23:00:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">解题技巧 代入排除法 ※ 代入排除法 题型：多位数问题、余数问题、年龄问题、不定方程、不会做……</summary><content type="html">&lt;h2 id="解题技巧">解题技巧&lt;/h2>
 &lt;h3 id="代入排除法-">代入排除法 ※&lt;/h3>
 &lt;p>&lt;a href="https://www.bilibili.com/video/BV1nE411o7qp/?share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=631">代入排除法&lt;/a>&lt;/p>
 &lt;p>题型：多位数问题、余数问题、年龄问题、不定方程、不会做的&lt;/p>
@@ -1271,7 +1454,7 @@
 &lt;li>先考虑除法，除完看加减&lt;/li>
 &lt;li>次考虑乘法，乘完看加减&lt;/li>
 &lt;li>后考虑加减&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry><entry><title type="text">TCP_IP网络编程2</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/tcp_ip_network_programming2/"/><id>https://keepjolly.com/posts/learn/tcp_ip_network_programming2/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-08-13T22:41:59+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">进程间通信 进程间通信的基本概念 管道实现进程间通信 可以看出，为了完成进程间通信，需要创……</summary><content type="html">&lt;h2 id="进程间通信">进程间通信&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry><entry><title type="text">TCP_IP网络编程2</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/tcp_ip_network_programming2/"/><id>https://keepjolly.com/posts/learn/tcp_ip_network_programming2/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-08-13T22:41:59+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">进程间通信 进程间通信的基本概念 管道实现进程间通信 可以看出，为了完成进程间通信，需要创……</summary><content type="html">&lt;h2 id="进程间通信">进程间通信&lt;/h2>
 &lt;h3 id="进程间通信的基本概念">进程间通信的基本概念&lt;/h3>
 &lt;h4 id="管道实现进程间通信">管道实现进程间通信&lt;/h4>
 &lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/08/20230813224506.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="">&lt;br />可以看出，为了完成进程间通信，需要创建管道。管道并非属于进程的资源，而是和套接字一样，属于操作系统（也就不是 fork 函数的复制对象）。所以，两个进程通过操作系统提供的内存空间进行通信。下面是创建管道的函数。&lt;/p>
@@ -2742,7 +2925,7 @@ epoll 例程 A 中&lt;strong>注册&lt;/strong>文件描述符 B ，主要目的
 &lt;li>404 Not Found : 请求的文件不存在!&lt;/li>
 &lt;li>400 Bad Request : 请求方式错误，请检查！&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>消息头中含有传输的数据类型和长度等信息&lt;/strong>。图中的消息头含有如下信息：&lt;br />服务端名为 SimpleWebServer ，传输的数据类型为 text/html。数据长度不超过 2048 个字节。&lt;br />最后插入一个空行后，通过消息体&lt;strong>发送客户端请求的文件数据&lt;/strong>。以上就是实现 Web 服务端过程中必要的 HTTP 协议。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/network/" term="Network" label="Network"/></entry><entry><title type="text">TCP_IP网络编程</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/tcp_ip_network_programming/"/><id>https://keepjolly.com/posts/learn/tcp_ip_network_programming/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-08-13T22:41:54+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">理解网络编程和套接字 server： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25……</summary><content type="html">&lt;h2 id="理解网络编程和套接字">理解网络编程和套接字&lt;/h2>
+&lt;p>&lt;strong>消息头中含有传输的数据类型和长度等信息&lt;/strong>。图中的消息头含有如下信息：&lt;br />服务端名为 SimpleWebServer ，传输的数据类型为 text/html。数据长度不超过 2048 个字节。&lt;br />最后插入一个空行后，通过消息体&lt;strong>发送客户端请求的文件数据&lt;/strong>。以上就是实现 Web 服务端过程中必要的 HTTP 协议。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/network/" term="Network" label="Network"/></entry><entry><title type="text">TCP_IP网络编程</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/tcp_ip_network_programming/"/><id>https://keepjolly.com/posts/learn/tcp_ip_network_programming/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-08-13T22:41:54+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">理解网络编程和套接字 server： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25……</summary><content type="html">&lt;h2 id="理解网络编程和套接字">理解网络编程和套接字&lt;/h2>
 &lt;p>server：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -4466,7 +4649,7 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;p>传输数据后要等待服务器端返回的数据，因为程序代码中重复调用了 read 和 write 函数。只能这么写的原因之一是，程序在 1 个进程中运行，现在可以创建多个进程，因此可以分割数据收发过程。分割后过程如下图所示：&lt;br />&lt;img src="https://camo.githubusercontent.com/60042284b80365905816ec0f9ca8bcf8695895916bad37b1d6d30a716e85ba0f/68747470733a2f2f73322e617831782e636f6d2f323031392f30312f32312f6b5062686b442e706e67#from=url&amp;amp;id=Qy4jl&amp;amp;originHeight=295&amp;amp;originWidth=459&amp;amp;originalType=binary&amp;amp;ratio=1.2&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;status=done&amp;amp;style=none&amp;amp;title=" alt="">&lt;br />从图中可以看出，客户端的父进程负责接收数据，额外创建的子进程负责发送数据，分割后，父子进程分别负责输入输出，这样，无论客户端是否从服务器端接收完数据都可以进程传输。&lt;br />分割 I/O 程序的另外一个好处是，可以提高频繁交换数据的程序性能，如下图所示：&lt;br />&lt;img src="https://pic.keepjolly.com/halo/blog/2023/06/20230607220100-12.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5#from=url&amp;amp;id=EtW4z&amp;amp;originHeight=374&amp;amp;originWidth=612&amp;amp;originalType=binary&amp;amp;ratio=1.2&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;status=done&amp;amp;style=none&amp;amp;title=" alt="">&lt;br />根据上图显示可以看出，在网络不好的情况下，明显提升速度。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/riba2534/TCP-IP-NetworkNote/blob/master/ch10/echo_mpclient.c">回声客户端的 I/O 分割的代码实现&lt;/a>&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/network/" term="Network" label="Network"/></entry><entry><title type="text">MySQL学习</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/mysql-tutorial/"/><id>https://keepjolly.com/posts/learn/mysql-tutorial/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-08-10T23:13:48+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">数据库概述 资料+视频 MySQL常用命令 退出 exit 查看数据库 show databases; 使用某数据库 use xxx; 创建数据库……</summary><content type="html">&lt;h2 id="数据库概述">数据库概述&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/network/" term="Network" label="Network"/></entry><entry><title type="text">MySQL学习</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/mysql-tutorial/"/><id>https://keepjolly.com/posts/learn/mysql-tutorial/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-08-10T23:13:48+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">数据库概述 资料+视频 MySQL常用命令 退出 exit 查看数据库 show databases; 使用某数据库 use xxx; 创建数据库……</summary><content type="html">&lt;h2 id="数据库概述">数据库概述&lt;/h2>
 &lt;p>&lt;a href="https://pan.baidu.com/s/18W0ZRYaCR60mQWFP92CJsg?pwd=2you">资料&lt;/a>+&lt;a href="https://www.bilibili.com/video/BV1Vy4y1z7EX">视频&lt;/a>&lt;/p>
 &lt;h3 id="mysql常用命令">MySQL常用命令&lt;/h3>
 &lt;table>
@@ -5530,7 +5713,7 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;li>select a.ename, b.ename, b.sal from EMP a join EMP b on a.mgr=b.empno where b.sal &amp;gt; 3000;&lt;/li>
 &lt;li>select dname, ifnull(sum(sal),0) sum, count(e.deptno) num from EMP e right join DEPT d on e.deptno=d.deptno where dname like 'S%' or dname like '%S%' or dname like '%S' group by d.deptno;&lt;/li>
 &lt;li>update EMP set sal=sal*1.1 where timestampdiff(year, hiredate, now()) &amp;gt; 30;&lt;/li>
-&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/mysql/" term="MySQL" label="MySQL"/></entry><entry><title type="text">文字摘录</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/life/book-list/"/><id>https://keepjolly.com/posts/life/book-list/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-07-31T22:57:22+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">序 限于文字功底不是那么深厚，故摘录一些喜欢的文字。 禅与摩托车维修艺术 禅与摩托车维修艺……</summary><content type="html">&lt;h2 id="序">序&lt;/h2>
+&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/mysql/" term="MySQL" label="MySQL"/></entry><entry><title type="text">文字摘录</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/life/book-list/"/><id>https://keepjolly.com/posts/life/book-list/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-07-31T22:57:22+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">序 限于文字功底不是那么深厚，故摘录一些喜欢的文字。 禅与摩托车维修艺术 禅与摩托车维修艺……</summary><content type="html">&lt;h2 id="序">序&lt;/h2>
 &lt;p>限于文字功底不是那么深厚，故摘录一些喜欢的文字。&lt;/p>
 &lt;h2 id="禅与摩托车维修艺术">禅与摩托车维修艺术&lt;/h2>
 &lt;div class="db-card">
@@ -5838,13 +6021,13 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;/div>
 &lt;div class="db-card-cate">book&lt;/div>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/life/" term="life" label="life"/><category scheme="https://keepjolly.com/tags/life/" term="Life" label="Life"/><category scheme="https://keepjolly.com/tags/books/" term="Books" label="Books"/></entry><entry><title type="text">2023年小记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/life/2023-mynote/"/><id>https://keepjolly.com/posts/life/2023-mynote/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-06-12T22:32:10+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">电脑间切换硬盘 这是不可行的，已经尝试过了，双系统丢失，但是装回来就可以复原 如何大致规……</summary><content type="html">&lt;h2 id="电脑间切换硬盘">电脑间切换硬盘&lt;/h2>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/life/" term="life" label="life"/><category scheme="https://keepjolly.com/tags/life/" term="Life" label="Life"/><category scheme="https://keepjolly.com/tags/books/" term="Books" label="Books"/></entry><entry><title type="text">2023年小记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/life/2023-mynote/"/><id>https://keepjolly.com/posts/life/2023-mynote/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-06-12T22:32:10+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">电脑间切换硬盘 这是不可行的，已经尝试过了，双系统丢失，但是装回来就可以复原 如何大致规……</summary><content type="html">&lt;h2 id="电脑间切换硬盘">电脑间切换硬盘&lt;/h2>
 &lt;p>这是不可行的，已经尝试过了，双系统丢失，但是装回来就可以复原&lt;/p>
 &lt;h2 id="如何大致规划研究生生活">如何大致规划研究生生活&lt;/h2>
 &lt;p>如果你的导师是放养型，但是还是会试不试的关照你的话，前期多准备工作的事情，等后面老师给你
 安排任务的时候，努力去钻研科研。&lt;/p>
 &lt;p>纯放养型的话，只能早点确定方向，赶紧把毕业要求达到，如果想要工作学业两手抓的话，效果不太好
-容易两边都忘。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/life/" term="life" label="life"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">Instant-ngp笔记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/ngp_note/"/><id>https://keepjolly.com/posts/learn/ngp_note/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-06-09T22:28:26+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">翻译、思维导图（good） Instant-ngp 是做什么的 Given a fully connected neural network$m(\mathbf{y} ; \Phi)$ we are interested in an encoding of its inputs ${y}=\operatorname{enc}(\mathbf{x} ; \theta)$ that improves the……</summary><content type="html">&lt;p>&lt;a href="https://blog.csdn.net/qq_43620967/article/details/124382650">翻译&lt;/a>、&lt;a href="https://blog.csdn.net/qq_32981275/article/details/125888274">思维导图（good）&lt;/a>&lt;/p>
+容易两边都忘。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/life/" term="life" label="life"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">Instant-ngp笔记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/ngp_note/"/><id>https://keepjolly.com/posts/learn/ngp_note/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-06-09T22:28:26+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">翻译、思维导图（good） Instant-ngp 是做什么的 Given a fully connected neural network$m(\mathbf{y} ; \Phi)$ we are interested in an encoding of its inputs ${y}=\operatorname{enc}(\mathbf{x} ; \theta)$ that improves the……</summary><content type="html">&lt;p>&lt;a href="https://blog.csdn.net/qq_43620967/article/details/124382650">翻译&lt;/a>、&lt;a href="https://blog.csdn.net/qq_32981275/article/details/125888274">思维导图（good）&lt;/a>&lt;/p>
 &lt;h2 id="instant-ngp-是做什么的">Instant-ngp 是做什么的&lt;/h2>
 &lt;p>Given a fully connected neural network$m(\mathbf{y} ; \Phi)$ we are interested in &lt;strong>an encoding&lt;/strong> of its inputs ${y}=\operatorname{enc}(\mathbf{x} ; \theta)$ that &lt;strong>improves the approximation quality and training speed&lt;/strong> &lt;strong>across a wide range of applications&lt;/strong> without incurring a notable performance overhead.&lt;/p>
 &lt;h2 id="instant-ngp-是怎么做的">Instant-ngp 是怎么做的&lt;/h2>
@@ -5894,7 +6077,7 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;li>优化哈希函数。两种途径是开发解析微分的连续哈希函数，或者有效探索离散函数空间的进化优化算法。&lt;/li>
 &lt;li>生成网络。因为特征与规则的点网格不是互相映射，无法进行生成式网络。&lt;/li>
 &lt;li>外部的空白空间、内部的固体空间以及其表面的稀疏细节，非常适合我们的编码。&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">Nerf初入门笔记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/nerf_note/"/><id>https://keepjolly.com/posts/learn/nerf_note/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-06-07T22:05:23+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">推荐一个专栏, 转载自来源, 再加入自己的东西 NeRF 是做什么的 通过使用稀疏的输入视图优化底层……</summary><content type="html">&lt;p>推荐一个&lt;a href="https://zhuanlan.zhihu.com/p/486710656">专栏&lt;/a>, 转载自&lt;a href="https://zicx.top/notebook/research/nerf/note/#hierarchical-volume-sampling">来源&lt;/a>, 再加入自己的东西&lt;/p>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">Nerf初入门笔记</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/nerf_note/"/><id>https://keepjolly.com/posts/learn/nerf_note/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-06-07T22:05:23+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">推荐一个专栏, 转载自来源, 再加入自己的东西 NeRF 是做什么的 通过使用稀疏的输入视图优化底层……</summary><content type="html">&lt;p>推荐一个&lt;a href="https://zhuanlan.zhihu.com/p/486710656">专栏&lt;/a>, 转载自&lt;a href="https://zicx.top/notebook/research/nerf/note/#hierarchical-volume-sampling">来源&lt;/a>, 再加入自己的东西&lt;/p>
 &lt;h2 id="nerf-是做什么的">NeRF 是做什么的&lt;/h2>
 &lt;p>通过使用稀疏的输入视图优化底层的的连续辐射体积场函数，实现&lt;strong>复杂场景的新视角合成&lt;/strong>&lt;/p>
 &lt;h2 id="nerf-是怎么做的">NeRF 是怎么做的&lt;/h2>
@@ -6071,7 +6254,7 @@ signal(SIGINT , keycontrol);&lt;/p>
 &lt;ol>
 &lt;li>auto-coder&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/06/20230607220051-7.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="1.jpg">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">ubuntu安装nerfstudio</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/ubuntu-install-nerfstudio/"/><id>https://keepjolly.com/posts/tech/ubuntu-install-nerfstudio/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-28T09:34:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">博主配置： ubuntu18.04 gcc11 （需要$\geq$8） conda cuda11.8 安装教程（基本来源于此，除了Dependen……</summary><content type="html">&lt;p>博主配置：&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/06/20230607220051-7.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="1.jpg">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/computervision/" term="ComputerVision" label="ComputerVision"/></entry><entry><title type="text">ubuntu安装nerfstudio</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/ubuntu-install-nerfstudio/"/><id>https://keepjolly.com/posts/tech/ubuntu-install-nerfstudio/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-05-28T09:34:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">博主配置： ubuntu18.04 gcc11 （需要$\geq$8） conda cuda11.8 安装教程（基本来源于此，除了Dependen……</summary><content type="html">&lt;p>博主配置：&lt;/p>
 &lt;ul>
 &lt;li>ubuntu18.04&lt;/li>
 &lt;li>gcc11 （&lt;a href="https://github.com/NVlabs/tiny-cuda-nn#requirements">需要&lt;/a>$\geq$8）&lt;/li>
@@ -6294,7 +6477,7 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 &lt;blockquote>
 &lt;p>nvcc -V&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/410764884">参考链接&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/ubuntu/" term="Ubuntu" label="Ubuntu"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">MemE关键美化</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/meme-custom-important/"/><id>https://keepjolly.com/posts/create/meme-custom-important/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-27T19:59:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">运用snippet简化配置front-matter；运用action简化配置algolia上传；修改about页加入视频和音频；创建toc右边显示，定制为页面级显示；加入豆瓣条目。</summary><content type="html">&lt;h2 id="hugo坑">hugo坑&lt;/h2>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/410764884">参考链接&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/ubuntu/" term="Ubuntu" label="Ubuntu"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">MemE关键美化</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/meme-custom-important/"/><id>https://keepjolly.com/posts/create/meme-custom-important/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-05-27T19:59:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">运用snippet简化配置front-matter；运用action简化配置algolia上传；修改about页加入视频和音频；创建toc右边显示，定制为页面级显示；加入豆瓣条目。</summary><content type="html">&lt;h2 id="hugo坑">hugo坑&lt;/h2>
 &lt;ul>
 &lt;li>使用shortcode时，无论放何处都会生效，必须取消shortcode格式，如：
 &lt;ul>
@@ -7472,7 +7655,7 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 &lt;li>&lt;a href="https://immmmm.com/post-show-douban-item/">文章内显示豆瓣条目&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://immmmm.com/hugo-shortcodes-douban/">Hugo 豆瓣短代码&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.sulvblog.cn/posts/blog/shortcodes/#5-%e5%bc%95%e5%85%a5%e8%b1%86%e7%93%a3%e9%98%85%e8%af%bb%e5%92%8c%e7%94%b5%e5%bd%b1%e5%8d%a1%e7%89%87">引入豆瓣（暂时没用）&lt;/a>&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/></entry><entry><title type="text">MemE美化1</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/meme-custom-1/"/><id>https://keepjolly.com/posts/create/meme-custom-1/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-27T19:51:00+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">设置为section 文章路径放在 blog/content/posts ，其内每个文件夹必须有个_index.md文件，为……</summary><content type="html">&lt;h2 id="设置为section">设置为section&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/></entry><entry><title type="text">MemE美化1</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/meme-custom-1/"/><id>https://keepjolly.com/posts/create/meme-custom-1/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-05-27T19:51:00+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">设置为section 文章路径放在 blog/content/posts ，其内每个文件夹必须有个_index.md文件，为……</summary><content type="html">&lt;h2 id="设置为section">设置为section&lt;/h2>
 &lt;p>文章路径放在 blog/content/posts ，其内每个文件夹必须有个_index.md文件，为空没事，并且posts下也需要有。&lt;/p>
 &lt;p>如果需要在第一个section内创建文件夹但是不显示该文件夹名可以配置Permalinks属性为&lt;/p>
 &lt;p>[permalinks]
@@ -7719,7 +7902,7 @@ posts = '/posts/:sections[1]/:slug/'&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">listDateFormat&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;2006-01-02&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/></entry><entry><title type="text">提高一些链接的下载速度</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/improve-download-speed/"/><id>https://keepjolly.com/posts/tech/improve-download-speed/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-26T21:16:39+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">做记录用 cuda下载 https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run 将其中的.nvidia.com改为.. .cn ..即可，并将链接复制……</summary><content type="html">&lt;p>做记录用&lt;/p>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/></entry><entry><title type="text">提高一些链接的下载速度</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/improve-download-speed/"/><id>https://keepjolly.com/posts/tech/improve-download-speed/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-05-26T21:16:39+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">做记录用 cuda下载 https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run 将其中的.nvidia.com改为.. .cn ..即可，并将链接复制……</summary><content type="html">&lt;p>做记录用&lt;/p>
 &lt;h2 id="cuda下载">cuda下载&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run">https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run&lt;/a>
@@ -7759,7 +7942,7 @@ github.com
 &lt;p>sudo systemd-resolve --flush-caches&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="还是慢">还是慢&lt;/h3>
-&lt;p>用镜像gitee吧&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">混合编程python与C++</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/python-client-c-server/"/><id>https://keepjolly.com/posts/create/python-client-c-server/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-26T21:14:31+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">上个版本: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,……</summary><content type="html">&lt;p>&lt;a href="https://keepjolly.com/posts/create/python-client-c-server/">上个版本&lt;/a>: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,方便后续维护.
+&lt;p>用镜像gitee吧&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">混合编程python与C++</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/python-client-c-server/"/><id>https://keepjolly.com/posts/create/python-client-c-server/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-05-26T21:14:31+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">上个版本: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,……</summary><content type="html">&lt;p>&lt;a href="https://keepjolly.com/posts/create/python-client-c-server/">上个版本&lt;/a>: 只是用到ctypes进行传输, 这次将python服务端更改为C++服务端,方便后续维护.
 本文实现功能: python传输图片给C++, C++接受图片后对图片进行处理,并将结果返回给python客户端, pass image from python to C++&lt;/p>
 &lt;h2 id="c-服务端">C++ 服务端&lt;/h2>
 &lt;h3 id="h文件">.h文件&lt;/h3>
@@ -8774,7 +8957,7 @@ github.com
 &lt;li>&lt;a href="https://blog.csdn.net/guotianqing/article/details/95970785">Linux c++获取本地毫秒级精确时间&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://python3-cookbook.readthedocs.io/zh_CN/latest/c06/p12_read_nested_and_variable_sized_binary_structures.html">如果不想用json,可以试试struct&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://blog.csdn.net/Mculover666/article/details/103796256">利用json来传输分类结果&lt;/a>&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/></entry><entry><title type="text">第3、4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/"/><id>https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-26T21:04:25+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">音频原理 博客 声音 频率（音调）：声音1秒内周期性变化的次数 人耳的听觉范围在20Hz-2……</summary><content type="html">&lt;h2 id="音频原理">音频原理&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/></entry><entry><title type="text">第3、4讲：实现一个基于TCP的RTP同时传输h264和aac的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/"/><id>https://keepjolly.com/posts/learn/rtsp-server-of-h264-and-aac-based-on-rtp-over-tcp/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-05-26T21:04:25+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">音频原理 博客 声音 频率（音调）：声音1秒内周期性变化的次数 人耳的听觉范围在20Hz-2……</summary><content type="html">&lt;h2 id="音频原理">音频原理&lt;/h2>
 &lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/53475069">博客&lt;/a>&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>声音&lt;/strong>&lt;/li>
@@ -11155,7 +11338,7 @@ github.com
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第2讲：实现一个传输h264的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/h264-rtsp-server/"/><id>https://keepjolly.com/posts/learn/h264-rtsp-server/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-26T21:03:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">vscode配置 vscode编译多个cpp文件 将${file}更改为选中部分，使之编……</summary><content type="html">&lt;h2 id="vscode配置">vscode配置&lt;/h2>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第2讲：实现一个传输h264的RTSP服务器</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/h264-rtsp-server/"/><id>https://keepjolly.com/posts/learn/h264-rtsp-server/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-05-26T21:03:50+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">vscode配置 vscode编译多个cpp文件 将${file}更改为选中部分，使之编……</summary><content type="html">&lt;h2 id="vscode配置">vscode配置&lt;/h2>
 &lt;p>&lt;a href="https://blog.csdn.net/Yujian2563/article/details/124749727">vscode编译多个cpp文件&lt;/a>&lt;/p>
 &lt;p>将${file}更改为选中部分，使之编译所有cpp文件。注意：变更之后本工程内不能出现多个main函数！！&lt;/p>
 &lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/05/20230526210444.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
@@ -12787,7 +12970,7 @@ IDR帧和I帧的关系：&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第1讲：RTSP协议讲解及代码实现</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/"/><id>https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-26T21:02:17+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">RTSP是一个实时传输流协议，是一个应用层的协议。通常说的RTSP包括RTSP协议、……</summary><content type="html">&lt;ul>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">第1讲：RTSP协议讲解及代码实现</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/"/><id>https://keepjolly.com/posts/learn/rtsp-protocol-explanation-and-code-implementation/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-05-26T21:02:17+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">RTSP是一个实时传输流协议，是一个应用层的协议。通常说的RTSP包括RTSP协议、……</summary><content type="html">&lt;ul>
 &lt;li>RTSP是一个实时传输流协议，是一个应用层的协议。通常说的RTSP包括RTSP协议、RTP协议、RTCP协议，对于这些协议的作用简单的理解如下
 &lt;ul>
 &lt;li>RTSP协议：负责服务器与客户端之间的&lt;strong>请求与响应&lt;/strong>&lt;/li>
@@ -13460,7 +13643,7 @@ IDR帧和I帧的关系：&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">zmq 小白简易安装C++版</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/zmq-install/"/><id>https://keepjolly.com/posts/tech/zmq-install/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-26T20:55:03+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">主要参考博客: 在cmake工程中使用ZeroMQ,并加以补充 次要博客:Linux下Z……</summary><content type="html">&lt;p>主要参考博客:&lt;a href="https://www.cnblogs.com/y4247464/p/14241876.html"> 在cmake工程中使用ZeroMQ&lt;/a>,并加以补充
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/><category scheme="https://keepjolly.com/tags/rtsp/" term="RTSP" label="RTSP"/></entry><entry><title type="text">zmq 小白简易安装C++版</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/zmq-install/"/><id>https://keepjolly.com/posts/tech/zmq-install/</id><updated>2023-11-19T15:12:49+00:00</updated><published>2023-05-26T20:55:03+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">主要参考博客: 在cmake工程中使用ZeroMQ,并加以补充 次要博客:Linux下Z……</summary><content type="html">&lt;p>主要参考博客:&lt;a href="https://www.cnblogs.com/y4247464/p/14241876.html"> 在cmake工程中使用ZeroMQ&lt;/a>,并加以补充
 次要博客:&lt;a href="https://blog.csdn.net/qq_41453285/article/details/105989698">Linux下ZeroMQ的编译安装与运行&lt;/a>
 文中提到arm,我只装在linux系统上，原本想用在通信中，最后还是用tcp实现了&lt;/p>
 &lt;h2 id="安装libzmq">安装libzmq&lt;/h2>
@@ -13645,854 +13828,4 @@ IDR帧和I帧的关系：&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">reply&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/install/" term="Install" label="Install"/></entry><entry><title type="text">混合编程之多线程</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/ctype-with-threading/"/><id>https://keepjolly.com/posts/create/ctype-with-threading/</id><updated>2023-11-17T15:35:58+00:00</updated><published>2023-05-26T20:34:37+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">前言: 小白一个, 没有系统性的学习过python网络通信,只是单纯的cv加修改代码,仅……</summary><content type="html">&lt;blockquote>
-&lt;p>前言: 小白一个, 没有系统性的学习过python网络通信,只是单纯的cv加修改代码,仅作留念以及参考用,感谢互联网博主们和bito插件,使得chatGPT得以免费使用.
-另外该多线程传输图片的速度比没有多线程执行还满,后续不对python服务端做优化,而改为C++服务端实现.写出来继续再分享把&lt;/p>
-&lt;/blockquote>
-&lt;p>前篇博客&lt;a href="https://keepjolly.com/archives/python-and-ctypes">地址&lt;/a>&lt;/p>
-&lt;h2 id="python客户端">python客户端&lt;/h2>
-&lt;p>采用&lt;a href="https://blog.csdn.net/weixin_43533825/article/details/89155648">生存者消费者模式&lt;/a>、&lt;a href="https://blog.csdn.net/u012720518/article/details/107410192">模式２&lt;/a>和&lt;a href="https://blog.csdn.net/qq_36441027/article/details/105929246">joinablequeue&lt;/a>库.
-客户端实现还是比较简单的,麻烦在server端&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;span class="lnt">30
-&lt;/span>&lt;span class="lnt">31
-&lt;/span>&lt;span class="lnt">32
-&lt;/span>&lt;span class="lnt">33
-&lt;/span>&lt;span class="lnt">34
-&lt;/span>&lt;span class="lnt">35
-&lt;/span>&lt;span class="lnt">36
-&lt;/span>&lt;span class="lnt">37
-&lt;/span>&lt;span class="lnt">38
-&lt;/span>&lt;span class="lnt">39
-&lt;/span>&lt;span class="lnt">40
-&lt;/span>&lt;span class="lnt">41
-&lt;/span>&lt;span class="lnt">42
-&lt;/span>&lt;span class="lnt">43
-&lt;/span>&lt;span class="lnt">44
-&lt;/span>&lt;span class="lnt">45
-&lt;/span>&lt;span class="lnt">46
-&lt;/span>&lt;span class="lnt">47
-&lt;/span>&lt;span class="lnt">48
-&lt;/span>&lt;span class="lnt">49
-&lt;/span>&lt;span class="lnt">50
-&lt;/span>&lt;span class="lnt">51
-&lt;/span>&lt;span class="lnt">52
-&lt;/span>&lt;span class="lnt">53
-&lt;/span>&lt;span class="lnt">54
-&lt;/span>&lt;span class="lnt">55
-&lt;/span>&lt;span class="lnt">56
-&lt;/span>&lt;span class="lnt">57
-&lt;/span>&lt;span class="lnt">58
-&lt;/span>&lt;span class="lnt">59
-&lt;/span>&lt;span class="lnt">60
-&lt;/span>&lt;span class="lnt">61
-&lt;/span>&lt;span class="lnt">62
-&lt;/span>&lt;span class="lnt">63
-&lt;/span>&lt;span class="lnt">64
-&lt;/span>&lt;span class="lnt">65
-&lt;/span>&lt;span class="lnt">66
-&lt;/span>&lt;span class="lnt">67
-&lt;/span>&lt;span class="lnt">68
-&lt;/span>&lt;span class="lnt">69
-&lt;/span>&lt;span class="lnt">70
-&lt;/span>&lt;span class="lnt">71
-&lt;/span>&lt;span class="lnt">72
-&lt;/span>&lt;span class="lnt">73
-&lt;/span>&lt;span class="lnt">74
-&lt;/span>&lt;span class="lnt">75
-&lt;/span>&lt;span class="lnt">76
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">pickle&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">time&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">multiprocessing&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Process&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">JoinableQueue&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">queue&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Queue&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">multiprocessing.connection&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Client&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Listener&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">client_apart&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">draw_box&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">image&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">plot_boxes&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">img_encode&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">natsort&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">ns&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">natsorted&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">host&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;localhost&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">9006&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">total_time&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">img_product&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_queue&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">path_mode&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;image&amp;#39;&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">path_mode&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;image&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">img_encode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_obj&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="s1">&amp;#39;frame_num&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;image&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="c1"># need frame_num?&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">put&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_obj&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">elif&lt;/span> &lt;span class="n">path_mode&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;dir&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dir_list&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">listdir&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">files&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">natsorted&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">dir_list&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">alg&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">ns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">PATH&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 顺序读取文件名&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">filename&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">files&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_path&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">path&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s1">&amp;#39;/&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">filename&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">img_encode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_path&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_obj&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="s1">&amp;#39;frame_num&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;image&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="c1"># need frame_num?&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">put&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_obj&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">put&lt;/span>&lt;span class="p">({&lt;/span>&lt;span class="s1">&amp;#39;frame_num&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;image&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;end&amp;#34;&lt;/span>&lt;span class="p">})&lt;/span> &lt;span class="c1"># end signal &lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">server_consumer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_queue&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 1. send data&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_obj&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">img_queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">get&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">img_obj&lt;/span> &lt;span class="ow">is&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">client&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1"># avoid connection-reset-by-peer&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span> &lt;span class="c1"># exit end&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">data_bytes&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pickle&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">dumps&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_obj&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">start&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">start_time&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">strftime&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;%Y-%m-&lt;/span>&lt;span class="si">%d&lt;/span>&lt;span class="s2"> %H:%M:%S&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">localtime&lt;/span>&lt;span class="p">())&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">client&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">send&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data_bytes&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 40ms/per send img&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># print(&amp;#39;send cost time: &amp;#39;, (end - start))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_queue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">task_done&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">try&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">det_result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">client&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">recv&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">end&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">end_time&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">strftime&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;%Y-%m-&lt;/span>&lt;span class="si">%d&lt;/span>&lt;span class="s2"> %H:%M:%S&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">localtime&lt;/span>&lt;span class="p">())&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;recv cost time: &amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">end&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">except&lt;/span> &lt;span class="ne">EOFError&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">det_result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pickle&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">loads&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">det_result&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">draw_box&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">det_result&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">img_obj&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="vm">__name__&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;__main__&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">client&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Client&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">host&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">port&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Listener&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_dir&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;./data&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">one_img&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;./data/Enterprise001.jpg&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mode&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;dir&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_jq&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">JoinableQueue&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">producer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Process&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">img_product&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">args&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_jq&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">img_dir&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">mode&lt;/span>&lt;span class="p">,))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">consumer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Process&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">server_consumer&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">args&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_jq&lt;/span>&lt;span class="p">,))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">consumer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">daemon&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">True&lt;/span> &lt;span class="c1"># set daemon but not set join()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">producer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">consumer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">producer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="python服务端">Python服务端&lt;/h2>
-&lt;p>此处接受图片和发送结果线程处在一个类内,使得可以共享一个Listener,来自chatGPT的idea.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt"> 10
-&lt;/span>&lt;span class="lnt"> 11
-&lt;/span>&lt;span class="lnt"> 12
-&lt;/span>&lt;span class="lnt"> 13
-&lt;/span>&lt;span class="lnt"> 14
-&lt;/span>&lt;span class="lnt"> 15
-&lt;/span>&lt;span class="lnt"> 16
-&lt;/span>&lt;span class="lnt"> 17
-&lt;/span>&lt;span class="lnt"> 18
-&lt;/span>&lt;span class="lnt"> 19
-&lt;/span>&lt;span class="lnt"> 20
-&lt;/span>&lt;span class="lnt"> 21
-&lt;/span>&lt;span class="lnt"> 22
-&lt;/span>&lt;span class="lnt"> 23
-&lt;/span>&lt;span class="lnt"> 24
-&lt;/span>&lt;span class="lnt"> 25
-&lt;/span>&lt;span class="lnt"> 26
-&lt;/span>&lt;span class="lnt"> 27
-&lt;/span>&lt;span class="lnt"> 28
-&lt;/span>&lt;span class="lnt"> 29
-&lt;/span>&lt;span class="lnt"> 30
-&lt;/span>&lt;span class="lnt"> 31
-&lt;/span>&lt;span class="lnt"> 32
-&lt;/span>&lt;span class="lnt"> 33
-&lt;/span>&lt;span class="lnt"> 34
-&lt;/span>&lt;span class="lnt"> 35
-&lt;/span>&lt;span class="lnt"> 36
-&lt;/span>&lt;span class="lnt"> 37
-&lt;/span>&lt;span class="lnt"> 38
-&lt;/span>&lt;span class="lnt"> 39
-&lt;/span>&lt;span class="lnt"> 40
-&lt;/span>&lt;span class="lnt"> 41
-&lt;/span>&lt;span class="lnt"> 42
-&lt;/span>&lt;span class="lnt"> 43
-&lt;/span>&lt;span class="lnt"> 44
-&lt;/span>&lt;span class="lnt"> 45
-&lt;/span>&lt;span class="lnt"> 46
-&lt;/span>&lt;span class="lnt"> 47
-&lt;/span>&lt;span class="lnt"> 48
-&lt;/span>&lt;span class="lnt"> 49
-&lt;/span>&lt;span class="lnt"> 50
-&lt;/span>&lt;span class="lnt"> 51
-&lt;/span>&lt;span class="lnt"> 52
-&lt;/span>&lt;span class="lnt"> 53
-&lt;/span>&lt;span class="lnt"> 54
-&lt;/span>&lt;span class="lnt"> 55
-&lt;/span>&lt;span class="lnt"> 56
-&lt;/span>&lt;span class="lnt"> 57
-&lt;/span>&lt;span class="lnt"> 58
-&lt;/span>&lt;span class="lnt"> 59
-&lt;/span>&lt;span class="lnt"> 60
-&lt;/span>&lt;span class="lnt"> 61
-&lt;/span>&lt;span class="lnt"> 62
-&lt;/span>&lt;span class="lnt"> 63
-&lt;/span>&lt;span class="lnt"> 64
-&lt;/span>&lt;span class="lnt"> 65
-&lt;/span>&lt;span class="lnt"> 66
-&lt;/span>&lt;span class="lnt"> 67
-&lt;/span>&lt;span class="lnt"> 68
-&lt;/span>&lt;span class="lnt"> 69
-&lt;/span>&lt;span class="lnt"> 70
-&lt;/span>&lt;span class="lnt"> 71
-&lt;/span>&lt;span class="lnt"> 72
-&lt;/span>&lt;span class="lnt"> 73
-&lt;/span>&lt;span class="lnt"> 74
-&lt;/span>&lt;span class="lnt"> 75
-&lt;/span>&lt;span class="lnt"> 76
-&lt;/span>&lt;span class="lnt"> 77
-&lt;/span>&lt;span class="lnt"> 78
-&lt;/span>&lt;span class="lnt"> 79
-&lt;/span>&lt;span class="lnt"> 80
-&lt;/span>&lt;span class="lnt"> 81
-&lt;/span>&lt;span class="lnt"> 82
-&lt;/span>&lt;span class="lnt"> 83
-&lt;/span>&lt;span class="lnt"> 84
-&lt;/span>&lt;span class="lnt"> 85
-&lt;/span>&lt;span class="lnt"> 86
-&lt;/span>&lt;span class="lnt"> 87
-&lt;/span>&lt;span class="lnt"> 88
-&lt;/span>&lt;span class="lnt"> 89
-&lt;/span>&lt;span class="lnt"> 90
-&lt;/span>&lt;span class="lnt"> 91
-&lt;/span>&lt;span class="lnt"> 92
-&lt;/span>&lt;span class="lnt"> 93
-&lt;/span>&lt;span class="lnt"> 94
-&lt;/span>&lt;span class="lnt"> 95
-&lt;/span>&lt;span class="lnt"> 96
-&lt;/span>&lt;span class="lnt"> 97
-&lt;/span>&lt;span class="lnt"> 98
-&lt;/span>&lt;span class="lnt"> 99
-&lt;/span>&lt;span class="lnt">100
-&lt;/span>&lt;span class="lnt">101
-&lt;/span>&lt;span class="lnt">102
-&lt;/span>&lt;span class="lnt">103
-&lt;/span>&lt;span class="lnt">104
-&lt;/span>&lt;span class="lnt">105
-&lt;/span>&lt;span class="lnt">106
-&lt;/span>&lt;span class="lnt">107
-&lt;/span>&lt;span class="lnt">108
-&lt;/span>&lt;span class="lnt">109
-&lt;/span>&lt;span class="lnt">110
-&lt;/span>&lt;span class="lnt">111
-&lt;/span>&lt;span class="lnt">112
-&lt;/span>&lt;span class="lnt">113
-&lt;/span>&lt;span class="lnt">114
-&lt;/span>&lt;span class="lnt">115
-&lt;/span>&lt;span class="lnt">116
-&lt;/span>&lt;span class="lnt">117
-&lt;/span>&lt;span class="lnt">118
-&lt;/span>&lt;span class="lnt">119
-&lt;/span>&lt;span class="lnt">120
-&lt;/span>&lt;span class="lnt">121
-&lt;/span>&lt;span class="lnt">122
-&lt;/span>&lt;span class="lnt">123
-&lt;/span>&lt;span class="lnt">124
-&lt;/span>&lt;span class="lnt">125
-&lt;/span>&lt;span class="lnt">126
-&lt;/span>&lt;span class="lnt">127
-&lt;/span>&lt;span class="lnt">128
-&lt;/span>&lt;span class="lnt">129
-&lt;/span>&lt;span class="lnt">130
-&lt;/span>&lt;span class="lnt">131
-&lt;/span>&lt;span class="lnt">132
-&lt;/span>&lt;span class="lnt">133
-&lt;/span>&lt;span class="lnt">134
-&lt;/span>&lt;span class="lnt">135
-&lt;/span>&lt;span class="lnt">136
-&lt;/span>&lt;span class="lnt">137
-&lt;/span>&lt;span class="lnt">138
-&lt;/span>&lt;span class="lnt">139
-&lt;/span>&lt;span class="lnt">140
-&lt;/span>&lt;span class="lnt">141
-&lt;/span>&lt;span class="lnt">142
-&lt;/span>&lt;span class="lnt">143
-&lt;/span>&lt;span class="lnt">144
-&lt;/span>&lt;span class="lnt">145
-&lt;/span>&lt;span class="lnt">146
-&lt;/span>&lt;span class="lnt">147
-&lt;/span>&lt;span class="lnt">148
-&lt;/span>&lt;span class="lnt">149
-&lt;/span>&lt;span class="lnt">150
-&lt;/span>&lt;span class="lnt">151
-&lt;/span>&lt;span class="lnt">152
-&lt;/span>&lt;span class="lnt">153
-&lt;/span>&lt;span class="lnt">154
-&lt;/span>&lt;span class="lnt">155
-&lt;/span>&lt;span class="lnt">156
-&lt;/span>&lt;span class="lnt">157
-&lt;/span>&lt;span class="lnt">158
-&lt;/span>&lt;span class="lnt">159
-&lt;/span>&lt;span class="lnt">160
-&lt;/span>&lt;span class="lnt">161
-&lt;/span>&lt;span class="lnt">162
-&lt;/span>&lt;span class="lnt">163
-&lt;/span>&lt;span class="lnt">164
-&lt;/span>&lt;span class="lnt">165
-&lt;/span>&lt;span class="lnt">166
-&lt;/span>&lt;span class="lnt">167
-&lt;/span>&lt;span class="lnt">168
-&lt;/span>&lt;span class="lnt">169
-&lt;/span>&lt;span class="lnt">170
-&lt;/span>&lt;span class="lnt">171
-&lt;/span>&lt;span class="lnt">172
-&lt;/span>&lt;span class="lnt">173
-&lt;/span>&lt;span class="lnt">174
-&lt;/span>&lt;span class="lnt">175
-&lt;/span>&lt;span class="lnt">176
-&lt;/span>&lt;span class="lnt">177
-&lt;/span>&lt;span class="lnt">178
-&lt;/span>&lt;span class="lnt">179
-&lt;/span>&lt;span class="lnt">180
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">ctypes&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="o">*&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">ctypes&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">time&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">pickle&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">PHeader&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="o">*&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">cv2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">numpy&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">np&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">multiprocessing.connection&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Listener&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">multiprocessing&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">JoinableQueue&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Process&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Queue&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">connection&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">threading&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">ListenerThread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">threading&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Thread&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="fm">__init__&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">address&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data_handler&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">lib&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">super&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="fm">__init__&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">daemon&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">True&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">address&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">address&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">data_handler&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">data_handler&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">lib&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">lib&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">listener&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Listener&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">address&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">backlog&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conn&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">is_running&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">True&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">run&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Listening on&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">listener&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">address&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">is_running&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">try&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conn&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">listener&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">accept&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1"># ready to accept data continually&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Connected by&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">listener&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">last_accepted&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">t1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">threading&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Thread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">receive_data&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">t2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">threading&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Thread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">send_result&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">t1&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">t2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">t1&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">t2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">except&lt;/span> &lt;span class="ne">OSError&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">e&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">e&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">errno&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="mi">98&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1"># Address already in use&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">raise&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Address already in use, retrying in 1 second...&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sleep&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">destroy_Model&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="c1"># when qt send a signal&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">lib&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">interface_destoryThread&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">receive_data&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">time_cost1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">try&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">start&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">received_bytes&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">recv&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1"># recv Client data&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">end&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;recv time cost: &amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">time_cost1&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">start&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_dict&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pickle&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">loads&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">received_bytes&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">img_dict&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;frame_num&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;receive&amp;#39;s thread already receive all data, close thread!!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;recv: &amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">time_cost1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">lib&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">interface_setEmptyFlag&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1"># make send thread break&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_dict&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;image&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cv2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">imdecode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_dict&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;image&amp;#39;&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">cv2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">IMREAD_COLOR&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">data_handler&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sendImgtoC&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">lib&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">img_dict&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># prepare to send img&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">except&lt;/span> &lt;span class="ne">EOFError&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Connection closed&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">send_result&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">time_cost1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">time_cost2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">lib&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">interface_getClsQueue&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">restype&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ObjClassifyOutput&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">start&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">lib&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">interface_getClsQueue&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1"># get result from model&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">end&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">time_cost1&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">start&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;get cls time cost: &amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_list&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_num&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cls_result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">data_handler&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">CtoP&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">output&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cls_result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pickle&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">dumps&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cls_result&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">start&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">send&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cls_result&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">end&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">time&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;send time cost: &amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">time_cost2&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">start&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">elif&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_list&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_num&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1"># queue is empty for now&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">time&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sleep&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">0.04&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">continue&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">elif&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_list&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_num&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="c1"># all data is classify&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;send&amp;#39;s thread alreay handle all data, close thread!!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;cls: &amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">time_cost1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39; send: &amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">time_cost2&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># self.close()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">close&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="c1"># useless for now&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conn&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># self.listener.close()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">DataHandler&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="fm">__init__&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">CtoP&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">):&lt;/span> &lt;span class="c1"># 将模型结果解析为python列表&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># [cv_object_list: [cv_object: [cv_box: [] ]]]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_object_list&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cls_out&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">obj_list&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_list&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">obj_list&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_num&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">obj_list&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_num&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_box&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_object&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">obj&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">obj_list&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># bbox&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_box&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">obj&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">bbox&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left_top_x&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_box&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">obj&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">bbox&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">left_top_y&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_box&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">obj&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">bbox&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">w&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_box&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">obj&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">bbox&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">h&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_object&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cv_box&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># classes/objectness/prob&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_object&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">obj&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">classes&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_object&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">obj&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">objectness&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">prob&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">POINTER&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">c_float&lt;/span>&lt;span class="p">)(&lt;/span>&lt;span class="n">obj&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">prob&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_object&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">prob&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">contents&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">value&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># cv_object&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_object_list&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cv_object&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_object_list&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">obj_list&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">object_num&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># cv_object_list&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cls_out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cv_object_list&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">cls_out&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="nf">sendImgtoC&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">lib&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">img_dict&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">lib&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">interface_receive&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">argtypes&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">PythonMat&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 1. combine info to img&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pi&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">PythonMat&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pi&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">frame_num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">img_dict&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;frame_num&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">img_dict&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;image&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 1.1 set width/height&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">PARAM&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">c_int&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">32&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">PARAM&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">height&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">shape&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pi&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">height&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">width&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">PARAM&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">width&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">shape&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pi&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">width&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 1.2 set Mat&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">frame_data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">asarray&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">dtype&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">uint8&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">frame_data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">frame_data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ctypes&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">data_as&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">c_char_p&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pi&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">frame&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">frame_data&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 2. send img to detect model&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">lib&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">interface_receive&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">pi&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="vm">__name__&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;__main__&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">address&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;localhost&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">9006&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">data_handler&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DataHandler&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ll&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ctypes&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">cdll&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">LoadLibrary&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">lib&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ll&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;../../lib/libDetClsController.so&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># create a C lib&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">listener_thread&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ListenerThread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">address&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">data_handler&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">lib&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">listener_thread&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">try&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">det_process&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">threading&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Thread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">lib&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">interface_initDetectImage&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cls_process&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">threading&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Thread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">lib&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">interface_initClassifyImage&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">det_process&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cls_process&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">det_process&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1"># need a break signal&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cls_process&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">except&lt;/span> &lt;span class="ne">KeyboardInterrupt&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 程序被强制关闭&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Program terminated&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 关闭ListenerThread对象&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">listener_thread&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">is_running&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">False&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">listener_thread&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">finally&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 关闭ListenerThread对象&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">listener_thread&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">is_running&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">False&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">listener_thread&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="c模型调用">C++模型调用&lt;/h2>
-&lt;p>此处涉及其他人员写的代码,做修改处理&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt"> 10
-&lt;/span>&lt;span class="lnt"> 11
-&lt;/span>&lt;span class="lnt"> 12
-&lt;/span>&lt;span class="lnt"> 13
-&lt;/span>&lt;span class="lnt"> 14
-&lt;/span>&lt;span class="lnt"> 15
-&lt;/span>&lt;span class="lnt"> 16
-&lt;/span>&lt;span class="lnt"> 17
-&lt;/span>&lt;span class="lnt"> 18
-&lt;/span>&lt;span class="lnt"> 19
-&lt;/span>&lt;span class="lnt"> 20
-&lt;/span>&lt;span class="lnt"> 21
-&lt;/span>&lt;span class="lnt"> 22
-&lt;/span>&lt;span class="lnt"> 23
-&lt;/span>&lt;span class="lnt"> 24
-&lt;/span>&lt;span class="lnt"> 25
-&lt;/span>&lt;span class="lnt"> 26
-&lt;/span>&lt;span class="lnt"> 27
-&lt;/span>&lt;span class="lnt"> 28
-&lt;/span>&lt;span class="lnt"> 29
-&lt;/span>&lt;span class="lnt"> 30
-&lt;/span>&lt;span class="lnt"> 31
-&lt;/span>&lt;span class="lnt"> 32
-&lt;/span>&lt;span class="lnt"> 33
-&lt;/span>&lt;span class="lnt"> 34
-&lt;/span>&lt;span class="lnt"> 35
-&lt;/span>&lt;span class="lnt"> 36
-&lt;/span>&lt;span class="lnt"> 37
-&lt;/span>&lt;span class="lnt"> 38
-&lt;/span>&lt;span class="lnt"> 39
-&lt;/span>&lt;span class="lnt"> 40
-&lt;/span>&lt;span class="lnt"> 41
-&lt;/span>&lt;span class="lnt"> 42
-&lt;/span>&lt;span class="lnt"> 43
-&lt;/span>&lt;span class="lnt"> 44
-&lt;/span>&lt;span class="lnt"> 45
-&lt;/span>&lt;span class="lnt"> 46
-&lt;/span>&lt;span class="lnt"> 47
-&lt;/span>&lt;span class="lnt"> 48
-&lt;/span>&lt;span class="lnt"> 49
-&lt;/span>&lt;span class="lnt"> 50
-&lt;/span>&lt;span class="lnt"> 51
-&lt;/span>&lt;span class="lnt"> 52
-&lt;/span>&lt;span class="lnt"> 53
-&lt;/span>&lt;span class="lnt"> 54
-&lt;/span>&lt;span class="lnt"> 55
-&lt;/span>&lt;span class="lnt"> 56
-&lt;/span>&lt;span class="lnt"> 57
-&lt;/span>&lt;span class="lnt"> 58
-&lt;/span>&lt;span class="lnt"> 59
-&lt;/span>&lt;span class="lnt"> 60
-&lt;/span>&lt;span class="lnt"> 61
-&lt;/span>&lt;span class="lnt"> 62
-&lt;/span>&lt;span class="lnt"> 63
-&lt;/span>&lt;span class="lnt"> 64
-&lt;/span>&lt;span class="lnt"> 65
-&lt;/span>&lt;span class="lnt"> 66
-&lt;/span>&lt;span class="lnt"> 67
-&lt;/span>&lt;span class="lnt"> 68
-&lt;/span>&lt;span class="lnt"> 69
-&lt;/span>&lt;span class="lnt"> 70
-&lt;/span>&lt;span class="lnt"> 71
-&lt;/span>&lt;span class="lnt"> 72
-&lt;/span>&lt;span class="lnt"> 73
-&lt;/span>&lt;span class="lnt"> 74
-&lt;/span>&lt;span class="lnt"> 75
-&lt;/span>&lt;span class="lnt"> 76
-&lt;/span>&lt;span class="lnt"> 77
-&lt;/span>&lt;span class="lnt"> 78
-&lt;/span>&lt;span class="lnt"> 79
-&lt;/span>&lt;span class="lnt"> 80
-&lt;/span>&lt;span class="lnt"> 81
-&lt;/span>&lt;span class="lnt"> 82
-&lt;/span>&lt;span class="lnt"> 83
-&lt;/span>&lt;span class="lnt"> 84
-&lt;/span>&lt;span class="lnt"> 85
-&lt;/span>&lt;span class="lnt"> 86
-&lt;/span>&lt;span class="lnt"> 87
-&lt;/span>&lt;span class="lnt"> 88
-&lt;/span>&lt;span class="lnt"> 89
-&lt;/span>&lt;span class="lnt"> 90
-&lt;/span>&lt;span class="lnt"> 91
-&lt;/span>&lt;span class="lnt"> 92
-&lt;/span>&lt;span class="lnt"> 93
-&lt;/span>&lt;span class="lnt"> 94
-&lt;/span>&lt;span class="lnt"> 95
-&lt;/span>&lt;span class="lnt"> 96
-&lt;/span>&lt;span class="lnt"> 97
-&lt;/span>&lt;span class="lnt"> 98
-&lt;/span>&lt;span class="lnt"> 99
-&lt;/span>&lt;span class="lnt">100
-&lt;/span>&lt;span class="lnt">101
-&lt;/span>&lt;span class="lnt">102
-&lt;/span>&lt;span class="lnt">103
-&lt;/span>&lt;span class="lnt">104
-&lt;/span>&lt;span class="lnt">105
-&lt;/span>&lt;span class="lnt">106
-&lt;/span>&lt;span class="lnt">107
-&lt;/span>&lt;span class="lnt">108
-&lt;/span>&lt;span class="lnt">109
-&lt;/span>&lt;span class="lnt">110
-&lt;/span>&lt;span class="lnt">111
-&lt;/span>&lt;span class="lnt">112
-&lt;/span>&lt;span class="lnt">113
-&lt;/span>&lt;span class="lnt">114
-&lt;/span>&lt;span class="lnt">115
-&lt;/span>&lt;span class="lnt">116
-&lt;/span>&lt;span class="lnt">117
-&lt;/span>&lt;span class="lnt">118
-&lt;/span>&lt;span class="lnt">119
-&lt;/span>&lt;span class="lnt">120
-&lt;/span>&lt;span class="lnt">121
-&lt;/span>&lt;span class="lnt">122
-&lt;/span>&lt;span class="lnt">123
-&lt;/span>&lt;span class="lnt">124
-&lt;/span>&lt;span class="lnt">125
-&lt;/span>&lt;span class="lnt">126
-&lt;/span>&lt;span class="lnt">127
-&lt;/span>&lt;span class="lnt">128
-&lt;/span>&lt;span class="lnt">129
-&lt;/span>&lt;span class="lnt">130
-&lt;/span>&lt;span class="lnt">131
-&lt;/span>&lt;span class="lnt">132
-&lt;/span>&lt;span class="lnt">133
-&lt;/span>&lt;span class="lnt">134
-&lt;/span>&lt;span class="lnt">135
-&lt;/span>&lt;span class="lnt">136
-&lt;/span>&lt;span class="lnt">137
-&lt;/span>&lt;span class="lnt">138
-&lt;/span>&lt;span class="lnt">139
-&lt;/span>&lt;span class="lnt">140
-&lt;/span>&lt;span class="lnt">141
-&lt;/span>&lt;span class="lnt">142
-&lt;/span>&lt;span class="lnt">143
-&lt;/span>&lt;span class="lnt">144
-&lt;/span>&lt;span class="lnt">145
-&lt;/span>&lt;span class="lnt">146
-&lt;/span>&lt;span class="lnt">147
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="k">struct&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">width&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">CV_MAX_BATCH_SIZE&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">height&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">CV_MAX_BATCH_SIZE&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">char&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">frame&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">CV_MAX_BATCH_SIZE&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">frame_num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">CV_MAX_BATCH_SIZE&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;span class="n">PythonMat&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// 多线程控制相关
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">mutex&lt;/span> &lt;span class="n">mtxQueueDet&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// mutex for detect queue
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">mutex&lt;/span> &lt;span class="n">mtxQueueImg&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// mutex for image queue
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">mutex&lt;/span> &lt;span class="n">mtxQueueCls&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// mutex for classify queue
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">mutex&lt;/span> &lt;span class="n">mtxif&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">queue&lt;/span>&lt;span class="o">&amp;lt;&amp;gt;&lt;/span> &lt;span class="n">queueDetOut&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="c1">// Det output queue
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">queue&lt;/span>&lt;span class="o">&amp;lt;&amp;gt;&lt;/span> &lt;span class="n">queueClsOut&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="c1">// Det classify queue
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">queue&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">cv&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Mat&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">queueMat&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">bool&lt;/span> &lt;span class="n">DetectFlag&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">true&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">bool&lt;/span> &lt;span class="n">ClassifyFlag&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">true&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">bool&lt;/span> &lt;span class="n">empty_flag&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">false&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">receiveImg&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">PythonMat&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">img&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Mat&lt;/span> &lt;span class="n">frame&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">height&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">width&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">CV_8UC3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">frame&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueImg&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queueMat&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">push&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">frame&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cout&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;frame num: &amp;#34;&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">frame_num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">endl&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueImg&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">unlock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">DetectImage&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Detect&lt;/span> &lt;span class="n">detect_output&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Detect&lt;/span> &lt;span class="n">detectmodel&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">detectmodel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Init&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">config_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Mat&lt;/span> &lt;span class="n">frame&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">queueMat&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">empty&lt;/span>&lt;span class="p">())&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="n">DetectFlag&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">usleep&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2000&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">continue&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueImg&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">frame&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queueMat&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">front&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queueMat&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">pop&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueImg&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">unlock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">detect_output&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">detectmodel&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Run&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">detect_input&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// lock
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">mtxQueueDet&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queueDetOut&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">push&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">detect_output&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cout&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;detect run !!&amp;#34;&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">endl&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueDet&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">unlock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">ClassifyImage&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Classify&lt;/span> &lt;span class="n">objclassify&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">objclassify&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Init&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">config_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ClassifyInput&lt;/span> &lt;span class="n">input&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ClassifyOutput&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Mat&lt;/span> &lt;span class="n">frame&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">queueDetOut&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">empty&lt;/span>&lt;span class="p">())&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="n">ClassifyFlag&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">usleep&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2000&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">continue&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueDet&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">detect_result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queueDetOut&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">front&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queueDetOut&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">pop&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueDet&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">unlock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">objclassify&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Run&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">input&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueCls&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queueClsOut&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">push&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">output&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueCls&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">unlock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">ClassifyOutput&lt;/span> &lt;span class="nf">getClsQueue&lt;/span>&lt;span class="p">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ObjClassifyOutput&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">queueClsOut&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">empty&lt;/span>&lt;span class="p">()){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">usleep&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2000&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">object_list&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">object_num&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// -1 is now empty; -2 is all empty
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">empty_flag&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">object_list&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">object_num&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">empty_flag&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">false&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueCls&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">lock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">queueClsOut&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">front&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">queueClsOut&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">pop&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cout&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;cls_out pop &amp;#34;&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">object_list&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">object_num&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">endl&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mtxQueueCls&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">unlock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">extern&lt;/span> &lt;span class="s">&amp;#34;C&amp;#34;&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">interface_initDetectImage&lt;/span>&lt;span class="p">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// if (flag ) exit thread detect/classify
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">DetectImage&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">interface_initClassifyImage&lt;/span>&lt;span class="p">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ClassifyImage&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">interface_receive&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">PythonMat&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">img&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;run %d times&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">receiveImg&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">interface_setEmptyFlag&lt;/span>&lt;span class="p">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">empty_flag&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">true&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">testThread&lt;/span>&lt;span class="p">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;C++ method!!&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">ClassifyOutput&lt;/span> &lt;span class="nf">interface_getClsQueue&lt;/span>&lt;span class="p">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ClassifyOutput&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">getClsQueue&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">interface_destoryThread&lt;/span>&lt;span class="p">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DetectFlag&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">false&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ClassifyFlag&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">false&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>至此这个混合编程项目结束,但是server接收到client耗时居然300ms,需要优化...&lt;/p>
-&lt;h2 id="参考博客">参考博客&lt;/h2>
-&lt;ol>
-&lt;li>&lt;a href="https://www.cnblogs.com/lsdb/p/10815319.html">共享内存&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.csdn.net/weixin_44141532/article/details/87937541">Address already in use&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://stackoverflow.com/questions/33981141/python-socket-error-errno-104-connection-reset-by-peer">connection-reset-by-peer 我是把client.close()加上就不报错&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.cnblogs.com/gooutlook/p/14989599.html">（最终版）linux下python和c++相互调用共享内存通信&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.csdn.net/qxqxqzzz/article/details/104384920">常见python通信错误&lt;/a>
-&lt;ol>
-&lt;li>EOFError&lt;/li>
-&lt;li>OSError: handle is closed&lt;/li>
-&lt;li>Broken pipe&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/ctype/" term="Ctype" label="Ctype"/><category scheme="https://keepjolly.com/tags/tcp/" term="TCP" label="TCP"/><category scheme="https://keepjolly.com/tags/python/" term="Python" label="Python"/></entry></feed>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/install/" term="Install" label="Install"/></entry></feed>
