@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.120.4 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sun, 19 Nov 2023 15:24:31 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>公务员行测--言语理解</title><link>https://keepjolly.com/posts/learn/speech-understanding/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/speech-understanding/</guid><pubDate>Sun, 19 Nov 2023 22:34:44 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>这个老师不讲选项的其他错误地方，有点不好&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.120.4 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sun, 19 Nov 2023 15:34:18 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>公务员行测--言语理解</title><link>https://keepjolly.com/posts/learn/speech-understanding/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/speech-understanding/</guid><pubDate>Sun, 19 Nov 2023 22:34:44 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>这个老师不讲选项的其他错误地方，有点不好&lt;/p>
 &lt;h2 id="准备知识">准备知识&lt;/h2>
 &lt;p>国考主要考逻辑填空、中心理解&lt;/p>
 &lt;ol>
@@ -245,22 +245,22 @@
 多步连除：分子分母同时截位，分开估算/交叉估算&lt;/li>
 &lt;/ol>
 &lt;p>关于多步截除的增长率估算&lt;/p>
-&lt;p>$\frac{1+11%}{1+3%} \approx {1+8%}$&lt;/p>
+&lt;p>$\frac{1+0.11}{1+0.08} \approx1+0.03$&lt;/p>
 &lt;ul>
 &lt;li>乘法估算：乘法一大一小，各按比例缩放（粗算不需要，首位均不同）&lt;/li>
 &lt;li>$99\uparrow+101\downarrow \approx100*100$&lt;/li>
 &lt;/ul>
 &lt;h3 id="特殊分数">特殊分数&lt;/h3>
 &lt;ul>
-&lt;li>$\frac{1}{2}=50%$&lt;/li>
-&lt;li>$\frac{1}{3}=33.3%$&lt;/li>
-&lt;li>$\frac{1}{4}=25%$&lt;/li>
-&lt;li>$\frac{1}{5}=20%$&lt;/li>
-&lt;li>$\frac{1}{6}=16.7%$&lt;/li>
-&lt;li>$\frac{1}{7}=13.4%$&lt;/li>
-&lt;li>$\frac{1}{8}=12.5%$&lt;/li>
-&lt;li>$\frac{1}{9}=11.1%$&lt;/li>
-&lt;li>$\frac{1}{10}=10%$&lt;/li>
+&lt;li>$\frac{1}{2}=50$%&lt;/li>
+&lt;li>$\frac{1}{3}=33.3$%&lt;/li>
+&lt;li>$\frac{1}{4}=25$%&lt;/li>
+&lt;li>$\frac{1}{5}=20$%&lt;/li>
+&lt;li>$\frac{1}{6}=16.7$%&lt;/li>
+&lt;li>$\frac{1}{7}=13.4$%&lt;/li>
+&lt;li>$\frac{1}{8}=12.5$%&lt;/li>
+&lt;li>$\frac{1}{9}=11.1$%&lt;/li>
+&lt;li>$\frac{1}{10}=10$%&lt;/li>
 &lt;li>&lt;/li>
 &lt;/ul>
 &lt;p>题目：&lt;/p>
