@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.120.4 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sun, 19 Nov 2023 15:12:54 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>公务员行测--言语理解</title><link>https://keepjolly.com/posts/learn/speech-understanding/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/speech-understanding/</guid><pubDate>Sun, 19 Nov 2023 22:34:44 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>这个老师不讲选项的其他错误地方，有点不好&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.120.4 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sun, 19 Nov 2023 15:24:31 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>公务员行测--言语理解</title><link>https://keepjolly.com/posts/learn/speech-understanding/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/speech-understanding/</guid><pubDate>Sun, 19 Nov 2023 22:34:44 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>这个老师不讲选项的其他错误地方，有点不好&lt;/p>
 &lt;h2 id="准备知识">准备知识&lt;/h2>
 &lt;p>国考主要考逻辑填空、中心理解&lt;/p>
 &lt;ol>
@@ -245,7 +245,7 @@
 多步连除：分子分母同时截位，分开估算/交叉估算&lt;/li>
 &lt;/ol>
 &lt;p>关于多步截除的增长率估算&lt;/p>
-&lt;p>$\frac{1+11%}{1+3%} \approx 1+8%$&lt;/p>
+&lt;p>$\frac{1+11%}{1+3%} \approx {1+8%}$&lt;/p>
 &lt;ul>
 &lt;li>乘法估算：乘法一大一小，各按比例缩放（粗算不需要，首位均不同）&lt;/li>
 &lt;li>$99\uparrow+101\downarrow \approx100*100$&lt;/li>
@@ -275,7 +275,7 @@
 &lt;p>2015 年我国高技术制造业实现主营业务收入 116048.9 亿元，比 2010 年增长 108.2%；占全部制造业企业的比重为 12.8%，比 2010 年提高 0.8 个百分点。2015 年我国高技术制造业实现利润总额 7233.7 亿元，比 2010 年增长 165.5%，增幅比 其他制造业平均水平高出 11.5 个百分点；高技术制造业利润总额占全部制造业 的比重为 13.1%，比 2010 年提高 0.5 个百分点。&lt;/p>
 &lt;p>【练 3】2010 年，我国制造业实现利润总额约多少万亿元？&lt;/p>
 &lt;p>A．1.3 B．1.7 C．2.2 D．2.8&lt;/p>
-&lt;p>&lt;a href="https://www.bilibili.com/video/BV1f4411C7z5/?p=4&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1425">2&lt;/a>，$\frac{利润_{2015}}{1+165.5%} \div 比重_{2010}$&lt;/p>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1f4411C7z5/?p=4&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=1425">2&lt;/a>，$\frac{利润_{2015}}{1+1.655} \div 比重_{2010}$&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="分数比较">分数比较&lt;/h3>
