@@ -1,4 +1,200 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.124.1 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Sun, 31 Mar 2024 16:02:53 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>毕业论文格式小技巧</title><link>https://keepjolly.com/posts/create/graduation-thesis-format-tips/</link><guid isPermaLink="true">https://keepjolly.com/posts/create/graduation-thesis-format-tips/</guid><pubDate>Sun, 31 Mar 2024 23:51:27 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="题注的章节号设置">题注的章节号设置&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.124.1 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Mon, 01 Apr 2024 01:36:10 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>hexo博客美化</title><link>https://keepjolly.com/posts/other/hexo-custom/</link><guid isPermaLink="true">https://keepjolly.com/posts/other/hexo-custom/</guid><pubDate>Mon, 01 Apr 2024 09:31:54 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;p>记录一些我没用到但是&lt;a href="https://butterfly.js.org">butterfly&lt;/a>上是true的选项&lt;/p>
+&lt;h2 id="page-front-matter">Page Front-matter&lt;/h2>
+&lt;p>&lt;a href="https://butterfly.js.org/posts/dc584b87/#Front-matter">PFM&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: # 【必需】页面标题
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: #【必需】页面创建日期
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">updated:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">type: # 【必需】标签、分类和友情链接三个页面需要配置
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">comments:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">description:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">keywords:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">top_img:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mathjax:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">katex:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">aside:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">aplayer:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">highlight_shrink:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>updated 【可选】页面更新日期&lt;/strong>&lt;br />&lt;strong>description 【可选】页面描述&lt;/strong>&lt;br />keywords 【可选】页面关键字&lt;br />&lt;strong>comments 【可选】显示页面评论模块 (默认 true)&lt;/strong>&lt;br />top_img 【可选】页面顶部图片&lt;br />mathjax 【可选】显示mathjax (当设置mathjax的per_page: false时，才需要配置，默认 false)&lt;br />katex 【可选】显示katex (当设置katex的per_page: false时，才需要配置，默认 false)&lt;br />aside 【可选】显示侧边栏 (默认 true)&lt;br />aplayer 【可选】在需要的页面加载aplayer的js和css,请参考文章下面的音乐 配置&lt;br />highlight_shrink 【可选】配置代码框是否展开 (true/false) (默认为设置中highlight_shrink的配置)&lt;/p>
+&lt;h2 id="post-front-matter">Post Front-matter&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">updated:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tags:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">categories:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">keywords:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">description:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">top_img:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">comments:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cover:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">toc:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">toc_number:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">toc_style_simple:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">copyright:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">copyright_author:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">copyright_author_href:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">copyright_url:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">copyright_info:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mathjax:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">katex:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">aplayer:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">highlight_shrink:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">aside:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">abcjs:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>title 【必需】文章标题&lt;br />date 【必需】文章创建日期&lt;br />updated 【可选】文章更新日期&lt;br />&lt;strong>tags 【可选】文章标签&lt;/strong>&lt;br />&lt;strong>categories 【可选】文章分类&lt;/strong>&lt;br />keywords 【可选】文章关键字&lt;br />&lt;strong>description 【可选】文章描述&lt;/strong>&lt;br />&lt;strong>top_img 【可选】文章顶部图片&lt;/strong>&lt;br />cover 【可选】文章缩略图(如果没有设置top_img,文章页顶部将显示缩略图，可设为false/图片地址/留空)&lt;br />&lt;strong>comments 【可选】显示文章评论模块(默认 true)&lt;/strong>&lt;br />toc 【可选】显示文章TOC(默认为设置中toc的enable配置)&lt;br />toc_number 【可选】显示toc_number(默认为设置中toc的number配置)&lt;br />toc_style_simple 【可选】显示 toc 简洁模式&lt;br />copyright 【可选】显示文章版权模块(默认为设置中post_copyright的enable配置)&lt;br />copyright_author 【可选】文章版权模块的文章作者&lt;br />copyright_author_href 【可选】文章版权模块的文章作者链接&lt;br />copyright_url 【可选】文章版权模块的文章连结链接&lt;br />copyright_info 【可选】文章版权模块的版权声明文字&lt;br />mathjax 【可选】显示mathjax(当设置 mathjax 的 per_page: false 时，才需要配置，默认 false )&lt;br />katex 【可选】显示 katex (当设置 katex 的 per_page: false 时，才需要配置，默认 false )&lt;br />aplayer 【可选】在需要的页面加载 aplayer 的 js 和 css,请参考文章下面的音乐 配置&lt;br />highlight_shrink 【可选】配置代码框是否展开(true/false)(默认为设置中 highlight_shrink 的配置)&lt;br />aside 【可选】显示侧边栏 (默认 true)&lt;br />abcjs 【可选】加载 abcjs (当设置 abcjs 的 per_page: false 时，才需要配置，默认 false )&lt;/p>
+&lt;h2 id="图库">图库&lt;/h2>
+&lt;p>&lt;a href="https://butterfly.js.org/posts/dc584b87/#%E5%9C%96%E5%BA%AB">https://butterfly.js.org/posts/dc584b87/#%E5%9C%96%E5%BA%AB&lt;/a>&lt;/p>
+&lt;h2 id="网址同步">网址同步&lt;/h2>
+&lt;p>因为我是从halo迁移过来，原主题的front-matter信息跟hexo不一致，多了一个url属性，表明文件路径&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&lt;span class="gh"># URL
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh">&lt;/span>&lt;span class="gu">## Set your site url here. For example, if you use GitHub Page, set url as &amp;#39;https://username.github.io/project&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gu">&lt;/span>&lt;span class="gh"># https://blog.csdn.net/qq_45020818/article/details/126892843 https://hexo.io/zh-cn/docs/permalinks
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh">&lt;/span>url: http://yoursite.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh"># 除了下列变量外，您还可使用 Front-matter 中的**所有**属性。
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh"># **.html**防止下载当前网页
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh">&lt;/span>permalink: :url.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">permalink_defaults:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pretty_urls:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> trailing_index: true # Set to false to remove trailing &amp;#39;index.html&amp;#39; from permalinks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> trailing_html: false # Set to false to remove trailing &amp;#39;.html&amp;#39; from permalinks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh"># 旧网址的front-matter
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh">&lt;/span>---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: 三维重建之路上
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: 2023-03-26 09:07:02.96
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">updated: 2023-03-26 09:41:47.726
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">url: /archives/three-d-reconstruction-1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">categories:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> 笔记
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tags:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> 三维重建
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;a href="https://blog.csdn.net/Likianta/article/details/79343427">参考博客，文中还附加了类别中英文转换，个人感觉网址应该不会重名就没设了&lt;/a>&lt;/p>
+&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;h3 id="配置algolia不显示在页面上">配置algolia不显示在页面上&lt;/h3>
+&lt;p>在_config.butterfly.yml里已经放入algolia配置选项，不要重新在最底部复制，否则出错，并且配置的时候文档里需要什么，都得配置上去，我没加adminApiKey导致生成失败，我还以为加入环境变量就可以了。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">algolia:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">appId: &amp;#34;Z7A3XW4R2I&amp;#34; #must
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">apiKey: &amp;#34;12db1ad54372045549ef465881c17e743&amp;#34; #must
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">adminApiKey: &amp;#34;40321c7c207e7f73b63a19aa24c4761b&amp;#34; #must
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">chunkSize: 5000
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">indexName: &amp;#34;my-hexo-blog&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">fields:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- content:strip:truncate,0,500
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- excerpt:strip
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- gallery
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- permalink
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- photos
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- slug
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- tags
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- title
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/other/">other</category><category domain="https://keepjolly.com/tags/blog/">Blog</category><category domain="https://keepjolly.com/tags/hugo/">Hugo</category></item><item><title>毕业论文格式小技巧</title><link>https://keepjolly.com/posts/create/graduation-thesis-format-tips/</link><guid isPermaLink="true">https://keepjolly.com/posts/create/graduation-thesis-format-tips/</guid><pubDate>Sun, 31 Mar 2024 23:51:27 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="题注的章节号设置">题注的章节号设置&lt;/h2>
 &lt;ul>
 &lt;li>问题：题注或页码中不含章节编号。请使用“开始”选项卡上的“多级列表”按钮，然后选择链接到标题样式的编号方案。&lt;/li>
 &lt;li>前因：从师兄复制过来的样式不对，将每个标题都新建了一个样式并且应用到标题中（见图1中的1.1，1.1.1），不是默认的标题x（见图1中的最右上角）&lt;/li>
@@ -10642,14 +10838,7 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>终于行测四大模块全部结束了，后天也考试了，不为自己为大家(实际上自己太菜了哈哈哈)，希望看到的人可以提提意见，如果好的话也可以转发。感谢您的观看，祝您考公顺利！！！&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/learn/">learn</category><category domain="https://keepjolly.com/tags/civilservant/">CivilServant</category></item><item><title>记录第一次团建</title><link>https://keepjolly.com/posts/life/team-building-1/</link><guid isPermaLink="true">https://keepjolly.com/posts/life/team-building-1/</guid><pubDate>Fri, 01 Dec 2023 23:04:34 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="早上">早上&lt;/h2>
-&lt;p>早上坐车做了好久，从单位一直到山中乐园，看了一路的风景，感觉怎么南方的乡下（杭州偏僻地方算乡下吗哈哈哈）房子都差不多呢。然后到达目的地啦。首先做了下小船，去看喀斯特地貌了，但是个人感觉没啥好看的⛰，里面甚至有用散光灯伪装萤火虫，笑死。然后拍了张必须要花钱才能看清的照片（小寸只能看见黑溜溜的👀）。到点盖章！然后做了按摩屁股的天梯（我有脚臭？好像是消化不良导致的屁股臭，偏偏以前和之后都没有的，尴尬啊），决不再景区消费，好贵的说。&lt;/p>
-&lt;h2 id="中午下午">中午&amp;amp;下午&lt;/h2>
-&lt;p>草草的吃了两个面包，好干啊。然后走了玻璃长廊，感觉没下一个玻璃圆廊吓人，我看一些女生都好怕哈哈哈，但是有个女生一马当先，一直走到终点，而我闲庭信步的走过去，在终点拍了俯瞰下面的照片（好喜欢全景照，适合拍照白痴），到点盖章！又是驿站，不吃！，直奔空中秋千，哇塞第一下真的好吓人，还好叫的不是特别神经哈哈哈，后两下也有点后劲，后面就是看风景啦，然后就是玻璃圆廊了，这个吓人多了，看下面根本不敢，甚至在上面拍了张集体照（后来居然没发出来）。然后就是开卡丁车🏎了，出门就被撞停了笑死，然后秋名山车神附体，又被撞停，然后安稳达到终点嘿嘿。坐了木马上山🎠，好幼稚哈哈哈，然后就是水上漂流了，临时跟一个女生组队，我想做前面啊，然后过了几段激流，到了终点，发现他们坐前面的都被水打脸了（还好没有坐前面）。对了，盖章盖章。&lt;/p>
-&lt;p>开始休息，看他们森林冒险，可惜没去啊。听他们说经济形势不行啊，it好难。休息完毕，开挖掘机，不，看他们开挖掘机，上，挖头朝下，左挖头开挖，右拉起，下放土。我会了！集章换奖品，拿到就想扔了，笑死。又是集体照，正好就我没拍进去，可恶啊（好吧，最好别拍进去，我不上镜哈哈哈）。出发去吃饭，又是领头羊，还好我不是路痴，路上路过江，拍照！吭哧吭哧吃饭，都是辣的，不吃，上车，到晚上了，睡觉。到单位了，骑车走人！&lt;/p>
-&lt;h2 id="晚上">晚上&lt;/h2>
-&lt;p>看电影，聊天。&lt;/p>
-&lt;p>一天结束了，团建一次就少一次啊。可惜上个没去，但确实没时间，还全是互动，社恐本人哪会互动啊。&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/life/">life</category><category domain="https://keepjolly.com/tags/life/">Life</category></item><item><title>公务员行测--言语理解下</title><link>https://keepjolly.com/posts/learn/speech-understanding-2/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/speech-understanding-2/</guid><pubDate>Sun, 26 Nov 2023 00:30:16 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="类中心理解">类中心理解&lt;/h2>
+&lt;p>终于行测四大模块全部结束了，后天也考试了，不为自己为大家(实际上自己太菜了哈哈哈)，希望看到的人可以提提意见，如果好的话也可以转发。感谢您的观看，祝您考公顺利！！！&lt;/p></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/learn/">learn</category><category domain="https://keepjolly.com/tags/civilservant/">CivilServant</category></item><item><title>公务员行测--言语理解下</title><link>https://keepjolly.com/posts/learn/speech-understanding-2/</link><guid isPermaLink="true">https://keepjolly.com/posts/learn/speech-understanding-2/</guid><pubDate>Sun, 26 Nov 2023 00:30:16 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="类中心理解">类中心理解&lt;/h2>
 &lt;p>(语句排序，语句填入，下文推断，细节判断，关键词提取）&lt;/p>
 &lt;h3 id="语句排序">语句排序&lt;/h3>
 &lt;ul>
