@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><title type="text">悠闲の小屋</title><subtitle type="html">一个极简主题的博客。</subtitle><updated>2024-04-01T01:36:10+00:00</updated><id>https://keepjolly.com/</id><link rel="alternate" type="text/html" href="https://keepjolly.com/"/><link rel="self" type="application/atom+xml" href="https://keepjolly.com/atom.xml"/><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><generator uri="https://gohugo.io/" version="0.124.1">Hugo</generator><entry><title type="text">hexo博客美化</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/hexo-custom/"/><id>https://keepjolly.com/posts/other/hexo-custom/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-04-01T09:31:54+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">记录一些我没用到但是butterfly上是true的选项 Page Front-matter PFM 1 2 3 4 5 6 7 8 9 10 11……</summary><content type="html">&lt;p>记录一些我没用到但是&lt;a href="https://butterfly.js.org">butterfly&lt;/a>上是true的选项&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><title type="text">悠闲の小屋</title><subtitle type="html">一个极简主题的博客。</subtitle><updated>2024-05-03T07:15:48+00:00</updated><id>https://keepjolly.com/</id><link rel="alternate" type="text/html" href="https://keepjolly.com/"/><link rel="self" type="application/atom+xml" href="https://keepjolly.com/atom.xml"/><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><generator uri="https://gohugo.io/" version="0.125.5">Hugo</generator><entry><title type="text">腾讯云关闭数据万象相关服务</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/life/oss-high-cost/"/><id>https://keepjolly.com/posts/life/oss-high-cost/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-05-03T14:53:49+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">前情提要：最近两个月腾讯云的消费突然激增了300倍的消费（0.01→3.21￥） 预告……</summary><content type="html">&lt;blockquote>
+&lt;p>前情提要：最近两个月腾讯云的消费突然激增了300倍的消费（0.01→3.21￥）
+预告：最近再整篇大的，关于qt面试总结，看我找工作情况择日发布吧&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="查看消费来源">查看消费来源&lt;/h2>
+&lt;ol>
+&lt;li>首先在网站上登陆你的账号，然后进入费用界面&lt;/li>
+&lt;li>选择费用账单→账单查看→选择按产品汇总的&amp;quot;查看更多&amp;quot;，从中找到最高消费的服务&lt;/li>
+&lt;li>选择对应的存储桶id，最后就能找到高消费的来源&lt;/li>
+&lt;li>本文是由于开启了盲水印服务，导致消费激增。（笑死，都没人看，还防盗）&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/05/20240503151121.png?imageMogr2/format/webp%7C&amp;amp;imageSlim" alt="Snipaste_2024-05-03_15-07-27.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/05/20240503151141.png?imageMogr2/format/webp%7C&amp;amp;imageSlim" alt="Snipaste_2024-05-03_15-08-39.png">&lt;/p>
+&lt;h2 id="解决方案">解决方案&lt;/h2>
+&lt;ol>
+&lt;li>询问GPT&lt;/li>
+&lt;li>获得Python代码&lt;/li>
+&lt;li>修改后上传至服务器，就不会使用该服务了（标题党嫌疑，哈哈哈）&lt;/li>
+&lt;li>注意，数据万象这个服务一旦开启就无法关闭，只能通过修改路径接口，停止使用对应服务即可&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">re&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">modify_md_files&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">folder_path&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 遍历文件夹及其子文件夹&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">dirs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">files&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">walk&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">folder_path&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">file_name&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">files&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">file_name&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;.md&amp;#39;&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">file_path&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">file_name&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 读取文件内容&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">with&lt;/span> &lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">file_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;r&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">encoding&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;utf-8&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">file&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">content&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">file&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">read&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 使用正则表达式匹配图片路径并替换&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">modified_content&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">re&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sub&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">r&lt;/span>&lt;span class="s1">&amp;#39;!\[.*?\]\((.*?)\?watermark.*?\)&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="sa">r&lt;/span>&lt;span class="s1">&amp;#39;![image](\1)&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">content&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">modified_content&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="n">content&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Modified:&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">file_path&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 写入修改后的内容&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">with&lt;/span> &lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">file_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;w&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">encoding&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;utf-8&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">file&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">file&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">write&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">modified_content&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">folder_path&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="sa">r&lt;/span>&lt;span class="s1">&amp;#39;content&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">modify_md_files&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">folder_path&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/life/" term="life" label="life"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">hexo博客美化</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/hexo-custom/"/><id>https://keepjolly.com/posts/other/hexo-custom/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-04-01T09:31:54+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">记录一些我没用到但是butterfly上是true的选项 Page Front-matter PFM 1 2 3 4 5 6 7 8 9 10 11……</summary><content type="html">&lt;p>记录一些我没用到但是&lt;a href="https://butterfly.js.org">butterfly&lt;/a>上是true的选项&lt;/p>
 &lt;h2 id="page-front-matter">Page Front-matter&lt;/h2>
 &lt;p>&lt;a href="https://butterfly.js.org/posts/dc584b87/#Front-matter">PFM&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -194,7 +264,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- title
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/><category scheme="https://keepjolly.com/tags/hugo/" term="Hugo" label="Hugo"/></entry><entry><title type="text">毕业论文格式小技巧</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/graduation-thesis-format-tips/"/><id>https://keepjolly.com/posts/create/graduation-thesis-format-tips/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-03-31T23:51:27+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">题注和章节号设置：通过使用多级列表与标题样式链接，并调整编号格式和样式，可以实现章节号和题注的正确显示。目录格式：虽然手动修改目录格式可以临时解决中英文前导符不一致的问题，但需要每次更新目录后手动调整。论文打勾样式：直接复制或选择其他符号作为勾选样式，虽然存在样式不一致的问题，但可以作为临时解决方案。图表样式更新域后不变：通过手动删除题注之间的空格并重新应用格式，可以保持更新后的样式一致。批量更新域：通过打印预览和使用快捷键可以快速更新文档中的所有域，确保引用和格式的正确性。查看多余空格，换行等：启用显示编辑标记功能，帮助识别并清理文档中的多余空格和换行。插入高清图片：推荐使用SVG或PNG格式以保持图片清晰度，同时注意调整图片的PPI设置以优化打印效果。表格续表：通过插入文本框并对其进行样式调整，可以手动创建续表，确保表格在跨页时的连续性和格式一致性。分割符与页表页码：正确使用分节符和页码设置，以实现封面、目录和正文的页码分别设置，保持文档结构的清晰和专业。</summary><content type="html">&lt;h2 id="题注的章节号设置">题注的章节号设置&lt;/h2>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/blog/" term="Blog" label="Blog"/><category scheme="https://keepjolly.com/tags/hugo/" term="Hugo" label="Hugo"/></entry><entry><title type="text">毕业论文格式小技巧</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/create/graduation-thesis-format-tips/"/><id>https://keepjolly.com/posts/create/graduation-thesis-format-tips/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-03-31T23:51:27+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">题注和章节号设置：通过使用多级列表与标题样式链接，并调整编号格式和样式，可以实现章节号和题注的正确显示。目录格式：虽然手动修改目录格式可以临时解决中英文前导符不一致的问题，但需要每次更新目录后手动调整。论文打勾样式：直接复制或选择其他符号作为勾选样式，虽然存在样式不一致的问题，但可以作为临时解决方案。图表样式更新域后不变：通过手动删除题注之间的空格并重新应用格式，可以保持更新后的样式一致。批量更新域：通过打印预览和使用快捷键可以快速更新文档中的所有域，确保引用和格式的正确性。查看多余空格，换行等：启用显示编辑标记功能，帮助识别并清理文档中的多余空格和换行。插入高清图片：推荐使用SVG或PNG格式以保持图片清晰度，同时注意调整图片的PPI设置以优化打印效果。表格续表：通过插入文本框并对其进行样式调整，可以手动创建续表，确保表格在跨页时的连续性和格式一致性。分割符与页表页码：正确使用分节符和页码设置，以实现封面、目录和正文的页码分别设置，保持文档结构的清晰和专业。</summary><content type="html">&lt;h2 id="题注的章节号设置">题注的章节号设置&lt;/h2>
 &lt;ul>
 &lt;li>问题：题注或页码中不含章节编号。请使用“开始”选项卡上的“多级列表”按钮，然后选择链接到标题样式的编号方案。&lt;/li>
 &lt;li>前因：从师兄复制过来的样式不对，将每个标题都新建了一个样式并且应用到标题中（见图1中的1.1，1.1.1），不是默认的标题x（见图1中的最右上角）&lt;/li>
@@ -214,23 +284,23 @@
 &lt;ul>
 &lt;li>
 &lt;p>图1&lt;/p>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331142358.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331142358.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>图2&lt;/p>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331150722.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331150722.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>图3&lt;/p>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331143140.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331143140.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>图4&lt;/p>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331143853.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331143853.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>图5&lt;/p>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331151436.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331151436.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -251,7 +321,7 @@
 &lt;/li>
 &lt;li>图片：
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331162049.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331162049.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -261,7 +331,7 @@
 &lt;ul>
 &lt;li>直接复制☑即可，但是跟不打勾的样式不一致，无法解决&lt;/li>
 &lt;li>其他打勾样式：&lt;a href="https://zhuanlan.zhihu.com/p/94069754">word方框（□）中打钩（√）的5种方法&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331162619.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331162619.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -279,7 +349,7 @@
 &lt;/li>
 &lt;li>图片
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331164229.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331164229.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -294,7 +364,7 @@
 &lt;/li>
 &lt;li>图片：
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331170519.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331170519.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -332,9 +402,10 @@
 &lt;/li>
 &lt;li>图片：
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331173433.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331173612.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331174059.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/04/20240401095613.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331173433.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331173612.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331174059.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>参考链接：&lt;a href="https://blog.csdn.net/qq_42191914/article/details/106083395">表格跨页续表&lt;/a>&lt;/li>
@@ -354,13 +425,13 @@
 &lt;/li>
 &lt;li>图片：
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331233137.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331233427.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331233845.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5&amp;amp;imageSlim" alt="image.png">
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331233137.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331233427.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/03/20240331233845.png?imageMogr2/format/webp%7C" alt="image">
 其他方法：&lt;a href="https://zhuanlan.zhihu.com/p/61108448">封面、目录、正文设置不同页码步骤教学&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">colmap 安装</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/colmap-install/"/><id>https://keepjolly.com/posts/tech/colmap-install/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-17T23:07:42+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">预准备 环境： Ubuntu 18.04 cuda11.3 gcc7.5 qt5.14.2 不必一致 安装教程 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 sudo apt-get……</summary><content type="html">&lt;h2 id="预准备">预准备&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/create/" term="create" label="create"/><category scheme="https://keepjolly.com/tags/others/" term="Others" label="Others"/></entry><entry><title type="text">colmap 安装</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/tech/colmap-install/"/><id>https://keepjolly.com/posts/tech/colmap-install/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-17T23:07:42+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">预准备 环境： Ubuntu 18.04 cuda11.3 gcc7.5 qt5.14.2 不必一致 安装教程 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 sudo apt-get……</summary><content type="html">&lt;h2 id="预准备">预准备&lt;/h2>
 &lt;p>环境：&lt;/p>
 &lt;ul>
 &lt;li>Ubuntu 18.04&lt;/li>
@@ -474,7 +545,7 @@
 &lt;li>&lt;a href="https://github.com/jetsonhacks/buildLibrealsense2TX/issues/13">https://github.com/jetsonhacks/buildLibrealsense2TX/issues/13&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/install/" term="Install" label="Install"/></entry><entry><title type="text">面试之计算机网络-5</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-5/"/><id>https://keepjolly.com/posts/other/interview-network-5/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:57:33+08:00</published><summary type="html">对于FIN_WAIT_2，CLOSE_WAIT状态和TIME_WAIT状态？你知道多……</summary><content type="html">&lt;h2 id="对于fin_wait_2close_wait状态和time_wait状态你知道多少">对于FIN_WAIT_2，CLOSE_WAIT状态和TIME_WAIT状态？你知道多少?&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/tech/" term="tech" label="tech"/><category scheme="https://keepjolly.com/tags/install/" term="Install" label="Install"/></entry><entry><title type="text">面试之计算机网络-5</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-5/"/><id>https://keepjolly.com/posts/other/interview-network-5/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:57:33+08:00</published><summary type="html">对于FIN_WAIT_2，CLOSE_WAIT状态和TIME_WAIT状态？你知道多……</summary><content type="html">&lt;h2 id="对于fin_wait_2close_wait状态和time_wait状态你知道多少">对于FIN_WAIT_2，CLOSE_WAIT状态和TIME_WAIT状态？你知道多少?&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>FIN_WAIT_2：&lt;/p>
@@ -700,8 +771,8 @@
 &lt;h2 id="udp是什么">UDP是什么？&lt;/h2>
 &lt;p>提供&lt;strong>无连接&lt;/strong>的，尽最大努力的数据传输服务（&lt;strong>不保证数据传输的可靠性&lt;/strong>）。UDP头部只有8个字节，包含源和目标端口号，包长度和校验和，各占16位。&lt;/p>
 &lt;h2 id="tcp和udp的区别">TCP和UDP的区别&lt;/h2>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210155.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230909171436">
-&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210158.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230909171448">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210155.png?imageMogr2/format/webp%7C" alt="image">
+&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210158.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>连接&lt;/p>
@@ -835,8 +906,8 @@ TFTP(Trival File Transfer Protocal)：简单文件传输协议，69&lt;/p>
 &lt;a href="https://taifua.com/udp-512bytes-limit.html">https://taifua.com/udp-512bytes-limit.html&lt;/a>&lt;/p>
 &lt;h2 id="tcp-利用滑动窗口实现流量控制的机制">TCP 利用滑动窗口实现流量控制的机制？&lt;/h2>
 &lt;p>参考82
-&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210144.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230910141305">
-&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210148.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230910141315">
+&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210144.png?imageMogr2/format/webp%7C" alt="image">
+&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210148.png?imageMogr2/format/webp%7C" alt="image">
 &lt;a href="https://xiaolincoding.com/network/3_tcp/tcp_feature.html#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3">https://xiaolincoding.com/network/3_tcp/tcp_feature.html#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3&lt;/a>&lt;/p>
 &lt;h2 id="可以解释一下rtortt和超时重传分别是什么吗">可以解释一下RTO，RTT和超时重传分别是什么吗？&lt;/h2>
 &lt;ul>
@@ -951,7 +1022,7 @@ TFTP(Trival File Transfer Protocal)：简单文件传输协议，69&lt;/p>
 &lt;/ul>
 &lt;h2 id="一台机器能够使用的端口号上限是多少是否可以修改如果想要用的端口超过这个限制怎么办">一台机器能够使用的端口号上限是多少，是否可以修改？如果想要用的端口超过这个限制怎么办？&lt;/h2>
 &lt;p>65536.因为TCP的报文头部中源端口号和目的端口号的长度是16位，也就是可以表示2^16=65536个不同端口号，因此TCP可供识别的端口号最多只有65536个。但是由于0到1023是知名服务端口，所以实际上还要少1024个端口号。&lt;/p>
-&lt;p>而对于服务器来说，可以开的端口号与65536无关，其实是受限于Linux可以打开的文件数量，并且可以通过MaxUserPort来进行配置。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之计算机网络-4</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-4/"/><id>https://keepjolly.com/posts/other/interview-network-4/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:57:19+08:00</published><summary type="html">四次挥手相关内容 TCP 的连接的拆除需要发送四个包，因此称为四次挥手(Four-way ha……</summary><content type="html">&lt;h2 id="四次挥手相关内容">四次挥手相关内容&lt;/h2>
+&lt;p>而对于服务器来说，可以开的端口号与65536无关，其实是受限于Linux可以打开的文件数量，并且可以通过MaxUserPort来进行配置。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之计算机网络-4</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-4/"/><id>https://keepjolly.com/posts/other/interview-network-4/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:57:19+08:00</published><summary type="html">四次挥手相关内容 TCP 的连接的拆除需要发送四个包，因此称为四次挥手(Four-way ha……</summary><content type="html">&lt;h2 id="四次挥手相关内容">四次挥手相关内容&lt;/h2>
 &lt;p>&lt;img src="http://oss.interviewguide.cn/img/202205220036404.png" alt="">&lt;/p>
 &lt;p>TCP 的连接的拆除需要发送四个包，因此称为四次挥手(Four-way handshake)，客户端或服务器均可主动发起挥手动作。&lt;/p>
 &lt;ul>
@@ -1041,7 +1112,7 @@ TFTP(Trival File Transfer Protocal)：简单文件传输协议，69&lt;/p>
 &lt;/ul>
 &lt;p>数字证书的作用，是用来认证公钥持有者的身份，以防止第三方进行冒充。&lt;/p>
 &lt;p>扩展
-&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210112.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230908141615">
+&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210112.png?imageMogr2/format/webp%7C" alt="image">
 CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;ul>
 &lt;li>首先 CA 会把持有者的公钥、用途、颁发者、有效时间等信息打成一个包，然后对这些信息进行 Hash 计算，得到一个 Hash 值；&lt;/li>
@@ -1084,7 +1155,7 @@ CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;p>以php语言来说，查原因的时候你也许会看到有说PHP上传文件涉及到的参数PHP默认的上传有限定，一般这个值是2MB，更改这个值需要更改php.conf的post_max_size这个值。这就很明白的说明了这个问题了。&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="网络层常见协议可以说一下吗">网络层常见协议？可以说一下吗？&lt;/h2>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210118.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230908152424">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210118.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Internet Protocol (IP)：IP是互联网的基础协议，负责在网络中传输数据包。&lt;del>它使用IP地址来标识网络上的设备，并提供数据包的路由功能。&lt;/del>&lt;/p>
@@ -1106,7 +1177,7 @@ CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="tcp四大拥塞控制算法总结极其重要">TCP四大拥塞控制算法总结？（极其重要）&lt;/h2>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210122.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230908162813">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210122.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;h3 id="慢启动算法--slow-start">慢启动算法 – Slow Start&lt;/h3>
 &lt;p>慢启动是TCP连接刚开始时的拥塞控制算法。
 慢启动的算法的规则就是：**每收到一个 ACK，拥塞窗口 cwnd 的大小就会加 1。**呈指数增加。
@@ -1143,7 +1214,7 @@ CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;/ul>
 &lt;p>超时重传是在发送一个数据以后就开启一个计时器，在指定时间内如果没有收到ACK报文，说明网络拥塞严重，就触发该算法：
 将慢启动门限&lt;code>ssthresh&lt;/code> 设为 &lt;code>cwnd/2&lt;/code>，拥塞窗口&lt;code>cwnd&lt;/code> 重置为 cwnd 初始化值(Linux 是10)，进入慢启动算法。
-&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210129.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230908164038">&lt;/p>
+&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210129.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>快速重传是当发送方连续三次收到前一个包的 ACK，于是发送端就会快速地重传，不必等待超时再重传。
 它将拥塞窗口设置为原来的一半，慢启动门限设置为拥塞窗口大小。&lt;/p>
 &lt;ul>
@@ -1160,7 +1231,7 @@ CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;li>如果收到新数据的 ACK 后，把 cwnd 设置为 ssthresh 的值，重新进入拥塞避免算法；&lt;/li>
 &lt;/ul>
 &lt;h2 id="为何快速重传是选择3次ack">为何快速重传是选择3次ACK？&lt;/h2>
-&lt;p>主要的考虑还是要区分包的丢失是由于链路故障还是乱序等其他因素引发。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之计算机网络-3</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-3/"/><id>https://keepjolly.com/posts/other/interview-network-3/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:57:09+08:00</published><summary type="html">使用 Session 的过程是怎样的？ 用户进行登录时，提交包含用户名和密码的表单，放入 HTTP 请求报文中；……</summary><content type="html">&lt;h2 id="使用-session-的过程是怎样的">使用 Session 的过程是怎样的？&lt;/h2>
+&lt;p>主要的考虑还是要区分包的丢失是由于链路故障还是乱序等其他因素引发。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之计算机网络-3</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-3/"/><id>https://keepjolly.com/posts/other/interview-network-3/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:57:09+08:00</published><summary type="html">使用 Session 的过程是怎样的？ 用户进行登录时，提交包含用户名和密码的表单，放入 HTTP 请求报文中；……</summary><content type="html">&lt;h2 id="使用-session-的过程是怎样的">使用 Session 的过程是怎样的？&lt;/h2>
 &lt;ol>
 &lt;li>用户进行登录时，提交包含用户名和密码的表单，放入 HTTP 请求报文中；&lt;/li>
 &lt;li>服务器验证该用户名和密码，如果正确则把用户信息存储到本地中，生成一个 Session ID；&lt;/li>
@@ -1202,7 +1273,7 @@ CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;p>IP 头中有一个 &lt;code>TTL&lt;/code> 字段，是 IP 数据报可以经过的&lt;strong>最大路由数&lt;/strong>，每经过一个处理他的路由器此值就减 1，当此值为 0 则数据报将被丢弃，同时发送 ICMP 报文通知源主机。&lt;/p>
 &lt;p>MSL 与 TTL 的区别： MSL 的单位是时间，而 TTL 是经过路由跳数。所以 &lt;strong>MSL 应该要大于等于 TTL 消耗为 0 的时间&lt;/strong>，以确保报文已被自然消亡。&lt;/p>
 &lt;h2 id="http中有个缓存机制但如何保证缓存是最新的呢">HTTP中有个缓存机制，但如何保证缓存是最新的呢？&lt;/h2>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205956.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230906151203">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205956.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>HTTP 缓存有两种实现方式，分别是&lt;strong>强制缓存和协商缓存&lt;/strong>。&lt;/p>
 &lt;p>强制缓存：&lt;/p>
 &lt;ul>
@@ -1228,7 +1299,7 @@ CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;li>如果浏览器收到 304 的请求响应状态码，则会从本地缓存中加载资源，否则更新资源。&lt;/li>
 &lt;/ul>
 &lt;h2 id="tcp头部中有哪些信息">TCP头部中有哪些信息？&lt;/h2>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210010.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230906161202">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210010.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>源端口号、目的端口号&lt;/p>
@@ -1273,7 +1344,7 @@ CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="常见tcp的连接状态有哪些">常见TCP的连接状态有哪些？&lt;/h2>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210046.jpg?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="1">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210046.jpg?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>&lt;a href="https://blog.csdn.net/chenxiyuehh/article/details/100146419">https://blog.csdn.net/chenxiyuehh/article/details/100146419&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>CLOSED：初始关闭状态。&lt;/li>
@@ -1409,10 +1480,10 @@ CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;li>缩短超时（SYN Timeout）时间&lt;/li>
 &lt;li>过滤网关防护&lt;/li>
 &lt;li>SYN cookies技术&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之计算机网络-2</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-2/"/><id>https://keepjolly.com/posts/other/interview-network-2/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:56:59+08:00</published><summary type="html">HTTPS是如何保证数据传输的安全，整体的流程是什么？ （SSL是怎么工作保证安全的）……</summary><content type="html">&lt;h2 id="https是如何保证数据传输的安全整体的流程是什么">HTTPS是如何保证数据传输的安全，整体的流程是什么？&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之计算机网络-2</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-2/"/><id>https://keepjolly.com/posts/other/interview-network-2/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:56:59+08:00</published><summary type="html">HTTPS是如何保证数据传输的安全，整体的流程是什么？ （SSL是怎么工作保证安全的）……</summary><content type="html">&lt;h2 id="https是如何保证数据传输的安全整体的流程是什么">HTTPS是如何保证数据传输的安全，整体的流程是什么？&lt;/h2>
 &lt;p>（SSL是怎么工作保证安全的）&lt;/p>
 &lt;p>&lt;a href="https://www.cnblogs.com/fangdada/p/15686204.html">https://www.cnblogs.com/fangdada/p/15686204.html&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205804.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230906104853">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205804.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>ECDHE过程：&lt;/p>
 &lt;ol>
 &lt;li>客户端首先会发送使用的 &lt;strong>TLS 版本号、支持的密码套件列表，以及生成的随机数&lt;/strong>（&lt;em>Client Random&lt;/em>）&lt;/li>
@@ -1422,7 +1493,7 @@ CA 签发证书的过程，如上图左边部分：&lt;/p>
 &lt;li>双方利用客户端随机数和服务端随机数和ECDHE算出的共享密钥计算出会话密钥来加密通话。互相验证加密和解密是否成功，并且验证消息是否被篡改。&lt;/li>
 &lt;li>最后进行HTTP通信。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205816.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230906105003">
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205816.png?imageMogr2/format/webp%7C" alt="image">
 RSA过程：&lt;/p>
 &lt;ol>
 &lt;li>客户端首先会发送使用的 TLS 版本号、支持的密码套件列表，以及生成的&lt;strong>随机数（&lt;em>Client Random&lt;/em>）&lt;/strong>&lt;/li>
@@ -1546,7 +1617,7 @@ RSA是缺点是不支持前向保密，一旦服务器的私钥泄漏了，则�
 &lt;/ol>
 &lt;p>&lt;a href="https://blog.csdn.net/qq_32798897/article/details/121879151">https://blog.csdn.net/qq_32798897/article/details/121879151&lt;/a>&lt;/p>
 &lt;h2 id="dns查询方式有哪些">DNS查询方式有哪些？&lt;/h2>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205825.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230906111735">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205825.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/423222573">https://zhuanlan.zhihu.com/p/423222573&lt;/a>&lt;/p>
 &lt;p>递归查询&lt;/p>
 &lt;p>递归查询一般发生在 Client 请求 DNS Server。Client 发出一个域名解析的请求，DNS Server 必须返回对应的 IP 地址，或者返回找不到的错误。&lt;/p>
@@ -1580,7 +1651,7 @@ RSA是缺点是不支持前向保密，一旦服务器的私钥泄漏了，则�
 &lt;p>对于传输来说，GET 和 POST 报文在传输上都是不安全的，因为 HTTP 在网络上是明文传输的，想要安全传输就得加密，也就是 HTTPS&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="post-方法会产生两个-tcp-数据包你了解吗">POST 方法会产生两个 TCP 数据包？你了解吗？&lt;/h2>
-&lt;p>大多数框架都是尽量在一个 TCP 包里面把 HTTP 请求发出去的，但是也确实存在先发 HTTP 头，然后发 body 的框架。但是具体发多少个TCP包，这个 &lt;strong>不是 HTTP 协议的事情是操作系统 TCP 协议栈与代码的问题，跟 HTTP 没关系&lt;/strong>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之计算机网络-1</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-1/"/><id>https://keepjolly.com/posts/other/interview-network-1/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:56:32+08:00</published><summary type="html">未标明出处的，均来自小林coding、阿秀的学习笔记、GPT3.5 OSI 的七层模型分别是……</summary><content type="html">&lt;p>未标明出处的，均来自&lt;a href="https://xiaolincoding.com/">小林coding&lt;/a>、&lt;a href="https://interviewguide.cn/">阿秀的学习笔记&lt;/a>、&lt;a href="https://poe.com/">GPT3.5&lt;/a>&lt;/p>
+&lt;p>大多数框架都是尽量在一个 TCP 包里面把 HTTP 请求发出去的，但是也确实存在先发 HTTP 头，然后发 body 的框架。但是具体发多少个TCP包，这个 &lt;strong>不是 HTTP 协议的事情是操作系统 TCP 协议栈与代码的问题，跟 HTTP 没关系&lt;/strong>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之计算机网络-1</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-network-1/"/><id>https://keepjolly.com/posts/other/interview-network-1/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:56:32+08:00</published><summary type="html">未标明出处的，均来自小林coding、阿秀的学习笔记、GPT3.5 OSI 的七层模型分别是……</summary><content type="html">&lt;p>未标明出处的，均来自&lt;a href="https://xiaolincoding.com/">小林coding&lt;/a>、&lt;a href="https://interviewguide.cn/">阿秀的学习笔记&lt;/a>、&lt;a href="https://poe.com/">GPT3.5&lt;/a>&lt;/p>
 &lt;h2 id="osi-的七层模型分别是各自的功能是什么">OSI 的七层模型分别是？各自的功能是什么？&lt;/h2>
 &lt;ol>
 &lt;li>物理层：负责传输比特流，处理物理介质和电信号。&lt;/li>
@@ -1805,7 +1876,7 @@ RSA是缺点是不支持前向保密，一旦服务器的私钥泄漏了，则�
 &lt;h2 id="什么是ssltls-">什么是SSL/TLS ？&lt;/h2>
 &lt;p>TLS协议采用&lt;a href="https://zh.wikipedia.org/wiki/%E4%B8%BB%E5%BE%9E%E5%BC%8F%E6%9E%B6%E6%A7%8B" title="主从式架构">主从式架构&lt;/a>模型，用于防止两个应用程序在交换数据时受到窃听及篡改。&lt;/p>
 &lt;p>TLS协议的优势是与高层的&lt;a href="https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E5%B1%82" title="应用层">应用层&lt;/a>协议（如&lt;a href="https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE" title="超文本传输协议">HTTP&lt;/a>、&lt;a href="https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE" title="文件传输协议">FTP&lt;/a>、&lt;a href="https://zh.wikipedia.org/wiki/Telnet" title="Telnet">Telnet&lt;/a>等）无耦合。应用层协议传输的数据在通过TLS协议时都会被加密，从而保证通信的私密性。&lt;/p>
-&lt;p>SSL/TLS协议作用：认证用户和服务，加密数据，维护数据的完整性。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-8</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-8/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-8/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:56:13+08:00</published><summary type="html">类的对象存储空间？ 类的非静态成员变量大小，静态成员不占据类的空间，成员函数也不占据类……</summary><content type="html">&lt;h2 id="类的对象存储空间">类的对象存储空间？&lt;/h2>
+&lt;p>SSL/TLS协议作用：认证用户和服务，加密数据，维护数据的完整性。&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-8</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-8/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-8/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:56:13+08:00</published><summary type="html">类的对象存储空间？ 类的非静态成员变量大小，静态成员不占据类的空间，成员函数也不占据类……</summary><content type="html">&lt;h2 id="类的对象存储空间">类的对象存储空间？&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>类的非静态成员变量大小，静态成员不占据类的空间，成员函数也不占据类的空间大小；&lt;/p>
@@ -1822,7 +1893,7 @@ RSA是缺点是不支持前向保密，一旦服务器的私钥泄漏了，则�
 &lt;/ol>
 &lt;h2 id="简要说明c的内存分区">简要说明C++的内存分区&lt;/h2>
 &lt;p>C++中的内存分区，分别是堆、栈、全局/静态存储区、常量存储区和代码区。如下图所示&lt;/p>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210303.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230927121914">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113210303.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>&lt;strong>栈&lt;/strong>：在执行函数时，函数内局部变量的存储单元都可以在栈上创建，函数执行结束时这些存储单元自动被释放。栈内存分配运算内置于处理器的指令集中，效率很高，但是分配的内存容量有限&lt;/p>
 &lt;p>&lt;strong>堆&lt;/strong>：由 &lt;code>new&lt;/code>分配的内存块，需要应用程序去控制，&lt;code>new&lt;/code>和 &lt;code>delete&lt;/code>要对应。如果程序员没有释放掉，那么在程序结束后，操作系统会自动回收&lt;/p>
 &lt;p>&lt;strong>全局/静态存储区&lt;/strong>：全局变量和静态变量被分配到同一块内存中，~~在以前的C语言中，全局变量和静态变量又分为初始化的和未初始化的，在C++里面没有这个区分了，~~在该区定义的变量若没有初始化，则会被自动初始化，例如int型变量自动初始为0&lt;/p>
@@ -1834,11 +1905,11 @@ RSA是缺点是不支持前向保密，一旦服务器的私钥泄漏了，则�
 &lt;li>内存池则是在真正使用内存之前，先申请分配一大块内存（内存池）留作备用。当程序员申请内存时，从池中取出一块动态分配，当程序员释放时，将释放的内存放回到池内，再次申请，就可以从池里取出来使用，并尽量与周边的空闲内存块合并。若内存池不够时，则自动扩大内存池，从操作系统中申请更大的内存池。&lt;/li>
 &lt;/ul>
 &lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/523216209">https://zhuanlan.zhihu.com/p/523216209&lt;/a>&lt;/p>
-&lt;h2 id="可以说一下你了解的c得内存管理吗">可以说一下你了解的C++得内存管理吗？&lt;/h2>
+&lt;h2 id="c的内存管理">C++的内存管理？&lt;/h2>
 &lt;p>在C++中，内存分成5个区，他们分别是堆、栈、全局/静态存储区和常量存储区和代码区。&lt;/p>
 &lt;p>&lt;strong>栈&lt;/strong>：在执行函数时，函数内局部变量的存储单元都可以在栈上创建，函数执行结束时这些存储单元自动被释放。栈内存分配运算内置于处理器的指令集中，效率很高，但是分配的内存容量有限&lt;/p>
 &lt;p>&lt;strong>堆&lt;/strong>：由 &lt;code>new&lt;/code>分配的内存块，需要应用程序去控制，&lt;code>new&lt;/code>和 &lt;code>delete&lt;/code>要对应。如果程序员没有释放掉，那么在程序结束后，操作系统会自动回收&lt;/p>
-&lt;p>&lt;strong>全局/静态存储区&lt;/strong>：全局变量和静态变量被分配到同一块内存中，~~在以前的C语言中，全局变量和静态变量又分为初始化的和未初始化的，在C++里面没有这个区分了，~~在该区定义的变量若没有初始化，则会被自动初始化，例如int型变量自动初始为0&lt;/p>
+&lt;p>&lt;strong>全局/静态存储区&lt;/strong>：全局变量和静态变量被分配到同一块内存中，&lt;del>在以前的C语言中，全局变量和静态变量又分为初始化的和未初始化的，在C++里面没有这个区分了，&lt;/del> 在该区定义的变量若没有初始化，则会被自动初始化，例如int型变量自动初始为0&lt;/p>
 &lt;p>&lt;strong>常量存储区&lt;/strong>：这是一块比较特殊的存储区，这里面存放的是常量，不允许修改&lt;/p>
 &lt;p>&lt;strong>代码区&lt;/strong>：存放函数体的二进制代码&lt;/p>
 &lt;h2 id="c中类的数据成员和成员函数内存分布情况">C++中类的数据成员和成员函数内存分布情况&lt;/h2>
@@ -2005,7 +2076,7 @@ RSA是缺点是不支持前向保密，一旦服务器的私钥泄漏了，则�
 &lt;li>
 &lt;p>&lt;a href="http://baiy.cn/doc/cpp/inside_rtti.htm">http://baiy.cn/doc/cpp/inside_rtti.htm&lt;/a>&lt;/p>
 &lt;/li>
-&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-7</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-7/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-7/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:55:47+08:00</published><summary type="html">static_cast比C语言中的转换强在哪里？ 在编译期间就能发现转换错误 更容易检索……</summary><content type="html">&lt;h2 id="static_cast比c语言中的转换强在哪里">static_cast比C语言中的转换强在哪里？&lt;/h2>
+&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-7</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-7/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-7/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:55:47+08:00</published><summary type="html">static_cast比C语言中的转换强在哪里？ 在编译期间就能发现转换错误 更容易检索……</summary><content type="html">&lt;h2 id="static_cast比c语言中的转换强在哪里">static_cast比C语言中的转换强在哪里？&lt;/h2>
 &lt;ul>
 &lt;li>在编译期间就能发现转换错误&lt;/li>
 &lt;li>更容易检索到何处强制转换&lt;/li>
@@ -2473,11 +2544,11 @@ RSA是缺点是不支持前向保密，一旦服务器的私钥泄漏了，则�
 &lt;li>控制：C++强调程序的可预测性和确定性。垃圾回收机制会增加程序的复杂性和不确定性。&lt;/li>
 &lt;li>生命周期管理：C++注重对资源的显式管理，可以精确地控制资源的生命周期，避免资源的浪费。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;a href="https://www.cnblogs.com/codemagiciant/p/17601843.html">https://www.cnblogs.com/codemagiciant/p/17601843.html&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-6</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-6/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-6/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:55:29+08:00</published><summary type="html">int main(int argc, char *argv[])里的参数，你了解吗？ 参数的含义是程序在命令行下运行的时候，输……</summary><content type="html">&lt;h2 id="int-mainint-argc-char-argv里的参数你了解吗">int main(int argc, char *argv[])里的参数，你了解吗？&lt;/h2>
+&lt;p>&lt;a href="https://www.cnblogs.com/codemagiciant/p/17601843.html">https://www.cnblogs.com/codemagiciant/p/17601843.html&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-6</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-6/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-6/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:55:29+08:00</published><summary type="html">int main(int argc, char *argv[])里的参数，你了解吗？ 参数的含义是程序在命令行下运行的时候，输……</summary><content type="html">&lt;h2 id="int-mainint-argc-char-argv里的参数你了解吗">int main(int argc, char *argv[])里的参数，你了解吗？&lt;/h2>
 &lt;p>参数的含义是程序在命令行下运行的时候，输入了argc 个参数，每个参数以char*类型存入 argv[]，第一个参数为程序的名称。&lt;/p>
 &lt;h2 id="volatile关键字的作用">volatile关键字的作用？&lt;/h2>
 &lt;p>volatile 关键字是一种类型修饰符，用它声明的类型变量表示可以被某些编译器未知的因素更改，系统总是重新从它所在的内存读取数据。可以用在多线程中，每次读取到修改后的值。&lt;/p>
-&lt;h2 id="103如果有一个空类它会默认添加哪些函数">103、如果有一个空类，它会默认添加哪些函数？&lt;/h2>
+&lt;h2 id="如果有一个空类它会默认添加哪些函数">如果有一个空类，它会默认添加哪些函数？&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2635,7 +2706,7 @@ RSA是缺点是不支持前向保密，一旦服务器的私钥泄漏了，则�
 &lt;a href="https://blog.csdn.net/wy1550365215/article/details/77930637">代码&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="在进行函数参数以及返回值传递时可以使用引用或者值传递其中使用引用的好处有哪些">在进行函数参数以及返回值传递时，可以使用引用或者值传递，其中使用引用的好处有哪些？&lt;/h2>
+&lt;h2 id="进行函数参数以及返回值传递时使用引用的好处有哪些">进行函数参数以及返回值传递时，使用引用的好处有哪些？&lt;/h2>
 &lt;p>对比值传递，引用传参的好处：&lt;/p>
 &lt;ul>
 &lt;li>在函数内部可以直接对实参修改&lt;/li>
@@ -2812,7 +2883,7 @@ RSA是缺点是不支持前向保密，一旦服务器的私钥泄漏了，则�
 &lt;li>strncpy函数：用来复制源字符串的前n个字符，但是它不会在目标字符串&lt;strong>追加结束符&lt;/strong>，容易出现意想不到的输出结果。如果n比较大，会一直填充结束符直到n，效率不太好。
 &lt;a href="https://blog.csdn.net/qq_26093511/article/details/73338036">https://blog.csdn.net/qq_26093511/article/details/73338036&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>因此推荐使用strdup，在堆上开辟，或者strdupa，在栈上开辟，或者用string&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-5</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-5/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-5/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:52:56+08:00</published><summary type="html">知道C++中的组合吗？它与继承相比有什么优缺点吗？ 一：继承 继承是Is a 的关系。继承的……</summary><content type="html">&lt;h2 id="知道c中的组合吗它与继承相比有什么优缺点吗">知道C++中的组合吗？它与继承相比有什么优缺点吗？&lt;/h2>
+&lt;p>因此推荐使用strdup，在堆上开辟，或者strdupa，在栈上开辟，或者用string&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-5</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-5/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-5/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:52:56+08:00</published><summary type="html">知道C++中的组合吗？它与继承相比有什么优缺点吗？ 一：继承 继承是Is a 的关系。继承的……</summary><content type="html">&lt;h2 id="知道c中的组合吗它与继承相比有什么优缺点吗">知道C++中的组合吗？它与继承相比有什么优缺点吗？&lt;/h2>
 &lt;p>&lt;strong>一：继承&lt;/strong>&lt;/p>
 &lt;p>继承是Is a 的关系。继承的优点是子类可以重写父类的方法来方便地实现对父类的扩展。&lt;/p>
 &lt;p>继承的缺点：&lt;/p>
@@ -3272,7 +3343,7 @@ typedef int *p_int; 显示p_int&lt;/p>
 &lt;ul>
 &lt;li>复制的内容不同。strcpy只能复制字符串，而memcpy可以复制任意内容，例如字符数组、整型、结构体、类等。&lt;/li>
 &lt;li>复制的方法不同。strcpy不需要指定长度，它遇到被复制的字符串结束符&amp;quot;\0&amp;quot;才结束，所以容易溢出。memcpy则是根据其第3个参数决定复制的长度。&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-3</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-3/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-3/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:52:47+08:00</published><summary type="html">C++中有几种类型的new 在C++中，new有三种典型的使用方法：plain new，……</summary><content type="html">&lt;h2 id="c中有几种类型的new">C++中有几种类型的new&lt;/h2>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-3</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-3/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-3/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:52:47+08:00</published><summary type="html">C++中有几种类型的new 在C++中，new有三种典型的使用方法：plain new，……</summary><content type="html">&lt;h2 id="c中有几种类型的new">C++中有几种类型的new&lt;/h2>
 &lt;p>在C++中，new有三种典型的使用方法：plain new，nothrow new和placement new&lt;/p>
 &lt;p>（1）&lt;strong>plain new&lt;/strong>
 如果分配空间失败，会抛出异常&lt;strong>std::bad_alloc&lt;/strong>。
@@ -3908,7 +3979,7 @@ typedef int *p_int; 显示p_int&lt;/p>
 &lt;li>
 &lt;p>字符串操作：&lt;code>std::string&lt;/code> 提供了一系列的成员函数，可以方便地进行字符串的拼接、子串提取、查找等操作，而 &lt;code>char*&lt;/code> 则需要使用一些 C 语言的字符串操作函数（如 &lt;code>strcat&lt;/code>、&lt;code>strchr&lt;/code> 等）或者手动进行指针操作。&lt;/p>
 &lt;/li>
-&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-4</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-4/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-4/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:52:43+08:00</published><summary type="html">什么是内存泄露，如何检测与避免 内存泄露 用new/malloc申请了内存，但是没有用d……</summary><content type="html">&lt;h2 id="什么是内存泄露如何检测与避免">什么是内存泄露，如何检测与避免&lt;/h2>
+&lt;/ol></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-4</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-4/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-4/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:52:43+08:00</published><summary type="html">什么是内存泄露，如何检测与避免 内存泄露 用new/malloc申请了内存，但是没有用d……</summary><content type="html">&lt;h2 id="什么是内存泄露如何检测与避免">什么是内存泄露，如何检测与避免&lt;/h2>
 &lt;p>&lt;strong>内存泄露&lt;/strong>&lt;/p>
 &lt;p>用new/malloc申请了内存，但是没有用delete/free释放内存。而其他程序就无法再申请该块空间&lt;/p>
 &lt;p>&lt;strong>避免内存泄露的几种方式&lt;/strong>&lt;/p>
@@ -4342,7 +4413,7 @@ typedef int *p_int; 显示p_int&lt;/p>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;a href="https://blog.csdn.net/baidu_35679960/article/details/80821222">https://blog.csdn.net/baidu_35679960/article/details/80821222&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-2</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-2/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-2/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:52:05+08:00</published><summary type="html">struct和class的区别 相同点 两者都拥有成员函数、公有和私有部分 任何可以使用s……</summary><content type="html">&lt;h2 id="struct和class的区别">struct和class的区别&lt;/h2>
+&lt;p>&lt;a href="https://blog.csdn.net/baidu_35679960/article/details/80821222">https://blog.csdn.net/baidu_35679960/article/details/80821222&lt;/a>&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-2</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-2/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-2/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:52:05+08:00</published><summary type="html">struct和class的区别 相同点 两者都拥有成员函数、公有和私有部分 任何可以使用s……</summary><content type="html">&lt;h2 id="struct和class的区别">struct和class的区别&lt;/h2>
 &lt;p>&lt;strong>相同点&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>两者都拥有成员函数、公有和私有部分&lt;/li>
@@ -5188,7 +5259,7 @@ typedef int *p_int; 显示p_int&lt;/p>
 &lt;/div>
 &lt;/div>&lt;p>情况1比较好理解&lt;/p>
 &lt;p>情况2的实现过程是，调用函数时先根据传入的实参产生临时对象，再用拷贝构造去初始化这个临时对象，在函数中与形参对应，函数调用结束后析构临时对象&lt;/p>
-&lt;p>情况3在执行return时，理论的执行过程是：产生临时对象，调用拷贝构造函数把返回对象拷贝给临时对象，函数执行完先析构局部变量，再析构临时对象， 依然会调用拷贝构造函数&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-1</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-1/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-1/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T21:51:17+08:00</published><summary type="html">https://www.cnblogs.com/marjosong/p/13801160.html 在main执行之前和之后执行的代码可能是什么？ 牛客网 全局对象的构造函数在main函……</summary><content type="html">&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205617.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="Pasted image 20230927121914">
+&lt;p>情况3在执行return时，理论的执行过程是：产生临时对象，调用拷贝构造函数把返回对象拷贝给临时对象，函数执行完先析构局部变量，再析构临时对象， 依然会调用拷贝构造函数&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">面试之CPP基础知识-1</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/other/interview-basic-cpp-1/"/><id>https://keepjolly.com/posts/other/interview-basic-cpp-1/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T21:51:17+08:00</published><summary type="html">https://www.cnblogs.com/marjosong/p/13801160.html 在main执行之前和之后执行的代码可能是什么？ 牛客网 全局对象的构造函数在main函……</summary><content type="html">&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2024/01/20240113205617.png?imageMogr2/format/webp%7C" alt="image">
 &lt;a href="https://www.cnblogs.com/marjosong/p/13801160.html">https://www.cnblogs.com/marjosong/p/13801160.html&lt;/a>&lt;/p>
 &lt;h2 id="在main执行之前和之后执行的代码可能是什么">在main执行之前和之后执行的代码可能是什么？&lt;/h2>
 &lt;p>&lt;a href="https://www.nowcoder.com/questionTerminal/113e8cc887a7412eb42627d8685bc19c?">牛客网&lt;/a>&lt;/p>
@@ -5262,7 +5333,7 @@ typedef int *p_int; 显示p_int&lt;/p>
 &lt;p>申请大小限制不同。&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>栈是向栈底扩展，大小固定，可以通过ulimit -a查看，由ulimit -s修改。&lt;/p>
+&lt;p>栈向低地址扩展，大小固定，可以通过ulimit -a查看，由ulimit -s修改。&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>堆向高地址扩展，是不连续的内存区域，大小可以灵活调整。&lt;/p>
@@ -5455,7 +5526,7 @@ typedef int *p_int; 显示p_int&lt;/p>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>#define p_int int * 显示 int*
+&lt;p>#define p_int int * 显示 int*&lt;br>
 typedef int *p_int; 显示p_int&lt;/p>
 &lt;h2 id="define宏定义和const的区别">define宏定义和const的区别&lt;/h2>
 &lt;table>
@@ -5517,7 +5588,7 @@ typedef int *p_int; 显示p_int&lt;/p>
 &lt;/table>
 &lt;h2 id="变量声明和定义区别">变量声明和定义区别？&lt;/h2>
 &lt;ul>
-&lt;li>声明仅仅是把变量的&lt;strong>声明的位置及类型提供给编译器&lt;/strong>，并不分配内存空间；定义要在定义的地方为其&lt;strong>分配存储空间&lt;/strong>。&lt;/li>
+&lt;li>声明仅仅是告诉这里有一个变量（把变量的&lt;strong>声明的位置及类型提供给编译器&lt;/strong>，）并不分配内存空间；定义要在定义的地方为其&lt;strong>分配存储空间&lt;/strong>。&lt;/li>
 &lt;/ul>
 &lt;h2 id="strlen和sizeof区别">strlen和sizeof区别？&lt;/h2>
 &lt;table>
@@ -5675,7 +5746,7 @@ typedef int *p_int; 显示p_int&lt;/p>
 &lt;li>Java在桌面程序上不如C++实用，C++可以直接编译成exe文件，指针是c++的优势，可以直接对内存的操作，但同时具有危险性 。（操作内存的确是一项非常危险的事情，一旦指针指向的位置发生错误，或者误删除了内存中某个地址单元存放的重要数据，后果是可想而知的）&lt;/li>
 &lt;li>Java在Web 应用上具有C++ 无可比拟的优势，具有丰富多样的框架&lt;/li>
 &lt;li>对于底层程序的编程以及控制方面的编程，C++很灵活，因为有句柄的存在&lt;/li>
-&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">C-STL超全总结汇总版</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/stl-summary/"/><id>https://keepjolly.com/posts/learn/stl-summary/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T20:52:18+08:00</published><summary type="html">文章转载自行码棋，并稍作修改 务必做到读万卷书，行万里路。 另外C版本一定要对（可能要加……</summary><content type="html">&lt;p>文章转载自&lt;a href="https://wyqz.top/p/870124582.html">行码棋&lt;/a>，并稍作修改&lt;/p>
+&lt;/ul></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/other/" term="other" label="other"/><category scheme="https://keepjolly.com/tags/interview/" term="Interview" label="Interview"/></entry><entry><title type="text">C-STL超全总结汇总版</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/stl-summary/"/><id>https://keepjolly.com/posts/learn/stl-summary/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T20:52:18+08:00</published><summary type="html">文章转载自行码棋，并稍作修改 务必做到读万卷书，行万里路。 另外C版本一定要对（可能要加……</summary><content type="html">&lt;p>文章转载自&lt;a href="https://wyqz.top/p/870124582.html">行码棋&lt;/a>，并稍作修改&lt;/p>
 &lt;p>务必做到&lt;strong>读万卷书，行万里路&lt;/strong>。&lt;/p>
 &lt;blockquote>
 &lt;p>另外C版本一定要对（可能要加编译参数&lt;code>-std=c++11&lt;/code>），C11即可，C++17或20更好。&lt;/p>
@@ -9358,7 +9429,7 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;blockquote>
 &lt;p>2023.03.28 已更新PDF文件（除去了水印，内容进行了部分排版调整和更新）&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;img src="https://wyqz.top/medias/gzh.jpg" alt="">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">排序、查找算法</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/basic-sort-and-search-algorithm/"/><id>https://keepjolly.com/posts/learn/basic-sort-and-search-algorithm/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2024-01-13T20:48:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">查找算法只涉及到用的最多的二分查找 排序算法 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21……</summary><content type="html">&lt;blockquote>
+&lt;p>&lt;img src="https://wyqz.top/medias/gzh.jpg" alt="">&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">排序、查找算法</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/basic-sort-and-search-algorithm/"/><id>https://keepjolly.com/posts/learn/basic-sort-and-search-algorithm/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2024-01-13T20:48:46+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">查找算法只涉及到用的最多的二分查找 排序算法 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21……</summary><content type="html">&lt;blockquote>
 &lt;p>查找算法只涉及到用的最多的二分查找&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="排序算法">排序算法&lt;/h2>
@@ -9617,7 +9688,7 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">公务员行测--判断推理</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/judgmental-reasoning/"/><id>https://keepjolly.com/posts/learn/judgmental-reasoning/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2023-12-09T08:27:05+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">图形推理 命题形式与考点 命题形式： 一组图：从左往右找规律，极少需要跳着找规律 二组图：第……</summary><content type="html">&lt;h2 id="图形推理">图形推理&lt;/h2>
+&lt;/div></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/c-/" term="C++" label="C++"/></entry><entry><title type="text">公务员行测--判断推理</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/judgmental-reasoning/"/><id>https://keepjolly.com/posts/learn/judgmental-reasoning/</id><updated>2024-05-03T07:15:44+00:00</updated><published>2023-12-09T08:27:05+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">图形推理 命题形式与考点 命题形式： 一组图：从左往右找规律，极少需要跳着找规律 二组图：第……</summary><content type="html">&lt;h2 id="图形推理">图形推理&lt;/h2>
 &lt;h3 id="命题形式与考点">命题形式与考点&lt;/h3>
 &lt;ul>
 &lt;li>命题形式：
@@ -9681,23 +9752,23 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;/ul>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231204233259.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231204233259.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例4】三角形底边在平移，并且顶点在按正方形进行平移&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231204233827.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231204233827.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例5】看单幅图的规律，1黑点顺时针到三角形45同理，如果考虑黑点和三角形的位置为123，没答案所以不行&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231204234529.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231204234529.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练4】一个个元素看（先横着看没规律，然后竖着看），第一个元素自上往下走，第二个往上走后从头跑，第三个位置不变，第四个从头跑。注意三角形走上去后，只会保留三角形内的方框。即梯形往上走变三角形。【练5】折返跑，是撞头后掉头不会穿越&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205190921.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205190921.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练5】外圈逆时针、内圈顺时针&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205191049.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205191049.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练2】九宫格优先看行，第一个到第二个是左右翻转、第二个到第三个是上下翻转。不要孤立单看白色三角形的变化和黑色三角形的变化。&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -9729,19 +9800,19 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;h4 id="消消乐黑白运算">消消乐&amp;amp;黑白运算&lt;/h4>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205194306.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205194306.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例5】第一行都存在平行四边形且第三幅图是消完后旋转的结果（并且顺逆旋转不变）。B是没有旋转，D是旋转后的结果。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205194533.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205194533.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练2】也可以&lt;strong>自下往上&lt;/strong>看，第一列第一个为后两个相加&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205195147.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205195147.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练6】发现是消消乐后，找到相同的线然后排除一个选项，知道排除所有选项，不要全消完。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205195837.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205195837.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练1】发现是黑白运算后直接从第二组中&lt;strong>按顺序&lt;/strong>找对应结果，不要先从第一组找到黑白运算表后再看选项&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -9755,14 +9826,14 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;li>
 &lt;p>轴对称：对称轴方向、数量&lt;/p>
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205200903.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205200903.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;li>对称轴数量分别为1、1、5、5，注意方向变化&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;a href="https://www.bilibili.com/video/BV12t4115735/?p=2&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=5328">中心对称&lt;/a>（图形旋转 180°后和原图形完全重合/找一中点，两点穿过该点距离相同）&lt;/p>
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205200915.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205200915.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;li>一般考试的图形都是上述特征图的变形&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -9788,31 +9859,31 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;h4 id="对称性曲直性开闭性">对称性&amp;amp;曲直性&amp;amp;开闭性&lt;/h4>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205203355.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205203355.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练5】结合选项看，只有D包含竖轴，图中都是既有多轴又出现中心对称&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205204606.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205204606.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【&lt;a href="https://www.bilibili.com/video/BV12t4115735/?p=2&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=7509">练8&lt;/a>】看各组成部分的对称性，134对称轴相交45°，256对称轴平行。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205204851.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205204851.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练9】对称轴数量相加&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205205625.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205205625.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练1】发现第一幅图不对称，立马考虑曲直性。外曲/直内直/曲，图形全为曲直，排除BD，发现AC为不同在于内外曲直性&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205205807.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205205807.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练2】优先考虑对称性，发现第四幅图不对称，然后考虑曲直性。结合内部对称轴方向+外部曲直性&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205210137.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205210137.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例1】优先考虑对称性，发现6不对称，曲直无法考虑，考虑开闭性。145一组，236一组&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205210757.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205210757.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例2】146半开半闭。另一种更好的解释：146的面都是线连接，235面都是紧挨。&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -9837,7 +9908,7 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;li>图形由一笔画成，&lt;a href="https://www.bilibili.com/video/BV12t4115735/?p=4&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=165">特点&lt;/a>：线条之间联通、奇点数=0或2（奇点：由一个点发射出奇数条线）、&lt;strong>端点必为奇点&lt;/strong>（奇点数一定是偶数个）&lt;/li>
 &lt;li>考点：遇到特征图考虑笔画数&lt;/li>
 &lt;li>特征：明显存在一笔画图和其特征图&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205231000.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205231000.png?imageMogr2/format/webp%7C" alt="image">
 &lt;ul>
 &lt;li>五角星（遇到时可能会考查线数量、点数量、 对称性和笔画数，可以结合其他的特征图判断考点）&lt;/li>
 &lt;li>“日”字及其变形&lt;/li>
@@ -9859,43 +9930,43 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;p>题目：&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205211646.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205211646.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例2】不相同不相似，无全对称，考虑点。126二点，345四点。虽然134一笔画，但是6需要4笔。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205212141.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205212141.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练1】4图不对称，考虑点，但是正常数点不行，发现四图中都出现圆，找曲直交点/圆切点&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205212337.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205212337.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练3】都出现圆，相切没规律，考虑圆内交点&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205223336.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205223336.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例4】曲直性无法分类；点不行，曲线数量不行，看直线数量不行，两者合并发现曲-直相等。建议把各类特性写出来，不要只看一点&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205223820.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205223820.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例5】首尾线垂直或平行&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205224434.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205224434.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练3】汉字一般考笔画，线数，面，部分。笔画不行，线数发现左撇有关系&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205224847.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205224847.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练4】数黑点没规律，数边没规律，两者相减有规律&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205225407.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205225407.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【&lt;a href="https://www.bilibili.com/video/BV12t4115735/?p=3&amp;amp;share_source=copy_web&amp;amp;vd_source=504045c18340a005fec8674ac78d7934&amp;amp;t=7294">练6&lt;/a>】元素相同，都是三条线。三条线的移动&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205225806.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205225806.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练7】同例5，但是平行的两条线方向不一致&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205232743.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231205232743.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练4】看对称，不能区分。看曲直不行。点肯定不行，出现一笔画24，考虑一笔画，135为多笔画，仅吉林会出现，一般都为同一规律&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -9937,51 +10008,51 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;p>题目：&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206190059.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206190059.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例4】对称轴没规律；点线也没规律；发现面和轴一致。要记录下所有规律的数字。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206191213.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206191213.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例6】每个小图形由对称性，但是5太多。考虑面，都是5个面，但是每个图形其中最小的子图形的形状和其大轮廓一致，反之就是另3个。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206191736.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206191736.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练1】非常综合，首先判断对称性，排除A，曲直性交替排除B，面数量排除D&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206192208.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206192208.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练4】数字考察：面、笔画、线。发现白面2个面，黑面3个面&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206192856.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206192856.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练6】面无规律，发现每幅图三角形数量递增&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206201612.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206201612.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例3】三角形变少，圆形逐渐变多，且仅这种图形，考虑元素替换，发现一个⚪=3个▲，每次递增一个▲。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206202304.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206202304.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练3】都包含三种元素，排除C，每幅图包含前幅图的一个元素，选A&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206203116.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206203116.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练4】三种元素，五个元素，排除AD。发现每幅图形呈现311，221，311，221，311规律&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206204910.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206204910.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练5】像这种内外圈图形，可以分开考虑，发现外圈2*3=6，内圈6=2*3&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206210557.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206210557.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例4】第一行前两个就不符合黑白运算，考虑小元素的部分数，黑色部分为1、2、3&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206212907.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206212907.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例2】注意数直角的两边都要数上&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206213109.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206213109.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练1】一笔画不行、对称不行、看到改造图D，发现数角为2365，则应该数锐角而不是都数。&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -10006,15 +10077,15 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;p>特征：出现小黑点或者箭头等小元素&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206215921.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206215921.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例3】连接两点&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206215958.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206215958.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练1】对称性只有124，其他没有规律，pass。发现点在线上和点在交点上&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206220251.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206220251.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练4】标记图形中最大和最小的角&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -10035,42 +10106,42 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;p>题目：&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206230713.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206230713.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例4】相同元素相交&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206230756.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206230756.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练1】相交边的包含和交错关系&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206230956.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206230956.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练2】相切点数量&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206231234.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206231234.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【练4】这题应该有敏感性吧，图形由线连接和封闭图形&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="其他规律">其他规律&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206232226.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206232226.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例2】每个数字只出现一次，或者9+6+8+3=2+6+？+7&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206232249.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206232249.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>选项和题目的对应关系&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206232915.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206232915.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例6】第一行=第一列；第二行=第二列；第三行=第三列&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206233407.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206233407.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例8】每列线条组合是米字&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206233659.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206233659.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例9】优先数格子数，空间重构也会用到，排除AC。没时间优先选不规则图形。可以尝试在选项中进行拼接&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -10088,7 +10159,7 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;ol>
 &lt;li>同行或同列相隔一个面&lt;/li>
 &lt;li>“Z”字形两端&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206235005.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231206235005.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ol>
 &lt;/li>
 &lt;li>相邻面
@@ -10096,7 +10167,7 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;li>折叠前后相邻关系保持不变&lt;/li>
 &lt;li>紧邻（挨着）的面是相邻面。外部构成直角的两条边是同一条边。四个格子的端点是相邻面&lt;/li>
 &lt;li>特征：图形方向明显，可直接唯一确定其相邻面位置。&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207192201.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207192201.png?imageMogr2/format/webp%7C" alt="image">
 &lt;ul>
 &lt;li>箭头为相邻法、蓝色为相对面&lt;/li>
 &lt;/ul>
@@ -10108,7 +10179,7 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;li>结合选项，找一个特殊面的&lt;strong>唯一点&lt;/strong>或&lt;strong>唯一边&lt;/strong>&lt;/li>
 &lt;li>顺时针&lt;del>或逆时针方向&lt;/del>描边&lt;/li>
 &lt;li>题干与选项对应面不一致——排除&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207194047.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207194047.png?imageMogr2/format/webp%7C" alt="image">
 &lt;ul>
 &lt;li>A用到唯一边（&lt;del>注意是从一条边开始画，而不是点&lt;/del>），B相对面，C唯一点&lt;/li>
 &lt;/ul>
@@ -10117,13 +10188,13 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;/li>
 &lt;/ol>
 &lt;p>题目：
-&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207194821.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207194821.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;h4 id="四面体和八面体">四面体和八面体&lt;/h4>
 &lt;ul>
 &lt;li>四面体
 &lt;ul>
 &lt;li>四面体的展开图只有两种情况，如下图，展开图中构成一条直线的两条边， 折合之后是同一条边&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207195430.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207195430.png?imageMogr2/format/webp%7C" alt="image">
 &lt;ul>
 &lt;li>图 1 中的 a 和 b，c 和 d，e 和 f，折合以后是同一条边；&lt;/li>
 &lt;li>图 2 中的 a 和 b，c 和 d，剩余的 e 和 f，折合以后是同一条边。&lt;/li>
@@ -10135,19 +10206,19 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;li>图 2 中，面3为其底面，面1为其左侧，面4为其右侧。看箭头指向的左右下&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207202614.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207202614.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>八面体
 &lt;ul>
 &lt;li>钝角是公共边，顶点发出四个面&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207203113.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207203113.png?imageMogr2/format/webp%7C" alt="image">
 &lt;ul>
 &lt;li>点 a 发出的四个面是 5，6，7 和 8。 点 b 发出的四个面呢？由于构成“ヘ”形的两条边，折合后是同一条边，那么 b 和 c 折合后是同一个点，所以 b 点发出的四个面是 2，3，6 和 7，同理，c 点发出的四个面也是 2，3，6 和 7。&lt;/li>
 &lt;li>蓝色公共边为5，8；红色为1，4；紫色为3，6&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207205217.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207205217.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -10170,11 +10241,11 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;/ul>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207210228.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207210228.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例5】选项方块数量不一致，优先数方块数&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207210641.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207210641.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例9】俯视图一致&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -10187,28 +10258,28 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;li>
 &lt;p>六面体的截面&lt;/p>
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207211901.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207211908.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207211901.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207211908.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;li>只能切出锐角三角形&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207211927.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207211927.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>圆柱体（1）圆（横切）（2）椭圆（斜切）（3）矩形（竖切）&lt;/p>
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207212004.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207212004.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>圆锥（1）圆（横切）（2）椭圆（斜切）（3）三角形（竖切）&lt;/p>
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207212037.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207212037.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>圆台（1）圆（横切）（2）椭圆（斜切）（3）梯形（竖切）&lt;/p>
 &lt;ul>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207212044.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207212044.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -10216,11 +10287,11 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;/ul>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207213730.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207213730.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例3】可以分成两部分进行切割，A选项从对角线开始切正方体，然后到下半部分长方体后变长从而又是个梯形。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207213715.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207213715.png?imageMogr2/format/webp%7C" alt="image">&lt;/p>
 &lt;p>【例5】BD选复杂的&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -10228,7 +10299,7 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;li>立体拼合
 &lt;ul>
 &lt;li>解题：凹凸有致：有凹必有凸，有凸必有凹。&lt;/li>
-&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207214133.png?imageMogr2/format/webp%7C?watermark/3/type/3/text/a2VlcGpvbGx5" alt="image.png">&lt;/li>
+&lt;li>&lt;img src="https://pic.keepjolly.com/halo/blog/2023/12/20231207214133.png?imageMogr2/format/webp%7C" alt="image">&lt;/li>
 &lt;li>【例4】其实还好，可以脑海里按它的位置摆好，因为位置肯定确定，①一定向左转，②一定开口向左&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -10838,671 +10909,4 @@ C语言中的字符串，用char数组实现，类型为&lt;code>const char *&lt
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>终于行测四大模块全部结束了，后天也考试了，不为自己为大家(实际上自己太菜了哈哈哈)，希望看到的人可以提提意见，如果好的话也可以转发。感谢您的观看，祝您考公顺利！！！&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry><entry><title type="text">公务员行测--言语理解下</title><link rel="alternate" type="text/html" href="https://keepjolly.com/posts/learn/speech-understanding-2/"/><id>https://keepjolly.com/posts/learn/speech-understanding-2/</id><updated>2024-04-01T01:36:06+00:00</updated><published>2023-11-26T00:30:16+08:00</published><author><name>Rurouni</name><uri>https://keepjolly.com/</uri><email>1366475809@qq.com</email></author><rights>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</rights><summary type="html">类中心理解 (语句排序，语句填入，下文推断，细节判断，关键词提取） 语句排序 做题思路： 先……</summary><content type="html">&lt;h2 id="类中心理解">类中心理解&lt;/h2>
-&lt;p>(语句排序，语句填入，下文推断，细节判断，关键词提取）&lt;/p>
-&lt;h3 id="语句排序">语句排序&lt;/h3>
-&lt;ul>
-&lt;li>做题思路： 先排除（首句和不可能独立可混合使用，不分先后），最后验证&lt;/li>
-&lt;li>22布局：选项首个为aabb型，判断是否符合首个以排除50%
-&lt;ol>
-&lt;li>&lt;strong>确定首句&lt;/strong>
-&lt;ul>
-&lt;li>下定义、背景知识引入常为首句的特征词、以及两个首句之间有内部的逻辑关系，常优先考虑其为首句&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>43布局：选项首个都不相同，或者就两个相同，abcd、aabc型
-&lt;ul>
-&lt;li>22布局、43布局时，也可以直接去文段寻找“不可能独立出现的词语”，即一定是处于脉络的铺垫引出部分。可以一眼锁定或者利用选项
-&lt;ul>
-&lt;li>转折之后的部分：但、但是、而、而是、不料等&lt;/li>
-&lt;li>并列之后的部分：也、并且、或、还、另外、另一方面等&lt;/li>
-&lt;li>结论性的部分：所以、显然、于是、以至于、以便、充分证明等&lt;/li>
-&lt;li>举例论证部分：比如、如、例如等&lt;/li>
-&lt;li>代指词：这个、这些、它们、其、该等&lt;/li>
-&lt;li>优先看&lt;strong>并列和代指&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>题目：&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>①另一位加拿大科学家发现，植物缺水时发出的响声大小和缺水程度是有相关性的，缺水越严重，发出的响声越大 &lt;br />②倘若是因为植物缺水而有意发出这种声音的话，这种具有意识性的表现实在令人惊叹&lt;br />③通过进一步的测量和收集数据，他发现声音的源头在植物体内的输水管上，植物在缺水的情况下会发生微小的震动 &lt;br />④20 世纪 70 年代，一位澳大利亚科学家研究了植物对气候环境的反应，发现在严重干旱时期，植物会发出一些奇特的声音 &lt;br />⑤但是，当时还无法对这种现象进行合理的解释 &lt;br />将以上 5 个句子重新排列，语序正确的是（ ）。 &lt;br />A.②③⑤④① &lt;br />B.②①④③⑤ &lt;br />C.④①③②⑤&lt;br />D.④③①⑤②&lt;/p>
-&lt;p>22布局，看②④，肯定④，不要看到另一位就觉得是并列，④③是问题+结果的脉络。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>①这就会让人产生对阶层问题的焦虑感，因为教育包含财富和知识的传递问题，它也更能反映这种焦虑 &lt;br />②他们在保住自身阶层的同时，担心孩子不能继承自己的“能力”，不能迈向更高阶层，反而滑落到更低阶层&lt;br />③一方面，一些人渴望跨越自身阶层限制，实现人生“逆袭” &lt;br />④在社会转型期，阶层分化加速，伴随而来的往往是经济增速放缓和阶层流动趋势下降的问题，由此产生许多人对阶层问题的幻想 &lt;br />⑤另一方面，一些人恐惧于从自身阶层跌落，尤其是刚刚迈入中等收入群体的一批人&lt;br />⑥其中最简单的办法还是考取北清这一级别的名校，进而跻身更高的知识层次和经济层次&lt;br />将上面的句子组成语意连贯的语段，排序最恰当的一项是（ ）。&lt;br />A.④③⑤⑥②① &lt;br />B.②④③⑥⑤① &lt;br />C.④③⑥⑤②①&lt;br />D.⑥④③⑤②①&lt;/p>
-&lt;p>43布局，优先看这、其中。①的前面必定是⑤，因为害怕跌落。⑥的前面必定③。如果看的是其中，排除AD后，看首个是否能总领。选C。③⑤不是并列。选完后，有时间可以按顺序读是否通顺。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="语句填入">语句填入&lt;/h3>
-&lt;p>讲的一般，可以看看其他的&lt;/p>
-&lt;ol>
-&lt;li>横线在开头
-&lt;ol>
-&lt;li>总结全文（中心理解，首先考虑）&lt;/li>
-&lt;li>背景引入&lt;/li>
-&lt;li>衔接后文&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>横线在中间
-&lt;ul>
-&lt;li>承上启下&lt;/li>
-&lt;li>承上或启下&lt;/li>
-&lt;li>上下文的粘合剂&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>横线在结尾
-&lt;ul>
-&lt;li>总结全文（中心理解）&lt;/li>
-&lt;li>衔接上文（导致的最终结果）&lt;/li>
-&lt;li>针对问题，提出对策&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;p>题目：&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>____。据了解，在 M 国，每 3 个上网的老年人中就有1 个有社交网络的账号。两年间，65 岁以上的社交网络用户增长了 150%。越来越多的老年人开始使用社交网络寻找老朋友，结识新朋友。一些 M 国老年人还会访问视频或者音频取代文字的社交网络，分享抗衰老心得。另外，一些社交网站除了为老年人提供线上交流服务外，还会定期组织同城活动，提供交通、房屋维修等服务。 &lt;br />下列最适合填入横线处的是（ ）。 &lt;br />A.社交网络为老年人的生活打开了一扇窗户 &lt;br />B.社交网络在人们日常生活中应用越来越广&lt;br />C.社交网络使不少老年人越来越热衷于交友 &lt;br />D.社交网络让老年人更便捷地享受各种服务&lt;/p>
-&lt;p>观点：老年人通过社交网络找朋友、分享新的、组织服务。CAB型，AB太长，选项肯定分别放入增加干扰，如CD。C没有体现老年人，即主体。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>____，最能代表一个时代的风貌，最能引领一个时代的风气。“文变染乎世情，兴废系乎时序。”在欧洲文艺复兴运动中，但丁、彼特拉克、薄伽丘、达·芬奇、拉斐尔、米开朗琪罗、蒙田、塞万提斯、莎士比亚等文艺巨人，发出了新时代的啼声，开启了人们的心灵，在谈到文艺复兴运动时，恩格斯说，这“是一个需要巨人而且产生了巨人——在思维能力、热情和性格方面，在多才多艺和学识渊博方面的巨人的时代”。在我国发展史上，包括文艺在内的文化发展同样与中华民族发展紧紧联系在一起。先秦时期，我国出现了百家争鸣的兴盛局面，开创了我国古代文化的一个鼎盛期，20 世纪初，在五四新文化运动中，发端于文艺领域的创新风潮对社会变革产生了重大影响，成为全民族思想解放运动的重要引擎。&lt;br />填入画横线部分最恰当的一项是： &lt;br />A.文艺是铸造灵魂的工程 &lt;br />B.文化是民族生存和发展的重要力量&lt;br />C.文艺是时代前进的号角 &lt;br />D.文艺创新是与时代脉搏同频共振的&lt;/p>
-&lt;p>&lt;a href="http://www.xinhuanet.com/politics/2015-10/14/c_1116825558.htm">原文&lt;/a>，时代的xx，又强调文艺，选C，D是同等地位了。B只是我国的情况。感觉语句填入得看另一个老师。注意是逗号需要粘合后文。而句号是引领全文&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>____。新中国成立以来，很多画家借用西方的一些画法创作山水画，大多不太成功，也很难得到国人的认可。在这方面较为成功的是李可染和赖少其。他们都有深厚的传统文化功底，年轻时向传统大家学习，精研书法，长期写生。在打牢传统的各种基础后，李可染将光引入艺术表现，尤善用积墨画逆光；赖少其学习西方印象派等画法，借鉴西洋画的着色方式，和传统融合得很好。所以，他们笔下的祖国河山仍然体现出雄浑厚重、大气磅礴的中国精神。 &lt;br />填人画横线部分最恰当的一项是：&lt;br /> A.中西融合是二十世纪中国画面对的世纪课题&lt;br /> B.中国画具有独特的文化特质和内在发展逻辑&lt;br /> C.中国画家借鉴外来艺术时需有良好的传统功底 &lt;br />D.借鉴西洋画艺术手法取得成功的中国画家很少&lt;/p>
-&lt;p>A即指问题，又提到中西融合。C对策放开头不太行吧。另外在打牢基础&lt;strong>后&lt;/strong>，引入艺术表现；融合传统。所以他们笔下的xxx可以体现顺承出融合重要。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>随着我国科技对经济社会发展贡献率的增大，以及科技介入生活程度的加深，普通人与科技的关系也变得更加密切。科普走进生活，越来越成为人们的普遍期待。而这又对科普创新提出了更高的要求。科普创新当然首先是要及时更新科普的理念和内容，把日新月异的科技发展成果通俗易懂地告诉民众。同时，它也意味着科普形式和手段的创新。增添文艺的元素，则是其题中应有之义，____。老一辈科学工作者十分善于借用文学艺术的力量。例如，当我们翻阅竺可桢先生《说飓风》《说云》等科普文章时，就会被其准确而又生动的文字所折服。&lt;br />填入画横部分最恰当的一项是： &lt;br />A.人们对科普作品文艺性的期，越来越高 &lt;br />B.文学艺术是推动科普创新的重要驱动力&lt;br />C.事实上，科普本身就具有文学性 &lt;br />D.如何兼顾科普内容和形式的创新是当务之急&lt;/p>
-&lt;p>前文增添（原先没有），后文借用文学（借）。缺少拥有的阶段，选C，科普有文学性。BD读起来不通顺啊，还是看语感。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>浪漫的古人，常借助一些动植物来表达爱情，常见的有鸳鸯、凤凰、大雁、红豆、梧桐等。为什么梧桐会成为爱情的象征呢？可能原因有二，一是梧桐雌雄异株，其中“梧”为雄株，“桐”为雌株，因此古人看见梧桐树，便联想到比翼双飞的爱情。另外一个原因，梧桐树高大茂密，常引来一些鸟儿共筑爱巢，____。&lt;/p>
-&lt;p>是逗号，应该顺承上文（树鸟），而不是总结全文。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>宝石颜色有三个影响要素，即光源、宝石和观察者。不同的光源具有不同的光谱能量分布，因而照射到宝石上会使宝石呈现出不同的颜色；宝石由于自身内部的致色离子对光源光波的选择性吸收、反射、透射而呈现出不同的颜色；对于观察者而言，虽然人眼具有对可见光的灵敏分辨力，但对具体波长可见光的感知是因人而异的。也就是说，对同一宝石品种与观察者来说，____。 &lt;br />填入画横线部分最恰当的一句是（ ）。 &lt;br />A.宝石颜色会随照明光源的不同而发生改变 &lt;br />B.标准光源的选定对宝石颜色评价尤为关键&lt;br />C.提高观察者对可见光的灵敏分辨力十分必要 &lt;br />D.选择透光性好的宝石能获得更高的市场利润&lt;/p>
-&lt;p>CAB结构，CD干扰选项。A其实有点废话，因为前文已经提到了。而B可以很好的顺承：在同一条件下，选择好光源。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="下文推断">下文推断&lt;/h3>
-&lt;ul>
-&lt;li>做题策略：全文阅读，明白&lt;strong>大致&lt;/strong>讲什么，不可直接锁定尾句，如选不出来，可以选项进行稍微造句，带回原文看看是否顺承。&lt;/li>
-&lt;/ul>
-&lt;h4 id="尾句引出新主体">尾句引出新主体&lt;/h4>
-&lt;ul>
-&lt;li>当尾句出现前文从来没有论述过的主体，抓住它，后文大概率是围绕其展开的。本质仍然是脉络的铺垫引出
-&lt;ol>
-&lt;li>
-&lt;p>2021 年 4 月 8 日，国家发展改革委印发《2021 年新型城镇化和城乡融合发展重点任务》，落实适用、经济、绿色、美观的新时期建筑方针，严格限制建设500 米以上超高层建筑，严禁建设“丑陋建筑”。&lt;/p>
-&lt;p>建筑→丑陋建筑（新主体），并且应先介绍再展开再意义的脉络。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="话题思维">话题思维&lt;/h4>
-&lt;ul>
-&lt;li>话题思维是下文推断的核心思维，即你原本的话题是否讲完了？你选择这个选项是否换话题了？&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>注重逻辑性和时间性&lt;/p>
-&lt;ul>
-&lt;li>按照事物的事件发生顺序：本话题→原因，主体展开，意义危害，对策。之后再换话题 (接连引出）&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>现在生活条件越来越好，除了家里常备的油盐酱醋，蚝油也是一款家家必备的调料品之一，蚝油顾名思义是以鲜蚝为原料，经过煮熟取汁浓缩，加上辅料精制而成，色泽呈红褐色，形态呈半流质状，黏稠度比较适中，相比于酱油来说，营养价值就更高一些，鲜味也就更加浓郁。平时在家做菜时放一点蚝油，不但可以起到增香、提鲜的作用，还能增加菜品的色泽。由于蚝油可以作为日常提鲜、增鲜的主要调料，因此很多人把蚝油拿来代替生抽使用，不管做什么菜都会用上蚝油。但蚝油无论是制作工艺还是原材料，都和生抽的大为不同，使用方法也是有较大的区别。如果随便放蚝油，不仅起不到提鲜的效果，甚至会影响身体健康。&lt;/p>
-&lt;p>末尾提出耗油的危害，后文应该优先衔接对策，其次是为什么出现这个危害。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>多对自己提问&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;ul>
-&lt;li>自问自答，猜测后文会是什么内容。
-&lt;ol>
-&lt;li>
-&lt;p>葡聚糖是现在人气极高，食品科学和工业界很看好的一种可溶性纤维。某些葡聚糖也似乎对于增强免疫力更有效果——但是任何的膳食纤维都会对健康大有裨益。与其花大钱去买“特别的”“增强免疫力”的纤维，多吃一些经济实惠的富含膳食纤维的食物是不是更划算?&lt;/p>
-&lt;p>主体是膳食纤维食物。因为膳食纤维会让人类生活更好，有点生硬，并且是其意义。（哪些食物呢？）膳食纤维有蔬菜水果，感觉顺承通顺，对主体展开。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>食品行业是关系人民群众切身需求和经济社会和谐稳定的民生行业。但目前来看，我国食品供给体系总体呈现出中低端产品过剩、中高端和个性化产品供给严重不足的问题，消费者对国外产品的依赖程度越来越高。特别在当前速度换挡、结构调整、动力转换的经济新常态下，深入推进食品行业供给侧改革，是实现食品行业健康长远发展的必然选择。食品标准既是国家食品安全治理体系中的重要组成部分，又是引导食品生产质量的主要风向标，因此，深化食品行业供给侧结构性改革的关键在于构建一套先进的食品行业标准。&lt;/p>
-&lt;p>引出新主体食品行业标准。那么应该如何构建这个标准呢？先看重点关注的问题，再解决这些问题，从国外案例吸取经验。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ul>
-&lt;h4 id="宏观具体展开难题">宏观具体展开（难题）&lt;/h4>
-&lt;ul>
-&lt;li>很多同学做下文推断题有一种误区，那就是上文论述过的东西下文就一定不能论述了，其实这是一种错误的思维，它可以进行宏观具体的展开。&lt;/li>
-&lt;li>宏观具体展开的难题， 往往本质上还是你的理解能力，读题的时候就要感觉出来作者写得很宏观，宽泛。看前句甚至前文来推断主要内容。&lt;/li>
-&lt;li>个人建议放弃，又难又浪费时间，或者从选项反推造句看看合不合适。&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>医学摄影是利用普通或特殊摄影成像设备，将被摄人体生命活动影像记录于感光材料或电子元件，它是用于医学科学的摄影技术，是科技的重要分支，也是摄影技术与医学科学交融的产物。随着科学技术的发展、医疗设备的进步，摄影技术在医学科学领域的应用日益广泛，医学科学进入了读图时代。医学摄影可以纵向延伸人们的视线，让你看到人体生命活动的微观世界；它又能横向拓宽人们的视野，让你看到平时看不到的生命活动影像。&lt;br />文章接下来最有可能介绍的是（ ）。 &lt;br />A.人体生命活动的微观世界 &lt;br />B.摄影技术在医学中的应用&lt;br />C.读图时代对摄影技术的要求&lt;br /> D.摄影技术在非医学领域的优势&lt;/p>
-&lt;p>观点：医学摄影很重要。后文应该也是紧扣医学摄影，选B；C的读图时代是因为摄影而引出来，只是附带品（个人理解，宏观具体展开不好理解）。 &lt;a href="https://epaper.gmw.cn/gmrb/html/2013-03/26/nw.D110000gmrb_20130326_1-12.htm">原文&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="出题人的小心思-先礼后兵">出题人的小心思， 先礼后兵&lt;/h4>
-&lt;ul>
-&lt;li>出题人经常把一个文段里面两个联系紧密的内容给你从中间剪开，只保留一半，此时要把另一半补齐，形成一套完整的行文脉络&lt;/li>
-&lt;li>出题人常见的小心思
-&lt;ol>
-&lt;li>总分文段：开头告诉你了总+分1+分2，后文只提及分1，则后文会有分2以形成完整的行文脉络。&lt;/li>
-&lt;li>古今时间对比文段：文段告诉你了过去怎样（常是有xx问题），则后文会叙述现在怎么样。（或者现在有问题，将来怎么样）&lt;/li>
-&lt;li>新旧事物对比文段：文段告诉你旧的事物是什么，则后文会叙述新的差异性事物是什么。&lt;/li>
-&lt;li>说话说一半，需要提升理解能力，灵活理解。&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>迄今为止，在地面实验中，量子密钥分发的点对点距离可达500 千米星级，而量子隐形传态可达 100 千米，那么如何在此基础上继续增加量子通信的距离呢？一个阶段性的解决方案是可信中继传输，我国建设的光纤总长超过 2000 千米的“京沪干线”是采用了这一方案，在可信中继方案中，需要人为保障中继站点的安全，而中继之间的线路则是安全的。这比传统通信手段中整条线路处处都是面临着信息泄露的风险而言，大幅提高了安全性。&lt;/p>
-&lt;p>一个阶段性方案→一个长远的方案&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="最不可能讲述">最不可能讲述&lt;/h4>
-&lt;ul>
-&lt;li>当文段问你以下最不可能论述的是哪个选项时， 常选上文已经完整具体论述过的或者选项本身离谱的，也可以排除可能会论述的&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>联想到当今跨文化接触中的问题，我们可以一如既往地视利玛窦为一个先驱，他使两个文明的沟通成为可能，他使用的工具是把理解中国文化视为己任（首先是掌握语言），努力在中国寻找和西方共通的思想和机制。以后几代的西方人，从传教士、外交家到商人，告别了利玛窦的信念，致力于寻找中西之间的差异，而中国也开始更多地强调中国文化的独特性。作者接下来最不可能讲述的是：（ ） A.利玛窦是如何寻找中西方共通的思想和机制的 B.中国相关学者是如何确定中国文化的独特性的 C.我们如何看待利玛窦的共通性和其他人的差异性 D.利玛窦之后的西方人是如何寻找中西之间差异的&lt;/p>
-&lt;p>尾句已经说到差异性，不可能又掉头再将共通。并且其他选项都是讲差异。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="关键词填入">关键词填入&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>题型：文段是完整文段，但是问你以下哪些是文段的关键词&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>这种题型正确率往往&lt;strong>极低&lt;/strong> ，个人建议放弃难题&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>关键词提取的秒杀技巧，就是把它当成中心理解题来做，提取观点，从观点选关键字。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>实用技巧：&lt;/p>
-&lt;ol>
-&lt;li>观点锁定&lt;/li>
-&lt;li>不排除不确定的，排除一定不能选的&lt;/li>
-&lt;li>同等地位排除（以人为本）&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>根据新的刑事证据规则，鉴定检材的真实性和同一性已经成为鉴定意见转化为定案根据的前提条件。这显然是我国刑事证据制度发生的重大变化。透过这一变化，我们可以发现司法改革的决策者们已经具有了一种新的理论认识：实物证据鉴真是司法鉴定程序启动的前提和基础；未经鉴真过程，任何专业人士对实物证据所作的“司法鉴定意见”都将是没有法律意义的；实物证据作为一种“送检材料”，在其真实性和同一性存在合理疑问的情况下，鉴定意见将不具有作为定案根据的资格。 &lt;br />这段文字中提取的关键词最恰当的是 &lt;br />A.刑事证据 实物证据鉴真 定案根据 &lt;br />B.司法改革 司法鉴定意见 定案根据&lt;br />C.鉴定检材 刑事证据制度 司法改革&lt;br /> D.证据制度 司法鉴定程序 送检材料&lt;/p>
-&lt;p>&lt;a href="https://m.sh.huatu.com/2023/0414/1264040.html">文段&lt;/a>首先提出了新的刑事证据规则的内容是“鉴定检材的真实性和统一性”是“定案根据”的“前提条件”，接着根据“重大变化”和“这一变化”都可以得出后文的内容都是对第一句的解释说明，因此可以确定重点句就是第一句，而第一句中我们可以提取的关键词有“刑事证据规则”、“鉴定检材的真实性和统一性”和“定案根据”，对比选项，发现只有A选项提到了重点句中的其中两个关键词，根据话题一致这时就可以确定正确答案是A选项了。再来验证“鉴定检材的真实性和统一性”是否是“实物证据鉴真”的同义替换。后文说到了“实物证据鉴真”是“司法程序启动”的前提，对应第一句所说的前提，再往后看，“实物证据作为一种“送检材料”，即“检材”，而“鉴真”就是“鉴定真实性和同一性”，所以通过这两个对比可以确认“鉴定检材的真实性和统一性”就是“实物证据鉴真”的同义替换。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>农村金融需求是否满足，对农村发展的进程有极大影响。全面疏解农村地区信贷供给，是我国推进农业农村优先发展的重要一环。要不断完善金融支农的激励约束机制，加快农村金融回归“三农”本源的进程，促进金融资源向农业农村流动，以打通农村金融供需“梗阻”。持续推进农村金融供给侧结构性改革，增强农村金融服务农村实体经济的能力。同时，大力发展农村普惠金融，鼓励各金融机构为农业农村优先发展提供多层次、广覆盖、低成本、可持续的金融服务。 &lt;br />这段文字中提取的关键词最恰当的是： &lt;br />A.农村金融 农村发展 金融支农 &lt;br />B.农村金融 金融机构 金融服务&lt;br />C.农村金融 金融资源 农业农村 &lt;br />D.农村金融 普惠金融 服务农村&lt;/p>
-&lt;p>我猜的：全篇强调农村金融，以及金融对农村发展的影响，以及金融支持农村的措施。上帝视角：A都是动词。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>精准扶贫不能仅仅专注个别事实，埋头解决个别问题，而不知道把个别贫困或特殊贫困同经济社会发展的宏观背景联系起来。应当明确地认识到，虽然各种特殊贫困都有特殊的因素，但特殊贫困也是在当下信息社会背景下存在的。信息化和网络化中蕴含了十分丰富的资源和能量，应当大力扶持贫困人口或贫困群体尽快了解和适应信息化与网络化的新形势，通过技术培训和典型示范，把远离信息化和网络化的贫困人口引入这个历史进程之中。&lt;/p>
-&lt;p>观点：精准扶贫如何做；认识到特殊贫困在信息社会下存在；应扶持xxx适应信息化，通过技术培训和典型示范。信息社会优于特殊贫困，因为有前者才有后者。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>树木年轮是气候学研究里最重要的代用指标，其定年方法准确可靠，气候敏感性与分辨率较高，被国际气候学研究广泛应用。干旱区与半干旱区是树木年轮研究工作的重点区域，我国在阿勒泰区域已经开展了大量的树木年轮研究工作，不过采样样本较少，气象数据年份较短，数据处理的精度存在问题，因此有必要开展新的树木年轮采样工作。随着全球气候变暖，阿勒泰区域的气候条件变化深刻，研究西伯利亚落叶松在气候变化下的生长情况，对于研究西利亚落叶松在应对全球变暖背景下如何发展和变化具有重要意义，对森林生长环境保护具有重要的借鉴和指导作用。&lt;/p>
-&lt;p>首局的限定相对来说没那么重要，需要从选项反窥首句。文段主要引出阿勒泰区域的情况。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>有学者认为，巫觋的地位在夏朝已经急剧下降。不过，巫觋在官方和民间的各种祭祀中仍然发挥作用，其参与的名称各异的前戏剧活动，一直延续到今天。现在我们在江西、贵州等地看到的“傩戏”或“地戏”，其将鬼神祭祀与戏剧融为一体的仪式，就多少包含了远古仪式的遗存。诚然，国家在每年春夏秋冬和各节令大典，及遇有战争之类重大事件时，还是会按例举行严肃的祭祀仪礼，但这些仪礼的效用与功能，早就发生了巨大变化。苏轼认为早在夏商周三代，各种祭祀性活动，就已包含非常明显的游戏或戏剧的因素，而祭祀神灵、祖先这一原初动机，反渐渐演变为依附性的功能。 &lt;br />这段文字所在的文章，论述主题最可能是：（ ）。 &lt;br />A.巫术 B.祭祀 C.戏剧 D.礼仪&lt;/p>
-&lt;p>观点：（仪礼的）效用发生变化，祭祀转换为戏剧。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="细节判断">细节判断&lt;/h3>
-&lt;h4 id="常见错误">常见错误&lt;/h4>
-&lt;ul>
-&lt;li>细节判断中，找正确的选项不难，难的是如何判断一个选项是否是错误的。需要注意的是，一定不可以本末倒置，做题的时候不是去思考它属于哪种错误，真真切切感受它有错就可以。&lt;/li>
-&lt;li>做题的时候，先读文段还是先读选烦没有绝对的说法，具体题目具体分析&lt;/li>
-&lt;li>错误类型：偷换时态、偷换概念、偷换范围、偷换逻辑、强加对比、绝对化、语义相悖、无中生有&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>偷换时态
-&lt;ul>
-&lt;li>过去时、现在时、将来时的替换
-&lt;ul>
-&lt;li>过去时态：已经，已，曾，了，过...&lt;/li>
-&lt;li>现在时态：正，正在，在...中，现，现在...&lt;/li>
-&lt;li>将来时态：将，要，不久，很快...&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>中国妇女发展基金会&lt;strong>将&lt;/strong>委托专业金融机构对中国女足发展基金进行管理和运作，其收益部分用于资助中国女子足球队改善生活和训练条件，开展交流合作，培养选拔后备力量。 &lt;br />D.中国女足发展基金，已确定了管理机制和运作规则&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>偷换概念
-&lt;ul>
-&lt;li>文段提到相关概念，但是对所提到的主客体及其动作、状态等相关要素进行替换&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>一战结束以后，中国海外移民掀起第三个高潮，其主要流向仍是东南亚，直接动力是东南亚的经济繁荣。20 世纪初以来，西方工业革命所带动的新兴产业的发展，陆续波及其东南亚的殖民地。东南亚经济发展刺激了对劳动力的需求的增长，廉价劳动力从中国南方不断&lt;strong>涌入东南亚&lt;/strong>。&lt;br />B.华人廉价劳工移民东南亚主要从事工业革命以来的新兴产业&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>偷换范围
-&lt;ul>
-&lt;li>要确保选项和原文讨论的是同一件事，不能缩小、扩大、更换话题&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>5G 时代的到来，标志着中国移动通信技术跃升至全球领先地位。这对&lt;strong>中国网络文化&lt;/strong>抓住中国技术领先契机、“引领全球文化”具有划时代的历史意义。5G 时代是智能终端应用更为广泛、智能思维极尽挥洒、创意创新充分涌现的好时机，“智能制造”“智能服务”“智能产业”“智能文化”“无人文化”等无处不在。&lt;br />B.5G 时代中国引领全球文化&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>偷换逻辑
-&lt;ul>
-&lt;li>偷换因果关系、前提关系、并列关系、转折关系等逻辑关系&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>生长在水中或水边的动植物的遗体是最易被保存下来的，因为保存动植物遗体的必要条件是快速掩埋，而在淤泥不断淤积的海洋、河流乃至湖泊中，动植物的遗体以及其他东西能够被快速掩埋。 &lt;br />B.只有生长在水中或水边的动植物的遗体才能被保存下来&lt;br />D.只要被快速掩埋，动植物遗体就能被保存&lt;/p>
-&lt;p>D保存遗体必须快速掩埋，&lt;a href="https://wx.huatu.com/beikao/20161116/184838.html">倒置&lt;/a>了。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>强加对比
-&lt;ul>
-&lt;li>文段并没有进行主体、程度的对比，但是选项添加了对比&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>一项新研究发现，低温能通过将所谓的“坏”脂肪转化为“好”脂肪帮助人体燃烧卡路里。这一理论基于两种脂肪的不同特性。我们都再熟悉不过的讨厌的白色脂肪会吸收额外的卡路里并将它们储存在肚子、腰间和大腿中。但成年人还有少量的另一种“健康脂肪”，这种褐色脂肪专门燃烧卡路里同时产生热量。婴儿有&lt;strong>大量褐色脂肪&lt;/strong>来保暖，褐色脂肪多的成年人也更苗条。&lt;br />D.婴儿体内的褐色脂肪更多&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>绝对化
-&lt;ul>
-&lt;li>绝对化指个体认为某一事物必定会发生或一定不会发生等程度过重的错误&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>当众羞辱学生，以冷酷的惩罚性体验“培养”了学生的自卑，仇恨甚至社会攻击倾向，而&lt;strong>侵害了自尊心，信任能力和集体归属感&lt;/strong>。一次当众羞辱就是对人的尊严的一次践踏，反复的羞辱体验则将导致人格尊严的丧失。而人类社会最重要的价值——爱，道德，公民品格与社会凝聚力——都有赖于人对自我，对他人的尊严的确认与珍视。&lt;br />C.学生有了自卑，仇恨甚至社会攻击倾向，就会走向犯罪&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>语义相悖
-&lt;ul>
-&lt;li>指完全错误的表达，和文段表达的意思相悖&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>比目鱼的眼睛为什么会长到同一边去呢？有人认为，比目鱼眼睛的移动是由&lt;strong>头骨变形&lt;/strong>造成的，但比目鱼的额骨位于眼睛的上方，与眼睛没有直接接触。有学者推测，比目鱼眼睛的移动是由于眼睛下方有限区域内分裂的细胞之间空间拥挤，驱使其上方的眼睛向上移动。最新研究通过在比目鱼移动眼下方区域注射细胞分裂抑制剂，培养出了眼睛不移动、两眼保持对称的比目鱼稚鱼，并发现其左右额骨仍然保持对称。而且发现比目鱼眼睛哪一方分裂细胞数明显多于上方区域，则那一方的眼睛会移动，如鲆类是右眼，鲽类则是左眼。&lt;br />B.比目鱼额骨的扭转不仅是眼睛向上移动的结果，而且会影响比目鱼眼睛的移动&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>无中生有
-&lt;ul>
-&lt;li>文段中完全没有提及某一概念&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>近些年来，我国网络游戏市场规模不断扩大，行业版图快速扩张，“搞代码”“做游戏”“写程序”的 IT 工程师，都成了众人口中的“香饽饽”职业。一份最新的报告数据显示，2018年第一季度，中国网络游戏市场维持稳定增长，市场规模达 643.3 亿元，各大游戏厂商纷纷加大网游出海业务布局。毫无疑问，我国网络游戏市场正在快速奔跑。&lt;br />C.越来越多企业选择跨行业&lt;strong>加入网络游戏市场&lt;/strong>&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="特殊题型">特殊题型&lt;/h4>
-&lt;ol>
-&lt;li>有无提及
-&lt;ul>
-&lt;li>题型：以下哪项有没有被提及。不要求你判断正误，选项往往是很短的，可优先看选项&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>鬼斧神工，天机独运。别处的山，都是亲亲热热地手拉着手，臂挽着臂，唯有张家界的山，彼此保持头角峥嵘的独立，谁也不待见谁。别处的峰，再陡再险也能踩在脚下，唯有张家界，以她的危崖崩壁，拒绝从猿到人的一切趾印。&lt;strong>每柱岩峰，都青筋裸露、血性十足地直插霄汉&lt;/strong>。而峰巅的每处缝隙，每尺泥士，又必定有苍松或翠柏，亭亭如盖地笑傲尘寰。银崖翠冠，站远了看，犹如放大的苏州盆景。曲壑蟠涧，更增添无限空蒙幽翠。风吹过，一啸百吟；云漫开，万千气韵。 &lt;br />上述语段对张家界的山水描写没有提到的是（ ）。 &lt;br />A.山峰的形态 &lt;br />B.峰顶的松柏 &lt;br />C.岩峰的走向&lt;br />D.山壑与山涧&lt;/p>
-&lt;p>“走向”为地质学名词，指地质构造上岩层、矿层、山脉等延伸的方向&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>难题的对比择优
-&lt;ul>
-&lt;li>细节判断题的难题，很多时候都是需要对比择优的，即有的选项是小瑕疵，有的选项是大问题，这种情况下，小瑕疵也能选&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>一个地区物质的贫困，往往与其&lt;strong>精神的贫乏、文化的落后&lt;/strong>息息相关。正是时下很多地方乡村文化的整体性衰落，导致民众很难获得足够丰富、正常的文化滋养和精神润泽。 &lt;br />由上述文字不能推出： &lt;br />A.乡土中国的发展亟需精神扶贫 &lt;br />B.中国乡村出现了物质与精神的“双重贫困” &lt;br />C.与硬件建设相比，流动在硬件背后的“文化流”更为重要 &lt;br />D.有必要从文化层面重建乡土中国&lt;/p>
-&lt;p>虽然B没有强调精神，但是C没有乡村必错。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="逻辑填空">逻辑填空&lt;/h2>
-&lt;ul>
-&lt;li>逻辑填空要学好，三方面少不了，一是提升理解能力，读懂作者所表达；二是分析文段脉络找对应；三是投入精力勤积累。&lt;/li>
-&lt;li>要对比择优，很多成语实词的选填往往是不完美的，甚至可能出现错误和小错误这种情况&lt;/li>
-&lt;li>辨析的前提是多者在宏观意思上相同才辨析，不要一上来直接抓辨析点&lt;/li>
-&lt;li>多个词语先挑简单的空，实词和成语先看成语&lt;/li>
-&lt;/ul>
-&lt;h3 id="四大契合">四大契合&lt;/h3>
-&lt;h4 id="契合解释说明">契合解释说明&lt;/h4>
-&lt;ul>
-&lt;li>文段出现举例子等解释说明时（常出现如，例如，比如等）,空格所填成语实词要契合后文的解释说明&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>除了“设计最短路线”“避开交通拥堵”之外，部分提供导航服务的企业，在安排线路时还渗入了其他_____，比如他们会让用户绕行一些企业暂时缺乏数据的路线，以_____收集信息。 &lt;br />依次填入画横线部分最恰当的一项是（ ）。 &lt;br />A.理念 尝试 B.想法 上报 &lt;br />C.思路 补充 D.考量 协助&lt;/p>
-&lt;p>让用户绕行，企业有点小心思，排除AC。上报是向上级汇报，而不是用户才是上级。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="契合具体展开">契合具体展开&lt;/h4>
-&lt;ul>
-&lt;li>文段出现后文完整语句可以填进空格，同样可以形成一个完整句子时，所填成语诗词要和后文完整语句契合。&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>迭代思维，大数据思维……关于互联网思维的众多阐释尤其是实践心得，都有价值。不过，互联网思维并不是万能的救命稻草，抓住了就能_____。如果罔顾互联网思维的本质，迷惑于它的表象，盲目套用这个“万能公式”，结果只会_____。用好互联网思维，还要洗去它被打扮的妆容，看清“素颜”，需要立足于“互联网给我们带来的改变”去思考，也需要_____，从自身的特点来挑选和利用。 &lt;br />依次填入画横线部分最恰当的一项是（ ）。 &lt;br />A.起死回生 适得其反 量体裁衣 B.化险为夷 事与愿违 随机应变&lt;br />C.转危为安 拔苗助长 随遇而安 D.妙手回春 欲速不达 量力而行&lt;/p>
-&lt;p>救命-&amp;gt;起死回生；从自身的特点来利用（量体裁衣）&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="契合主谓宾性质">契合主谓宾性质&lt;/h4>
-&lt;ul>
-&lt;li>文段横线的内容，主语、谓语、宾语三者的性质要相同，可以跳出题目思考具体有什么性质。&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>移动终端快餐化、碎片化阅读受到大学生的推崇，但松散的阅读习惯很难使人构建_____的思想体系。在浮躁的社会环境中，经典著作虽然能够对人有潜移默化的影响，但却不能像实用书籍那样_____，这也是部分读者远离经典的原因。&lt;br />A.完整 立竿见影 B.深刻 行之有效 &lt;br />C.系统 屡试不爽D.宏大 学以致用&lt;/p>
-&lt;p>松散的习惯-&amp;gt;完整的体系&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>甲骨文发现后，学者们通过对殷墟甲骨文的研究，证明了《史记•殷本纪》的可信，证实了司马迁撰写的商代历史绝非_____，从而极大地提高了《史记》中有关夏朝历史记载的可信度。考古学家和历史学家正以《史记•夏本纪》的记载为_____，探寻夏代的历史文化，目前已取得了可观的成绩。因此，用出土文物去印证古代典籍，重建夏商周三代文明的可信历史，甲骨文起了举足轻重的作用。&lt;br />A.虚构 线索：探寻（寻找）线索&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>在一些城市的流调报告中，相继出现了“只提地点不提人”的信息公布新方式，得到了舆论的高度_____。在新增确诊病例的流调报告中隐去患者的个人信息，改为以涉及区域和场所信息披露为主，这一做法受到了不少媒体和网民的称赞，“不提人”更显对人的_____。&lt;br />A.关注 体谅 B.认可 尊重 &lt;br />C.评价 关爱 D.肯定 重视&lt;/p>
-&lt;p>“不提人”-&amp;gt;尊重隐私权-&amp;gt;尊重&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>从企业成长理论的角度分析，多元化经营是企业成长的结果，是企业实现发展壮大的重要途径。多元化的经营能够帮助企业实现规模经济向范围经济转变的目标，同时又可以降低资产的_____，提高企业能力。在利益和效率的_____下，多元化经营成为众多企业的选择。 &lt;br />A.流动性 推动 B.封闭性 带领 &lt;br />C.风险性 引领 D.专属性 驱动&lt;/p>
-&lt;p>多元化-&amp;gt;单一性-&amp;gt;专属性。封闭性对应开放。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="契合比喻">契合比喻&lt;/h4>
-&lt;ul>
-&lt;li>当文段出现了很形象的比喻用法时，抓准比喻，契合比喻性质，往往可以秒杀题。&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>从符号化到数字化，信息在人类进化和文明发展中的重要性毋庸置疑。如果说符号化产生了知识的“宝库”，那么作为数字化的产物，大数据将成为人类的“超级矿藏”，其资源性、基础性与战略性的价值已经_____。为应对大数据时代的到来，国际竞争正在悄然展开。&lt;br />A.略胜一筹 B.初露峥嵘 &lt;br />C.不可胜数 D.今非昔比&lt;/p>
-&lt;p>&lt;a href="https://hb.huatu.com/hbgwy/1571100.html">文中&lt;/a>提到了“信息是很重要的”，“大数据将成为‘超级矿藏’”，因此该空应体现“大数据价值巨大”的含义。A项“略胜一筹”指两相比较，稍微好一些，文中未体现“大数据与其他事物相比而自身优越”的含义，排除。C项“不可胜数”形容数量很多，显然此处没有“数量多少”的含义，且与空前的“价值”不搭配，排除。D项“今非昔比”形容现在比起过去，变化很大，文中未体现“今昔”“变化”的含义，排除。B项“初露峥嵘”指不寻常之处刚刚显露出来，符合文意。因此答案为B。&lt;strong>尊重原文&lt;/strong>，怎么能选C？？，比喻形容矿藏资源丰富&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>前驱者们深厚的学养和科学态度，对_____当下学界弥漫着的浮泛学风，有着深刻的现实意义。他们严谨扎实的作风和科学求实的态度，永远也不会过时，仍然是当代比较文学研究者应当继承和学习的。但这绝不意味着，我们要重复前人的劳动，_____地重走前人已经走过的道路。 &lt;br />A.改正 按部就班 B.矫正 如法炮制&lt;br /> C.纠正 心安理得 D.匡正 亦步亦趋&lt;/p>
-&lt;p>道路-&amp;gt;走路-&amp;gt;亦步亦趋&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>电影是“文化名片”，生动地展示着一个国家的形象；也是“文化底片”，形象地显影着一个国家的_____；电影是“文化芯片”，深刻地_____着一个国家的精神密码。电影并不提供解决方案，但却让陌生的心灵相通，成为我们彼此贴近、_____对方的“通行证”。&lt;br />A.内涵 传递 理解 B.底蕴 揭示 抵达 &lt;br />C.神采 谱写 拥抱 D.气质 建构 接纳&lt;/p>
-&lt;p>文化底片-&amp;gt;底蕴；通行证-&amp;gt;抵达&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>让学生接受马克思主义，离不开必要的灌输，但这不等于搞填鸭式的“硬灌输”。要注重启发式教育，引导学生发现问题、分析问题、思考问题，在不断启发中让学生_____得出结论。&lt;br /> A.潜移默化 B.举一反三&lt;br /> C.水到渠成 D.融会贯通&lt;/p>
-&lt;p>硬灌输-&amp;gt;软灌输-&amp;gt;渠-&amp;gt;水到渠成&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>科技是国家强盛之基，科技成果是科技发展水平的外在表现。当下，我国在多个关键核心技术上依旧面临“卡脖子”的问题，如何用好科技成果评价这个（），支持一线科技人员潜心研究，激发科技人员（ ），是加快实现国家科技自立自强的关键。&lt;br />A.指挥棒 积极性 B.发动机 内驱力 &lt;br />C.火车头 新动能 D.风向标 创造性&lt;/p>
-&lt;p>&lt;a href="https://www.chinagwy.org/files/20230904103409_52810.pdf">第一空&lt;/a>，横线处是对“科技成果评价”的比喻，能够形象生动地体现出“科技成果评价”的作用。根据文段“我国在多个关键核心技术上依旧面临‘卡脖子’的问题”，而“如何用好科技成果评价”“是加快实现国家科技自主自强的关键”，&lt;strong>可知“科技成果评价”有助于我国有针对性的解决“卡脖子”的问题，故“科技成果评价”具有一定的指引作用、引领作用&lt;/strong>。A 项“指挥棒”原指乐队指挥﹑交通警指挥棍之意，现比喻能起指挥、引导作用的事物，符合文意，保留；B 项“发动机”原指提供动力的机械，可也比喻为动力源泉，文中“科技成果评价”并非源头性作用，不合文意，排除；C 项“火车头”比喻起带头作用或领导作用的人或事物，文段并未表明“成果评价”是领导带头人物，程度过重，排除；D 项“风向标”本意为一种测定风来向的设备，后来引申为某种事物的发展趋势和方向，不合文意，排除。第二空，代入验证，“激发科研人员积极性”，符合文意，当选。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="三大注重">三大注重&lt;/h3>
-&lt;ul>
-&lt;li>注重主谓宾
-&lt;ul>
-&lt;li>一定要看准一个完整语句里面，谁是主语，谁是谓语，谁是宾语，很多同学往往读得很快，很容易忽略这个点。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>注重程度轻重
-&lt;ul>
-&lt;li>横线中填入的成语实词，一定要和文段的程度轻重匹配，不可过轻或过重&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>注重情感色彩
-&lt;ul>
-&lt;li>要注重文段的褒贬，中性的情感色彩，不能褒贬混用&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>注重主谓宾&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>访古是十分感人的经历，尤其是当我们踏上古代文献中_____的地点时。亲手触摸庄重威严的利簋，秀丽铭文好像把我们拉回到三千年前牧野之战的场景，_____中描绘的古代社会面貌在脑海中清晰了起来，我们感受到了历史迎面扑来的强烈震颤。这种感觉，对于考古学家来说可谓一种致命的“诱惑”。然而，身为一名严谨科学的从业者，必须对这种诱惑保持足够的警惕，维护考古记录的_____，这是一名考古学者的自警，也是整个考古学学科的自尊。&lt;br />A.如雷贯耳 刀光剑影 客观性 B.如数家珍 白纸黑字 严肃性&lt;br />C.司空见惯 鼓角齐鸣 主体性 D.耳熟能详 只言片语 独立性&lt;/p>
-&lt;p>铭文(主语)-&amp;gt;文字-&amp;gt;只言片语(白纸黑字指的是证据)&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>注重程度轻重&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>横线中填入的成语实词，一定要和文段的程度轻重匹配，不可过轻或过重&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>随着年轻人不断搬至新城，古城的活力日减，如何用新鲜血液激活（）的古城？恐怕没有比组织年轻人徒步“走读”更好的方式了，通过开展一系列活动来激发年轻一代的主人翁意识，是（ ）古城的重要一步。 &lt;br />A.濒危 还原 B.衰颓 挽救 &lt;br />C.退化 重启D.落寞 复苏&lt;/p>
-&lt;p>活力日减-&amp;gt;还未消亡-&amp;gt;排除ABC（（身体、精神等）衰弱颓废。）。活力复苏。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>注重情感⾊彩&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>要注重文段的褒贬，中性的情感色彩，不能褒贬混用&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>国学如果停留在如此浅层次的形式复古，无异于_____，甚至会把国学弄成与现代文明相对抗的姿态，凡事不问好坏对错，一切以东西古今划界。凡是古人的都是好的，哪怕骑驴;凡是现代的都是“非我族类”,都该保持距离。如此下去，国学非但不会被这些人“发扬光大”，相反可能会走入狭隘化、极端化、边缘化的境地，钻进狭小天地里_____，与文明发展割断脉络，把自己变成了一块“化石”。 &lt;br />A.缘木求鱼 蓬荜生辉 B.掩耳盗铃 纤尘不染&lt;br />C.刻舟求剑 皮里阳秋 D.买椟还珠 孤芳自赏&lt;/p>
-&lt;p>贬义-&amp;gt;孤芳自赏。（皮里阳秋：藏在人们心中的褒贬。）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>诗歌是一门语言艺术，它的材料就是语言，而任何一种语言系统都有巨大的（），诗歌语言也不例外，诗人生活在特定的语言环境中，要表达任何审美意识，都不得不运用（）的语言，即广义的“陈言”，因为从理论上讲，前人从未使用过的崭新语言是无法进行交流的。&lt;br />A.严密性 相沿成习 B.稳定性 循规蹈矩 &lt;br />C.严谨性 陈陈相因 D.稳固性 约定俗成&lt;/p>
-&lt;p>约定俗成：指某种事物的名称或社会习惯是由人们通过长期实践而认定或形成的；相沿成习：成为习惯；陈陈相因：沿袭老一套，没有改进。稳固才不容易改变。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;ul>
-&lt;li>渲染：言词、文字过度吹嘘夸大。&lt;/li>
-&lt;/ul>
-&lt;h3 id="三大内部关系">三大内部关系&lt;/h3>
-&lt;h4 id="前后文递进">前后文递进&lt;/h4>
-&lt;ul>
-&lt;li>当出现表达递进的关键词时，注意体现这种递进，拿不准时排除一定不是递进的。&lt;/li>
-&lt;li>常见的递进关键词：甚至、更、更加、尤其等&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>人工智能听起来很遥远，其实已经_____到我们的日常工作和生活中了。人工智能的应用，让生活更便捷、更有乐趣，节约时间、解放体力，甚至未来机器将_____人类进行一些基础性的劳作，这个场景令人憧憬。 &lt;br />A.渗透 替代 B.融入 协助 &lt;br />C.深入 取代 D.运用 辅助&lt;/p>
-&lt;p>主动替代，被动取代。机器应该智能到主动替代。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="同义并列及不绝对性">同义并列及不绝对性&lt;/h4>
-&lt;ul>
-&lt;li>当题干中出现一个成语实词后紧跟顿号的情况，为同义并列的表达。&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>中国古代技术的西传，为欧洲农业、手工业的改进和提高创造了条件，这成为后来英国工业革命兴起的隐形因素。同时，我们有理由相信，一个民族越是思想活跃、眼界开阔，技术的产生越如雨后春笋，从而（ ）时代；越是（ ）、满足现状，技术越会被禁锢，从而被时代遗弃。 A.引领 固步自封 B.推动 畏首畏尾 C.超越 墨守成规 D.开启 抱残守缺&lt;/p>
-&lt;p>与满足现状并列-&amp;gt;固步自封：比喻保守，安于现状，不求进步；抱残守缺：形容思想保守，不肯接受新事物。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>踏上实现第二个百年奋斗目标新的赶考之路，交出更加优异的答卷，就要使理想信念强大无比，全党的马克思主义信仰_____，共产主义远大理想豪迈澎湃，理想信念的洪流冲决一切阻碍我们前进的围堰和堤坝。交出更加优异的答卷，就要常怀远虑、_____，始终谦虚谨慎、不骄不燥、艰苦奋斗，不为任何风险所惧，不为任何干扰所惑，不懈推进中华民族伟大复兴。&lt;br />A.坚定无比 忧国忧民 B.坚如磐石 居安思危&lt;br />C.坚强如铁 殚精竭虑 D.毫不动摇 常思过往&lt;/p>
-&lt;p>思考未来-&amp;gt;居安思危。常思过往反义词了。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>“为调研而调研”等现象的出现，很大程度上就在于调研不深入、不具体。现实中，有人了解情况习惯于大而化之、_____;有人调研习惯于走设计路线，_____。这些心中不揣问题、脚下不沾泥土的错误做法，导致调研不深、不实、不细、不准，最终也会无效。&lt;br />A.粗枝大叶 按部就班 B.走马观花 表里不一 &lt;br />C.轻描淡写 循规蹈矩 D.避重就轻 按图索骥&lt;/p>
-&lt;p>大而化之：形容做事马虎，不仔细。粗枝大叶同义词&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>情绪是本能，每个人每天都会有各种情绪产生。情绪产生之后，是被情绪_____，还是运用情绪优化自己，这就考验一个人的情商。情商绝对不是逢迎拍马，口是心非，_____，也绝对不是否认自己的情绪，或者认为自己不高兴是无所谓的。 &lt;br />A.摆布 滔滔不绝 B.俘虏 巧言令色 &lt;br />C.折磨 人云亦云 D.控制 能言善辩&lt;/p>
-&lt;p>逢迎拍马：迎合；口是心非：虚假-&amp;gt;贬义。巧言令色：形容花言巧语，假装和善，向人讨好。人云亦云：&lt;strong>别人&lt;/strong>说什么，自己也跟着说什么。形容没有主见，随声附和。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>居天下之广居，立天下之正位，行天下之大道。面对国家间、文化间的差异，中国主张_____、开放包容、互学互鉴；面对经济全球化大潮，中国致力于_____开放合作、开放创新、开放共享的世界经济；面对人类共同挑战，中国秉持共商共建共享的的全球治理观，_____国际关系民主化······习近平总书记强调：我们要_____时代风云，把握时代大势，站在人类发展前沿积极探索关系人类前途命运的重大问题，为应对当今世界面临的全球性挑战、解决人类面临的共性问题贡献中国智慧、中国方案。 &lt;br />A.携手共进 建造 推进 紧跟 B.合作共赢 打造 促进 关注&lt;br />C.求同存异 共建 倡导 洞察 D.和平崛起 构建 力挺 识别&lt;/p>
-&lt;p>开放包容：开放，递进到互学互鉴：互相学习。从不同中找相同，然后包容，然后互相学习。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>如果你的生活中没有伟大、高贵的人和有智慧的人怎么办?请不要变得麻木，不要_____，不要放弃向生活学习的机会。因为至少在你的周围还有树，特别是大树，它会教会你许多东西。一棵大树，就是你的亲人和老师，而且也可以毫不夸张地说，它就是伟大、高贵和有智慧的人。 &lt;br />A.自以为是 B.茫然失措 &lt;br />C.随波逐流 D.自暴自弃&lt;/p>
-&lt;p>根据文段“不要变得麻木，不要……，不要放弃向生活学习的机会”可知空格处应该填一个与变得麻木、放弃学习并列的成分。A项“自以为是”指总以为自己是对的，这与文段的语意明显偏离，排除；B项“茫然失措”指心中迷惑，不知怎么办才好，本身有麻木之意，对应的正是“不要变得麻木”，排除；C项“随波逐流”比喻没有坚定的立场，缺乏判断是非的能力，只能随着别人走。能够作为并列成分填入且符合题干语意。D项“自暴自弃”指自己瞧不起自己，甘于落后或堕落，本身有放弃学习之意，对应的正是“不要放弃向生活学习”，排除。故&lt;a href="https://www.zongyang.org/133079.html">正确答案为C&lt;/a>。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;ul>
-&lt;li>顿号表达同义并列，其实是一种“底线抓手”，没有任何对应的时候，可考虑同义并列，当出现&lt;strong>更明显的对应&lt;/strong>时，可以不同义，也就是顿号的同义并列有“不绝对性”。&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>从个人无意识、（）的影像记录，到组织严密、目标明确、系统全面的深度追踪，纪实摄影体现出见证人类社会发展的历史价值。个人生存状态、家庭生活变迁、社会文明进程、国家发展历程、时代步伐变迁等，纪实摄影建构的“记忆银行”，（）了人们的视觉感官，为我们提供了生动逼真的历史见证。 &lt;br />A.碎片化 延伸 B.零散化 重塑 &lt;br />C.浅表化 拓展D.娱乐化 刺激&lt;/p>
-&lt;p>根据“从个人...系统全面”可知，横线处所填词语应该与横线后语义相反，表示缺乏严密的组织、明确的目标以及非系统全面的意思，存在对应关系。A项“碎片化”、B项“零散化”均可表示不够全面、不够系统之意，保留。C项“浅表化”、D项“娱乐化”不符合语境，且不能形容“影像记录”，排除。延伸感官。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="前后文反义">前后文反义&lt;/h4>
-&lt;ul>
-&lt;li>当出现引导反义的关键词时， 注重前后的意思相反。&lt;/li>
-&lt;li>常见的引导反义的关键词：但是、但、然而、却等&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>2019 年以来，“双百行动”与“综合改革试点”为地方国企改革注入了新动力，踩下了加速器。地方国企改革正推向纵深，包括从单项改革向综合改革推进，从容易改的层面向较难改的层面推进，从修修补补向（）推进。 &lt;br />A.脱胎换骨 B.洗心革面 &lt;br />C.清身洁己 D.阳春白雪&lt;/p>
-&lt;p>“国企改革”，由“向”可知，待填词与“修修补补”构成递进，词义相近，程度更重，待填词应表示改革程度深。对应选项，A项“脱胎换骨”比喻痛改前非，重新来过，侧重强调&lt;strong>改变程度深&lt;/strong>，与“修修补补”构成递进，当选。B项“洗心革面”指去除旧思想，改变旧面貌，比喻&lt;strong>坏人物&lt;/strong>彻底悔改，文中搭配对象为“国企改革”，搭配不当，排除；C项“清身洁己”比喻保持自身节操，身体力行，D项“阳春白雪”比喻高深的不通俗的文学艺术，两项均不符合文意，&lt;a href="https://cq.m.jinbiaochi.com/cqgwy/news_236894.html">排除&lt;/a>。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>我们通过守正创新形成了中国特色社会主义理论体系，守正就不能偏离马克思主义、社会主义，但不是（），还要往前发展、与时俱进，否则就是僵化的、陈旧的、过时的。 &lt;br />A.刻舟求剑 B.缘木求鱼 &lt;br />C.邯郸学步 D.削足适履&lt;/p>
-&lt;p>（）对比往前发展，与时俱进。刻舟求剑：比喻办事刻板拘泥，不知根据实际情况的&lt;strong>发展&lt;/strong>处理问题。削足适履：比喻不合理地迁就现有条件，或不顾具体条件地生搬硬套。缘木求鱼：行事的方向、方法不对，必将劳而无功，贬义。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>年轻人应该更好地认识自己、了解各个专业，选择自己真正擅长、真正愿意去（）的方向。热情善谈的人适合当老师，天生大大咧咧的人可能不太适合做医生。不感兴趣的话，在影视鉴赏或媒体创意中也会（），感兴趣的话，在复杂的数学公式和化学方程式中也一样可以自得其乐。 &lt;br />A.努力 束手无策 B.追求 心猿意马 &lt;br />C.实践 郁郁寡欢 D.钻研 索然无味&lt;/p>
-&lt;p>自得其乐-&amp;gt;不快乐-&amp;gt;郁郁寡欢。索然无味还要再推一步才能得到不快乐。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="特殊语境相反">特殊：语境相反&lt;/h4>
-&lt;ul>
-&lt;li>文段有可能出现分成两个大部分，两个大部分整体相反，要有宏观思维。&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>心理学上有个概念叫曝光效应，是指人们会对自己熟悉的事物产生好感，会有“（）”的感觉。曝光效应就是广告营销的心理学基础。不过（），心理学上还有一个概念叫“过度曝光”，研究发现，一个事物在被试面前连续呈现 10 到20 次后会增加好感度，但是超过这个次数，反而会让被试产生厌烦感。 &lt;br />A.似曾相识 不言而喻 B.情有独钟 无独有偶&lt;br />C.心旷神怡 如出一辙 D.如沐春风 物极必反&lt;/p>
-&lt;p>不过，转折出不好-&amp;gt;物极必反&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="三大谬误">三大谬误&lt;/h3>
-&lt;ul>
-&lt;li>局部谬误
-&lt;ul>
-&lt;li>很多同学逻辑填空做不好，找不到对应，最大的一个问题便是眼光过于的&amp;quot;局限&amp;quot;，只盯着一个局部看，没有宏观的文章把握，我把这种错误称作&amp;quot;局部谬误&amp;quot;。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>搭配不当
-&lt;ul>
-&lt;li>顾名思义，所填入的成语实词和原文的搭配是有问题的。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>分割谬误
-&lt;ul>
-&lt;li>当文段有大量内容并列时，很多同学往往将其割裂开来看，往往会犯错误，应该注意其&amp;quot;整体性&amp;quot;。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>局部谬误&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>1915 年，爱因斯坦提出了广义相对论，他认为引力是时空扭曲的结果。在过去的一个世纪，广义相对论的那些看似（）的预言一一被验证。其中一个最（）的预言是，当中子星和黑洞等大质量天体相互碰撞时，时空结构会出现波动。这类事件引发的涟漪会渗透到时空中，（）到很远的地方。&lt;br /> A.石破天惊 别出心裁 扩散 B.荒诞不经 雄心勃勃 投射&lt;br />C.异想天开 引人注目 传播 D.遥不可及 广为人知 弥漫&lt;/p>
-&lt;p>第一步，分析第一空。根据文意可知，文中介绍的广义相对论预言在当时是非常超前大胆，难以被人所理解的。A项“石破天惊”比喻诗文、议论不同凡响或&lt;strong>事件发展&lt;/strong>出奇而惊人，和“预言”搭配不当，排除A项。B项“荒诞不经”指非常荒谬，&lt;strong>不合情理&lt;/strong>，符合文意。C项“异想天开”比喻想法离奇，实现不了，&lt;a href="https://m.ah.huatu.com/2022/0524/2308488.html">符合文意&lt;/a>。D项“遥不可及”指很远很远，非常遥远、&lt;strong>难以得到&lt;/strong>的东西，不符合文意，排除D项。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>在我国逻辑哲学的研究刚刚起步时，人们致力于引进、学习西方逻辑哲学理论。因此，部分学者产生一种（），似乎西方逻辑哲学的理论就是逻辑哲学的唯一真理。他们对待西方逻辑哲学理论，不是采取批判的态度，去其糟粕，取其精华，并以之作为构建我国逻辑哲学的素材，而是全盘照搬，（）。 &lt;br />A.错觉 奉为圭臬 B.误解 肃然起敬 &lt;br />C.倾向 人云亦云 D.认识 顶礼膜拜&lt;/p>
-&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/568146377">第一空&lt;/a>，由“似乎西方逻辑哲学的理论就是逻辑哲学的唯一真理”可知，部分学者对逻辑哲学的认知发生了偏差，待填词应表示出现偏差之意，且感情色彩&lt;strong>消极&lt;/strong>。对应选项，C项“倾向”和D项“认识”侧重对逻辑哲学有了了解，感情色彩中性，不符合文意，排除。第二空，由“，”可知，待填词与“全盘照搬”构成&lt;strong>并列&lt;/strong>，词义相近，感情色彩一致，应表示把西方逻辑哲学理论全部当成我国构建逻辑哲学的素材之意。对应选项，A项“奉为圭臬”指把某些言论或事物奉为准则，感情色彩消极，置于文段可以体现出我国构建逻辑哲学时全部照搬西方理论，符合文意，当选。B项“肃然起敬”形容产生严肃敬仰的感情，感情色彩积极且不符合文意，排除。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>教师是课堂的主导，因此，教学信息化软硬件系统的使用大多取决于教师。但教师在常年的教学中，已形成了一套（）、驾轻就熟的教学方法，如果让他们放弃现成的方法，去学习新的软硬件系统，需要花费大量的时间和精力，有时甚至要（）整门课程的教学组织方式和内容。因此，如果没有合理的激励机制，很多老师对于新系统是（）的。&lt;br />A.完整 颠覆 望而却步 B.严密 改变 踌躇不前&lt;br />C.系统 推翻 漠不关心 D.复杂 重构 畏首畏尾&lt;/p>
-&lt;p>第一空，由“、”可知，待填词与“驾轻就熟”并列，“驾轻就熟”意为对事情熟悉，做起来轻松便捷，再由“如果让他们放弃现成的方法”可知，目前教师在教学中已经有了一套熟悉的、完备的的教学方法，待填词应体现完备之意。对应选项，A项“完整”、B项“严密”、C项“系统”均可以体现教师目前有适合自己的教学方法，保留。D项“复杂”意为繁多而杂，代入文段强调目前的教学方式多且杂，不符合文意，排除。第二空，由“甚至”可知，待填词与“花费大量的时间和精力”构成&lt;strong>递进，程度更重&lt;/strong>，应表示重新形成新的教学组织方式和内容之意。对应选项，A项“颠覆”、C项“推翻”均可体现重新形成新的教学方法，保留。B项“改变”强调在旧教学方法上作出变动，程度较轻，排除。第三空，由“因此，如果没有合理的激励机制”可知，待填词表示没有激励机制造成的结果，由文意可知，教师有自己熟悉的教学方式，且适应新系统代价很大，如果奖励机制不合理，教师不会愿意尝试新系统，待填词应表示&lt;strong>不敢、不想做某事之意&lt;/strong>。A项“望而却步”意为遇到力不能及的事而往后退缩，能体现教师由于付出的代价大而内心不愿意去主动适应新系统之意，符合文意，当选。C项“漠不关心”指对人或事物冷淡，一点也不关心，文段并无体现关心之意，不符合文意，排除。故本题答案为A项。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>搭配不当&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>顾名思义，所填入的成语实词和原文的搭配是有问题的。&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>大多数人都是围绕要做的事情而非身体的自然节奏来安排自己的时间。每天的工作任务、上下班的交通、社交活动和孩子的日程安排经常（）了我们，我们的时间安排不可避免地与人体生物钟发生（）。 &lt;br />A.支配 冲突 B.干扰 矛盾&lt;br /> C.影响 混淆 D.主宰 混乱&lt;/p>
-&lt;p>大多数人、经常-&amp;gt;程度深，排除BC，发生冲突搭配。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>分割谬误&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>当文段有大量内容并列时，很多同学往往将其割裂开来看，往往会犯错误，应该注意其&amp;quot;整体性&amp;quot;。&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>基础研究是科技创新的（），除了探索自然奥秘、拓展人类的认知边界，基础研究也是破解“卡脖子”难题的关键开关。根深才能叶茂，基础认知不（），原理机制不清楚，就很难做出原创性、革命性、颠覆性的关键核心技术。以我国的“人造太阳”为例，它之所以能（）创造出 1.2 亿摄氏度“燃烧”101 秒，1.6 亿摄氏度“燃烧”20 秒的世界纪录，就源自科研人员对核物理规律更深层次的理解与把握。 &lt;br />A.源头 清晰 接连 B.核心 深入 迅速&lt;br /> C.基石 全面 持续D.结果 完整 一直&lt;/p>
-&lt;p>第三空，应该是接连出现成果。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="特殊技巧">特殊技巧&lt;/h3>
-&lt;ul>
-&lt;li>原因导致后果，保持⼀致
-&lt;ul>
-&lt;li>当题干出现因果逻辑时，原因导致了某个结果，则这个结果一定要和原图吻合。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>敏感于固定搭配
-&lt;ul>
-&lt;li>掌握常见的固定搭配，有时候可帮助解题&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>保障基础性
-&lt;ul>
-&lt;li>没有相应的语境时，不求最好和完美，确保基础保障即可&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>多对多对应
-&lt;ul>
-&lt;li>经常会出现多者并列和多者并列的对应，此时要注意一一对应。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>原因导致后果，保持⼀致&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>使用大数据，一旦安全无法保障，大数据就会产生极大的（），不仅侵害广大用户的切身利益，也会给行业发展蒙上阴影。数据隐私保护固然离不开技术，但我们也不能过于（）技术。只有加强顶层设计，多方形成合力，才更靠谱。&lt;br />A.破坏力 青睐 B.杀伤力 迷信 &lt;br />C.威慑力 推崇 D.冲击力 倚仗&lt;/p>
-&lt;p>&lt;a href="https://m.sydw8.com/2021/0205/372775.html">第一空&lt;/a>。根据第一句提示信息“不仅侵害广大用户的切身利益，也会给行业发展蒙上阴影”可知，大数据会对用户和行业带来巨大的损失和危害，第一空词语情感&lt;strong>偏消极&lt;/strong>。A项“破坏力”是指使损害，损坏，符合文意。B项“杀伤力”指射杀目标，破坏目标的能力，符合文意。C项“威慑力”通常指用武力或威势使对方感到恐惧的力量；D项“冲击力”是指物体相互碰撞时出现的力，这两项均&lt;strong>无法直接导致危害&lt;/strong>的产生，排除C项和D项。第二空。根据文段语义信息，可知我们不能太过于依赖大数据技术，第二空情感倾向应&lt;strong>偏消极&lt;/strong>。A项“青睐”是用正眼相看，指喜爱或重视，且多为褒义词，排除A项。B项“迷信”多指迷失自性，而盲目地信从，表述情感和语义符合文意。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>敏感于固定搭配&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>作为智能城市基础设施的重要组成，雄安新区区块链的开发应用一直在悄然进行，从基础架构的 （）到应用落地的（），无不昭示打造“智能之城”的雄心抱负。&lt;br />A.规划 成功不居 B.搭建 牛刀小试&lt;br /> C.建立 初露锋芒 D.运行 崭露头角&lt;/p>
-&lt;p>搭建架构&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>保障基础性&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>近年来，一批优秀的中国企业和中国品牌在国际市场成功（），品牌美誉度和忠诚度快速提升。这充分说明，只要依靠创新、下足功夫，中国品牌一定可以（）世界知名品牌。 &lt;br />A.转型 媲美 B.崛起 超越&lt;br /> C.突围 比肩 D.亮相 领先&lt;/p>
-&lt;p>超越，领先不符合现实。市场中突围。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>多对多对应&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>管理者往往对直观信息熟视无睹，对数字情有独钟。结果，他们就可能（）一些关键线索，不能真正了解到对方的优势和劣势。由此导致的结果，要么是“ （）”，要么是“交友不慎”。 &lt;br />A.遗漏 铤而走险 B.轻视 畏首畏尾 &lt;br />C.丢失 误入歧途 D.忽略 坐失良机&lt;/p>
-&lt;p>劣势-&amp;gt;交友不慎，优势-&amp;gt;坐失良机&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>习近平总书记指出：“环境就是民生，青山就是美丽，蓝天也是幸福。要像保护眼睛一样保护生态环境，像对待生命一样对待生态环境，把不损害生态环境作为发展的（）。”“在生态环境保护上一定要算大账、算长远账、算整体账、算综合账，不能因小失大、寅吃卯粮、急功近利、（）。” &lt;br />A.基础 一叶障目 B.根本 杀鸡取卵 &lt;br />C.目标 沽名钓誉 D.底线 顾此失彼&lt;/p>
-&lt;p>大帐-&amp;gt;因小失大；长远账-&amp;gt;寅吃卯粮；综合帐-&amp;gt;综合-&amp;gt;顾此失彼：只考虑单个&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>传统戏曲中所蕴含的价值理念以及（）的表演节奏，很难与当代青年人的生活节奏与审美趣味相合拍。因而，关于戏曲衰亡的声音（）。事实上，戏曲相对于互联网时代知识文化的（）、快餐式传播，其可重复欣赏和耐咀嚼的品格显得更为可贵，其特有的艺术价值决定了它不可能退出历史舞台，更不会走向消亡。 &lt;br />A.不疾不徐 如雷贯耳 碎片化 B.从容不迫 不绝于耳 肤浅化&lt;br />C.四平八稳 甚嚣尘上 机械化 D.慢条斯理 此起彼伏 泡沫化&lt;/p>
-&lt;p>第三空：本空为并列关系。根据顿号可知，本空为并列关系。空处与“快餐式传播”对应，应与其语义相近，又根据“可重复欣赏和耐咀嚼的品格显得更为可贵”可知，&lt;strong>空处与“可重复欣赏”语义相反，表达“快且不重复”的意思&lt;/strong>。 A选项“碎片化”指完整的东西破成诸多零块；B选项“泡沫化”指像泡沫一样，外表光鲜，容易转瞬即逝。二者均符合文意，保留。C选项“肤浅化”指局限于表面的、浅薄，不深刻，常用于观点、认识、体会、理论等等；D选项“机械化”指使用机械装备以节省人力的生产方式，也指事物如机械动作般缺少变化。二者均不能体现“快且不重复”的意思，不合文意，排除。第二空：本空为修饰关系。空处与“声音”搭配。B选项“此起彼伏”指这里起来，那里下去；形容接连不断，可以与“声音”搭配，符合文意，保留。A选项“如雷贯耳”形容&lt;strong>人的名声大&lt;/strong>。与“声音”搭配不当，排除。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="如何学逻辑填空">如何学逻辑填空&lt;/h3>
-&lt;ol>
-&lt;li>学好前文的出题逻辑&lt;/li>
-&lt;li>成语实词的积累
-&lt;ol>
-&lt;li>&lt;a href="https://dict.baidu.com/">学习词义&lt;/a>&lt;/li>
-&lt;li>辨析类似词语&lt;/li>
-&lt;li>总结适用&lt;a href="http://search.people.cn/">语境&lt;/a>，精确匹配&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;p>恭喜你结束了言语理解，🎊，最后做一道题吧&lt;/p>
-&lt;p>美好只是个幻影，我们总是尝试着把生活中所有美好的一切，都据为己有。总是觉得世间万物的馈赠都是理所应当。而当现实的残酷降临在自身的时候，我们总是在抱怨上天的不公平。而我们不知不觉地发现身边总是有些默默无闻的人，他们不骄不躁，总是在失败中学会总结。不是不说故事的人没有故事，即使你的故事辛酸坎坷，让聆听者潸然泪下，不会在故事中汲取教训，你也永远都是一个说故事的人。站在二十年后，你是否会对今天的喟叹而唏嘘不已，对不满足如今的自己而悲伤流泪，而对这样的曾经演变成二十年后的自己万般无奈?&lt;/p>
-&lt;p>这段文字想要表达的是：&lt;/p>
-&lt;p>A.与其过度期望膨胀的自己，将过错归结于上天的命运，还不如积极地面对现实，活在当下&lt;/p>
-&lt;p>B.抱怨会将自己与现实的遭遇撇清关系，让事实的存在变得与自己毫无瓜葛&lt;/p>
-&lt;p>C.美好对于现实生活而言，是可望而不可及的&lt;/p>
-&lt;p>D.太多的苛求和心安理得只会让现实变得更加不切实际&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry></feed>
+&lt;p>终于行测四大模块全部结束了，后天也考试了，不为自己为大家(实际上自己太菜了哈哈哈)，希望看到的人可以提提意见，如果好的话也可以转发。感谢您的观看，祝您考公顺利！！！&lt;/p></content><category scheme="https://keepjolly.com/posts/" term="posts" label="posts"/><category scheme="https://keepjolly.com/posts/learn/" term="learn" label="learn"/><category scheme="https://keepjolly.com/tags/civilservant/" term="CivilServant" label="CivilServant"/></entry></feed>
