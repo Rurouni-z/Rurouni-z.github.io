@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.125.5 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Fri, 03 May 2024 07:15:48 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>腾讯云关闭数据万象相关服务</title><link>https://keepjolly.com/posts/life/oss-high-cost/</link><guid isPermaLink="true">https://keepjolly.com/posts/life/oss-high-cost/</guid><pubDate>Fri, 03 May 2024 14:53:49 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>悠闲の小屋</title><link>https://keepjolly.com/</link><description>一个极简主题的博客。</description><generator>Hugo 0.128.2 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>1366475809@qq.com (Rurouni)</managingEditor><webMaster>1366475809@qq.com (Rurouni)</webMaster><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><lastBuildDate>Fri, 05 Jul 2024 03:04:55 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://keepjolly.com/rss.xml"/><item><title>腾讯云关闭数据万象相关服务</title><link>https://keepjolly.com/posts/life/oss-high-cost/</link><guid isPermaLink="true">https://keepjolly.com/posts/life/oss-high-cost/</guid><pubDate>Fri, 03 May 2024 14:53:49 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;blockquote>
 &lt;p>前情提要：最近两个月腾讯云的消费突然激增了300倍的消费（0.01→3.21￥）
 预告：最近再整篇大的，关于qt面试总结，看我找工作情况择日发布吧&lt;/p>
 &lt;/blockquote>
@@ -431,6 +431,19 @@
 其他方法：&lt;a href="https://zhuanlan.zhihu.com/p/61108448">封面、目录、正文设置不同页码步骤教学&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;/ul>
+&lt;h2 id="修改表格中公式间距问题">修改表格中公式间距问题&lt;/h2>
+&lt;ul>
+&lt;li>问题：表格中插入公式，导致每行的间距不一致，并且正文部分插入公式也会修改行间距。&lt;/li>
+&lt;li>前因：答辩老师指出需要修改&lt;/li>
+&lt;li>方案：
+&lt;ol>
+&lt;li>选中对应文字&lt;/li>
+&lt;li>搜索&lt;code>段落设置&lt;/code> 或者右键找到&lt;code>段落&lt;/code>&lt;/li>
+&lt;li>修改&lt;code>如果定义了文档网格，则对齐到网格&lt;/code> 为false&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>参考连接：&lt;a href="https://blog.csdn.net/sinat_33425327/article/details/106654940">Word中插入公式后行距变大的解决办法&lt;/a>&lt;/li>
 &lt;/ul></description><category domain="https://keepjolly.com/posts/">posts</category><category domain="https://keepjolly.com/posts/create/">create</category><category domain="https://keepjolly.com/tags/others/">Others</category></item><item><title>colmap 安装</title><link>https://keepjolly.com/posts/tech/colmap-install/</link><guid isPermaLink="true">https://keepjolly.com/posts/tech/colmap-install/</guid><pubDate>Wed, 17 Jan 2024 23:07:42 +0800</pubDate><author>1366475809@qq.com (Rurouni)</author><copyright>在保留本文作者及本文链接的前提下，非商业用途随意转载分享(我会高强度自搜的喔👊)。</copyright><description>&lt;h2 id="预准备">预准备&lt;/h2>
 &lt;p>环境：&lt;/p>
 &lt;ul>
